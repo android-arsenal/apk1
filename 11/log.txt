@@ -1,0 +1,8 @@
+2016-07-18 02:26:18,014 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/libgdx/libgdx/archive/master.zip", attempt 3
+2016-07-18 02:26:21,862 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/libgdx/libgdx/archive/master.zip, attempt 3
+2016-07-18 02:26:49,996 DEBUG o.z.z.ZipUtil - Extracting '/tmp/rdisk/11/master.zip' into '/tmp/rdisk/11/src'.
+2016-07-18 02:26:53,114 INFO  c.g.v.a.s.FullProcessService - Size of directory with sources: 185 MB
+2016-07-18 02:26:53,114 ERROR c.g.v.a.s.FullProcessService - Source directory should be less than 40 MB
+2016-07-18 02:26:53,114 ERROR c.g.v.a.s.FullProcessService - Project will not be processed
+2016-07-18 02:26:53,114 ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+2016-07-18 02:26:53,306 ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

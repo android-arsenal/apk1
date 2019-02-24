@@ -1,0 +1,4 @@
+{
+  "com.jensdriller.libs.multistatelistview" : [ "BuildConfig", "MultiStateListView", "MultiStateListView$1", "MultiStateListView$Builder", "MultiStateListView$State", "R", "R$attr", "R$styleable" ],
+  "com.jensdriller.libs.multistatelistview.sample" : [ "BuildConfig", "MainActivity", "MainActivity$1", "MainActivity$LoadListDataTask", "R", "R$attr", "R$drawable", "R$id", "R$layout", "R$string", "R$style", "R$styleable" ]
+}

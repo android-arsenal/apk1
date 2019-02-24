@@ -1,0 +1,912 @@
+2018-04-11 21:28:46,901 INFO  DownloadService - Downloading "https://github.com/BoltsFramework/Bolts-Android/archive/master.zip", attempt 3
+2018-04-11 21:29:47,371 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 21:29:48,115 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 21:29:48,115 INFO  DownloadService - Downloading "https://github.com/BoltsFramework/Bolts-Android/archive/master.zip", attempt 3
+2018-04-11 21:30:49,464 DEBUG FullProcessService - Repository https://github.com/BoltsFramework/Bolts-Android available: true
+2018-04-11 21:30:49,464 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 21:30:49,464 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/BoltsFramework/Bolts-Android, /tmp/rdisk/49/src]
+2018-04-11 21:30:51,156 INFO  SysUtils - 
+2018-04-11 21:30:51,171 INFO  GitService - Deleted "/tmp/rdisk/49/src/.git": true
+2018-04-11 21:30:51,173 INFO  FullProcessService - Size of directory with sources: 326 KB
+2018-04-11 21:30:51,174 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/49/src]
+2018-04-11 21:30:51,185 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/49/src/.git/
+
+2018-04-11 21:30:51,187 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/49/src/gradlew
+2018-04-11 21:30:51,189 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/49/src/bolts-android/build.gradle /tmp/rdisk/49/src/bolts-applinks/build.gradle /tmp/rdisk/49/src/build.gradle /tmp/rdisk/49/src/bolts-tasks/build.gradle
+2018-04-11 21:30:51,191 INFO  ProjectBuildService - All script(s): /tmp/rdisk/49/src/settings.gradle /tmp/rdisk/49/src/build.gradle /tmp/rdisk/49/src/bolts-tasks/build.gradle /tmp/rdisk/49/src/bolts-applinks/build.gradle /tmp/rdisk/49/src/bolts-android/build.gradle
+2018-04-11 21:30:51,192 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 21:30:51,192 INFO  ProjectFixService - Fixing project...
+2018-04-11 21:30:51,198 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/49/src/bolts-android/local.properties
+2018-04-11 21:30:51,214 INFO  ProjectFixService - Build info for "/tmp/rdisk/49/src/bolts-android/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-11 21:30:51,214 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/49/src/bolts-applinks/local.properties
+2018-04-11 21:30:51,216 INFO  ProjectFixService - Build info for "/tmp/rdisk/49/src/bolts-applinks/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-11 21:30:51,216 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/49/src/local.properties
+2018-04-11 21:30:51,221 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2-all.zip
+2018-04-11 21:30:51,221 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2-bin.zip)
+2018-04-11 21:30:51,221 INFO  ProjectFixService - Build info for "/tmp/rdisk/49/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-11 21:30:51,223 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/49/src/bolts-tasks/local.properties
+2018-04-11 21:30:51,224 INFO  ProjectFixService - Build info for "/tmp/rdisk/49/src/bolts-tasks/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-11 21:30:51,224 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 21:30:51,224 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:30:51,225 INFO  SysUtils - Execute command: [/tmp/rdisk/49/src/gradlew, -b, /tmp/rdisk/49/src/bolts-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:31:06,688 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-11 21:31:06,689 INFO  ProjectTaskService - Excluded tasks (18): lintDebug mockableAndroidJar deviceCheck coveralls lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll createDebugCoverageReport test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-11 21:31:06,689 INFO  SysUtils - Execute command: [/tmp/rdisk/49/src/gradlew, -b, /tmp/rdisk/49/src/bolts-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, coveralls, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, createDebugCoverageReport, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-11 21:31:17,312 INFO  SysUtils - Configuration on demand is an incubating feature.
+:bolts-android:androidJavadocs UP-TO-DATE
+:bolts-android:androidJavadocsJar
+:bolts-android:androidSourcesJar
+:bolts-android:compileLint
+:bolts-android:copyDebugLint UP-TO-DATE
+:bolts-android:mergeDebugProguardFiles
+:bolts-android:preBuild UP-TO-DATE
+:bolts-android:preDebugBuild UP-TO-DATE
+:bolts-android:checkDebugManifest
+:bolts-android:preDebugAndroidTestBuild UP-TO-DATE
+:bolts-android:preDebugUnitTestBuild UP-TO-DATE
+:bolts-android:preReleaseBuild UP-TO-DATE
+:bolts-android:preReleaseUnitTestBuild UP-TO-DATE
+:bolts-applinks:compileLint
+:bolts-applinks:copyReleaseLint UP-TO-DATE
+:bolts-applinks:mergeReleaseProguardFiles
+:bolts-applinks:preBuild UP-TO-DATE
+:bolts-applinks:preReleaseBuild UP-TO-DATE
+:bolts-applinks:checkReleaseManifest
+:bolts-applinks:prepareReleaseDependencies
+:bolts-applinks:compileReleaseAidl
+:bolts-applinks:compileReleaseRenderscript
+:bolts-applinks:generateReleaseBuildConfig
+:bolts-applinks:generateReleaseAssets UP-TO-DATE
+:bolts-applinks:mergeReleaseAssets
+:bolts-applinks:generateReleaseResValues
+:bolts-applinks:generateReleaseResources
+:bolts-applinks:packageReleaseResources
+:bolts-applinks:processReleaseManifest
+:bolts-applinks:processReleaseResources
+:bolts-applinks:generateReleaseSources
+:bolts-applinks:processReleaseJavaRes UP-TO-DATE
+:bolts-tasks:compileJava
+:bolts-tasks:processResources UP-TO-DATE
+:bolts-tasks:classes
+:bolts-tasks:jar
+:bolts-applinks:compileReleaseJavaWithJavac
+:bolts-applinks:packageReleaseJar
+:bolts-applinks:compileReleaseNdk UP-TO-DATE
+:bolts-applinks:packageReleaseJniLibs UP-TO-DATE
+:bolts-applinks:packageReleaseLocalJar UP-TO-DATE
+:bolts-applinks:packageReleaseRenderscript UP-TO-DATE
+:bolts-applinks:bundleRelease
+:bolts-android:prepareComParseBoltsBoltsApplinks141SNAPSHOTLibrary
+:bolts-android:prepareDebugDependencies
+:bolts-android:compileDebugAidl
+:bolts-android:compileDebugRenderscript
+:bolts-android:generateDebugBuildConfig
+:bolts-android:generateDebugAssets UP-TO-DATE
+:bolts-android:mergeDebugAssets
+:bolts-android:generateDebugResValues
+:bolts-android:generateDebugResources
+:bolts-android:mergeDebugResources
+:bolts-android:processDebugManifest
+:bolts-android:processDebugResources
+:bolts-android:generateDebugSources
+:bolts-android:processDebugJavaRes UP-TO-DATE
+:bolts-android:compileDebugJavaWithJavac
+:bolts-android:unzipJacocoAgent
+:bolts-android:instrumentDebug
+:bolts-android:packageDebugJar
+:bolts-android:compileDebugNdk UP-TO-DATE
+:bolts-android:packageDebugJniLibs UP-TO-DATE
+:bolts-android:packageDebugLocalJar
+:bolts-android:packageDebugRenderscript UP-TO-DATE
+:bolts-android:packageDebugResources
+:bolts-android:bundleDebug
+:bolts-android:compileDebugSources
+:bolts-android:assembleDebug
+:bolts-android:copyReleaseLint UP-TO-DATE
+:bolts-android:mergeReleaseProguardFiles
+:bolts-android:checkReleaseManifest
+:bolts-android:prepareReleaseDependencies
+:bolts-android:compileReleaseAidl
+:bolts-android:compileReleaseRenderscript
+:bolts-android:generateReleaseBuildConfig
+:bolts-android:generateReleaseAssets UP-TO-DATE
+:bolts-android:mergeReleaseAssets
+:bolts-android:generateReleaseResValues
+:bolts-android:generateReleaseResources
+:bolts-android:mergeReleaseResources
+:bolts-android:processReleaseManifest
+:bolts-android:processReleaseResources
+:bolts-android:generateReleaseSources
+:bolts-android:processReleaseJavaRes UP-TO-DATE
+:bolts-android:compileReleaseJavaWithJavac
+:bolts-android:packageReleaseJar
+:bolts-android:compileReleaseNdk UP-TO-DATE
+:bolts-android:packageReleaseJniLibs UP-TO-DATE
+:bolts-android:packageReleaseLocalJar UP-TO-DATE
+:bolts-android:packageReleaseRenderscript UP-TO-DATE
+:bolts-android:packageReleaseResources
+:bolts-android:bundleRelease
+:bolts-android:compileReleaseSources
+:bolts-android:assembleRelease
+:bolts-android:jarRelease
+:bolts-android:signArchives SKIPPED
+:bolts-android:assemble
+:bolts-android:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.147 secs
+
+2018-04-11 21:31:17,321 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:31:17,321 INFO  SysUtils - Execute command: [/tmp/rdisk/49/src/gradlew, -b, /tmp/rdisk/49/src/bolts-applinks/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:31:24,772 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-11 21:31:24,772 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-11 21:31:24,773 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-11 21:31:24,773 INFO  SysUtils - Execute command: [/tmp/rdisk/49/src/gradlew, -b, /tmp/rdisk/49/src/bolts-applinks/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-11 21:31:43,672 INFO  SysUtils - Configuration on demand is an incubating feature.
+:bolts-applinks:androidJavadocs/tmp/rdisk/49/src/bolts-applinks/src/main/java/bolts/WebViewAppLinkResolver.java:82: error: cannot find symbol
+  public Task<AppLink> getAppLinkFromUrlInBackground(final Uri url) {
+         ^
+  symbol:   class Task
+  location: class WebViewAppLinkResolver
+/tmp/rdisk/49/src/bolts-applinks/src/main/java/bolts/AppLinkResolver.java:26: error: cannot find symbol
+  public Task<AppLink> getAppLinkFromUrlInBackground(Uri url);
+         ^
+  symbol:   class Task
+  location: interface AppLinkResolver
+/tmp/rdisk/49/src/bolts-applinks/src/main/java/bolts/AppLinkNavigation.java:389: error: cannot find symbol
+  public static Task<NavigationResult> navigateInBackground(final Context context,
+                ^
+  symbol:   class Task
+  location: class AppLinkNavigation
+/tmp/rdisk/49/src/bolts-applinks/src/main/java/bolts/AppLinkNavigation.java:410: error: cannot find symbol
+  public static Task<NavigationResult> navigateInBackground(Context context,
+                ^
+  symbol:   class Task
+  location: class AppLinkNavigation
+/tmp/rdisk/49/src/bolts-applinks/src/main/java/bolts/AppLinkNavigation.java:425: error: cannot find symbol
+  public static Task<NavigationResult> navigateInBackground(Context context,
+                ^
+  symbol:   class Task
+  location: class AppLinkNavigation
+/tmp/rdisk/49/src/bolts-applinks/src/main/java/bolts/AppLinkNavigation.java:439: error: cannot find symbol
+  public static Task<NavigationResult> navigateInBackground(Context context,
+                ^
+  symbol:   class Task
+  location: class AppLinkNavigation
+/tmp/rdisk/49/src/bolts-applinks/src/main/java/bolts/AppLinkNavigation.java:454: error: cannot find symbol
+  public static Task<NavigationResult> navigateInBackground(Context context,
+                ^
+  symbol:   class Task
+  location: class AppLinkNavigation
+/tmp/rdisk/49/src/bolts-applinks/src/main/java/bolts/AppLinkNavigation.java:469: error: cannot find symbol
+  public static Task<NavigationResult> navigateInBackground(Context context,
+                ^
+  symbol:   class Task
+  location: class AppLinkNavigation
+
+8 warnings
+:bolts-applinks:androidJavadocsJar
+:bolts-applinks:androidSourcesJar
+:bolts-applinks:compileLint
+:bolts-applinks:copyDebugLint UP-TO-DATE
+:bolts-applinks:mergeDebugProguardFiles
+:bolts-applinks:preBuild UP-TO-DATE
+:bolts-applinks:preDebugBuild UP-TO-DATE
+:bolts-applinks:checkDebugManifest
+:bolts-applinks:prepareDebugDependencies
+:bolts-applinks:compileDebugAidl
+:bolts-applinks:compileDebugRenderscript
+:bolts-applinks:generateDebugBuildConfig
+:bolts-applinks:generateDebugAssets UP-TO-DATE
+:bolts-applinks:mergeDebugAssets
+:bolts-applinks:generateDebugResValues
+:bolts-applinks:generateDebugResources
+:bolts-applinks:packageDebugResources
+:bolts-applinks:processDebugManifest
+:bolts-applinks:processDebugResources
+:bolts-applinks:generateDebugSources
+:bolts-applinks:processDebugJavaRes UP-TO-DATE
+:bolts-tasks:compileJava UP-TO-DATE
+:bolts-tasks:processResources UP-TO-DATE
+:bolts-tasks:classes UP-TO-DATE
+:bolts-tasks:jar UP-TO-DATE
+:bolts-applinks:compileDebugJavaWithJavac
+:bolts-applinks:unzipJacocoAgent
+:bolts-applinks:instrumentDebug
+:bolts-applinks:packageDebugJar
+:bolts-applinks:compileDebugNdk UP-TO-DATE
+:bolts-applinks:packageDebugJniLibs UP-TO-DATE
+:bolts-applinks:packageDebugLocalJar
+:bolts-applinks:packageDebugRenderscript UP-TO-DATE
+:bolts-applinks:bundleDebug
+:bolts-applinks:compileDebugSources
+:bolts-applinks:assembleDebug
+:bolts-applinks:copyReleaseLint UP-TO-DATE
+:bolts-applinks:mergeReleaseProguardFiles UP-TO-DATE
+:bolts-applinks:preReleaseBuild UP-TO-DATE
+:bolts-applinks:checkReleaseManifest
+:bolts-applinks:prepareReleaseDependencies
+:bolts-applinks:compileReleaseAidl UP-TO-DATE
+:bolts-applinks:compileReleaseRenderscript UP-TO-DATE
+:bolts-applinks:generateReleaseBuildConfig UP-TO-DATE
+:bolts-applinks:generateReleaseAssets UP-TO-DATE
+:bolts-applinks:mergeReleaseAssets UP-TO-DATE
+:bolts-applinks:generateReleaseResValues UP-TO-DATE
+:bolts-applinks:generateReleaseResources UP-TO-DATE
+:bolts-applinks:packageReleaseResources UP-TO-DATE
+:bolts-applinks:processReleaseManifest UP-TO-DATE
+:bolts-applinks:processReleaseResources UP-TO-DATE
+:bolts-applinks:generateReleaseSources UP-TO-DATE
+:bolts-applinks:processReleaseJavaRes UP-TO-DATE
+:bolts-applinks:compileReleaseJavaWithJavac UP-TO-DATE
+:bolts-applinks:packageReleaseJar UP-TO-DATE
+:bolts-applinks:compileReleaseNdk UP-TO-DATE
+:bolts-applinks:packageReleaseJniLibs UP-TO-DATE
+:bolts-applinks:packageReleaseLocalJar UP-TO-DATE
+:bolts-applinks:packageReleaseRenderscript UP-TO-DATE
+:bolts-applinks:bundleRelease UP-TO-DATE
+:bolts-applinks:compileReleaseSources UP-TO-DATE
+:bolts-applinks:assembleRelease UP-TO-DATE
+:bolts-applinks:jarRelease
+:bolts-applinks:signArchives SKIPPED
+:bolts-applinks:assemble
+:bolts-applinks:lint
+Ran lint on variant release: 4 issues found
+Ran lint on variant debug: 4 issues found
+Wrote HTML report to file:/tmp/rdisk/49/src/bolts-applinks/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/49/src/bolts-applinks/build/outputs/lint-results.xml
+:bolts-applinks:preDebugUnitTestBuild UP-TO-DATE
+:bolts-applinks:prepareDebugUnitTestDependencies
+:bolts-applinks:processDebugUnitTestJavaRes UP-TO-DATE
+:bolts-applinks:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:bolts-applinks:compileDebugUnitTestSources UP-TO-DATE
+:bolts-applinks:mockableAndroidJar
+:bolts-applinks:assembleDebugUnitTest
+:bolts-applinks:testDebugUnitTest
+:bolts-applinks:preReleaseUnitTestBuild UP-TO-DATE
+:bolts-applinks:prepareReleaseUnitTestDependencies
+:bolts-applinks:processReleaseUnitTestJavaRes UP-TO-DATE
+:bolts-applinks:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:bolts-applinks:compileReleaseUnitTestSources UP-TO-DATE
+:bolts-applinks:assembleReleaseUnitTest
+:bolts-applinks:testReleaseUnitTest
+:bolts-applinks:test
+:bolts-applinks:check
+:bolts-applinks:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.462 secs
+
+2018-04-11 21:31:43,684 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:31:43,684 INFO  SysUtils - Execute command: [/tmp/rdisk/49/src/gradlew, -b, /tmp/rdisk/49/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:31:51,418 INFO  ProjectTaskService - Detected possible tasks: 77
+2018-04-11 21:31:51,418 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck coveralls lint testReleaseUnitTest javadoc deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll createDebugCoverageReport test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-11 21:31:51,418 INFO  SysUtils - Execute command: [/tmp/rdisk/49/src/gradlew, -b, /tmp/rdisk/49/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, coveralls, -x, lint, -x, testReleaseUnitTest, -x, javadoc, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, createDebugCoverageReport, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-11 21:31:59,097 INFO  SysUtils - Configuration on demand is an incubating feature.
+:bolts-android:androidJavadocs UP-TO-DATE
+:bolts-android:androidJavadocsJar UP-TO-DATE
+:bolts-android:androidSourcesJar UP-TO-DATE
+:bolts-android:compileLint
+:bolts-android:copyDebugLint UP-TO-DATE
+:bolts-android:mergeDebugProguardFiles UP-TO-DATE
+:bolts-android:preBuild UP-TO-DATE
+:bolts-android:preDebugBuild UP-TO-DATE
+:bolts-android:checkDebugManifest
+:bolts-android:preDebugAndroidTestBuild UP-TO-DATE
+:bolts-android:preDebugUnitTestBuild UP-TO-DATE
+:bolts-android:preReleaseBuild UP-TO-DATE
+:bolts-android:preReleaseUnitTestBuild UP-TO-DATE
+:bolts-applinks:compileLint
+:bolts-applinks:copyReleaseLint UP-TO-DATE
+:bolts-applinks:mergeReleaseProguardFiles UP-TO-DATE
+:bolts-applinks:preBuild UP-TO-DATE
+:bolts-applinks:preReleaseBuild UP-TO-DATE
+:bolts-applinks:checkReleaseManifest
+:bolts-applinks:prepareReleaseDependencies
+:bolts-applinks:compileReleaseAidl UP-TO-DATE
+:bolts-applinks:compileReleaseRenderscript UP-TO-DATE
+:bolts-applinks:generateReleaseBuildConfig UP-TO-DATE
+:bolts-applinks:generateReleaseAssets UP-TO-DATE
+:bolts-applinks:mergeReleaseAssets UP-TO-DATE
+:bolts-applinks:generateReleaseResValues UP-TO-DATE
+:bolts-applinks:generateReleaseResources UP-TO-DATE
+:bolts-applinks:packageReleaseResources UP-TO-DATE
+:bolts-applinks:processReleaseManifest UP-TO-DATE
+:bolts-applinks:processReleaseResources UP-TO-DATE
+:bolts-applinks:generateReleaseSources UP-TO-DATE
+:bolts-applinks:processReleaseJavaRes UP-TO-DATE
+:bolts-tasks:compileJava UP-TO-DATE
+:bolts-tasks:processResources UP-TO-DATE
+:bolts-tasks:classes UP-TO-DATE
+:bolts-tasks:jar UP-TO-DATE
+:bolts-applinks:compileReleaseJavaWithJavac UP-TO-DATE
+:bolts-applinks:packageReleaseJar UP-TO-DATE
+:bolts-applinks:compileReleaseNdk UP-TO-DATE
+:bolts-applinks:packageReleaseJniLibs UP-TO-DATE
+:bolts-applinks:packageReleaseLocalJar UP-TO-DATE
+:bolts-applinks:packageReleaseRenderscript UP-TO-DATE
+:bolts-applinks:bundleRelease UP-TO-DATE
+:bolts-android:prepareComParseBoltsBoltsApplinks141SNAPSHOTLibrary UP-TO-DATE
+:bolts-android:prepareDebugDependencies
+:bolts-android:compileDebugAidl UP-TO-DATE
+:bolts-android:compileDebugRenderscript UP-TO-DATE
+:bolts-android:generateDebugBuildConfig UP-TO-DATE
+:bolts-android:generateDebugAssets UP-TO-DATE
+:bolts-android:mergeDebugAssets UP-TO-DATE
+:bolts-android:generateDebugResValues UP-TO-DATE
+:bolts-android:generateDebugResources UP-TO-DATE
+:bolts-android:mergeDebugResources UP-TO-DATE
+:bolts-android:processDebugManifest UP-TO-DATE
+:bolts-android:processDebugResources UP-TO-DATE
+:bolts-android:generateDebugSources UP-TO-DATE
+:bolts-android:processDebugJavaRes UP-TO-DATE
+:bolts-android:compileDebugJavaWithJavac UP-TO-DATE
+:bolts-android:unzipJacocoAgent UP-TO-DATE
+:bolts-android:instrumentDebug UP-TO-DATE
+:bolts-android:packageDebugJar UP-TO-DATE
+:bolts-android:compileDebugNdk UP-TO-DATE
+:bolts-android:packageDebugJniLibs UP-TO-DATE
+:bolts-android:packageDebugLocalJar UP-TO-DATE
+:bolts-android:packageDebugRenderscript UP-TO-DATE
+:bolts-android:packageDebugResources UP-TO-DATE
+:bolts-android:bundleDebug UP-TO-DATE
+:bolts-android:compileDebugSources UP-TO-DATE
+:bolts-android:assembleDebug UP-TO-DATE
+:bolts-android:copyReleaseLint UP-TO-DATE
+:bolts-android:mergeReleaseProguardFiles UP-TO-DATE
+:bolts-android:checkReleaseManifest
+:bolts-android:prepareReleaseDependencies
+:bolts-android:compileReleaseAidl UP-TO-DATE
+:bolts-android:compileReleaseRenderscript UP-TO-DATE
+:bolts-android:generateReleaseBuildConfig UP-TO-DATE
+:bolts-android:generateReleaseAssets UP-TO-DATE
+:bolts-android:mergeReleaseAssets UP-TO-DATE
+:bolts-android:generateReleaseResValues UP-TO-DATE
+:bolts-android:generateReleaseResources UP-TO-DATE
+:bolts-android:mergeReleaseResources UP-TO-DATE
+:bolts-android:processReleaseManifest UP-TO-DATE
+:bolts-android:processReleaseResources UP-TO-DATE
+:bolts-android:generateReleaseSources UP-TO-DATE
+:bolts-android:processReleaseJavaRes UP-TO-DATE
+:bolts-android:compileReleaseJavaWithJavac UP-TO-DATE
+:bolts-android:packageReleaseJar UP-TO-DATE
+:bolts-android:compileReleaseNdk UP-TO-DATE
+:bolts-android:packageReleaseJniLibs UP-TO-DATE
+:bolts-android:packageReleaseLocalJar UP-TO-DATE
+:bolts-android:packageReleaseRenderscript UP-TO-DATE
+:bolts-android:packageReleaseResources UP-TO-DATE
+:bolts-android:bundleRelease UP-TO-DATE
+:bolts-android:compileReleaseSources UP-TO-DATE
+:bolts-android:assembleRelease UP-TO-DATE
+:bolts-android:jarRelease UP-TO-DATE
+:bolts-android:signArchives SKIPPED
+:bolts-android:assemble UP-TO-DATE
+:bolts-android:build
+:bolts-applinks:androidJavadocs UP-TO-DATE
+:bolts-applinks:androidJavadocsJar UP-TO-DATE
+:bolts-applinks:androidSourcesJar UP-TO-DATE
+:bolts-applinks:copyDebugLint UP-TO-DATE
+:bolts-applinks:mergeDebugProguardFiles UP-TO-DATE
+:bolts-applinks:preDebugBuild UP-TO-DATE
+:bolts-applinks:checkDebugManifest
+:bolts-applinks:prepareDebugDependencies
+:bolts-applinks:compileDebugAidl UP-TO-DATE
+:bolts-applinks:compileDebugRenderscript UP-TO-DATE
+:bolts-applinks:generateDebugBuildConfig UP-TO-DATE
+:bolts-applinks:generateDebugAssets UP-TO-DATE
+:bolts-applinks:mergeDebugAssets UP-TO-DATE
+:bolts-applinks:generateDebugResValues UP-TO-DATE
+:bolts-applinks:generateDebugResources UP-TO-DATE
+:bolts-applinks:packageDebugResources UP-TO-DATE
+:bolts-applinks:processDebugManifest UP-TO-DATE
+:bolts-applinks:processDebugResources UP-TO-DATE
+:bolts-applinks:generateDebugSources UP-TO-DATE
+:bolts-applinks:processDebugJavaRes UP-TO-DATE
+:bolts-applinks:compileDebugJavaWithJavac UP-TO-DATE
+:bolts-applinks:unzipJacocoAgent UP-TO-DATE
+:bolts-applinks:instrumentDebug UP-TO-DATE
+:bolts-applinks:packageDebugJar UP-TO-DATE
+:bolts-applinks:compileDebugNdk UP-TO-DATE
+:bolts-applinks:packageDebugJniLibs UP-TO-DATE
+:bolts-applinks:packageDebugLocalJar UP-TO-DATE
+:bolts-applinks:packageDebugRenderscript UP-TO-DATE
+:bolts-applinks:bundleDebug UP-TO-DATE
+:bolts-applinks:compileDebugSources UP-TO-DATE
+:bolts-applinks:assembleDebug UP-TO-DATE
+:bolts-applinks:compileReleaseSources UP-TO-DATE
+:bolts-applinks:assembleRelease UP-TO-DATE
+:bolts-applinks:jarRelease UP-TO-DATE
+:bolts-applinks:signArchives SKIPPED
+:bolts-applinks:assemble UP-TO-DATE
+:bolts-applinks:build
+:bolts-tasks:javadocJar
+:bolts-tasks:sourcesJar
+:bolts-tasks:signArchives SKIPPED
+:bolts-tasks:assemble
+:bolts-tasks:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.243 secs
+
+2018-04-11 21:31:59,109 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:31:59,109 INFO  SysUtils - Execute command: [/tmp/rdisk/49/src/gradlew, -b, /tmp/rdisk/49/src/bolts-tasks/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:32:06,505 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-11 21:32:06,505 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-11 21:32:06,505 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-11 21:32:06,505 INFO  SysUtils - Execute command: [/tmp/rdisk/49/src/gradlew, -b, /tmp/rdisk/49/src/bolts-tasks/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-11 21:32:12,564 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 21:32:12,564 INFO  SysUtils - Configuration on demand is an incubating feature.
+:bolts-tasks:compileJava UP-TO-DATE
+:bolts-tasks:processResources UP-TO-DATE
+:bolts-tasks:classes UP-TO-DATE
+:bolts-tasks:jar UP-TO-DATE
+:bolts-tasks:javadoc/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/AndroidExecutors.java:12: error: package android.annotation does not exist
+import android.annotation.SuppressLint;
+                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/AndroidExecutors.java:13: error: package android.os does not exist
+import android.os.Build;
+                 ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/AndroidExecutors.java:14: error: package android.os does not exist
+import android.os.Handler;
+                 ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/AndroidExecutors.java:15: error: package android.os does not exist
+import android.os.Looper;
+                 ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/AndroidExecutors.java:118: error: cannot find symbol
+  @SuppressLint("NewApi")
+   ^
+  symbol:   class SuppressLint
+  location: class AndroidExecutors
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/AggregateException.java:75: warning: no @return
+  public List<Throwable> getInnerThrowables() {
+                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/AggregateException.java:113: warning: no @return
+  public List<Exception> getErrors() {
+                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/AggregateException.java:133: warning: no @return
+  public Throwable[] getCauses() {
+                     ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/CancellationToken.java:19: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/CancellationToken.java:23: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Capture.java:15: warning: no description for @param
+ * @param <T>
+   ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:78: warning: no @return
+  public static UnobservedExceptionHandler getUnobservedExceptionHandler() {
+                                           ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:116: error: unexpected text
+   * @deprecated Please use {@link bolts.TaskCompletionSource()} instead.
+                            ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:118: warning: no @param for <TResult>
+  public static <TResult> Task<TResult>.TaskCompletionSource create() {
+                                                             ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:118: warning: no @return
+  public static <TResult> Task<TResult>.TaskCompletionSource create() {
+                                                             ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:179: warning: no @throws for java.lang.InterruptedException
+  public void waitForCompletion() throws InterruptedException {
+              ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:192: warning: no @param for duration
+  public boolean waitForCompletion(long duration, TimeUnit timeUnit) throws InterruptedException {
+                 ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:192: warning: no @param for timeUnit
+  public boolean waitForCompletion(long duration, TimeUnit timeUnit) throws InterruptedException {
+                 ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:192: warning: no @throws for java.lang.InterruptedException
+  public boolean waitForCompletion(long duration, TimeUnit timeUnit) throws InterruptedException {
+                 ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:205: warning: no @param for <TResult>
+  public static <TResult> Task<TResult> forResult(TResult value) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:205: warning: no @param for value
+  public static <TResult> Task<TResult> forResult(TResult value) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:205: warning: no @return
+  public static <TResult> Task<TResult> forResult(TResult value) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:220: warning: no @param for <TResult>
+  public static <TResult> Task<TResult> forError(Exception error) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:220: warning: no @param for error
+  public static <TResult> Task<TResult> forError(Exception error) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:220: warning: no @return
+  public static <TResult> Task<TResult> forError(Exception error) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:230: warning: no @param for <TResult>
+  public static <TResult> Task<TResult> cancelled() {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:230: warning: no @return
+  public static <TResult> Task<TResult> cancelled() {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:240: warning: no @return
+  public static Task<Void> delay(long delay) {
+                           ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:252: warning: no @return
+  public static Task<Void> delay(long delay, CancellationToken cancellationToken) {
+                           ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:290: warning: no @param for <TOut>
+  public <TOut> Task<TOut> cast() {
+                           ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:290: warning: no @return
+  public <TOut> Task<TOut> cast() {
+                           ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:297: error: unknown tag: T
+   * Turns a Task<T> into a Task<Void>, dropping any result.
+                 ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:297: error: unknown tag: Void
+   * Turns a Task<T> into a Task<Void>, dropping any result.
+                                ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:299: warning: no @return
+  public Task<Void> makeVoid() {
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:320: warning: no @param for <TResult>
+  public static <TResult> Task<TResult> callInBackground(Callable<TResult> callable) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:320: warning: no @param for callable
+  public static <TResult> Task<TResult> callInBackground(Callable<TResult> callable) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:320: warning: no @return
+  public static <TResult> Task<TResult> callInBackground(Callable<TResult> callable) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:327: warning: no @param for <TResult>
+  public static <TResult> Task<TResult> callInBackground(Callable<TResult> callable, CancellationToken ct) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:327: warning: no @param for callable
+  public static <TResult> Task<TResult> callInBackground(Callable<TResult> callable, CancellationToken ct) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:327: warning: no @param for ct
+  public static <TResult> Task<TResult> callInBackground(Callable<TResult> callable, CancellationToken ct) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:327: warning: no @return
+  public static <TResult> Task<TResult> callInBackground(Callable<TResult> callable, CancellationToken ct) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:337: warning: no @param for <TResult>
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable, Executor executor) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:337: warning: no @param for callable
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable, Executor executor) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:337: warning: no @param for executor
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable, Executor executor) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:337: warning: no @return
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable, Executor executor) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:344: warning: no @param for <TResult>
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable, Executor executor,
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:344: warning: no @param for callable
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable, Executor executor,
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:344: warning: no @param for executor
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable, Executor executor,
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:344: warning: no @param for ct
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable, Executor executor,
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:344: warning: no @return
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable, Executor executor,
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:378: warning: no @param for <TResult>
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:378: warning: no @param for callable
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:378: warning: no @return
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:385: warning: no @param for <TResult>
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable, CancellationToken ct) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:385: warning: no @param for callable
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable, CancellationToken ct) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:385: warning: no @param for ct
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable, CancellationToken ct) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:385: warning: no @return
+  public static <TResult> Task<TResult> call(final Callable<TResult> callable, CancellationToken ct) {
+                                        ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:391: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:401: warning: no @param for <TResult>
+  public static <TResult> Task<Task<TResult>> whenAnyResult(Collection<? extends Task<TResult>> tasks) {
+                                              ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:427: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:464: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:469: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:472: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:479: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:487: warning: no @param for <TResult>
+  public static <TResult> Task<List<TResult>> whenAllResult(final Collection<? extends Task<TResult>> tasks) {
+                                              ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:506: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:511: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:514: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:517: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:579: warning: no @param for predicate
+  public Task<Void> continueWhile(Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:579: warning: no @param for continuation
+  public Task<Void> continueWhile(Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:579: warning: no @return
+  public Task<Void> continueWhile(Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:588: warning: no @param for predicate
+  public Task<Void> continueWhile(Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:588: warning: no @param for continuation
+  public Task<Void> continueWhile(Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:588: warning: no @param for ct
+  public Task<Void> continueWhile(Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:588: warning: no @return
+  public Task<Void> continueWhile(Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:597: warning: no @param for predicate
+  public Task<Void> continueWhile(final Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:597: warning: no @param for continuation
+  public Task<Void> continueWhile(final Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:597: warning: no @param for executor
+  public Task<Void> continueWhile(final Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:597: warning: no @return
+  public Task<Void> continueWhile(final Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:606: warning: no @param for predicate
+  public Task<Void> continueWhile(final Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:606: warning: no @param for continuation
+  public Task<Void> continueWhile(final Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:606: warning: no @param for executor
+  public Task<Void> continueWhile(final Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:606: warning: no @param for ct
+  public Task<Void> continueWhile(final Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:606: warning: no @return
+  public Task<Void> continueWhile(final Callable<Boolean> predicate,
+                    ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:633: warning: no @param for <TContinuationResult>
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:633: warning: no @param for continuation
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:633: warning: no @param for executor
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:633: warning: no @return
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:643: warning: no @param for <TContinuationResult>
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:643: warning: no @param for continuation
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:643: warning: no @param for executor
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:643: warning: no @param for ct
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:643: warning: no @return
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:670: warning: no @param for <TContinuationResult>
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:670: warning: no @param for continuation
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:670: warning: no @return
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:679: warning: no @param for <TContinuationResult>
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:679: warning: no @param for continuation
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:679: warning: no @param for ct
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:679: warning: no @return
+  public <TContinuationResult> Task<TContinuationResult> continueWith(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:688: warning: no @param for <TContinuationResult>
+  public <TContinuationResult> Task<TContinuationResult> continueWithTask(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:688: warning: no @param for continuation
+  public <TContinuationResult> Task<TContinuationResult> continueWithTask(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:688: warning: no @param for executor
+  public <TContinuationResult> Task<TContinuationResult> continueWithTask(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:688: warning: no @return
+  public <TContinuationResult> Task<TContinuationResult> continueWithTask(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:697: warning: no @param for <TContinuationResult>
+  public <TContinuationResult> Task<TContinuationResult> continueWithTask(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:697: warning: no @param for continuation
+  public <TContinuationResult> Task<TContinuationResult> continueWithTask(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:697: warning: no @param for executor
+  public <TContinuationResult> Task<TContinuationResult> continueWithTask(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:697: warning: no @param for ct
+  public <TContinuationResult> Task<TContinuationResult> continueWithTask(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:697: warning: no @return
+  public <TContinuationResult> Task<TContinuationResult> continueWithTask(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:724: warning: no @param for <TContinuationResult>
+  public <TContinuationResult> Task<TContinuationResult> continueWithTask(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:724: warning: no @param for continuation
+  public <TContinuationResult> Task<TContinuationResult> continueWithTask(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:724: warning: no @return
+  public <TContinuationResult> Task<TContinuationResult> continueWithTask(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:733: warning: no @param for <TContinuationResult>
+  public <TContinuationResult> Task<TContinuationResult> continueWithTask(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/Task.java:733: warning: no @param for continuation
+  public <TContinuationResult> Task<TContinuationResult> continueWithTask(
+                                                         ^
+/tmp/rdisk/49/src/bolts-tasks/src/main/java/bolts/TaskCompletionSource.java:5: error: unknown tag: TResult
+ * completing the task. Essentially, it represents the producer side of a Task<TResult>, providing
+                                                                              ^
+
+16 errors
+100 warnings
+:bolts-tasks:javadoc FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':bolts-tasks:javadoc'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/49/src/bolts-tasks/build/tmp/javadoc/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':bolts-tasks:javadoc'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/49/src/bolts-tasks/build/tmp/javadoc/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:55)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:140)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:128)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 5.662 secs
+
+2018-04-11 21:32:12,577 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 21:32:12,588 ERROR FullProcessService - Could not find generated or existed APK file

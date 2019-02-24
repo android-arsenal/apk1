@@ -1,0 +1,165 @@
+2018-05-15 06:03:41,239 INFO  DownloadService - Downloading "https://github.com/emilsjolander/android-FlipView/archive/master.zip", attempt 3
+2018-05-15 06:04:41,957 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-15 06:04:42,834 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-15 06:04:42,834 INFO  DownloadService - Downloading "https://github.com/emilsjolander/android-FlipView/archive/master.zip", attempt 3
+2018-05-15 06:05:44,208 DEBUG FullProcessService - Repository https://github.com/emilsjolander/android-FlipView available: true
+2018-05-15 06:05:44,208 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-15 06:05:44,208 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/emilsjolander/android-FlipView, /tmp/rdisk/108/src]
+2018-05-15 06:05:46,826 INFO  SysUtils - 
+2018-05-15 06:05:46,839 INFO  GitService - Deleted "/tmp/rdisk/108/src/.git": true
+2018-05-15 06:05:46,841 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-05-15 06:05:46,841 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/108/src]
+2018-05-15 06:05:46,850 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/108/src/.git/
+
+2018-05-15 06:05:46,852 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/108/src/gradlew
+2018-05-15 06:05:46,854 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/108/src/library/build.gradle /tmp/rdisk/108/src/sample/build.gradle /tmp/rdisk/108/src/build.gradle
+2018-05-15 06:05:46,856 INFO  ProjectBuildService - All script(s): /tmp/rdisk/108/src/settings.gradle /tmp/rdisk/108/src/sample/build.gradle /tmp/rdisk/108/src/maven_push.gradle /tmp/rdisk/108/src/library/build.gradle /tmp/rdisk/108/src/build.gradle
+2018-05-15 06:05:46,856 INFO  ProjectBuildService - Remote scripts: none
+2018-05-15 06:05:46,856 INFO  ProjectFixService - Fixing project...
+2018-05-15 06:05:46,862 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/108/src/library/local.properties
+2018-05-15 06:05:46,863 INFO  ProjectFixService - Build info for "/tmp/rdisk/108/src/library/build.gradle": [buildToolsVersion=18.1.1,compileSdkVersion=18,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-15 06:05:46,863 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/108/src/library/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=18,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 06:05:46,864 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/108/src/sample/local.properties
+2018-05-15 06:05:46,865 INFO  ProjectFixService - Build info for "/tmp/rdisk/108/src/sample/build.gradle": [buildToolsVersion=18.0.1,compileSdkVersion=18,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-15 06:05:46,865 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/108/src/sample/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=18,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 06:05:46,866 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/108/src/local.properties
+2018-05-15 06:05:46,867 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.8-all.zip
+2018-05-15 06:05:46,867 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.8-bin.zip)
+2018-05-15 06:05:46,868 INFO  ProjectFixService - Build info for "/tmp/rdisk/108/src/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=18,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-15 06:05:46,869 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/108/src/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=18,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 06:05:46,869 INFO  ProjectFixService - Project was maybe fixed
+2018-05-15 06:05:46,869 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 06:05:46,869 INFO  SysUtils - Execute command: [/tmp/rdisk/108/src/gradlew, -b, /tmp/rdisk/108/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 06:05:55,367 INFO  ProjectTaskService - Detected possible tasks: 51
+2018-05-15 06:05:55,367 INFO  ProjectTaskService - Excluded tasks (6): androidJavadocs deviceCheck lint connectedCheck uninstallAll check
+2018-05-15 06:05:55,367 INFO  SysUtils - Execute command: [/tmp/rdisk/108/src/gradlew, -b, /tmp/rdisk/108/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, build]
+2018-05-15 06:06:03,263 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+Creating properties on demand (a.k.a. dynamic properties) has been deprecated and is scheduled to be removed in Gradle 2.0. Please read http://gradle.org/docs/current/dsl/org.gradle.api.plugins.ExtraPropertiesExtension.html for information on the replacement for dynamic properties.
+Deprecated dynamic property: "sonatypeRepositoryUrl" on "project ':library'", value: "https://oss.sonatype.o...".
+:library:androidJavadocsJar
+:library:androidSourcesJar
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:mergeDebugProguardFiles
+:library:packageDebugAidl UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:mergeDebugAssets
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebug
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:bundleDebug
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:packageReleaseAidl UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:mergeReleaseAssets
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileRelease
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.459 secs
+
+2018-05-15 06:06:03,270 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 06:06:03,270 INFO  SysUtils - Execute command: [/tmp/rdisk/108/src/gradlew, -b, /tmp/rdisk/108/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 06:06:09,507 INFO  ProjectTaskService - Detected possible tasks: 49
+2018-05-15 06:06:09,507 INFO  ProjectTaskService - Excluded tasks (8): deviceCheck lint uninstallRelease connectedCheck uninstallAll check installDebug uninstallDebug
+2018-05-15 06:06:09,507 INFO  SysUtils - Execute command: [/tmp/rdisk/108/src/gradlew, -b, /tmp/rdisk/108/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, installDebug, -x, uninstallDebug, build]
+2018-05-15 06:06:23,149 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD
+Creating properties on demand (a.k.a. dynamic properties) has been deprecated and is scheduled to be removed in Gradle 2.0. Please read http://gradle.org/docs/current/dsl/org.gradle.api.plugins.ExtraPropertiesExtension.html for information on the replacement for dynamic properties.
+Deprecated dynamic property: "sonatypeRepositoryUrl" on "project ':library'", value: "https://oss.sonatype.o...".
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseAidl UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileRelease UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareSeEmilsjolanderLibrary110Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:mergeDebugAssets
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebug
+:sample:dexDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:assembleDebug
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:mergeReleaseAssets
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileRelease
+:sample:dexRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 13.226 secs
+
+2018-05-15 06:06:23,159 INFO  FullProcessService - Found APK file: /tmp/rdisk/108/src/sample/build/apk/sample-release-unsigned.apk

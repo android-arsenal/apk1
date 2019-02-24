@@ -1,0 +1,852 @@
+2018-05-15 06:39:05,957 INFO  DownloadService - Downloading "https://github.com/facebook/rebound/archive/master.zip", attempt 3
+2018-05-15 06:40:06,483 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-15 06:40:07,178 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-15 06:40:07,178 INFO  DownloadService - Downloading "https://github.com/facebook/rebound/archive/master.zip", attempt 3
+2018-05-15 06:41:08,629 DEBUG FullProcessService - Repository https://github.com/facebook/rebound available: true
+2018-05-15 06:41:08,629 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-15 06:41:08,629 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/facebook/rebound, /tmp/rdisk/30/src]
+2018-05-15 06:41:24,269 INFO  SysUtils - 
+2018-05-15 06:41:24,276 INFO  GitService - Deleted "/tmp/rdisk/30/src/.git": true
+2018-05-15 06:41:24,281 INFO  FullProcessService - Size of directory with sources: 18 MB
+2018-05-15 06:41:24,281 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/30/src]
+2018-05-15 06:41:24,285 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/30/src/.git/
+
+2018-05-15 06:41:24,289 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/30/src/gradlew
+2018-05-15 06:41:24,293 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/30/src/build.gradle /tmp/rdisk/30/src/rebound-android-example/build.gradle /tmp/rdisk/30/src/rebound-android-playground/build.gradle /tmp/rdisk/30/src/rebound-android/build.gradle /tmp/rdisk/30/src/rebound-core/build.gradle
+2018-05-15 06:41:24,297 INFO  ProjectBuildService - All script(s): /tmp/rdisk/30/src/settings.gradle /tmp/rdisk/30/src/rebound-core/build.gradle /tmp/rdisk/30/src/rebound-android/build.gradle /tmp/rdisk/30/src/rebound-android-playground/build.gradle /tmp/rdisk/30/src/rebound-android-example/build.gradle /tmp/rdisk/30/src/build.gradle
+2018-05-15 06:41:24,297 INFO  ProjectBuildService - Remote scripts: none
+2018-05-15 06:41:24,297 INFO  ProjectFixService - Fixing project...
+2018-05-15 06:41:24,307 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/30/src/local.properties
+2018-05-15 06:41:24,307 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-05-15 06:41:24,307 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-05-15 06:41:24,309 INFO  ProjectFixService - Build info for "/tmp/rdisk/30/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=11,targetSdkVersion=<null>]
+2018-05-15 06:41:24,309 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/30/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=11,targetSdkVersion=27]
+2018-05-15 06:41:24,321 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/30/src/rebound-android-example/local.properties
+2018-05-15 06:41:24,325 INFO  ProjectFixService - Build info for "/tmp/rdisk/30/src/rebound-android-example/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=11,targetSdkVersion=<null>]
+2018-05-15 06:41:24,325 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/30/src/rebound-android-example/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=11,targetSdkVersion=27]
+2018-05-15 06:41:24,325 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/30/src/rebound-android-playground/local.properties
+2018-05-15 06:41:24,327 INFO  ProjectFixService - Build info for "/tmp/rdisk/30/src/rebound-android-playground/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=19,targetSdkVersion=<null>]
+2018-05-15 06:41:24,327 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/30/src/rebound-android-playground/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=19,targetSdkVersion=27]
+2018-05-15 06:41:24,328 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/30/src/rebound-android/local.properties
+2018-05-15 06:41:24,330 INFO  ProjectFixService - Build info for "/tmp/rdisk/30/src/rebound-android/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=11,targetSdkVersion=<null>]
+2018-05-15 06:41:24,330 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/30/src/rebound-android/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=11,targetSdkVersion=27]
+2018-05-15 06:41:24,330 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/30/src/rebound-core/local.properties
+2018-05-15 06:41:24,332 INFO  ProjectFixService - Build info for "/tmp/rdisk/30/src/rebound-core/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=11,targetSdkVersion=<null>]
+2018-05-15 06:41:24,333 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/30/src/rebound-core/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=11,targetSdkVersion=27]
+2018-05-15 06:41:24,333 INFO  ProjectFixService - Project was maybe fixed
+2018-05-15 06:41:24,333 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 06:41:24,333 INFO  SysUtils - Execute command: [/tmp/rdisk/30/src/gradlew, -b, /tmp/rdisk/30/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 06:41:31,288 INFO  ProjectTaskService - Detected possible tasks: 77
+2018-05-15 06:41:31,288 INFO  ProjectTaskService - Excluded tasks (20): lintDebug mockableAndroidJar deviceCheck lint javadoc uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-05-15 06:41:31,288 INFO  SysUtils - Execute command: [/tmp/rdisk/30/src/gradlew, -b, /tmp/rdisk/30/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, javadoc, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-05-15 06:41:48,009 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-15 06:41:48,009 INFO  SysUtils - Configuration on demand is an incubating feature.
+:preBuild UP-TO-DATE
+:preReleaseBuild UP-TO-DATE
+:checkReleaseManifest
+:prepareReleaseDependencies
+:compileReleaseAidl
+:compileReleaseRenderscript
+:generateReleaseBuildConfig
+:generateReleaseAssets UP-TO-DATE
+:mergeReleaseAssets
+:generateReleaseResValues
+:generateReleaseResources
+:packageReleaseResources
+:processReleaseManifest
+:processReleaseResources
+:generateReleaseSources
+:processReleaseJavaRes UP-TO-DATE
+:compileReleaseJava
+:androidJavadocsjavadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+
+1 warning
+:androidJavadocsJar
+:androidSourcesJar
+:compileLint
+:copyDebugLint UP-TO-DATE
+:mergeDebugProguardFiles
+:preDebugBuild UP-TO-DATE
+:checkDebugManifest
+:prepareDebugDependencies
+:compileDebugAidl
+:compileDebugRenderscript
+:generateDebugBuildConfig
+:generateDebugAssets UP-TO-DATE
+:mergeDebugAssets
+:generateDebugResValues
+:generateDebugResources
+:packageDebugResources
+:processDebugManifest
+:processDebugResources
+:generateDebugSources
+:processDebugJavaRes UP-TO-DATE
+:compileDebugJava
+:packageDebugJar
+:compileDebugNdk UP-TO-DATE
+:packageDebugJniLibs UP-TO-DATE
+:packageDebugLocalJar UP-TO-DATE
+:packageDebugRenderscript UP-TO-DATE
+:bundleDebug
+:compileDebugSources
+:assembleDebug
+:copyReleaseLint UP-TO-DATE
+:mergeReleaseProguardFiles
+:packageReleaseJar
+:compileReleaseNdk UP-TO-DATE
+:packageReleaseJniLibs UP-TO-DATE
+:packageReleaseLocalJar UP-TO-DATE
+:packageReleaseRenderscript UP-TO-DATE
+:bundleRelease
+:compileReleaseSources
+:assembleRelease
+:reboundDistJar
+:assemble
+:build
+:rebound-android:compileLint
+:rebound-android:copyDebugLint UP-TO-DATE
+:rebound-android:mergeDebugProguardFiles
+:rebound-android:preBuild UP-TO-DATE
+:rebound-android:preDebugBuild UP-TO-DATE
+:rebound-android:checkDebugManifest
+:rebound-android:prepareDebugDependencies
+:rebound-android:compileDebugAidl
+:rebound-android:compileDebugRenderscript
+:rebound-android:generateDebugBuildConfig
+:rebound-android:generateDebugAssets UP-TO-DATE
+:rebound-android:mergeDebugAssets
+:rebound-android:generateDebugResValues
+:rebound-android:generateDebugResources
+:rebound-android:packageDebugResources
+:rebound-android:processDebugManifest
+:rebound-android:processDebugResources
+:rebound-android:generateDebugSources
+:rebound-android:processDebugJavaRes UP-TO-DATE
+:rebound-core:compileJava
+:rebound-core:processResources UP-TO-DATE
+:rebound-core:classes
+:rebound-core:jar
+:rebound-android:compileDebugJava
+:rebound-android:packageDebugJar
+:rebound-android:compileDebugNdk UP-TO-DATE
+:rebound-android:packageDebugJniLibs UP-TO-DATE
+:rebound-android:packageDebugLocalJar UP-TO-DATE
+:rebound-android:packageDebugRenderscript UP-TO-DATE
+:rebound-android:bundleDebug
+:rebound-android:compileDebugSources
+:rebound-android:assembleDebug
+:rebound-android:copyReleaseLint UP-TO-DATE
+:rebound-android:mergeReleaseProguardFiles
+:rebound-android:preReleaseBuild UP-TO-DATE
+:rebound-android:checkReleaseManifest
+:rebound-android:prepareReleaseDependencies
+:rebound-android:compileReleaseAidl
+:rebound-android:compileReleaseRenderscript
+:rebound-android:generateReleaseBuildConfig
+:rebound-android:generateReleaseAssets UP-TO-DATE
+:rebound-android:mergeReleaseAssets
+:rebound-android:generateReleaseResValues
+:rebound-android:generateReleaseResources
+:rebound-android:packageReleaseResources
+:rebound-android:processReleaseManifest
+:rebound-android:processReleaseResources
+:rebound-android:generateReleaseSources
+:rebound-android:processReleaseJavaRes UP-TO-DATE
+:rebound-android:compileReleaseJava
+:rebound-android:packageReleaseJar
+:rebound-android:compileReleaseNdk UP-TO-DATE
+:rebound-android:packageReleaseJniLibs UP-TO-DATE
+:rebound-android:packageReleaseLocalJar UP-TO-DATE
+:rebound-android:packageReleaseRenderscript UP-TO-DATE
+:rebound-android:bundleRelease
+:rebound-android:compileReleaseSources
+:rebound-android:assembleRelease
+:rebound-android:assemble
+:rebound-android:build
+:rebound-android-example:preBuild UP-TO-DATE
+:rebound-android-example:preDebugBuild UP-TO-DATE
+:rebound-android-example:checkDebugManifest
+:rebound-android-example:preReleaseBuild UP-TO-DATE
+:rebound-android-example:prepareSrcReboundAndroidUnspecifiedLibrary
+:rebound-android-example:prepareDebugDependencies
+:rebound-android-example:compileDebugAidl
+:rebound-android-example:compileDebugRenderscript
+:rebound-android-example:generateDebugBuildConfig
+:rebound-android-example:generateDebugAssets UP-TO-DATE
+:rebound-android-example:mergeDebugAssets
+:rebound-android-example:generateDebugResValues
+:rebound-android-example:generateDebugResources
+:rebound-android-example:mergeDebugResources
+AAPT: /tmp/rdisk/30/src/rebound-android-example/src/main/res/drawable-hdpi/rebound_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/30/src/rebound-android-example/src/main/res/drawable-xxhdpi/rebound_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/30/src/rebound-android-example/src/main/res/drawable-mdpi/rebound_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/30/src/rebound-android-example/src/main/res/drawable-xhdpi/rebound_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:rebound-android-example:processDebugManifest
+:rebound-android-example:processDebugResources
+:rebound-android-example:generateDebugSources
+:rebound-android-example:processDebugJavaRes UP-TO-DATE
+:rebound-android-example:compileDebugJava
+:rebound-android-example:compileDebugNdk UP-TO-DATE
+:rebound-android-example:compileDebugSources
+:rebound-android-example:preDexDebugUNEXPECTED TOP-LEVEL EXCEPTION:
+com.android.dx.cf.iface.ParseException: bad class file magic (cafebabe) or version (0034.0000)
+	at com.android.dx.cf.direct.DirectClassFile.parse0(DirectClassFile.java:472)
+	at com.android.dx.cf.direct.DirectClassFile.parse(DirectClassFile.java:406)
+	at com.android.dx.cf.direct.DirectClassFile.parseToInterfacesIfNecessary(DirectClassFile.java:388)
+	at com.android.dx.cf.direct.DirectClassFile.getMagic(DirectClassFile.java:251)
+	at com.android.dx.command.dexer.Main.processClass(Main.java:704)
+	at com.android.dx.command.dexer.Main.processFileBytes(Main.java:673)
+	at com.android.dx.command.dexer.Main.access$300(Main.java:83)
+	at com.android.dx.command.dexer.Main$1.processFileBytes(Main.java:602)
+	at com.android.dx.cf.direct.ClassPathOpener.processArchive(ClassPathOpener.java:284)
+	at com.android.dx.cf.direct.ClassPathOpener.processOne(ClassPathOpener.java:166)
+	at com.android.dx.cf.direct.ClassPathOpener.process(ClassPathOpener.java:144)
+	at com.android.dx.command.dexer.Main.processOne(Main.java:632)
+	at com.android.dx.command.dexer.Main.processAllFiles(Main.java:510)
+	at com.android.dx.command.dexer.Main.runMonoDex(Main.java:280)
+	at com.android.dx.command.dexer.Main.run(Main.java:246)
+	at com.android.dx.command.dexer.Main.main(Main.java:215)
+	at com.android.dx.command.Main.main(Main.java:106)
+...while parsing com/facebook/rebound/BouncyConversion.class
+1 error; aborting
+
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':rebound-android-example:preDexDebug'.
+> com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':rebound-android-example:preDexDebug'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: java.lang.RuntimeException: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at com.android.ide.common.internal.WaitableExecutor.waitForTasksWithQuickFail(WaitableExecutor.java:116)
+	at com.android.ide.common.internal.WaitableExecutor$waitForTasksWithQuickFail$0.call(Unknown Source)
+	at com.android.build.gradle.tasks.PreDex.taskAction(PreDex.groovy:106)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:42)
+	at com.android.builder.core.AndroidBuilder.preDexLibrary(AndroidBuilder.java:1296)
+	at com.android.builder.internal.compiler.PreDexCache.preDexLibrary(PreDexCache.java:122)
+	at com.android.builder.core.AndroidBuilder.preDexLibrary(AndroidBuilder.java:1248)
+	at com.android.builder.core.AndroidBuilder$preDexLibrary$5.call(Unknown Source)
+	at com.android.build.gradle.tasks.PreDex$PreDexTask.call(PreDex.groovy:150)
+	at com.android.build.gradle.tasks.PreDex$PreDexTask.call(PreDex.groovy)
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:40)
+	... 6 more
+
+
+BUILD FAILED
+
+Total time: 16.308 secs
+
+2018-05-15 06:41:48,025 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 06:41:48,025 INFO  SysUtils - Execute command: [/tmp/rdisk/30/src/gradlew, -b, /tmp/rdisk/30/src/rebound-android-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 06:41:54,454 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-05-15 06:41:54,454 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-15 06:41:54,454 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-15 06:41:54,454 INFO  SysUtils - Execute command: [/tmp/rdisk/30/src/gradlew, -b, /tmp/rdisk/30/src/rebound-android-example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-15 06:42:00,919 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-15 06:42:00,919 INFO  SysUtils - Configuration on demand is an incubating feature.
+:rebound-android:compileLint
+:rebound-android:copyReleaseLint UP-TO-DATE
+:rebound-android:mergeReleaseProguardFiles UP-TO-DATE
+:rebound-android:preBuild UP-TO-DATE
+:rebound-android:preReleaseBuild UP-TO-DATE
+:rebound-android:checkReleaseManifest
+:rebound-android:prepareReleaseDependencies
+:rebound-android:compileReleaseAidl UP-TO-DATE
+:rebound-android:compileReleaseRenderscript UP-TO-DATE
+:rebound-android:generateReleaseBuildConfig UP-TO-DATE
+:rebound-android:generateReleaseAssets UP-TO-DATE
+:rebound-android:mergeReleaseAssets UP-TO-DATE
+:rebound-android:generateReleaseResValues UP-TO-DATE
+:rebound-android:generateReleaseResources UP-TO-DATE
+:rebound-android:packageReleaseResources UP-TO-DATE
+:rebound-android:processReleaseManifest UP-TO-DATE
+:rebound-android:processReleaseResources UP-TO-DATE
+:rebound-android:generateReleaseSources UP-TO-DATE
+:rebound-android:processReleaseJavaRes UP-TO-DATE
+:rebound-core:compileJava UP-TO-DATE
+:rebound-core:processResources UP-TO-DATE
+:rebound-core:classes UP-TO-DATE
+:rebound-core:jar UP-TO-DATE
+:rebound-android:compileReleaseJava UP-TO-DATE
+:rebound-android:packageReleaseJar UP-TO-DATE
+:rebound-android:compileReleaseNdk UP-TO-DATE
+:rebound-android:packageReleaseJniLibs UP-TO-DATE
+:rebound-android:packageReleaseLocalJar UP-TO-DATE
+:rebound-android:packageReleaseRenderscript UP-TO-DATE
+:rebound-android:bundleRelease UP-TO-DATE
+:rebound-android-example:preBuild UP-TO-DATE
+:rebound-android-example:preDebugBuild UP-TO-DATE
+:rebound-android-example:checkDebugManifest
+:rebound-android-example:preReleaseBuild UP-TO-DATE
+:rebound-android-example:prepareSrcReboundAndroidUnspecifiedLibrary UP-TO-DATE
+:rebound-android-example:prepareDebugDependencies
+:rebound-android-example:compileDebugAidl UP-TO-DATE
+:rebound-android-example:compileDebugRenderscript UP-TO-DATE
+:rebound-android-example:generateDebugBuildConfig UP-TO-DATE
+:rebound-android-example:generateDebugAssets UP-TO-DATE
+:rebound-android-example:mergeDebugAssets UP-TO-DATE
+:rebound-android-example:generateDebugResValues UP-TO-DATE
+:rebound-android-example:generateDebugResources UP-TO-DATE
+:rebound-android-example:mergeDebugResources UP-TO-DATE
+:rebound-android-example:processDebugManifest UP-TO-DATE
+:rebound-android-example:processDebugResources UP-TO-DATE
+:rebound-android-example:generateDebugSources UP-TO-DATE
+:rebound-android-example:processDebugJavaRes UP-TO-DATE
+:rebound-android-example:compileDebugJava UP-TO-DATE
+:rebound-android-example:compileDebugNdk UP-TO-DATE
+:rebound-android-example:compileDebugSources UP-TO-DATE
+:rebound-android-example:preDexDebugUNEXPECTED TOP-LEVEL EXCEPTION:
+com.android.dx.cf.iface.ParseException: bad class file magic (cafebabe) or version (0034.0000)
+	at com.android.dx.cf.direct.DirectClassFile.parse0(DirectClassFile.java:472)
+	at com.android.dx.cf.direct.DirectClassFile.parse(DirectClassFile.java:406)
+	at com.android.dx.cf.direct.DirectClassFile.parseToInterfacesIfNecessary(DirectClassFile.java:388)
+	at com.android.dx.cf.direct.DirectClassFile.getMagic(DirectClassFile.java:251)
+	at com.android.dx.command.dexer.Main.processClass(Main.java:704)
+	at com.android.dx.command.dexer.Main.processFileBytes(Main.java:673)
+	at com.android.dx.command.dexer.Main.access$300(Main.java:83)
+	at com.android.dx.command.dexer.Main$1.processFileBytes(Main.java:602)
+	at com.android.dx.cf.direct.ClassPathOpener.processArchive(ClassPathOpener.java:284)
+	at com.android.dx.cf.direct.ClassPathOpener.processOne(ClassPathOpener.java:166)
+	at com.android.dx.cf.direct.ClassPathOpener.process(ClassPathOpener.java:144)
+	at com.android.dx.command.dexer.Main.processOne(Main.java:632)
+	at com.android.dx.command.dexer.Main.processAllFiles(Main.java:510)
+	at com.android.dx.command.dexer.Main.runMonoDex(Main.java:280)
+	at com.android.dx.command.dexer.Main.run(Main.java:246)
+	at com.android.dx.command.dexer.Main.main(Main.java:215)
+	at com.android.dx.command.Main.main(Main.java:106)
+...while parsing com/facebook/rebound/BouncyConversion.class
+1 error; aborting
+
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':rebound-android-example:preDexDebug'.
+> com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':rebound-android-example:preDexDebug'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: java.lang.RuntimeException: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at com.android.ide.common.internal.WaitableExecutor.waitForTasksWithQuickFail(WaitableExecutor.java:116)
+	at com.android.ide.common.internal.WaitableExecutor$waitForTasksWithQuickFail$0.call(Unknown Source)
+	at com.android.build.gradle.tasks.PreDex.taskAction(PreDex.groovy:106)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:42)
+	at com.android.builder.core.AndroidBuilder.preDexLibrary(AndroidBuilder.java:1296)
+	at com.android.builder.internal.compiler.PreDexCache.preDexLibrary(PreDexCache.java:122)
+	at com.android.builder.core.AndroidBuilder.preDexLibrary(AndroidBuilder.java:1248)
+	at com.android.builder.core.AndroidBuilder$preDexLibrary$0.call(Unknown Source)
+	at com.android.build.gradle.tasks.PreDex$PreDexTask.call(PreDex.groovy:150)
+	at com.android.build.gradle.tasks.PreDex$PreDexTask.call(PreDex.groovy)
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:40)
+	... 6 more
+
+
+BUILD FAILED
+
+Total time: 6.053 secs
+
+2018-05-15 06:42:00,934 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 06:42:00,934 INFO  SysUtils - Execute command: [/tmp/rdisk/30/src/gradlew, -b, /tmp/rdisk/30/src/rebound-android-playground/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 06:42:07,210 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-05-15 06:42:07,210 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-15 06:42:07,210 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-15 06:42:07,210 INFO  SysUtils - Execute command: [/tmp/rdisk/30/src/gradlew, -b, /tmp/rdisk/30/src/rebound-android-playground/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-15 06:42:20,105 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-15 06:42:20,106 INFO  SysUtils - Configuration on demand is an incubating feature.
+:rebound-android:compileLint
+:rebound-android:copyReleaseLint UP-TO-DATE
+:rebound-android:mergeReleaseProguardFiles UP-TO-DATE
+:rebound-android:preBuild UP-TO-DATE
+:rebound-android:preReleaseBuild UP-TO-DATE
+:rebound-android:checkReleaseManifest
+:rebound-android:prepareReleaseDependencies
+:rebound-android:compileReleaseAidl UP-TO-DATE
+:rebound-android:compileReleaseRenderscript UP-TO-DATE
+:rebound-android:generateReleaseBuildConfig UP-TO-DATE
+:rebound-android:generateReleaseAssets UP-TO-DATE
+:rebound-android:mergeReleaseAssets UP-TO-DATE
+:rebound-android:generateReleaseResValues UP-TO-DATE
+:rebound-android:generateReleaseResources UP-TO-DATE
+:rebound-android:packageReleaseResources UP-TO-DATE
+:rebound-android:processReleaseManifest UP-TO-DATE
+:rebound-android:processReleaseResources UP-TO-DATE
+:rebound-android:generateReleaseSources UP-TO-DATE
+:rebound-android:processReleaseJavaRes UP-TO-DATE
+:rebound-core:compileJava UP-TO-DATE
+:rebound-core:processResources UP-TO-DATE
+:rebound-core:classes UP-TO-DATE
+:rebound-core:jar UP-TO-DATE
+:rebound-android:compileReleaseJava UP-TO-DATE
+:rebound-android:packageReleaseJar UP-TO-DATE
+:rebound-android:compileReleaseNdk UP-TO-DATE
+:rebound-android:packageReleaseJniLibs UP-TO-DATE
+:rebound-android:packageReleaseLocalJar UP-TO-DATE
+:rebound-android:packageReleaseRenderscript UP-TO-DATE
+:rebound-android:bundleRelease UP-TO-DATE
+:rebound-android-playground:preBuild UP-TO-DATE
+:rebound-android-playground:preDebugBuild UP-TO-DATE
+:rebound-android-playground:checkDebugManifest
+:rebound-android-playground:preReleaseBuild UP-TO-DATE
+:rebound-android-playground:prepareSrcReboundAndroidUnspecifiedLibrary
+:rebound-android-playground:prepareDebugDependencies
+:rebound-android-playground:compileDebugAidl
+:rebound-android-playground:compileDebugRenderscript
+:rebound-android-playground:generateDebugBuildConfig
+:rebound-android-playground:generateDebugAssets UP-TO-DATE
+:rebound-android-playground:mergeDebugAssets
+:rebound-android-playground:generateDebugResValues
+:rebound-android-playground:generateDebugResources
+:rebound-android-playground:mergeDebugResources
+AAPT: /tmp/rdisk/30/src/rebound-android-playground/src/main/res/drawable-hdpi/rebound_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/30/src/rebound-android-playground/src/main/res/drawable-xxhdpi/rebound_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/30/src/rebound-android-playground/src/main/res/drawable-xhdpi/rebound_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/30/src/rebound-android-playground/src/main/res/drawable-mdpi/rebound_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:rebound-android-playground:processDebugManifest
+:rebound-android-playground:processDebugResources
+:rebound-android-playground:generateDebugSources
+:rebound-android-playground:processDebugJavaRes UP-TO-DATE
+:rebound-android-playground:compileDebugJavaNote: /tmp/rdisk/30/src/rebound-android-playground/src/main/java/com/facebook/rebound/playground/examples/scrollview/SpringScrollView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:rebound-android-playground:compileDebugNdk UP-TO-DATE
+:rebound-android-playground:compileDebugSources
+:rebound-android-playground:preDexDebugUNEXPECTED TOP-LEVEL EXCEPTION:
+com.android.dx.cf.iface.ParseException: bad class file magic (cafebabe) or version (0034.0000)
+	at com.android.dx.cf.direct.DirectClassFile.parse0(DirectClassFile.java:472)
+	at com.android.dx.cf.direct.DirectClassFile.parse(DirectClassFile.java:406)
+	at com.android.dx.cf.direct.DirectClassFile.parseToInterfacesIfNecessary(DirectClassFile.java:388)
+	at com.android.dx.cf.direct.DirectClassFile.getMagic(DirectClassFile.java:251)
+	at com.android.dx.command.dexer.Main.processClass(Main.java:704)
+	at com.android.dx.command.dexer.Main.processFileBytes(Main.java:673)
+	at com.android.dx.command.dexer.Main.access$300(Main.java:83)
+	at com.android.dx.command.dexer.Main$1.processFileBytes(Main.java:602)
+	at com.android.dx.cf.direct.ClassPathOpener.processArchive(ClassPathOpener.java:284)
+	at com.android.dx.cf.direct.ClassPathOpener.processOne(ClassPathOpener.java:166)
+	at com.android.dx.cf.direct.ClassPathOpener.process(ClassPathOpener.java:144)
+	at com.android.dx.command.dexer.Main.processOne(Main.java:632)
+	at com.android.dx.command.dexer.Main.processAllFiles(Main.java:510)
+	at com.android.dx.command.dexer.Main.runMonoDex(Main.java:280)
+	at com.android.dx.command.dexer.Main.run(Main.java:246)
+	at com.android.dx.command.dexer.Main.main(Main.java:215)
+	at com.android.dx.command.Main.main(Main.java:106)
+...while parsing com/facebook/rebound/BouncyConversion.class
+1 error; aborting
+
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':rebound-android-playground:preDexDebug'.
+> com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':rebound-android-playground:preDexDebug'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: java.lang.RuntimeException: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at com.android.ide.common.internal.WaitableExecutor.waitForTasksWithQuickFail(WaitableExecutor.java:116)
+	at com.android.ide.common.internal.WaitableExecutor$waitForTasksWithQuickFail$0.call(Unknown Source)
+	at com.android.build.gradle.tasks.PreDex.taskAction(PreDex.groovy:106)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:235)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:222)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:42)
+	at com.android.builder.core.AndroidBuilder.preDexLibrary(AndroidBuilder.java:1296)
+	at com.android.builder.internal.compiler.PreDexCache.preDexLibrary(PreDexCache.java:122)
+	at com.android.builder.core.AndroidBuilder.preDexLibrary(AndroidBuilder.java:1248)
+	at com.android.builder.core.AndroidBuilder$preDexLibrary$6.call(Unknown Source)
+	at com.android.build.gradle.tasks.PreDex$PreDexTask.call(PreDex.groovy:150)
+	at com.android.build.gradle.tasks.PreDex$PreDexTask.call(PreDex.groovy)
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/java'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at com.android.build.gradle.internal.process.GradleProcessResult.assertNormalExitValue(GradleProcessResult.java:40)
+	... 6 more
+
+
+BUILD FAILED
+
+Total time: 12.481 secs
+
+2018-05-15 06:42:20,125 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 06:42:20,125 INFO  SysUtils - Execute command: [/tmp/rdisk/30/src/gradlew, -b, /tmp/rdisk/30/src/rebound-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 06:42:26,512 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-05-15 06:42:26,512 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-15 06:42:26,512 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-15 06:42:26,512 INFO  SysUtils - Execute command: [/tmp/rdisk/30/src/gradlew, -b, /tmp/rdisk/30/src/rebound-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-15 06:42:40,845 INFO  SysUtils - Configuration on demand is an incubating feature.
+:rebound-android:compileLint
+:rebound-android:copyDebugLint UP-TO-DATE
+:rebound-android:mergeDebugProguardFiles UP-TO-DATE
+:rebound-android:preBuild UP-TO-DATE
+:rebound-android:preDebugBuild UP-TO-DATE
+:rebound-android:checkDebugManifest
+:rebound-android:prepareDebugDependencies
+:rebound-android:compileDebugAidl UP-TO-DATE
+:rebound-android:compileDebugRenderscript UP-TO-DATE
+:rebound-android:generateDebugBuildConfig UP-TO-DATE
+:rebound-android:generateDebugAssets UP-TO-DATE
+:rebound-android:mergeDebugAssets UP-TO-DATE
+:rebound-android:generateDebugResValues UP-TO-DATE
+:rebound-android:generateDebugResources UP-TO-DATE
+:rebound-android:packageDebugResources UP-TO-DATE
+:rebound-android:processDebugManifest UP-TO-DATE
+:rebound-android:processDebugResources UP-TO-DATE
+:rebound-android:generateDebugSources UP-TO-DATE
+:rebound-android:processDebugJavaRes UP-TO-DATE
+:rebound-core:compileJava UP-TO-DATE
+:rebound-core:processResources UP-TO-DATE
+:rebound-core:classes UP-TO-DATE
+:rebound-core:jar UP-TO-DATE
+:rebound-android:compileDebugJava UP-TO-DATE
+:rebound-android:packageDebugJar UP-TO-DATE
+:rebound-android:compileDebugNdk UP-TO-DATE
+:rebound-android:packageDebugJniLibs UP-TO-DATE
+:rebound-android:packageDebugLocalJar UP-TO-DATE
+:rebound-android:packageDebugRenderscript UP-TO-DATE
+:rebound-android:bundleDebug UP-TO-DATE
+:rebound-android:compileDebugSources UP-TO-DATE
+:rebound-android:assembleDebug UP-TO-DATE
+:rebound-android:copyReleaseLint UP-TO-DATE
+:rebound-android:mergeReleaseProguardFiles UP-TO-DATE
+:rebound-android:preReleaseBuild UP-TO-DATE
+:rebound-android:checkReleaseManifest
+:rebound-android:prepareReleaseDependencies
+:rebound-android:compileReleaseAidl UP-TO-DATE
+:rebound-android:compileReleaseRenderscript UP-TO-DATE
+:rebound-android:generateReleaseBuildConfig UP-TO-DATE
+:rebound-android:generateReleaseAssets UP-TO-DATE
+:rebound-android:mergeReleaseAssets UP-TO-DATE
+:rebound-android:generateReleaseResValues UP-TO-DATE
+:rebound-android:generateReleaseResources UP-TO-DATE
+:rebound-android:packageReleaseResources UP-TO-DATE
+:rebound-android:processReleaseManifest UP-TO-DATE
+:rebound-android:processReleaseResources UP-TO-DATE
+:rebound-android:generateReleaseSources UP-TO-DATE
+:rebound-android:processReleaseJavaRes UP-TO-DATE
+:rebound-android:compileReleaseJava UP-TO-DATE
+:rebound-android:packageReleaseJar UP-TO-DATE
+:rebound-android:compileReleaseNdk UP-TO-DATE
+:rebound-android:packageReleaseJniLibs UP-TO-DATE
+:rebound-android:packageReleaseLocalJar UP-TO-DATE
+:rebound-android:packageReleaseRenderscript UP-TO-DATE
+:rebound-android:bundleRelease UP-TO-DATE
+:rebound-android:compileReleaseSources UP-TO-DATE
+:rebound-android:assembleRelease UP-TO-DATE
+:rebound-android:assemble UP-TO-DATE
+:rebound-android:lint
+Ran lint on variant release: 3 issues found
+Ran lint on variant debug: 3 issues found
+Wrote HTML report to file:/tmp/rdisk/30/src/rebound-android/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/30/src/rebound-android/build/outputs/lint-results.xml
+:rebound-android:preCompileDebugUnitTestJava
+:rebound-android:preDebugUnitTestBuild UP-TO-DATE
+:rebound-android:prepareDebugUnitTestDependencies
+:rebound-android:processDebugUnitTestJavaRes UP-TO-DATE
+:rebound-android:compileDebugUnitTestJava UP-TO-DATE
+:rebound-android:compileDebugUnitTestSources UP-TO-DATE
+:rebound-android:mockableAndroidJar
+:rebound-android:assembleDebugUnitTest
+:rebound-android:testDebug
+:rebound-android:preCompileReleaseUnitTestJava
+:rebound-android:preReleaseUnitTestBuild UP-TO-DATE
+:rebound-android:prepareReleaseUnitTestDependencies
+:rebound-android:processReleaseUnitTestJavaRes UP-TO-DATE
+:rebound-android:compileReleaseUnitTestJava UP-TO-DATE
+:rebound-android:compileReleaseUnitTestSources UP-TO-DATE
+:rebound-android:assembleReleaseUnitTest
+:rebound-android:testRelease
+:rebound-android:test
+:rebound-android:check
+:rebound-android:build
+
+BUILD SUCCESSFUL
+
+Total time: 13.929 secs
+
+2018-05-15 06:42:40,864 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 06:42:40,865 INFO  SysUtils - Execute command: [/tmp/rdisk/30/src/gradlew, -b, /tmp/rdisk/30/src/rebound-core/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 06:42:46,947 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-05-15 06:42:46,947 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-15 06:42:46,947 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-15 06:42:46,947 INFO  SysUtils - Execute command: [/tmp/rdisk/30/src/gradlew, -b, /tmp/rdisk/30/src/rebound-core/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-15 06:42:55,116 INFO  SysUtils - Configuration on demand is an incubating feature.
+:rebound-core:compileJava UP-TO-DATE
+:rebound-core:processResources UP-TO-DATE
+:rebound-core:classes UP-TO-DATE
+:rebound-core:jar UP-TO-DATE
+:rebound-core:assemble UP-TO-DATE
+:rebound-core:compileTestJava
+:rebound-core:processTestResources UP-TO-DATE
+:rebound-core:testClasses
+:rebound-core:test
+:rebound-core:check
+:rebound-core:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.753 secs
+
+2018-05-15 06:42:55,138 ERROR FullProcessService - Project build has not produced APK file
+2018-05-15 06:42:55,158 ERROR FullProcessService - Could not find generated or existed APK file

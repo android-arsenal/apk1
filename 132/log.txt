@@ -1,0 +1,106 @@
+2018-04-11 11:05:05,202 INFO  DownloadService - Downloading "https://github.com/johncarl81/transfuse/archive/master.zip", attempt 3
+2018-04-11 11:06:05,708 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 11:06:06,553 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 11:06:06,553 INFO  DownloadService - Downloading "https://github.com/johncarl81/transfuse/archive/master.zip", attempt 3
+2018-04-11 11:07:07,875 DEBUG FullProcessService - Repository https://github.com/johncarl81/transfuse available: true
+2018-04-11 11:07:07,876 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 11:07:07,876 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/johncarl81/transfuse, /tmp/rdisk/132/src]
+2018-04-11 11:07:12,068 INFO  SysUtils - 
+2018-04-11 11:07:12,086 INFO  GitService - Deleted "/tmp/rdisk/132/src/.git": true
+2018-04-11 11:07:12,122 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-11 11:07:12,122 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/132/src]
+2018-04-11 11:07:12,126 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/132/src/.git/
+
+2018-04-11 11:07:12,149 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/132/src/examples/gradle/gradlew
+2018-04-11 11:07:12,171 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/132/src/examples/gradle/GradleTransfuse/build.gradle /tmp/rdisk/132/src/examples/gradle/build.gradle
+2018-04-11 11:07:12,194 INFO  ProjectBuildService - All script(s): /tmp/rdisk/132/src/examples/gradle/settings.gradle /tmp/rdisk/132/src/examples/gradle/build.gradle /tmp/rdisk/132/src/examples/gradle/GradleTransfuse/build.gradle
+2018-04-11 11:07:12,194 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 11:07:12,194 INFO  ProjectFixService - Fixing project...
+2018-04-11 11:07:12,241 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/132/src/examples/gradle/GradleTransfuse/local.properties
+2018-04-11 11:07:12,242 INFO  ProjectFixService - Build info for "/tmp/rdisk/132/src/examples/gradle/GradleTransfuse/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=25,minSdkVersion=16,targetSdkVersion=25]
+2018-04-11 11:07:12,242 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/132/src/examples/gradle/local.properties
+2018-04-11 11:07:12,243 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-11 11:07:12,243 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-11 11:07:12,244 INFO  ProjectFixService - Build info for "/tmp/rdisk/132/src/examples/gradle/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=25,minSdkVersion=16,targetSdkVersion=25]
+2018-04-11 11:07:12,244 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 11:07:12,244 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 11:07:12,244 INFO  SysUtils - Execute command: [/tmp/rdisk/132/src/examples/gradle/gradlew, -b, /tmp/rdisk/132/src/examples/gradle/GradleTransfuse/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 11:07:23,612 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-11 11:07:23,612 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-11 11:07:23,612 INFO  SysUtils - Execute command: [/tmp/rdisk/132/src/examples/gradle/gradlew, -b, /tmp/rdisk/132/src/examples/gradle/GradleTransfuse/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-11 11:07:38,565 INFO  SysUtils - Configuration on demand is an incubating feature.
+WARNING: Ignoring Android API artifact com.google.android:android:2.1_r1 for debug
+WARNING: Ignoring Android API artifact com.google.android:android:2.1_r1 for debug
+WARNING: Ignoring Android API artifact com.google.android:android:2.1_r1 for release
+WARNING: Ignoring Android API artifact com.google.android:android:2.1_r1 for release
+:GradleTransfuse:preBuild UP-TO-DATE
+:GradleTransfuse:preDebugBuild UP-TO-DATE
+:GradleTransfuse:checkDebugManifest
+:GradleTransfuse:prepareDebugDependencies
+:GradleTransfuse:compileDebugAidl
+:GradleTransfuse:compileDebugRenderscript
+:GradleTransfuse:generateDebugBuildConfig
+:GradleTransfuse:generateDebugResValues
+:GradleTransfuse:generateDebugResources
+:GradleTransfuse:mergeDebugResources
+:GradleTransfuse:processDebugManifest
+:GradleTransfuse:processDebugResources
+:GradleTransfuse:generateDebugSources
+:GradleTransfuse:incrementalDebugJavaCompilationSafeguard
+:GradleTransfuse:javaPreCompileDebug
+:GradleTransfuse:compileDebugJavaWithJavacNote: Transfuse: Manifest generation disabled
+
+:GradleTransfuse:compileDebugNdk UP-TO-DATE
+:GradleTransfuse:compileDebugSources
+:GradleTransfuse:mergeDebugShaders
+:GradleTransfuse:compileDebugShaders
+:GradleTransfuse:generateDebugAssets
+:GradleTransfuse:mergeDebugAssets
+:GradleTransfuse:transformClassesWithDexForDebug
+:GradleTransfuse:mergeDebugJniLibFolders
+:GradleTransfuse:transformNativeLibsWithMergeJniLibsForDebug
+:GradleTransfuse:transformNativeLibsWithStripDebugSymbolForDebug
+:GradleTransfuse:processDebugJavaRes UP-TO-DATE
+:GradleTransfuse:transformResourcesWithMergeJavaResForDebug
+:GradleTransfuse:validateSigningDebug
+:GradleTransfuse:packageDebug
+:GradleTransfuse:assembleDebug
+:GradleTransfuse:preReleaseBuild UP-TO-DATE
+:GradleTransfuse:checkReleaseManifest
+:GradleTransfuse:prepareReleaseDependencies
+:GradleTransfuse:compileReleaseAidl
+:GradleTransfuse:compileReleaseRenderscript
+:GradleTransfuse:generateReleaseBuildConfig
+:GradleTransfuse:generateReleaseResValues
+:GradleTransfuse:generateReleaseResources
+:GradleTransfuse:mergeReleaseResources
+:GradleTransfuse:processReleaseManifest
+:GradleTransfuse:processReleaseResources
+:GradleTransfuse:generateReleaseSources
+:GradleTransfuse:incrementalReleaseJavaCompilationSafeguard
+:GradleTransfuse:javaPreCompileRelease
+:GradleTransfuse:compileReleaseJavaWithJavacNote: Transfuse: Manifest generation disabled
+
+:GradleTransfuse:compileReleaseNdk UP-TO-DATE
+:GradleTransfuse:compileReleaseSources
+:GradleTransfuse:lintVitalRelease
+:GradleTransfuse:mergeReleaseShaders
+:GradleTransfuse:compileReleaseShaders
+:GradleTransfuse:generateReleaseAssets
+:GradleTransfuse:mergeReleaseAssets
+:GradleTransfuse:transformClassesWithDexForRelease
+:GradleTransfuse:mergeReleaseJniLibFolders
+:GradleTransfuse:transformNativeLibsWithMergeJniLibsForRelease
+:GradleTransfuse:transformNativeLibsWithStripDebugSymbolForRelease
+:GradleTransfuse:processReleaseJavaRes UP-TO-DATE
+:GradleTransfuse:transformResourcesWithMergeJavaResForRelease
+:GradleTransfuse:packageRelease
+:GradleTransfuse:assembleRelease
+:GradleTransfuse:assemble
+:GradleTransfuse:build
+
+BUILD SUCCESSFUL
+
+Total time: 14.604 secs
+
+2018-04-11 11:07:38,598 INFO  FullProcessService - Found APK file: /tmp/rdisk/132/src/examples/gradle/GradleTransfuse/build/outputs/apk/GradleTransfuse-release-unsigned.apk

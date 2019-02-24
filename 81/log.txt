@@ -1,0 +1,151 @@
+2018-05-15 06:20:38,279 INFO  DownloadService - Downloading "https://github.com/gabrielemariotti/changeloglib/archive/master.zip", attempt 3
+2018-05-15 06:21:38,751 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-15 06:21:39,489 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-15 06:21:39,489 INFO  DownloadService - Downloading "https://github.com/gabrielemariotti/changeloglib/archive/master.zip", attempt 3
+2018-05-15 06:22:40,845 DEBUG FullProcessService - Repository https://github.com/gabrielemariotti/changeloglib available: true
+2018-05-15 06:22:40,845 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-15 06:22:40,845 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/gabrielemariotti/changeloglib, /tmp/rdisk/81/src]
+2018-05-15 06:22:45,314 INFO  SysUtils - 
+2018-05-15 06:22:45,323 INFO  GitService - Deleted "/tmp/rdisk/81/src/.git": true
+2018-05-15 06:22:45,328 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-05-15 06:22:45,329 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/81/src]
+2018-05-15 06:22:45,333 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/81/src/.git/
+
+2018-05-15 06:22:45,340 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/81/src/gradlew
+2018-05-15 06:22:45,344 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/81/src/ChangeLogDemo/build.gradle /tmp/rdisk/81/src/ChangeLogLibrary/build.gradle /tmp/rdisk/81/src/build.gradle
+2018-05-15 06:22:45,348 INFO  ProjectBuildService - All script(s): /tmp/rdisk/81/src/settings.gradle /tmp/rdisk/81/src/maven_push.gradle /tmp/rdisk/81/src/build.gradle /tmp/rdisk/81/src/ChangeLogLibrary/build.gradle /tmp/rdisk/81/src/ChangeLogDemo/build.gradle
+2018-05-15 06:22:45,348 INFO  ProjectBuildService - Remote scripts: none
+2018-05-15 06:22:45,348 INFO  ProjectFixService - Fixing project...
+2018-05-15 06:22:45,361 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/81/src/ChangeLogDemo/local.properties
+2018-05-15 06:22:45,362 INFO  ProjectFixService - Build info for "/tmp/rdisk/81/src/ChangeLogDemo/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=23]
+2018-05-15 06:22:45,362 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/81/src/ChangeLogLibrary/local.properties
+2018-05-15 06:22:45,364 INFO  ProjectFixService - Build info for "/tmp/rdisk/81/src/ChangeLogLibrary/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=23]
+2018-05-15 06:22:45,364 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/81/src/local.properties
+2018-05-15 06:22:45,364 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-05-15 06:22:45,364 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-05-15 06:22:45,365 INFO  ProjectFixService - Build info for "/tmp/rdisk/81/src/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=23]
+2018-05-15 06:22:45,365 INFO  ProjectFixService - Project was maybe fixed
+2018-05-15 06:22:45,365 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 06:22:45,366 INFO  SysUtils - Execute command: [/tmp/rdisk/81/src/gradlew, -b, /tmp/rdisk/81/src/ChangeLogDemo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 06:22:54,216 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-05-15 06:22:54,216 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-15 06:22:54,216 INFO  SysUtils - Execute command: [/tmp/rdisk/81/src/gradlew, -b, /tmp/rdisk/81/src/ChangeLogDemo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-15 06:23:29,052 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD NOT FOUND SIGNING FILE
+Incremental java compilation is an incubating feature.
+:ChangeLogDemo:preBuild UP-TO-DATE
+:ChangeLogDemo:preDebugBuild UP-TO-DATE
+:ChangeLogDemo:checkDebugManifest
+:ChangeLogDemo:preReleaseBuild UP-TO-DATE
+:ChangeLogLibrary:preBuild UP-TO-DATE
+:ChangeLogLibrary:preReleaseBuild UP-TO-DATE
+:ChangeLogLibrary:compileReleaseNdk UP-TO-DATE
+:ChangeLogLibrary:compileLint
+:ChangeLogLibrary:copyReleaseLint UP-TO-DATE
+:ChangeLogLibrary:checkReleaseManifest
+:ChangeLogLibrary:preDebugAndroidTestBuild UP-TO-DATE
+:ChangeLogLibrary:preDebugBuild UP-TO-DATE
+:ChangeLogLibrary:preDebugUnitTestBuild UP-TO-DATE
+:ChangeLogLibrary:preReleaseUnitTestBuild UP-TO-DATE
+:ChangeLogLibrary:prepareComAndroidSupportRecyclerviewV72330Library
+:ChangeLogLibrary:prepareComAndroidSupportSupportV42330Library
+:ChangeLogLibrary:prepareReleaseDependencies
+:ChangeLogLibrary:compileReleaseAidl
+:ChangeLogLibrary:compileReleaseRenderscript
+:ChangeLogLibrary:generateReleaseBuildConfig
+:ChangeLogLibrary:generateReleaseAssets UP-TO-DATE
+:ChangeLogLibrary:mergeReleaseAssets
+:ChangeLogLibrary:generateReleaseResValues
+:ChangeLogLibrary:generateReleaseResources
+:ChangeLogLibrary:mergeReleaseResources
+:ChangeLogLibrary:processReleaseManifest
+:ChangeLogLibrary:processReleaseResources
+:ChangeLogLibrary:generateReleaseSources
+:ChangeLogLibrary:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:ChangeLogLibrary:extractReleaseAnnotations
+:ChangeLogLibrary:mergeReleaseProguardFiles
+:ChangeLogLibrary:packageReleaseRenderscript UP-TO-DATE
+:ChangeLogLibrary:packageReleaseResources
+:ChangeLogLibrary:processReleaseJavaRes UP-TO-DATE
+:ChangeLogLibrary:transformResourcesWithMergeJavaResForRelease
+:ChangeLogLibrary:transformClassesAndResourcesWithSyncLibJarsForRelease
+:ChangeLogLibrary:mergeReleaseJniLibFolders
+:ChangeLogLibrary:transformNative_libsWithMergeJniLibsForRelease
+:ChangeLogLibrary:transformNative_libsWithSyncJniLibsForRelease
+:ChangeLogLibrary:bundleRelease
+:ChangeLogDemo:prepareComAndroidSupportAnimatedVectorDrawable2330Library
+:ChangeLogDemo:prepareComAndroidSupportAppcompatV72330Library
+:ChangeLogDemo:prepareComAndroidSupportDesign2330Library
+:ChangeLogDemo:prepareComAndroidSupportRecyclerviewV72330Library
+:ChangeLogDemo:prepareComAndroidSupportSupportV42330Library
+:ChangeLogDemo:prepareComAndroidSupportSupportVectorDrawable2330Library
+:ChangeLogDemo:prepareComGithubGabrielemariottiChangeloglibChangeLogLibrary210Library
+:ChangeLogDemo:prepareOrgLucasrDspecDspec011Library
+:ChangeLogDemo:prepareDebugDependencies
+:ChangeLogDemo:compileDebugAidl
+:ChangeLogDemo:compileDebugRenderscript
+:ChangeLogDemo:generateDebugBuildConfig
+:ChangeLogDemo:generateDebugAssets UP-TO-DATE
+:ChangeLogDemo:mergeDebugAssets
+:ChangeLogDemo:generateDebugResValues
+:ChangeLogDemo:generateDebugResources
+:ChangeLogDemo:mergeDebugResources
+:ChangeLogDemo:processDebugManifest
+:ChangeLogDemo:processDebugResources
+:ChangeLogDemo:generateDebugSources
+:ChangeLogDemo:compileDebugJavaWithJavacNote: /tmp/rdisk/81/src/ChangeLogDemo/src/main/java/it/gmariotti/changelog/demo/utils/UtilsBase.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/81/src/ChangeLogDemo/src/main/java/it/gmariotti/changelog/demo/iabutils/IabUtil.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:ChangeLogDemo:compileDebugNdk UP-TO-DATE
+:ChangeLogDemo:compileDebugSources
+:ChangeLogDemo:prePackageMarkerForDebug
+:ChangeLogDemo:transformClassesWithDexForDebug
+:ChangeLogDemo:mergeDebugJniLibFolders
+:ChangeLogDemo:transformNative_libsWithMergeJniLibsForDebug
+:ChangeLogDemo:processDebugJavaRes UP-TO-DATE
+:ChangeLogDemo:transformResourcesWithMergeJavaResForDebug
+:ChangeLogDemo:validateDebugSigning
+:ChangeLogDemo:packageDebug
+:ChangeLogDemo:zipalignDebug
+:ChangeLogDemo:assembleDebug
+:ChangeLogDemo:checkReleaseManifest
+:ChangeLogDemo:prepareReleaseDependencies
+:ChangeLogDemo:compileReleaseAidl
+:ChangeLogDemo:compileReleaseRenderscript
+:ChangeLogDemo:generateReleaseBuildConfig
+:ChangeLogDemo:generateReleaseAssets UP-TO-DATE
+:ChangeLogDemo:mergeReleaseAssets
+:ChangeLogDemo:generateReleaseResValues
+:ChangeLogDemo:generateReleaseResources
+:ChangeLogDemo:mergeReleaseResources
+:ChangeLogDemo:processReleaseManifest
+:ChangeLogDemo:processReleaseResources
+:ChangeLogDemo:generateReleaseSources
+:ChangeLogDemo:compileReleaseJavaWithJavacNote: /tmp/rdisk/81/src/ChangeLogDemo/src/main/java/it/gmariotti/changelog/demo/utils/UtilsBase.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/81/src/ChangeLogDemo/src/main/java/it/gmariotti/changelog/demo/iabutils/IabUtil.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:ChangeLogDemo:compileReleaseNdk UP-TO-DATE
+:ChangeLogDemo:compileReleaseSources
+:ChangeLogDemo:lintVitalRelease
+:ChangeLogDemo:prePackageMarkerForRelease
+:ChangeLogDemo:transformClassesWithDexForRelease
+:ChangeLogDemo:mergeReleaseJniLibFolders
+:ChangeLogDemo:transformNative_libsWithMergeJniLibsForRelease
+:ChangeLogDemo:processReleaseJavaRes UP-TO-DATE
+:ChangeLogDemo:transformResourcesWithMergeJavaResForRelease
+:ChangeLogDemo:packageRelease
+:ChangeLogDemo:assembleRelease
+:ChangeLogDemo:assemble
+:ChangeLogDemo:build
+
+BUILD SUCCESSFUL
+
+Total time: 34.389 secs
+
+2018-05-15 06:23:29,108 INFO  FullProcessService - Found APK file: /tmp/rdisk/81/src/ChangeLogDemo/build/outputs/apk/ChangeLogDemo-release-unsigned.apk

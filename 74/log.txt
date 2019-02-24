@@ -1,0 +1,21 @@
+2018-04-11 21:01:50,319 INFO  DownloadService - Downloading "https://github.com/mitmel/Android-Image-Cache/archive/master.zip", attempt 3
+2018-04-11 21:02:50,792 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 21:02:51,525 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 21:02:51,525 INFO  DownloadService - Downloading "https://github.com/mitmel/Android-Image-Cache/archive/master.zip", attempt 3
+2018-04-11 21:03:53,017 DEBUG FullProcessService - Repository https://github.com/mitmel/Android-Image-Cache available: true
+2018-04-11 21:03:53,017 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 21:03:53,017 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/mitmel/Android-Image-Cache, /tmp/rdisk/74/src]
+2018-04-11 21:03:54,775 INFO  SysUtils - 
+2018-04-11 21:03:54,787 INFO  GitService - Deleted "/tmp/rdisk/74/src/.git": true
+2018-04-11 21:03:54,788 INFO  FullProcessService - Size of directory with sources: 522 KB
+2018-04-11 21:03:54,788 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/74/src]
+2018-04-11 21:03:54,792 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/74/src/.git/
+
+2018-04-11 21:03:54,795 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-11 21:03:54,795 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-11 21:03:54,799 INFO  ProjectBuildService - Build script(s): none
+2018-04-11 21:03:54,801 INFO  ProjectBuildService - All script(s): none
+2018-04-11 21:03:54,801 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 21:03:54,801 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-11 21:03:54,801 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 21:03:54,803 ERROR FullProcessService - Could not find generated or existed APK file

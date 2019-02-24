@@ -1,0 +1,8 @@
+{
+  "com.github.danielnilsson9.colorpickerview" : [ "BuildConfig", "R", "R$attr", "R$dimen", "R$drawable", "R$id", "R$layout", "R$style", "R$styleable" ],
+  "com.github.danielnilsson9.colorpickerview.demo" : [ "AboutDialog", "AboutDialog$1", "AboutDialog$1$1", "AboutDialog$2", "BuildConfig", "ColorPickerActivity", "MainActivity", "MainActivity$ExamplePreferenceFragment", "MainActivity$ExamplePreferenceFragment$1", "R", "R$attr", "R$dimen", "R$drawable", "R$id", "R$layout", "R$menu", "R$string", "R$style", "R$styleable", "R$xml" ],
+  "com.github.danielnilsson9.colorpickerview.dialog" : [ "ColorPickerDialogFragment", "ColorPickerDialogFragment$1", "ColorPickerDialogFragment$2", "ColorPickerDialogFragment$ColorPickerDialogListener" ],
+  "com.github.danielnilsson9.colorpickerview.drawable" : [ "AlphaPatternDrawable" ],
+  "com.github.danielnilsson9.colorpickerview.preference" : [ "ColorPreference", "ColorPreference$1", "ColorPreference$OnShowDialogListener" ],
+  "com.github.danielnilsson9.colorpickerview.view" : [ "ColorPanelView", "ColorPickerView", "ColorPickerView$1", "ColorPickerView$BitmapCache", "ColorPickerView$OnColorChangedListener", "DrawingUtils" ]
+}

@@ -1,0 +1,173 @@
+2018-04-11 20:27:43,341 INFO  DownloadService - Downloading "https://github.com/BoD/android-contentprovider-generator/archive/master.zip", attempt 3
+2018-04-11 20:28:43,904 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 20:28:44,581 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 20:28:44,581 INFO  DownloadService - Downloading "https://github.com/BoD/android-contentprovider-generator/archive/master.zip", attempt 3
+2018-04-11 20:29:45,985 DEBUG FullProcessService - Repository https://github.com/BoD/android-contentprovider-generator available: true
+2018-04-11 20:29:45,985 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 20:29:45,985 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/BoD/android-contentprovider-generator, /tmp/rdisk/111/src]
+2018-04-11 20:29:47,743 INFO  SysUtils - 
+2018-04-11 20:29:47,748 INFO  GitService - Deleted "/tmp/rdisk/111/src/.git": true
+2018-04-11 20:29:47,754 INFO  FullProcessService - Size of directory with sources: 700 KB
+2018-04-11 20:29:47,754 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/111/src]
+2018-04-11 20:29:47,758 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/111/src/.git/
+
+2018-04-11 20:29:47,762 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/111/src/gradlew
+2018-04-11 20:29:47,767 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/111/src/sample-app/build.gradle /tmp/rdisk/111/src/build.gradle /tmp/rdisk/111/src/acpg-gradle-plugin/build.gradle /tmp/rdisk/111/src/acpg-lib/build.gradle /tmp/rdisk/111/src/cli/build.gradle
+2018-04-11 20:29:47,771 INFO  ProjectBuildService - All script(s): /tmp/rdisk/111/src/settings.gradle /tmp/rdisk/111/src/sample-app/build.gradle /tmp/rdisk/111/src/cli/build.gradle /tmp/rdisk/111/src/build.gradle /tmp/rdisk/111/src/acpg-lib/build.gradle /tmp/rdisk/111/src/acpg-gradle-plugin/build.gradle
+2018-04-11 20:29:47,771 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 20:29:47,771 INFO  ProjectFixService - Fixing project...
+2018-04-11 20:29:47,780 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/111/src/sample-app/local.properties
+2018-04-11 20:29:47,780 INFO  ProjectFixService - Build info for "/tmp/rdisk/111/src/sample-app/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-04-11 20:29:47,781 INFO  LocalPropertiesFixService - Updated fake /tmp/rdisk/111/src/local.properties
+2018-04-11 20:29:47,781 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.5-all.zip
+2018-04-11 20:29:47,782 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.5-bin.zip)
+2018-04-11 20:29:47,783 INFO  ProjectFixService - Build info for "/tmp/rdisk/111/src/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-04-11 20:29:47,783 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/111/src/acpg-gradle-plugin/local.properties
+2018-04-11 20:29:47,784 INFO  ProjectFixService - Build info for "/tmp/rdisk/111/src/acpg-gradle-plugin/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-04-11 20:29:47,784 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/111/src/acpg-lib/local.properties
+2018-04-11 20:29:47,785 INFO  ProjectFixService - Build info for "/tmp/rdisk/111/src/acpg-lib/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-04-11 20:29:47,785 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/111/src/cli/local.properties
+2018-04-11 20:29:47,786 INFO  ProjectFixService - Build info for "/tmp/rdisk/111/src/cli/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=9,targetSdkVersion=25]
+2018-04-11 20:29:47,786 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 20:29:47,786 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 20:29:47,787 INFO  SysUtils - Execute command: [/tmp/rdisk/111/src/gradlew, -b, /tmp/rdisk/111/src/sample-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 20:30:00,045 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-11 20:30:00,045 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-11 20:30:00,046 INFO  SysUtils - Execute command: [/tmp/rdisk/111/src/gradlew, -b, /tmp/rdisk/111/src/sample-app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-11 20:30:35,816 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sample-app:acpgGenerateDebugContentProvider
+[32m20:30:07,507 I/ConfigParser 'sqliteOpenHelperClassName' not set in configuration: assuming 'SampleProviderSQLiteOpenHelper'.
+[m[32m20:30:07,511 I/ConfigParser 'generateBeans' not set in configuration: assuming true.
+[m[36m20:30:07,708 D/ModelParser /tmp/rdisk/111/src/sample-app/etc/acpg/company.json
+[m[36m20:30:07,794 D/ModelParser /tmp/rdisk/111/src/sample-app/etc/acpg/manual.json
+[m[36m20:30:07,795 D/ModelParser /tmp/rdisk/111/src/sample-app/etc/acpg/person.json
+[m[36m20:30:07,803 D/ModelParser /tmp/rdisk/111/src/sample-app/etc/acpg/person_team.json
+[m[36m20:30:07,803 D/ModelParser /tmp/rdisk/111/src/sample-app/etc/acpg/product.json
+[m[36m20:30:07,804 D/ModelParser /tmp/rdisk/111/src/sample-app/etc/acpg/serial_number.json
+[m[36m20:30:07,805 D/ModelParser /tmp/rdisk/111/src/sample-app/etc/acpg/team.json
+[m[32m20:30:07,816 I/Model Note: in the table 'company', the column 'name' will be named 'company__name' to avoid ambiguities when joining.
+[m[32m20:30:07,817 I/Model Note: in the table 'company', the column 'serial_number_id' will be named 'company__serial_number_id' to avoid ambiguities when joining.
+[m[32m20:30:07,817 I/Model Note: in the table 'person', the column 'country_code' will be named 'person__country_code' to avoid ambiguities when joining.
+[m[32m20:30:07,817 I/Model Note: in the table 'serial_number', the column 'part0' will be named 'serial_number__part0' to avoid ambiguities when joining.
+[m[32m20:30:07,818 I/Model Note: in the table 'serial_number', the column 'part1' will be named 'serial_number__part1' to avoid ambiguities when joining.
+[m[32m20:30:07,818 I/Model Note: in the table 'team', the column 'name' will be named 'team__name' to avoid ambiguities when joining.
+[m[32m20:30:07,818 I/Model Note: in the table 'team', the column 'country_code' will be named 'team__country_code' to avoid ambiguities when joining.
+[m[32m20:30:07,818 I/Model Note: in the table 'team', the column 'serial_number_id' will be named 'team__serial_number_id' to avoid ambiguities when joining.
+[m[33m20:30:08,233 W/Field The default value for field person.has_blue_eyes could not be parsed as a boolean type, which is probably a problem - assuming 'false'.
+[m[32m20:30:08,240 I/Generator 
+
+
+Provider declaration to paste in the AndroidManifest.xml file: 
+
+        <provider
+            android:name="org.jraf.androidcontentprovidergenerator.sample.provider.SampleProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false" />
+
+
+[m:sample-app:preBuild UP-TO-DATE
+:sample-app:resolveDebugDependencies
+:sample-app:preDebugBuild
+:sample-app:checkDebugManifest
+:sample-app:prepareDebugDependencies
+:sample-app:compileDebugAidl
+:sample-app:compileDebugRenderscript
+:sample-app:generateDebugBuildConfig
+:sample-app:generateDebugResValues
+:sample-app:handleDebugMicroApk
+:sample-app:generateDebugResources
+:sample-app:mergeDebugResources
+:sample-app:processDebugManifest
+:sample-app:processDebugResources
+:sample-app:generateDebugSources
+:sample-app:incrementalDebugJavaCompilationSafeguard
+:sample-app:javaPreCompileDebug
+:sample-app:compileDebugJavaWithJavac
+:sample-app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:sample-app:compileDebugNdk NO-SOURCE
+:sample-app:compileDebugSources
+:sample-app:mergeDebugShaders
+:sample-app:compileDebugShaders
+:sample-app:generateDebugAssets
+:sample-app:mergeDebugAssets
+:sample-app:transformClassesWithDexBuilderForDebug
+:sample-app:transformDexArchiveWithDexMergerForDebug
+:sample-app:mergeDebugJniLibFolders
+:sample-app:transformNativeLibsWithMergeJniLibsForDebug
+:sample-app:transformNativeLibsWithStripDebugSymbolForDebug
+:sample-app:processDebugJavaRes NO-SOURCE
+:sample-app:transformResourcesWithMergeJavaResForDebug
+:sample-app:validateSigningDebug
+:sample-app:packageDebug
+:sample-app:assembleDebug
+:sample-app:acpgGenerateReleaseContentProvider
+[32m20:30:24,720 I/ConfigParser 'sqliteOpenHelperClassName' not set in configuration: assuming 'SampleProviderSQLiteOpenHelper'.
+[m[32m20:30:24,720 I/ConfigParser 'generateBeans' not set in configuration: assuming true.
+[m[36m20:30:24,721 D/ModelParser /tmp/rdisk/111/src/sample-app/etc/acpg/company.json
+[m[36m20:30:24,725 D/ModelParser /tmp/rdisk/111/src/sample-app/etc/acpg/manual.json
+[m[36m20:30:24,726 D/ModelParser /tmp/rdisk/111/src/sample-app/etc/acpg/person.json
+[m[36m20:30:24,727 D/ModelParser /tmp/rdisk/111/src/sample-app/etc/acpg/person_team.json
+[m[36m20:30:24,727 D/ModelParser /tmp/rdisk/111/src/sample-app/etc/acpg/product.json
+[m[36m20:30:24,728 D/ModelParser /tmp/rdisk/111/src/sample-app/etc/acpg/serial_number.json
+[m[36m20:30:24,728 D/ModelParser /tmp/rdisk/111/src/sample-app/etc/acpg/team.json
+[m[32m20:30:24,729 I/Model Note: in the table 'company', the column 'name' will be named 'company__name' to avoid ambiguities when joining.
+[m[32m20:30:24,730 I/Model Note: in the table 'company', the column 'serial_number_id' will be named 'company__serial_number_id' to avoid ambiguities when joining.
+[m[32m20:30:24,730 I/Model Note: in the table 'person', the column 'country_code' will be named 'person__country_code' to avoid ambiguities when joining.
+[m[32m20:30:24,730 I/Model Note: in the table 'serial_number', the column 'part0' will be named 'serial_number__part0' to avoid ambiguities when joining.
+[m[32m20:30:24,731 I/Model Note: in the table 'serial_number', the column 'part1' will be named 'serial_number__part1' to avoid ambiguities when joining.
+[m[32m20:30:24,731 I/Model Note: in the table 'team', the column 'name' will be named 'team__name' to avoid ambiguities when joining.
+[m[32m20:30:24,731 I/Model Note: in the table 'team', the column 'country_code' will be named 'team__country_code' to avoid ambiguities when joining.
+[m[32m20:30:24,731 I/Model Note: in the table 'team', the column 'serial_number_id' will be named 'team__serial_number_id' to avoid ambiguities when joining.
+[m[33m20:30:24,815 W/Field The default value for field person.has_blue_eyes could not be parsed as a boolean type, which is probably a problem - assuming 'false'.
+[m[32m20:30:24,819 I/Generator 
+
+
+Provider declaration to paste in the AndroidManifest.xml file: 
+
+        <provider
+            android:name="org.jraf.androidcontentprovidergenerator.sample.provider.SampleProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false" />
+
+
+[m:sample-app:resolveReleaseDependencies
+:sample-app:preReleaseBuild
+:sample-app:checkReleaseManifest
+:sample-app:prepareReleaseDependencies
+:sample-app:compileReleaseAidl
+:sample-app:compileReleaseRenderscript
+:sample-app:generateReleaseBuildConfig
+:sample-app:generateReleaseResValues
+:sample-app:generateReleaseResources
+:sample-app:mergeReleaseResources
+:sample-app:processReleaseManifest
+:sample-app:processReleaseResources
+:sample-app:generateReleaseSources
+:sample-app:incrementalReleaseJavaCompilationSafeguard
+:sample-app:javaPreCompileRelease
+:sample-app:compileReleaseJavaWithJavac
+:sample-app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:sample-app:compileReleaseNdk NO-SOURCE
+:sample-app:compileReleaseSources
+:sample-app:lintVitalRelease
+:sample-app:mergeReleaseShaders
+:sample-app:compileReleaseShaders
+:sample-app:generateReleaseAssets
+:sample-app:mergeReleaseAssets
+:sample-app:transformClassesWithPreDexForRelease
+:sample-app:transformDexWithDexForRelease
+:sample-app:mergeReleaseJniLibFolders
+:sample-app:transformNativeLibsWithMergeJniLibsForRelease
+:sample-app:transformNativeLibsWithStripDebugSymbolForRelease
+:sample-app:processReleaseJavaRes NO-SOURCE
+:sample-app:transformResourcesWithMergeJavaResForRelease
+:sample-app:packageRelease
+:sample-app:assembleRelease
+:sample-app:assemble
+:sample-app:build
+
+BUILD SUCCESSFUL
+
+Total time: 35.282 secs
+
+2018-04-11 20:30:35,869 INFO  FullProcessService - Found APK file: /tmp/rdisk/111/src/sample-app/build/outputs/apk/sample-app-release-unsigned.apk

@@ -1,0 +1,17 @@
+{
+  "com.android.export" : [ "AllCapsTransformationMethod", "TransformationMethod2" ],
+  "com.neopixl.pixlui" : [ "BuildConfig", "R", "R$attr", "R$id", "R$styleable" ],
+  "com.neopixl.pixlui.components.button" : [ "Button", "Button$1" ],
+  "com.neopixl.pixlui.components.checkbox" : [ "CheckBox", "CheckBox$1" ],
+  "com.neopixl.pixlui.components.chronometer" : [ "Chronometer", "Chronometer$1" ],
+  "com.neopixl.pixlui.components.edittext" : [ "AutoCompleteEditText", "AutoCompleteEditText$1", "AutoCompleteEditText$2", "AutoCompleteEditText$3", "AutoCompleteEditText$CustomInputConnection", "AutoCompleteEditText$CustomTextWatcher", "AutoCompleteEditTextBatchListener", "AutoCompleteEditTextFocusListener", "EditText", "EditText$1", "EditTextBatchListener", "EditTextFocusListener", "ExtractEditText", "ExtractEditText$1" ],
+  "com.neopixl.pixlui.components.imageview" : [ "ImageView", "ImageViewLayoutAnimator" ],
+  "com.neopixl.pixlui.components.linearlayout" : [ "LinearLayoutAnimator" ],
+  "com.neopixl.pixlui.components.radiobutton" : [ "RadioButton", "RadioButton$1" ],
+  "com.neopixl.pixlui.components.relativelayout" : [ "RelativeLayout", "RelativeLayoutAnimator" ],
+  "com.neopixl.pixlui.components.sswitch" : [ "Switch", "Switch$1" ],
+  "com.neopixl.pixlui.components.textview" : [ "CheckedTextView", "CheckedTextView$1", "EllipsizingTextView", "EllipsizingTextView$1", "EllipsizingTextView$EllipsizeListener", "TextView", "TextView$1" ],
+  "com.neopixl.pixlui.intern" : [ "CustomPasswordTransformationMethod", "CustomPasswordTransformationMethod$CustomPasswordCharSequence", "PixlUIContants", "PixlUIfaceManager", "PixlUIfaceManager$DrawCallback", "PixlUIfaceManager$ExtraFontData" ],
+  "com.neopixl.pixluisample" : [ "BuildConfig", "MainActivity", "R", "R$attr", "R$dimen", "R$drawable", "R$id", "R$layout", "R$menu", "R$string", "R$style", "R$styleable" ],
+  "np" : [ "AutoCompleteEditText", "Button", "CheckBox", "CheckedTextView", "Chronometer", "EditText", "EllipsizingTextView", "ExtractEditText", "RadioButton", "Switch", "TextView" ]
+}

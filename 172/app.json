@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.dacer.androidchartsexample",
+    "label" : "AndroidChartsExample",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAE80lEQVR42u2a+1OUVRjHJSAu0VI/4FS/8LuVmTcMrU0KQokgJcyYrKb7dfpLykq7WUDT/WIM3dk0Lq7rasLq1pS1LBdhNUUEx6WGTJ7Od845c553910CW9d9Hc7Md/bMeZ895/s553mffXmHefPm2lxLbmttbX2rqamJGhsbKfaTi48luq51Lt+N/YRaWlq2TWve7/c3t7W1kcfjschuzE6ISxQ73bWZrKfHfD5fs615t9t9CTmkwWscQFFR0aVOAYDXOIDCwsJcpwDA68UH4HK58pwCAK9zAMlu4QmijhNEP4wQ7RTacZzII3R2yiEAn0SIHggQNfQQ3dtNdM9+orv3EZ05OweQmvYxA9ggzNf9SFQ7G4CCgoL8Cw2wSZhv6P5vAHiNA7hMtAsJ8NEw0f0C4D4BUC8A1k8DAK8pBRidJAqME/UIdUNjRPuFomesAEifjQpgnQCoSReAvSeJnv+Z6LmfiJ4RejpI9MRBooE/TcyHw/HpU703TQD8AuBZZfwpZf6xGIAPhq27D4A70wVgz0lp/Emhx5X5Rw4Q9U+YmPeHrLt/lzBf5U8TgN2jxvijwvjDQg8FrADvDcnar3Mfu79mNgD5+fkF5wvAOyp3XBt/MCBLZh8DeHfIpE612v079tgDwGvSACb+ITpwyuigEiqPbrtGjXH8WKFcNsQAvHOYpY5QpQCoSAUATKB6wBCMYWdhsuuEiUF/U48xjnjcsGEG0HzYmF+jzN/uSwEATODmgyH8CGmYTgaAfoO6vlGVSlQbDtA0aDVfLrQ6FQC9E7Jy1CtTG5TaGUD7iDFdryoN8r03amLeHrSaLxPmb91N9Pd5B4jK3IUh/PzXKeG5Xjf069R1faNCHGDbQLz5W2YDkJeXd/m5AISismrU7DPGoJ0MYMeIGa9RVQZlMsQA3hyQOb+amV/ptQeAVzsAV2zg1JR8hgnEVJmjf1kBUPKqlKlqpe+Pmxj0tekqVSKRLr8zgDcGjPmbvdL8TbsSArhmBIAvYxJMtsordwULvN5vYmAC9bpSmVqr5GEA6K9V1ytVfUe6cIDX+uX8q5j5kmQAYBIOgd15lQH8FpVHX65MabUxAPT1eLkqj7f55Hd129ofb35ZVxIAMMlyoRUMZGsfAzgtjx4qU8ag746ZmG+PybEyn4nFSeK7um3pk/NjHayHdZd0JgFgsZhkqZqwRC2whQEcOi2P3q3SS+sbBoC+HnerGxQneYgBvNJndh3rYd0bkwGwqFNOht1YpkBejgFY6TUpptPs6z9MDPr6mo4tFWZ/ZQAvhc2uYz2se0PHLAByc3ML7QAwyaIOKwgW0w0mdHpBpUpfMQD0S1nMCpXjHGBz2BjHelj3+gQA8BoHkJOTc4UdACZZ2GFAcKybYwD0ySxXaQZ9yQDQL2G5rfULA3gxbIwvVOavbbcHgNcZA2CS69qtIC/0mhiYWKJOZmmXuV++OGpi0NfXdCx2mwNgTm0c62HdBf8XAK/1Po0YfXZEKnjKxIyJx+btR6Q+ZxpkD2ro6/HtTGPskRtzYm6+Hl522b1anDFAuraEAJOTk+QEJQQYHx8nJyghQCQSIScoEcCVoVCInCB4tQUIBoPkBNkC4F1LZmbmgoyMjAqhGqFaoXVpolrlqQIebd8LFRcXZ+Evnezs7PlCVwldnZWVdU06CF6Up/nwCK8Xzf92/AsM2ZDdPoLoqAAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 412,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.dacer.androidchartsexample\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"25\" />\n\t<application android:theme=\"resourceId:0x7f060000\" android:label=\"AndroidChartsExample\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"AndroidChartsExample\" android:name=\"com.dacer.androidchartsexample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 233256,
+  "crc32" : 1609714988,
+  "sha256" : "b9a8419981d7b51651ddabd56f0a1d878e7e4d39212bca7676a539f8c86eabde",
+  "buildTime" : 1523440847000
+}

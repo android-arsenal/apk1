@@ -1,0 +1,7 @@
+{
+  "android.annotation" : [ "SuppressLint", "TargetApi" ],
+  "com.aphidmobile" : [ "MainActivity" ],
+  "com.aphidmobile.flip" : [ "Card", "FlipCards", "FlipRenderer", "FlipViewGroup", "FlipViewGroup$1", "GrabIt", "Texture", "Utils" ],
+  "com.aphidmobile.fliptouch" : [ "BuildConfig", "R", "R$attr", "R$drawable", "R$id", "R$layout", "R$menu", "R$string" ],
+  "com.aphidmobile.utils" : [ "AphidLog", "AphidLog$1", "AphidLog$ReusableFormatter", "IO", "UI" ]
+}

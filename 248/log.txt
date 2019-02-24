@@ -1,0 +1,319 @@
+2018-04-10 18:45:28,144 INFO  DownloadService - Downloading "https://github.com/timroes/EnhancedListView/archive/master.zip", attempt 3
+2018-04-10 18:45:28,530 INFO  DownloadService - Downloaded https://github.com/timroes/EnhancedListView/archive/master.zip, attempt 3
+2018-04-10 18:45:28,530 INFO  DownloadService - Size of file "/tmp/rdisk/248/master.zip": 158 KB
+2018-04-10 18:45:28,530 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-10 18:45:28,531 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/248/master.zip: true
+2018-04-10 18:45:28,531 DEBUG ZipUtil - Extracting '/tmp/rdisk/248/master.zip' into '/tmp/rdisk/248/src'.
+2018-04-10 18:45:28,543 INFO  FullProcessService - Size of directory with sources: 213 KB
+2018-04-10 18:45:28,543 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/248/src]
+2018-04-10 18:45:28,550 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/248/src/.git/
+
+2018-04-10 18:45:28,553 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/248/src/EnhancedListView-master/gradlew
+2018-04-10 18:45:28,556 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/248/src/EnhancedListView-master/EnhancedListView/build.gradle /tmp/rdisk/248/src/EnhancedListView-master/EnhancedListViewDemo/build.gradle /tmp/rdisk/248/src/EnhancedListView-master/build.gradle
+2018-04-10 18:45:28,558 INFO  ProjectBuildService - All script(s): /tmp/rdisk/248/src/EnhancedListView-master/settings.gradle /tmp/rdisk/248/src/EnhancedListView-master/build.gradle /tmp/rdisk/248/src/EnhancedListView-master/EnhancedListViewDemo/build.gradle /tmp/rdisk/248/src/EnhancedListView-master/EnhancedListView/build.gradle
+2018-04-10 18:45:28,559 INFO  ProjectBuildService - Remote scripts: none
+2018-04-10 18:45:28,559 INFO  ProjectFixService - Fixing project...
+2018-04-10 18:45:28,565 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/248/src/EnhancedListView-master/EnhancedListView/local.properties
+2018-04-10 18:45:28,565 INFO  ProjectFixService - Build info for "/tmp/rdisk/248/src/EnhancedListView-master/EnhancedListView/build.gradle": [buildToolsVersion=19.1,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-10 18:45:28,566 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/248/src/EnhancedListView-master/EnhancedListView/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-10 18:45:28,566 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/248/src/EnhancedListView-master/EnhancedListViewDemo/local.properties
+2018-04-10 18:45:28,567 INFO  ProjectFixService - Build info for "/tmp/rdisk/248/src/EnhancedListView-master/EnhancedListViewDemo/build.gradle": [buildToolsVersion=19.1,compileSdkVersion=18,minSdkVersion=8,targetSdkVersion=19]
+2018-04-10 18:45:28,567 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/248/src/EnhancedListView-master/EnhancedListViewDemo/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=18,minSdkVersion=8,targetSdkVersion=19]
+2018-04-10 18:45:28,567 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/248/src/EnhancedListView-master/local.properties
+2018-04-10 18:45:28,567 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.11-all.zip
+2018-04-10 18:45:28,568 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.11-bin.zip)
+2018-04-10 18:45:28,568 INFO  ProjectFixService - Build info for "/tmp/rdisk/248/src/EnhancedListView-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=18,minSdkVersion=8,targetSdkVersion=19]
+2018-04-10 18:45:28,569 INFO  ProjectFixService - Project was maybe fixed
+2018-04-10 18:45:28,569 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 18:45:28,572 INFO  SysUtils - Execute command: [/tmp/rdisk/248/src/EnhancedListView-master/gradlew, -b, /tmp/rdisk/248/src/EnhancedListView-master/EnhancedListView/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 18:45:35,302 INFO  ProjectTaskService - Detected possible tasks: 47
+2018-04-10 18:45:35,303 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-10 18:45:35,303 INFO  SysUtils - Execute command: [/tmp/rdisk/248/src/EnhancedListView-master/gradlew, -b, /tmp/rdisk/248/src/EnhancedListView-master/EnhancedListView/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-10 18:45:43,113 INFO  SysUtils - Configuration on demand is an incubating feature.
+:EnhancedListView:compileLint
+:EnhancedListView:copyDebugLint UP-TO-DATE
+:EnhancedListView:mergeDebugProguardFiles
+:EnhancedListView:preBuild
+:EnhancedListView:preDebugBuild
+:EnhancedListView:checkDebugManifest
+:EnhancedListView:prepareDebugDependencies
+:EnhancedListView:compileDebugAidl
+:EnhancedListView:compileDebugRenderscript
+:EnhancedListView:generateDebugBuildConfig
+:EnhancedListView:generateDebugAssets UP-TO-DATE
+:EnhancedListView:mergeDebugAssets
+:EnhancedListView:generateDebugResValues
+:EnhancedListView:generateDebugResources
+:EnhancedListView:packageDebugResources
+:EnhancedListView:processDebugManifest
+:EnhancedListView:processDebugResources
+:EnhancedListView:generateDebugSources
+:EnhancedListView:compileDebugJava
+:EnhancedListView:processDebugJavaRes UP-TO-DATE
+:EnhancedListView:packageDebugJar
+:EnhancedListView:compileDebugNdk
+:EnhancedListView:packageDebugJniLibs UP-TO-DATE
+:EnhancedListView:packageDebugLocalJar UP-TO-DATE
+:EnhancedListView:packageDebugRenderscript UP-TO-DATE
+:EnhancedListView:bundleDebug
+:EnhancedListView:assembleDebug
+:EnhancedListView:copyReleaseLint UP-TO-DATE
+:EnhancedListView:mergeReleaseProguardFiles
+:EnhancedListView:preReleaseBuild
+:EnhancedListView:checkReleaseManifest
+:EnhancedListView:prepareReleaseDependencies
+:EnhancedListView:compileReleaseAidl
+:EnhancedListView:compileReleaseRenderscript
+:EnhancedListView:generateReleaseBuildConfig
+:EnhancedListView:generateReleaseAssets UP-TO-DATE
+:EnhancedListView:mergeReleaseAssets
+:EnhancedListView:generateReleaseResValues
+:EnhancedListView:generateReleaseResources
+:EnhancedListView:packageReleaseResources
+:EnhancedListView:processReleaseManifest
+:EnhancedListView:processReleaseResources
+:EnhancedListView:generateReleaseSources
+:EnhancedListView:compileReleaseJava
+:EnhancedListView:processReleaseJavaRes UP-TO-DATE
+:EnhancedListView:packageReleaseJar
+:EnhancedListView:compileReleaseNdk
+:EnhancedListView:packageReleaseJniLibs UP-TO-DATE
+:EnhancedListView:packageReleaseLocalJar UP-TO-DATE
+:EnhancedListView:packageReleaseRenderscript UP-TO-DATE
+:EnhancedListView:bundleRelease
+:EnhancedListView:assembleRelease
+:EnhancedListView:assemble
+:EnhancedListView:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.34 secs
+
+2018-04-10 18:45:43,121 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 18:45:43,122 INFO  SysUtils - Execute command: [/tmp/rdisk/248/src/EnhancedListView-master/gradlew, -b, /tmp/rdisk/248/src/EnhancedListView-master/EnhancedListViewDemo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 18:45:50,085 INFO  ProjectTaskService - Detected possible tasks: 49
+2018-04-10 18:45:50,085 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-10 18:45:50,085 INFO  SysUtils - Execute command: [/tmp/rdisk/248/src/EnhancedListView-master/gradlew, -b, /tmp/rdisk/248/src/EnhancedListView-master/EnhancedListViewDemo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-10 18:46:11,500 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-10 18:46:11,501 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:EnhancedListViewDemo:preBuild
+:EnhancedListViewDemo:compileDebugNdk
+:EnhancedListView:compileLint
+:EnhancedListView:copyReleaseLint UP-TO-DATE
+:EnhancedListView:mergeReleaseProguardFiles UP-TO-DATE
+:EnhancedListView:preBuild
+:EnhancedListView:preReleaseBuild
+:EnhancedListView:checkReleaseManifest
+:EnhancedListView:prepareReleaseDependencies
+:EnhancedListView:compileReleaseAidl UP-TO-DATE
+:EnhancedListView:compileReleaseRenderscript UP-TO-DATE
+:EnhancedListView:generateReleaseBuildConfig UP-TO-DATE
+:EnhancedListView:generateReleaseAssets UP-TO-DATE
+:EnhancedListView:mergeReleaseAssets UP-TO-DATE
+:EnhancedListView:generateReleaseResValues UP-TO-DATE
+:EnhancedListView:generateReleaseResources UP-TO-DATE
+:EnhancedListView:packageReleaseResources UP-TO-DATE
+:EnhancedListView:processReleaseManifest UP-TO-DATE
+:EnhancedListView:processReleaseResources UP-TO-DATE
+:EnhancedListView:generateReleaseSources UP-TO-DATE
+:EnhancedListView:compileReleaseJava UP-TO-DATE
+:EnhancedListView:processReleaseJavaRes UP-TO-DATE
+:EnhancedListView:packageReleaseJar UP-TO-DATE
+:EnhancedListView:compileReleaseNdk UP-TO-DATE
+:EnhancedListView:packageReleaseJniLibs UP-TO-DATE
+:EnhancedListView:packageReleaseLocalJar UP-TO-DATE
+:EnhancedListView:packageReleaseRenderscript UP-TO-DATE
+:EnhancedListView:bundleRelease UP-TO-DATE
+:EnhancedListViewDemo:preDebugBuild
+:EnhancedListViewDemo:checkDebugManifest
+:EnhancedListViewDemo:preReleaseBuild
+:EnhancedListViewDemo:prepareComAndroidSupportAppcompatV71901Library
+:EnhancedListViewDemo:prepareDeTimroesAndroidEnhancedListView034Library
+:EnhancedListViewDemo:prepareDebugDependencies
+:EnhancedListViewDemo:compileDebugAidl
+:EnhancedListViewDemo:compileDebugRenderscript
+:EnhancedListViewDemo:generateDebugBuildConfig
+:EnhancedListViewDemo:generateDebugAssets UP-TO-DATE
+:EnhancedListViewDemo:mergeDebugAssets
+:EnhancedListViewDemo:generateDebugResValues
+:EnhancedListViewDemo:generateDebugResources
+:EnhancedListViewDemo:mergeDebugResources
+:EnhancedListViewDemo:processDebugManifest
+:EnhancedListViewDemo:processDebugResources
+:EnhancedListViewDemo:generateDebugSources
+:EnhancedListViewDemo:compileDebugJava
+:EnhancedListViewDemo:preDexDebug
+:EnhancedListViewDemo:dexDebug
+:EnhancedListViewDemo:processDebugJavaRes UP-TO-DATE
+:EnhancedListViewDemo:validateDebugSigning
+:EnhancedListViewDemo:packageDebug
+:EnhancedListViewDemo:zipalignDebug
+:EnhancedListViewDemo:assembleDebug
+:EnhancedListViewDemo:checkReleaseManifest
+:EnhancedListViewDemo:prepareReleaseDependencies
+:EnhancedListViewDemo:compileReleaseAidl
+:EnhancedListViewDemo:compileReleaseRenderscript
+:EnhancedListViewDemo:generateReleaseBuildConfig
+:EnhancedListViewDemo:generateReleaseAssets UP-TO-DATE
+:EnhancedListViewDemo:mergeReleaseAssets
+:EnhancedListViewDemo:generateReleaseResValues
+:EnhancedListViewDemo:generateReleaseResources
+:EnhancedListViewDemo:mergeReleaseResources
+:EnhancedListViewDemo:processReleaseManifest
+:EnhancedListViewDemo:processReleaseResources
+:EnhancedListViewDemo:generateReleaseSources
+:EnhancedListViewDemo:compileReleaseJava
+:EnhancedListViewDemo:lintVitalRelease
+/tmp/rdisk/248/src/EnhancedListView-master/EnhancedListViewDemo/src/main/java/de/timroes/android/listviewdemo/MainActivity.java:397: Error: This fragment class should be public (de.timroes.android.listviewdemo.MainActivity.DialogPicker) [ValidFragment]
+    private class DialogPicker extends DialogFragment {
+                  ~~~~~~~~~~~~
+
+   Explanation for issues of type "ValidFragment":
+   From the Fragment documentation:
+   Every fragment must have an empty constructor, so it can be instantiated
+   when restoring its activity's state. It is strongly recommended that
+   subclasses do not have other constructors with parameters, since these
+   constructors will not be called when the fragment is re-instantiated;
+   instead, arguments can be supplied by the caller with setArguments(Bundle)
+   and later retrieved by the Fragment with getArguments().
+
+   http://developer.android.com/reference/android/app/Fragment.html#Fragment()
+
+1 errors, 0 warnings
+Wrote HTML report to file:/tmp/rdisk/248/src/EnhancedListView-master/EnhancedListViewDemo/build/outputs/lint-results-release-fatal.html
+Wrote XML report to /tmp/rdisk/248/src/EnhancedListView-master/EnhancedListViewDemo/build/outputs/lint-results-release-fatal.xml
+:EnhancedListViewDemo:lintVitalRelease FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':EnhancedListViewDemo:lintVitalRelease'.
+> Lint found fatal errors while assembling a release target.
+  
+  To proceed, either fix the issues identified by lint, or modify your build script as follows:
+  ...
+  android {
+      lintOptions {
+          checkReleaseBuilds false
+          // Or, if you prefer, you can continue to check for errors in release builds,
+          // but continue the build even when errors are found:
+          abortOnError false
+      }
+  }
+  ...
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':EnhancedListViewDemo:lintVitalRelease'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:289)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:86)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:67)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:54)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:166)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: org.gradle.api.GradleException: Lint found fatal errors while assembling a release target.
+
+To proceed, either fix the issues identified by lint, or modify your build script as follows:
+...
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+...
+	at com.android.build.gradle.tasks.Lint.abort(Lint.groovy:154)
+	at com.android.build.gradle.tasks.Lint.runLint(Lint.groovy:193)
+	at com.android.build.gradle.tasks.Lint.this$4$runLint(Lint.groovy)
+	at com.android.build.gradle.tasks.Lint$this$4$runLint.callCurrent(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.lintSingleVariant(Lint.groovy:161)
+	at com.android.build.gradle.tasks.Lint$lintSingleVariant.callCurrent(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:65)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:212)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:201)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:533)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:516)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 46 more
+
+
+BUILD FAILED
+
+Total time: 20.778 secs
+
+2018-04-10 18:46:11,535 INFO  FullProcessService - Found APK file: /tmp/rdisk/248/src/EnhancedListView-master/EnhancedListViewDemo/build/outputs/apk/EnhancedListViewDemo-debug.apk

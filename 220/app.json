@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "uk.co.senab.photoview.sample",
+    "label" : "PhotoView Sample",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 100,
+    "installLocation" : null,
+    "minSdkVersion" : "9",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1918,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"100\" android:versionName=\"1.0\" package=\"uk.co.senab.photoview.sample\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"9\" android:targetSdkVersion=\"25\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f08009c\" android:label=\"PhotoView Sample\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\" android:fullBackupContent=\"true\">\n\t\t<activity android:name=\"uk.co.senab.photoview.sample.LauncherActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"uk.co.senab.photoview.sample.SimpleSampleActivity\" />\n\t\t<activity android:name=\"uk.co.senab.photoview.sample.ViewPagerActivity\" />\n\t\t<activity android:name=\"uk.co.senab.photoview.sample.RotationSampleActivity\" />\n\t\t<activity android:name=\"uk.co.senab.photoview.sample.PicassoSampleActivity\" />\n\t\t<activity android:name=\"uk.co.senab.photoview.sample.ActivityTransitionActivity\" />\n\t\t<activity android:name=\"uk.co.senab.photoview.sample.ActivityTransitionToActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1757772,
+  "crc32" : 216103267,
+  "sha256" : "73e09e826ad35270d19c9a8b431ff29ec374c59729dc37f258738b2414c3bdb5",
+  "buildTime" : 1496784446000
+}

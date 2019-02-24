@@ -1,0 +1,597 @@
+2018-05-15 05:27:34,623 INFO  DownloadService - Downloading "https://github.com/square/picasso/archive/master.zip", attempt 3
+2018-05-15 05:28:35,298 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-15 05:28:36,129 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-15 05:28:36,129 INFO  DownloadService - Downloading "https://github.com/square/picasso/archive/master.zip", attempt 3
+2018-05-15 05:29:37,513 DEBUG FullProcessService - Repository https://github.com/square/picasso available: true
+2018-05-15 05:29:37,513 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-15 05:29:37,513 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/square/picasso, /tmp/rdisk/209/src]
+2018-05-15 05:29:40,607 INFO  SysUtils - 
+2018-05-15 05:29:40,613 INFO  GitService - Deleted "/tmp/rdisk/209/src/.git": true
+2018-05-15 05:29:40,619 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-05-15 05:29:40,619 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/209/src]
+2018-05-15 05:29:40,626 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/209/src/.git/
+
+2018-05-15 05:29:40,630 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/209/src/gradlew
+2018-05-15 05:29:40,635 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/209/src/picasso-pollexor/build.gradle /tmp/rdisk/209/src/picasso-provider/build.gradle /tmp/rdisk/209/src/picasso-sample/build.gradle /tmp/rdisk/209/src/picasso/build.gradle /tmp/rdisk/209/src/build.gradle
+2018-05-15 05:29:40,640 INFO  ProjectBuildService - All script(s): /tmp/rdisk/209/src/settings.gradle /tmp/rdisk/209/src/picasso/build.gradle /tmp/rdisk/209/src/picasso-sample/build.gradle /tmp/rdisk/209/src/picasso-provider/build.gradle /tmp/rdisk/209/src/picasso-pollexor/build.gradle /tmp/rdisk/209/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/209/src/build.gradle
+2018-05-15 05:29:40,640 INFO  ProjectBuildService - Remote scripts: none
+2018-05-15 05:29:40,640 INFO  ProjectFixService - Fixing project...
+2018-05-15 05:29:40,655 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/209/src/picasso-pollexor/local.properties
+2018-05-15 05:29:40,660 INFO  ProjectFixService - Build info for "/tmp/rdisk/209/src/picasso-pollexor/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-15 05:29:40,660 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/209/src/picasso-pollexor/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:29:40,660 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/209/src/picasso-provider/local.properties
+2018-05-15 05:29:40,664 INFO  ProjectFixService - Build info for "/tmp/rdisk/209/src/picasso-provider/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-15 05:29:40,665 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/209/src/picasso-provider/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:29:40,665 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/209/src/picasso-sample/local.properties
+2018-05-15 05:29:40,669 INFO  ProjectFixService - Build info for "/tmp/rdisk/209/src/picasso-sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-15 05:29:40,669 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/209/src/picasso-sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:29:40,670 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/209/src/picasso/local.properties
+2018-05-15 05:29:40,674 INFO  ProjectFixService - Build info for "/tmp/rdisk/209/src/picasso/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-15 05:29:40,674 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/209/src/picasso/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:29:40,675 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/209/src/local.properties
+2018-05-15 05:29:40,675 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.6-all.zip
+2018-05-15 05:29:40,675 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.6-bin.zip)
+2018-05-15 05:29:40,680 INFO  ProjectFixService - Build info for "/tmp/rdisk/209/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-15 05:29:40,680 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/209/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:29:40,680 INFO  ProjectFixService - Project was maybe fixed
+2018-05-15 05:29:40,680 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 05:29:40,680 INFO  SysUtils - Execute command: [/tmp/rdisk/209/src/gradlew, -b, /tmp/rdisk/209/src/picasso-pollexor/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 05:31:20,315 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-05-15 05:31:20,316 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-15 05:31:20,316 INFO  SysUtils - Execute command: [/tmp/rdisk/209/src/gradlew, -b, /tmp/rdisk/209/src/picasso-pollexor/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-15 05:31:46,730 INFO  SysUtils - Configuration on demand is an incubating feature.
+:picasso-pollexor:androidJavadocs/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:5: error: cannot find symbol
+import com.squareup.picasso3.Request;
+                            ^
+  symbol:   class Request
+  location: package com.squareup.picasso3
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:6: error: package com.squareup.pollexor does not exist
+import com.squareup.pollexor.Thumbor;
+                            ^
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:7: error: package com.squareup.pollexor does not exist
+import com.squareup.pollexor.ThumborUrlBuilder;
+                            ^
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:8: error: package com.squareup.pollexor.ThumborUrlBuilder does not exist
+import com.squareup.pollexor.ThumborUrlBuilder.ImageFormat;
+                                              ^
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:10: error: cannot find symbol
+import static com.squareup.picasso3.Picasso.RequestTransformer;
+                                   ^
+  symbol:   class Picasso
+  location: package com.squareup.picasso3
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:10: error: static import only from classes and interfaces
+import static com.squareup.picasso3.Picasso.RequestTransformer;
+^
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:11: error: package com.squareup.pollexor does not exist
+import static com.squareup.pollexor.ThumborUrlBuilder.format;
+                                   ^
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:11: error: static import only from classes and interfaces
+import static com.squareup.pollexor.ThumborUrlBuilder.format;
+^
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:18: error: cannot find symbol
+public class PollexorRequestTransformer implements RequestTransformer {
+                                                   ^
+  symbol: class RequestTransformer
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:19: error: cannot find symbol
+  private final Thumbor thumbor;
+                ^
+  symbol:   class Thumbor
+  location: class PollexorRequestTransformer
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:23: error: cannot find symbol
+  public PollexorRequestTransformer(Thumbor thumbor) {
+                                    ^
+  symbol:   class Thumbor
+  location: class PollexorRequestTransformer
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:31: error: cannot find symbol
+  public PollexorRequestTransformer(Thumbor thumbor, boolean alwaysTransform) {
+                                    ^
+  symbol:   class Thumbor
+  location: class PollexorRequestTransformer
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:36: error: cannot find symbol
+  @Override public Request transformRequest(Request request) {
+                                            ^
+  symbol:   class Request
+  location: class PollexorRequestTransformer
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:36: error: cannot find symbol
+  @Override public Request transformRequest(Request request) {
+                   ^
+  symbol:   class Request
+  location: class PollexorRequestTransformer
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:18: warning - Tag @link: reference not found: RequestTransformer
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:18: warning - Tag @link: reference not found: Thumbor
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:23: warning - Tag @link: reference not found: Thumbor
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:31: warning - Tag @link: reference not found: Thumbor
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:23: warning - Tag @link: reference not found: Thumbor
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:31: warning - Tag @link: reference not found: Thumbor
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:18: warning - Tag @link: reference not found: RequestTransformer
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:18: warning - Tag @link: reference not found: Thumbor
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:18: warning - Tag @link: reference not found: RequestTransformer
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:18: warning - Tag @link: reference not found: Thumbor
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:23: warning - Tag @link: reference not found: Thumbor
+/tmp/rdisk/209/src/picasso-pollexor/src/main/java/com/squareup/picasso3/pollexor/PollexorRequestTransformer.java:31: warning - Tag @link: reference not found: Thumbor
+
+26 warnings
+:picasso-pollexor:androidJavadocsJar
+:picasso-pollexor:androidSourcesJar
+:picasso:preBuild UP-TO-DATE
+:picasso:preDebugBuild UP-TO-DATE
+:picasso:compileDebugAidl
+:picasso-pollexor:preBuild UP-TO-DATE
+:picasso-pollexor:preDebugBuild UP-TO-DATE
+:picasso-pollexor:compileDebugAidl
+:picasso:compileDebugRenderscript
+:picasso:checkDebugManifest
+:picasso:generateDebugBuildConfig
+:picasso:generateDebugResValues
+:picasso:generateDebugResources
+:picasso:packageDebugResources
+:picasso:platformAttrExtractor
+:picasso:processDebugManifest
+:picasso:prepareLintJar
+:picasso:javaPreCompileDebug
+:picasso:processDebugJavaRes NO-SOURCE
+:picasso:packageDebugRenderscript NO-SOURCE
+:picasso-pollexor:compileDebugRenderscript
+:picasso-pollexor:checkDebugManifest
+:picasso-pollexor:generateDebugBuildConfig
+:picasso-pollexor:generateDebugResValues
+:picasso-pollexor:generateDebugResources
+:picasso-pollexor:packageDebugResources
+:picasso-pollexor:platformAttrExtractor
+:picasso-pollexor:processDebugManifest
+:picasso-pollexor:prepareLintJar
+:picasso-pollexor:mergeDebugConsumerProguardFiles
+:picasso-pollexor:mergeDebugShaders
+:picasso-pollexor:compileDebugShaders
+:picasso-pollexor:generateDebugAssets
+:picasso-pollexor:packageDebugAssets
+:picasso-pollexor:packageDebugRenderscript NO-SOURCE
+:picasso-pollexor:processDebugJavaRes NO-SOURCE
+:picasso-pollexor:compileDebugNdk NO-SOURCE
+:picasso-pollexor:mergeDebugJniLibFolders
+:picasso-pollexor:transformNativeLibsWithMergeJniLibsForDebug
+:picasso-pollexor:transformNativeLibsWithStripDebugSymbolForDebug
+:picasso-pollexor:transformNativeLibsWithSyncJniLibsForDebug
+:picasso:preReleaseBuild UP-TO-DATE
+:picasso:compileReleaseAidl
+:picasso-pollexor:preReleaseBuild UP-TO-DATE
+:picasso-pollexor:compileReleaseAidl
+:picasso:compileReleaseRenderscript
+:picasso:checkReleaseManifest
+:picasso:generateReleaseBuildConfig
+:picasso:generateReleaseResValues
+:picasso:generateReleaseResources
+:picasso:packageReleaseResources
+:picasso:processReleaseManifest
+:picasso:javaPreCompileRelease
+:picasso:processReleaseJavaRes NO-SOURCE
+:picasso:packageReleaseRenderscript NO-SOURCE
+:picasso-pollexor:compileReleaseRenderscript
+:picasso-pollexor:checkReleaseManifest
+:picasso-pollexor:generateReleaseBuildConfig
+:picasso-pollexor:generateReleaseResValues
+:picasso-pollexor:generateReleaseResources
+:picasso-pollexor:packageReleaseResources
+:picasso-pollexor:processReleaseManifest
+:picasso-pollexor:mergeReleaseConsumerProguardFiles
+:picasso-pollexor:mergeReleaseShaders
+:picasso-pollexor:compileReleaseShaders
+:picasso-pollexor:generateReleaseAssets
+:picasso-pollexor:packageReleaseAssets
+:picasso-pollexor:packageReleaseRenderscript NO-SOURCE
+:picasso-pollexor:processReleaseJavaRes NO-SOURCE
+:picasso-pollexor:compileReleaseNdk NO-SOURCE
+:picasso-pollexor:mergeReleaseJniLibFolders
+:picasso-pollexor:transformNativeLibsWithMergeJniLibsForRelease
+:picasso-pollexor:transformNativeLibsWithStripDebugSymbolForRelease
+:picasso-pollexor:transformNativeLibsWithSyncJniLibsForRelease
+:picasso-pollexor:mergeReleaseResources
+:picasso-pollexor:verifyReleaseResources
+:picasso:generateDebugRFile
+:picasso:generateDebugSources
+:picasso:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:picasso:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:picasso-pollexor:generateDebugRFile
+:picasso-pollexor:generateDebugSources
+:picasso-pollexor:javaPreCompileDebug
+:picasso-pollexor:compileDebugJavaWithJavac
+:picasso-pollexor:extractDebugAnnotations
+:picasso-pollexor:transformResourcesWithMergeJavaResForDebug
+:picasso-pollexor:transformClassesAndResourcesWithSyncLibJarsForDebug
+:picasso-pollexor:bundleDebug
+:picasso-pollexor:compileDebugSources
+:picasso-pollexor:assembleDebug
+:picasso:generateReleaseRFile
+:picasso:generateReleaseSources
+:picasso:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:picasso:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:picasso-pollexor:generateReleaseRFile
+:picasso-pollexor:generateReleaseSources
+:picasso-pollexor:javaPreCompileRelease
+:picasso-pollexor:compileReleaseJavaWithJavac
+:picasso-pollexor:extractReleaseAnnotations
+:picasso-pollexor:transformResourcesWithMergeJavaResForRelease
+:picasso-pollexor:transformClassesAndResourcesWithSyncLibJarsForRelease
+:picasso-pollexor:bundleRelease
+:picasso-pollexor:compileReleaseSources
+:picasso-pollexor:assembleRelease
+:picasso-pollexor:signArchives SKIPPED
+:picasso-pollexor:assemble
+:picasso-pollexor:build
+
+BUILD SUCCESSFUL in 26s
+75 actionable tasks: 75 executed
+
+2018-05-15 05:31:46,762 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 05:31:46,762 INFO  SysUtils - Execute command: [/tmp/rdisk/209/src/gradlew, -b, /tmp/rdisk/209/src/picasso-provider/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 05:31:54,629 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-05-15 05:31:54,629 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-15 05:31:54,629 INFO  SysUtils - Execute command: [/tmp/rdisk/209/src/gradlew, -b, /tmp/rdisk/209/src/picasso-provider/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-15 05:32:08,545 INFO  SysUtils - Configuration on demand is an incubating feature.
+:picasso-provider:androidJavadocs/tmp/rdisk/209/src/picasso-provider/src/main/java/com/squareup/picasso3/provider/PicassoProvider.java:4: error: cannot find symbol
+import com.squareup.picasso3.Picasso;
+                            ^
+  symbol:   class Picasso
+  location: package com.squareup.picasso3
+/tmp/rdisk/209/src/picasso-provider/src/main/java/com/squareup/picasso3/provider/PicassoProvider.java:25: error: cannot find symbol
+  private static volatile Picasso instance;
+                          ^
+  symbol:   class Picasso
+  location: class PicassoProvider
+/tmp/rdisk/209/src/picasso-provider/src/main/java/com/squareup/picasso3/provider/PicassoProvider.java:27: error: cannot find symbol
+  public static Picasso get() {
+                ^
+  symbol:   class Picasso
+  location: class PicassoProvider
+/tmp/rdisk/209/src/picasso-provider/src/main/java/com/squareup/picasso3/provider/PicassoContentProvider.java:9: error: package android.support.annotation does not exist
+import android.support.annotation.RestrictTo;
+                                 ^
+/tmp/rdisk/209/src/picasso-provider/src/main/java/com/squareup/picasso3/provider/PicassoContentProvider.java:11: error: package android.support.annotation.RestrictTo does not exist
+import static android.support.annotation.RestrictTo.Scope.LIBRARY;
+                                                   ^
+/tmp/rdisk/209/src/picasso-provider/src/main/java/com/squareup/picasso3/provider/PicassoContentProvider.java:11: error: static import only from classes and interfaces
+import static android.support.annotation.RestrictTo.Scope.LIBRARY;
+^
+/tmp/rdisk/209/src/picasso-provider/src/main/java/com/squareup/picasso3/provider/PicassoContentProvider.java:13: error: cannot find symbol
+@RestrictTo(LIBRARY)
+ ^
+  symbol: class RestrictTo
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+/tmp/rdisk/209/src/picasso-provider/src/main/java/com/squareup/picasso3/provider/PicassoProvider.java:23: warning - Tag @link: reference not found: Picasso.Builder
+/tmp/rdisk/209/src/picasso-provider/src/main/java/com/squareup/picasso3/provider/PicassoProvider.java:23: warning - Tag @link: reference not found: Picasso
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+javadoc: warning - Class RestrictTo not found.
+
+42 warnings
+:picasso-provider:androidJavadocsJar
+:picasso-provider:androidSourcesJar
+:picasso:preBuild UP-TO-DATE
+:picasso:preDebugBuild UP-TO-DATE
+:picasso:compileDebugAidl UP-TO-DATE
+:picasso-provider:preBuild UP-TO-DATE
+:picasso-provider:preDebugBuild UP-TO-DATE
+:picasso-provider:compileDebugAidl
+:picasso:compileDebugRenderscript UP-TO-DATE
+:picasso:checkDebugManifest UP-TO-DATE
+:picasso:generateDebugBuildConfig UP-TO-DATE
+:picasso:generateDebugResValues UP-TO-DATE
+:picasso:generateDebugResources UP-TO-DATE
+:picasso:packageDebugResources UP-TO-DATE
+:picasso:platformAttrExtractor UP-TO-DATE
+:picasso:processDebugManifest UP-TO-DATE
+:picasso:generateDebugRFile UP-TO-DATE
+:picasso:prepareLintJar UP-TO-DATE
+:picasso:generateDebugSources UP-TO-DATE
+:picasso:javaPreCompileDebug UP-TO-DATE
+:picasso:compileDebugJavaWithJavac UP-TO-DATE
+:picasso:processDebugJavaRes NO-SOURCE
+:picasso:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:picasso:packageDebugRenderscript NO-SOURCE
+:picasso-provider:compileDebugRenderscript
+:picasso-provider:checkDebugManifest
+:picasso-provider:generateDebugBuildConfig
+:picasso-provider:generateDebugResValues
+:picasso-provider:generateDebugResources
+:picasso-provider:packageDebugResources
+:picasso-provider:platformAttrExtractor
+:picasso-provider:processDebugManifest
+:picasso-provider:prepareLintJar
+:picasso-provider:javaPreCompileDebug
+:picasso-provider:mergeDebugConsumerProguardFiles
+:picasso-provider:mergeDebugShaders
+:picasso-provider:compileDebugShaders
+:picasso-provider:generateDebugAssets
+:picasso-provider:packageDebugAssets
+:picasso-provider:packageDebugRenderscript NO-SOURCE
+:picasso-provider:processDebugJavaRes NO-SOURCE
+:picasso-provider:compileDebugNdk NO-SOURCE
+:picasso-provider:mergeDebugJniLibFolders
+:picasso-provider:transformNativeLibsWithMergeJniLibsForDebug
+:picasso-provider:transformNativeLibsWithStripDebugSymbolForDebug
+:picasso-provider:transformNativeLibsWithSyncJniLibsForDebug
+:picasso:preReleaseBuild UP-TO-DATE
+:picasso:compileReleaseAidl UP-TO-DATE
+:picasso-provider:preReleaseBuild UP-TO-DATE
+:picasso-provider:compileReleaseAidl
+:picasso:compileReleaseRenderscript UP-TO-DATE
+:picasso:checkReleaseManifest UP-TO-DATE
+:picasso:generateReleaseBuildConfig UP-TO-DATE
+:picasso:generateReleaseResValues UP-TO-DATE
+:picasso:generateReleaseResources UP-TO-DATE
+:picasso:packageReleaseResources UP-TO-DATE
+:picasso:processReleaseManifest UP-TO-DATE
+:picasso:generateReleaseRFile UP-TO-DATE
+:picasso:generateReleaseSources UP-TO-DATE
+:picasso:javaPreCompileRelease UP-TO-DATE
+:picasso:compileReleaseJavaWithJavac UP-TO-DATE
+:picasso:processReleaseJavaRes NO-SOURCE
+:picasso:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:picasso:packageReleaseRenderscript NO-SOURCE
+:picasso-provider:compileReleaseRenderscript
+:picasso-provider:checkReleaseManifest
+:picasso-provider:generateReleaseBuildConfig
+:picasso-provider:generateReleaseResValues
+:picasso-provider:generateReleaseResources
+:picasso-provider:packageReleaseResources
+:picasso-provider:processReleaseManifest
+:picasso-provider:javaPreCompileRelease
+:picasso-provider:mergeReleaseConsumerProguardFiles
+:picasso-provider:mergeReleaseShaders
+:picasso-provider:compileReleaseShaders
+:picasso-provider:generateReleaseAssets
+:picasso-provider:packageReleaseAssets
+:picasso-provider:packageReleaseRenderscript NO-SOURCE
+:picasso-provider:processReleaseJavaRes NO-SOURCE
+:picasso-provider:compileReleaseNdk NO-SOURCE
+:picasso-provider:mergeReleaseJniLibFolders
+:picasso-provider:transformNativeLibsWithMergeJniLibsForRelease
+:picasso-provider:transformNativeLibsWithStripDebugSymbolForRelease
+:picasso-provider:transformNativeLibsWithSyncJniLibsForRelease
+:picasso-provider:mergeReleaseResources
+:picasso-provider:verifyReleaseResources
+:picasso-provider:generateDebugRFile
+:picasso-provider:generateDebugSources
+:picasso-provider:compileDebugJavaWithJavac
+:picasso-provider:extractDebugAnnotations
+:picasso-provider:transformResourcesWithMergeJavaResForDebug
+:picasso-provider:transformClassesAndResourcesWithSyncLibJarsForDebug
+:picasso-provider:bundleDebug
+:picasso-provider:compileDebugSources
+:picasso-provider:assembleDebug
+:picasso-provider:generateReleaseRFile
+:picasso-provider:generateReleaseSources
+:picasso-provider:compileReleaseJavaWithJavac
+:picasso-provider:extractReleaseAnnotations
+:picasso-provider:transformResourcesWithMergeJavaResForRelease
+:picasso-provider:transformClassesAndResourcesWithSyncLibJarsForRelease
+:picasso-provider:bundleRelease
+:picasso-provider:compileReleaseSources
+:picasso-provider:assembleRelease
+:picasso-provider:signArchives SKIPPED
+:picasso-provider:assemble
+:picasso-provider:build
+
+BUILD SUCCESSFUL in 13s
+75 actionable tasks: 51 executed, 24 up-to-date
+
+2018-05-15 05:32:08,597 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 05:32:08,598 INFO  SysUtils - Execute command: [/tmp/rdisk/209/src/gradlew, -b, /tmp/rdisk/209/src/picasso-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 05:32:15,889 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-15 05:32:15,890 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-15 05:32:15,890 INFO  SysUtils - Execute command: [/tmp/rdisk/209/src/gradlew, -b, /tmp/rdisk/209/src/picasso-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-15 05:32:53,655 INFO  SysUtils - Configuration on demand is an incubating feature.
+:picasso:preBuild UP-TO-DATE
+:picasso:preDebugBuild UP-TO-DATE
+:picasso:compileDebugAidl UP-TO-DATE
+:picasso:compileDebugRenderscript UP-TO-DATE
+:picasso:checkDebugManifest UP-TO-DATE
+:picasso:generateDebugBuildConfig UP-TO-DATE
+:picasso:generateDebugResValues UP-TO-DATE
+:picasso:generateDebugResources UP-TO-DATE
+:picasso:packageDebugResources UP-TO-DATE
+:picasso:platformAttrExtractor UP-TO-DATE
+:picasso:processDebugManifest UP-TO-DATE
+:picasso:generateDebugRFile UP-TO-DATE
+:picasso:prepareLintJar UP-TO-DATE
+:picasso:generateDebugSources UP-TO-DATE
+:picasso:javaPreCompileDebug UP-TO-DATE
+:picasso:compileDebugJavaWithJavac UP-TO-DATE
+:picasso:processDebugJavaRes NO-SOURCE
+:picasso:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:picasso-provider:preBuild UP-TO-DATE
+:picasso-provider:preDebugBuild UP-TO-DATE
+:picasso-provider:compileDebugAidl UP-TO-DATE
+:picasso:packageDebugRenderscript NO-SOURCE
+:picasso-provider:compileDebugRenderscript UP-TO-DATE
+:picasso-provider:checkDebugManifest UP-TO-DATE
+:picasso-provider:generateDebugBuildConfig UP-TO-DATE
+:picasso-provider:generateDebugResValues UP-TO-DATE
+:picasso-provider:generateDebugResources UP-TO-DATE
+:picasso-provider:packageDebugResources UP-TO-DATE
+:picasso-provider:platformAttrExtractor UP-TO-DATE
+:picasso-provider:processDebugManifest UP-TO-DATE
+:picasso-provider:generateDebugRFile UP-TO-DATE
+:picasso-provider:prepareLintJar UP-TO-DATE
+:picasso-provider:generateDebugSources UP-TO-DATE
+:picasso-provider:javaPreCompileDebug UP-TO-DATE
+:picasso-provider:compileDebugJavaWithJavac UP-TO-DATE
+:picasso-provider:processDebugJavaRes NO-SOURCE
+:picasso-provider:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:picasso-sample:preBuild UP-TO-DATE
+:picasso-sample:preDebugBuild
+:picasso-sample:compileDebugAidl
+:picasso-provider:packageDebugRenderscript NO-SOURCE
+:picasso-sample:compileDebugRenderscript
+:picasso-sample:checkDebugManifest
+:picasso-sample:generateDebugBuildConfig
+:picasso-sample:prepareLintJar
+:picasso-sample:mainApkListPersistenceDebug
+:picasso-sample:generateDebugResValues
+:picasso-sample:generateDebugResources
+:picasso-sample:mergeDebugResources
+:picasso-sample:createDebugCompatibleScreenManifests
+:picasso-sample:processDebugManifest
+:picasso-sample:splitsDiscoveryTaskDebug
+:picasso-sample:processDebugResources
+:picasso-sample:generateDebugSources
+:picasso-sample:javaPreCompileDebug
+:picasso-sample:compileDebugJavaWithJavac
+:picasso-sample:compileDebugNdk NO-SOURCE
+:picasso-sample:compileDebugSources
+:picasso:mergeDebugShaders
+:picasso:compileDebugShaders
+:picasso:generateDebugAssets
+:picasso:packageDebugAssets
+:picasso-provider:mergeDebugShaders UP-TO-DATE
+:picasso-provider:compileDebugShaders UP-TO-DATE
+:picasso-provider:generateDebugAssets UP-TO-DATE
+:picasso-provider:packageDebugAssets UP-TO-DATE
+:picasso-sample:mergeDebugShaders
+:picasso-sample:compileDebugShaders
+:picasso-sample:generateDebugAssets
+:picasso-sample:mergeDebugAssets
+:picasso-sample:transformClassesWithDexBuilderForDebug
+:picasso-sample:transformDexArchiveWithExternalLibsDexMergerForDebug
+:picasso-sample:transformDexArchiveWithDexMergerForDebug
+:picasso:compileDebugNdk NO-SOURCE
+:picasso:mergeDebugJniLibFolders
+:picasso:transformNativeLibsWithMergeJniLibsForDebug
+:picasso:transformNativeLibsWithStripDebugSymbolForDebug
+:picasso:transformNativeLibsWithIntermediateJniLibsForDebug
+:picasso-provider:compileDebugNdk NO-SOURCE
+:picasso-provider:mergeDebugJniLibFolders UP-TO-DATE
+:picasso-provider:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:picasso-provider:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:picasso-provider:transformNativeLibsWithIntermediateJniLibsForDebug
+:picasso-sample:mergeDebugJniLibFolders
+:picasso-sample:transformNativeLibsWithMergeJniLibsForDebug
+:picasso-sample:transformNativeLibsWithStripDebugSymbolForDebug
+:picasso-sample:processDebugJavaRes NO-SOURCE
+:picasso-sample:transformResourcesWithMergeJavaResForDebug
+:picasso-sample:validateSigningDebug
+:picasso-sample:packageDebug
+:picasso-sample:assembleDebug
+:picasso:preReleaseBuild UP-TO-DATE
+:picasso:compileReleaseAidl UP-TO-DATE
+:picasso:compileReleaseRenderscript UP-TO-DATE
+:picasso:checkReleaseManifest UP-TO-DATE
+:picasso:generateReleaseBuildConfig UP-TO-DATE
+:picasso:generateReleaseResValues UP-TO-DATE
+:picasso:generateReleaseResources UP-TO-DATE
+:picasso:packageReleaseResources UP-TO-DATE
+:picasso:processReleaseManifest UP-TO-DATE
+:picasso:generateReleaseRFile UP-TO-DATE
+:picasso:generateReleaseSources UP-TO-DATE
+:picasso:javaPreCompileRelease UP-TO-DATE
+:picasso:compileReleaseJavaWithJavac UP-TO-DATE
+:picasso:processReleaseJavaRes NO-SOURCE
+:picasso:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease UP-TO-DATE
+:picasso-provider:preReleaseBuild UP-TO-DATE
+:picasso-provider:compileReleaseAidl UP-TO-DATE
+:picasso:packageReleaseRenderscript NO-SOURCE
+:picasso-provider:compileReleaseRenderscript UP-TO-DATE
+:picasso-provider:checkReleaseManifest UP-TO-DATE
+:picasso-provider:generateReleaseBuildConfig UP-TO-DATE
+:picasso-provider:generateReleaseResValues UP-TO-DATE
+:picasso-provider:generateReleaseResources UP-TO-DATE
+:picasso-provider:packageReleaseResources UP-TO-DATE
+:picasso-provider:processReleaseManifest UP-TO-DATE
+:picasso-provider:generateReleaseRFile UP-TO-DATE
+:picasso-provider:generateReleaseSources UP-TO-DATE
+:picasso-provider:javaPreCompileRelease UP-TO-DATE
+:picasso-provider:compileReleaseJavaWithJavac UP-TO-DATE
+:picasso-provider:processReleaseJavaRes NO-SOURCE
+:picasso-provider:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:picasso-sample:preReleaseBuild
+:picasso-sample:compileReleaseAidl
+:picasso-provider:packageReleaseRenderscript NO-SOURCE
+:picasso-sample:compileReleaseRenderscript
+:picasso-sample:checkReleaseManifest
+:picasso-sample:generateReleaseBuildConfig
+:picasso-sample:mainApkListPersistenceRelease
+:picasso-sample:generateReleaseResValues
+:picasso-sample:generateReleaseResources
+:picasso-sample:mergeReleaseResources
+:picasso-sample:createReleaseCompatibleScreenManifests
+:picasso-sample:processReleaseManifest
+:picasso-sample:splitsDiscoveryTaskRelease
+:picasso-sample:processReleaseResources
+:picasso-sample:generateReleaseSources
+:picasso-sample:javaPreCompileRelease
+:picasso-sample:compileReleaseJavaWithJavac
+:picasso-sample:compileReleaseNdk NO-SOURCE
+:picasso-sample:compileReleaseSources
+:picasso-sample:lintVitalRelease
+:picasso:mergeReleaseShaders
+:picasso:compileReleaseShaders
+:picasso:generateReleaseAssets
+:picasso:packageReleaseAssets
+:picasso-provider:mergeReleaseShaders UP-TO-DATE
+:picasso-provider:compileReleaseShaders UP-TO-DATE
+:picasso-provider:generateReleaseAssets UP-TO-DATE
+:picasso-provider:packageReleaseAssets UP-TO-DATE
+:picasso-sample:mergeReleaseShaders
+:picasso-sample:compileReleaseShaders
+:picasso-sample:generateReleaseAssets
+:picasso-sample:mergeReleaseAssets
+:picasso-sample:transformClassesWithDexBuilderForRelease
+:picasso-sample:transformDexArchiveWithExternalLibsDexMergerForRelease
+:picasso-sample:transformDexArchiveWithDexMergerForRelease
+:picasso:compileReleaseNdk NO-SOURCE
+:picasso:mergeReleaseJniLibFolders
+:picasso:transformNativeLibsWithMergeJniLibsForRelease
+:picasso:transformNativeLibsWithStripDebugSymbolForRelease
+:picasso:transformNativeLibsWithIntermediateJniLibsForRelease
+:picasso-provider:compileReleaseNdk NO-SOURCE
+:picasso-provider:mergeReleaseJniLibFolders UP-TO-DATE
+:picasso-provider:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:picasso-provider:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:picasso-provider:transformNativeLibsWithIntermediateJniLibsForRelease
+:picasso-sample:mergeReleaseJniLibFolders
+:picasso-sample:transformNativeLibsWithMergeJniLibsForRelease
+:picasso-sample:transformNativeLibsWithStripDebugSymbolForRelease
+:picasso-sample:processReleaseJavaRes NO-SOURCE
+:picasso-sample:transformResourcesWithMergeJavaResForRelease
+:picasso-sample:packageRelease
+:picasso-sample:assembleRelease
+:picasso-sample:assemble
+:picasso-sample:build
+
+BUILD SUCCESSFUL in 37s
+129 actionable tasks: 71 executed, 58 up-to-date
+
+2018-05-15 05:32:53,747 INFO  FullProcessService - Found APK file: /tmp/rdisk/209/src/picasso-sample/build/outputs/apk/release/picasso-sample-release-unsigned.apk

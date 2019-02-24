@@ -1,0 +1,14 @@
+2018-04-11 21:55:18,781 INFO  DownloadService - Downloading "https://github.com/ketai/ketai/archive/master.zip", attempt 3
+2018-04-11 21:56:19,405 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 21:56:20,414 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 21:56:20,414 INFO  DownloadService - Downloading "https://github.com/ketai/ketai/archive/master.zip", attempt 3
+2018-04-11 21:57:21,732 DEBUG FullProcessService - Repository https://github.com/ketai/ketai available: true
+2018-04-11 21:57:21,732 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 21:57:21,732 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/ketai/ketai, /tmp/rdisk/37/src]
+2018-04-11 21:57:25,933 INFO  SysUtils - 
+2018-04-11 21:57:25,976 INFO  GitService - Deleted "/tmp/rdisk/37/src/.git": true
+2018-04-11 21:57:26,062 INFO  FullProcessService - Size of directory with sources: 118 MB
+2018-04-11 21:57:26,062 ERROR FullProcessService - Source directory should be less than 50 MB
+2018-04-11 21:57:26,062 ERROR FullProcessService - Project will not be processed
+2018-04-11 21:57:26,062 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 21:57:26,116 ERROR FullProcessService - Could not find generated or existed APK file

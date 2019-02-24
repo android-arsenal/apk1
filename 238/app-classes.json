@@ -1,0 +1,4 @@
+{
+  "com.sababado.circularview" : [ "BaseCircularViewAdapter", "BuildConfig", "CircularView", "CircularView$1", "CircularView$2", "CircularView$3", "CircularView$AdapterDataSetObserver", "CircularView$OnClickListener", "CircularView$OnHighlightAnimationEndListener", "CircularViewCursorAdapter", "CircularViewCursorAdapter$1", "CircularViewCursorAdapter$ChangeObserver", "CircularViewCursorAdapter$MyDataSetObserver", "CircularViewObject", "Marker", "Marker$1", "R", "R$attr", "R$drawable", "R$id", "R$integer", "R$string", "R$styleable", "SimpleCircularViewAdapter" ],
+  "com.sababado.circularview.sample" : [ "BuildConfig", "MainActivity", "MainActivity$1", "MainActivity$2", "MainActivity$MySimpleCircularViewAdapter", "R", "R$attr", "R$dimen", "R$drawable", "R$id", "R$integer", "R$layout", "R$menu", "R$string", "R$style", "R$styleable" ]
+}

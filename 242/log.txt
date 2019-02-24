@@ -1,0 +1,222 @@
+2018-04-10 18:47:44,784 INFO  DownloadService - Downloading "https://github.com/medyo/dynamicbox/archive/master.zip", attempt 3
+2018-04-10 18:47:45,226 INFO  DownloadService - Downloaded https://github.com/medyo/dynamicbox/archive/master.zip, attempt 3
+2018-04-10 18:47:45,227 INFO  DownloadService - Size of file "/tmp/rdisk/242/master.zip": 531 KB
+2018-04-10 18:47:45,227 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-10 18:47:45,227 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/242/master.zip: true
+2018-04-10 18:47:45,227 DEBUG ZipUtil - Extracting '/tmp/rdisk/242/master.zip' into '/tmp/rdisk/242/src'.
+2018-04-10 18:47:45,239 INFO  FullProcessService - Size of directory with sources: 566 KB
+2018-04-10 18:47:45,239 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/242/src]
+2018-04-10 18:47:45,243 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/242/src/.git/
+
+2018-04-10 18:47:45,246 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/242/src/Dynamicbox-master/gradlew
+2018-04-10 18:47:45,249 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/242/src/Dynamicbox-master/DynamicBox/build.gradle /tmp/rdisk/242/src/Dynamicbox-master/DynamicBoxExample/build.gradle /tmp/rdisk/242/src/Dynamicbox-master/build.gradle
+2018-04-10 18:47:45,251 INFO  ProjectBuildService - All script(s): /tmp/rdisk/242/src/Dynamicbox-master/settings.gradle /tmp/rdisk/242/src/Dynamicbox-master/maven_push.gradle /tmp/rdisk/242/src/Dynamicbox-master/build.gradle /tmp/rdisk/242/src/Dynamicbox-master/DynamicBoxExample/build.gradle /tmp/rdisk/242/src/Dynamicbox-master/DynamicBox/build.gradle
+2018-04-10 18:47:45,251 INFO  ProjectBuildService - Remote scripts: none
+2018-04-10 18:47:45,251 INFO  ProjectFixService - Fixing project...
+2018-04-10 18:47:45,260 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/242/src/Dynamicbox-master/DynamicBox/local.properties
+2018-04-10 18:47:45,261 INFO  ProjectFixService - Build info for "/tmp/rdisk/242/src/Dynamicbox-master/DynamicBox/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-10 18:47:45,261 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/242/src/Dynamicbox-master/DynamicBoxExample/local.properties
+2018-04-10 18:47:45,261 INFO  ProjectFixService - Build info for "/tmp/rdisk/242/src/Dynamicbox-master/DynamicBoxExample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-10 18:47:45,261 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/242/src/Dynamicbox-master/local.properties
+2018-04-10 18:47:45,262 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-10 18:47:45,262 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-10 18:47:45,264 INFO  ProjectFixService - Build info for "/tmp/rdisk/242/src/Dynamicbox-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-10 18:47:45,264 INFO  ProjectFixService - Project was maybe fixed
+2018-04-10 18:47:45,264 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 18:47:45,264 INFO  SysUtils - Execute command: [/tmp/rdisk/242/src/Dynamicbox-master/gradlew, -b, /tmp/rdisk/242/src/Dynamicbox-master/DynamicBox/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 18:47:52,684 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-10 18:47:52,684 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-10 18:47:52,684 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-10 18:47:52,684 INFO  SysUtils - Execute command: [/tmp/rdisk/242/src/Dynamicbox-master/gradlew, -b, /tmp/rdisk/242/src/Dynamicbox-master/DynamicBox/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-10 18:48:09,568 INFO  SysUtils - Configuration on demand is an incubating feature.
+GROUP = com.github.medyo
+:DynamicBox:androidJavadocs/tmp/rdisk/242/src/Dynamicbox-master/DynamicBox/src/main/java/mehdi/sakout/dynamicbox/DynamicBox.java:220: warning: no @param for message
+    public void setLoadingMessage(String message){
+                ^
+
+1 warning
+:DynamicBox:androidJavadocsJar
+:DynamicBox:androidSourcesJar
+:DynamicBox:compileLint
+:DynamicBox:copyDebugLint UP-TO-DATE
+:DynamicBox:mergeDebugProguardFiles
+:DynamicBox:preBuild UP-TO-DATE
+:DynamicBox:preDebugBuild UP-TO-DATE
+:DynamicBox:checkDebugManifest
+:DynamicBox:prepareDebugDependencies
+:DynamicBox:compileDebugAidl
+:DynamicBox:compileDebugRenderscript
+:DynamicBox:generateDebugBuildConfig
+:DynamicBox:generateDebugAssets UP-TO-DATE
+:DynamicBox:mergeDebugAssets
+:DynamicBox:generateDebugResValues
+:DynamicBox:generateDebugResources
+:DynamicBox:packageDebugResources
+:DynamicBox:processDebugManifest
+:DynamicBox:processDebugResources
+:DynamicBox:generateDebugSources
+:DynamicBox:processDebugJavaRes UP-TO-DATE
+:DynamicBox:compileDebugJavaWithJavac
+:DynamicBox:packageDebugJar
+:DynamicBox:compileDebugNdk UP-TO-DATE
+:DynamicBox:packageDebugJniLibs UP-TO-DATE
+:DynamicBox:packageDebugLocalJar UP-TO-DATE
+:DynamicBox:packageDebugRenderscript UP-TO-DATE
+:DynamicBox:bundleDebug
+:DynamicBox:compileDebugSources
+:DynamicBox:assembleDebug
+:DynamicBox:copyReleaseLint UP-TO-DATE
+:DynamicBox:mergeReleaseProguardFiles
+:DynamicBox:preReleaseBuild UP-TO-DATE
+:DynamicBox:checkReleaseManifest
+:DynamicBox:prepareReleaseDependencies
+:DynamicBox:compileReleaseAidl
+:DynamicBox:compileReleaseRenderscript
+:DynamicBox:generateReleaseBuildConfig
+:DynamicBox:generateReleaseAssets UP-TO-DATE
+:DynamicBox:mergeReleaseAssets
+:DynamicBox:generateReleaseResValues
+:DynamicBox:generateReleaseResources
+:DynamicBox:packageReleaseResources
+:DynamicBox:processReleaseManifest
+:DynamicBox:processReleaseResources
+:DynamicBox:generateReleaseSources
+:DynamicBox:processReleaseJavaRes UP-TO-DATE
+:DynamicBox:compileReleaseJavaWithJavac
+:DynamicBox:packageReleaseJar
+:DynamicBox:compileReleaseNdk UP-TO-DATE
+:DynamicBox:packageReleaseJniLibs UP-TO-DATE
+:DynamicBox:packageReleaseLocalJar UP-TO-DATE
+:DynamicBox:packageReleaseRenderscript UP-TO-DATE
+:DynamicBox:bundleRelease
+:DynamicBox:compileReleaseSources
+:DynamicBox:assembleRelease
+:DynamicBox:signArchives SKIPPED
+:DynamicBox:assemble
+:DynamicBox:lint
+Ran lint on variant debug: 18 issues found
+Ran lint on variant release: 18 issues found
+Wrote HTML report to file:/tmp/rdisk/242/src/Dynamicbox-master/DynamicBox/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/242/src/Dynamicbox-master/DynamicBox/build/outputs/lint-results.xml
+:DynamicBox:preDebugUnitTestBuild UP-TO-DATE
+:DynamicBox:prepareDebugUnitTestDependencies
+:DynamicBox:processDebugUnitTestJavaRes UP-TO-DATE
+:DynamicBox:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:DynamicBox:compileDebugUnitTestSources UP-TO-DATE
+:DynamicBox:mockableAndroidJar
+:DynamicBox:assembleDebugUnitTest
+:DynamicBox:testDebugUnitTest
+:DynamicBox:preReleaseUnitTestBuild UP-TO-DATE
+:DynamicBox:prepareReleaseUnitTestDependencies
+:DynamicBox:processReleaseUnitTestJavaRes UP-TO-DATE
+:DynamicBox:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:DynamicBox:compileReleaseUnitTestSources UP-TO-DATE
+:DynamicBox:assembleReleaseUnitTest
+:DynamicBox:testReleaseUnitTest
+:DynamicBox:test
+:DynamicBox:check
+:DynamicBox:build
+
+BUILD SUCCESSFUL
+
+Total time: 16.471 secs
+
+2018-04-10 18:48:09,576 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 18:48:09,576 INFO  SysUtils - Execute command: [/tmp/rdisk/242/src/Dynamicbox-master/gradlew, -b, /tmp/rdisk/242/src/Dynamicbox-master/DynamicBoxExample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 18:48:16,579 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-10 18:48:16,579 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-10 18:48:16,580 INFO  SysUtils - Execute command: [/tmp/rdisk/242/src/Dynamicbox-master/gradlew, -b, /tmp/rdisk/242/src/Dynamicbox-master/DynamicBoxExample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-10 18:48:38,113 INFO  SysUtils - Configuration on demand is an incubating feature.
+GROUP = com.github.medyo
+:DynamicBox:compileLint
+:DynamicBox:copyReleaseLint UP-TO-DATE
+:DynamicBox:mergeReleaseProguardFiles UP-TO-DATE
+:DynamicBox:preBuild UP-TO-DATE
+:DynamicBox:preReleaseBuild UP-TO-DATE
+:DynamicBox:checkReleaseManifest
+:DynamicBox:prepareReleaseDependencies
+:DynamicBox:compileReleaseAidl UP-TO-DATE
+:DynamicBox:compileReleaseRenderscript UP-TO-DATE
+:DynamicBox:generateReleaseBuildConfig UP-TO-DATE
+:DynamicBox:generateReleaseAssets UP-TO-DATE
+:DynamicBox:mergeReleaseAssets UP-TO-DATE
+:DynamicBox:generateReleaseResValues UP-TO-DATE
+:DynamicBox:generateReleaseResources UP-TO-DATE
+:DynamicBox:packageReleaseResources UP-TO-DATE
+:DynamicBox:processReleaseManifest UP-TO-DATE
+:DynamicBox:processReleaseResources UP-TO-DATE
+:DynamicBox:generateReleaseSources UP-TO-DATE
+:DynamicBox:processReleaseJavaRes UP-TO-DATE
+:DynamicBox:compileReleaseJavaWithJavac UP-TO-DATE
+:DynamicBox:packageReleaseJar UP-TO-DATE
+:DynamicBox:compileReleaseNdk UP-TO-DATE
+:DynamicBox:packageReleaseJniLibs UP-TO-DATE
+:DynamicBox:packageReleaseLocalJar UP-TO-DATE
+:DynamicBox:packageReleaseRenderscript UP-TO-DATE
+:DynamicBox:bundleRelease UP-TO-DATE
+:DynamicBoxExample:preBuild UP-TO-DATE
+:DynamicBoxExample:preDebugBuild UP-TO-DATE
+:DynamicBoxExample:checkDebugManifest
+:DynamicBoxExample:preReleaseBuild UP-TO-DATE
+:DynamicBoxExample:prepareComAndroidSupportAppcompatV72221Library
+:DynamicBoxExample:prepareComAndroidSupportSupportV42221Library
+:DynamicBoxExample:prepareComGithubMedyoDynamicBox12Library
+:DynamicBoxExample:prepareDebugDependencies
+:DynamicBoxExample:compileDebugAidl
+:DynamicBoxExample:compileDebugRenderscript
+:DynamicBoxExample:generateDebugBuildConfig
+:DynamicBoxExample:generateDebugAssets UP-TO-DATE
+:DynamicBoxExample:mergeDebugAssets
+:DynamicBoxExample:generateDebugResValues
+:DynamicBoxExample:generateDebugResources
+:DynamicBoxExample:mergeDebugResources
+:DynamicBoxExample:processDebugManifest
+:DynamicBoxExample:processDebugResources
+:DynamicBoxExample:generateDebugSources
+:DynamicBoxExample:processDebugJavaRes UP-TO-DATE
+:DynamicBoxExample:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/242/src/Dynamicbox-master/DynamicBoxExample/src/main/java/mehdi/sakout/dynamicboxexample/MainActivity.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:DynamicBoxExample:compileDebugNdk UP-TO-DATE
+:DynamicBoxExample:compileDebugSources
+:DynamicBoxExample:preDexDebug
+:DynamicBoxExample:dexDebug
+:DynamicBoxExample:validateDebugSigning
+:DynamicBoxExample:packageDebug
+:DynamicBoxExample:zipalignDebug
+:DynamicBoxExample:assembleDebug
+:DynamicBoxExample:checkReleaseManifest
+:DynamicBoxExample:prepareReleaseDependencies
+:DynamicBoxExample:compileReleaseAidl
+:DynamicBoxExample:compileReleaseRenderscript
+:DynamicBoxExample:generateReleaseBuildConfig
+:DynamicBoxExample:generateReleaseAssets UP-TO-DATE
+:DynamicBoxExample:mergeReleaseAssets
+:DynamicBoxExample:generateReleaseResValues
+:DynamicBoxExample:generateReleaseResources
+:DynamicBoxExample:mergeReleaseResources
+:DynamicBoxExample:processReleaseManifest
+:DynamicBoxExample:processReleaseResources
+:DynamicBoxExample:generateReleaseSources
+:DynamicBoxExample:processReleaseJavaRes UP-TO-DATE
+:DynamicBoxExample:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/242/src/Dynamicbox-master/DynamicBoxExample/src/main/java/mehdi/sakout/dynamicboxexample/MainActivity.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:DynamicBoxExample:compileReleaseNdk UP-TO-DATE
+:DynamicBoxExample:compileReleaseSources
+:DynamicBoxExample:preDexRelease
+:DynamicBoxExample:dexRelease
+:DynamicBoxExample:packageRelease
+:DynamicBoxExample:assembleRelease
+:DynamicBoxExample:assemble
+:DynamicBoxExample:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.089 secs
+
+2018-04-10 18:48:38,149 INFO  FullProcessService - Found APK file: /tmp/rdisk/242/src/Dynamicbox-master/DynamicBoxExample/build/outputs/apk/DynamicBoxExample-release-unsigned.apk

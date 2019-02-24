@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "org.gradletransfuse",
+    "label" : null,
+    "icon" : null,
+    "versionName" : null,
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "16",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 326,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" xmlns:t=\"http://androidtransfuse.org\" android:versionCode=\"1\" package=\"org.gradletransfuse\" t:tag=\"+\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"16\" android:targetSdkVersion=\"25\" />\n\t<application android:name=\"android.app.Application\" t:tag=\"+,n\">\n\t\t<activity android:name=\"org.gradletransfuse.MainActivity\" t:tag=\"+,n\">\n\t\t\t<intent-filter t:tag=\"+\">\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" t:tag=\"+,n\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" t:tag=\"+,n\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 90590,
+  "crc32" : 1043099776,
+  "sha256" : "12eea5d1454d4cb427f53ea497c8087cfc2850ef789d24f4d1c6499d6af38f03",
+  "buildTime" : 1523444858000
+}

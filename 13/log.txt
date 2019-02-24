@@ -1,0 +1,50 @@
+2018-04-11 22:29:12,884 INFO  DownloadService - Downloading "https://github.com/deadmoose/min3d/archive/master.zip", attempt 3
+2018-04-11 22:30:13,462 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 22:30:14,287 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 22:30:14,288 INFO  DownloadService - Downloading "https://github.com/deadmoose/min3d/archive/master.zip", attempt 3
+2018-04-11 22:31:15,508 DEBUG FullProcessService - Repository https://github.com/deadmoose/min3d available: true
+2018-04-11 22:31:15,508 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 22:31:15,508 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/deadmoose/min3d, /tmp/rdisk/13/src]
+2018-04-11 22:31:17,999 INFO  SysUtils - 
+2018-04-11 22:31:18,004 INFO  GitService - Deleted "/tmp/rdisk/13/src/.git": true
+2018-04-11 22:31:18,008 INFO  FullProcessService - Size of directory with sources: 6 MB
+2018-04-11 22:31:18,008 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/13/src]
+2018-04-11 22:31:18,021 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/13/src/.git/
+
+2018-04-11 22:31:18,024 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-11 22:31:18,024 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-11 22:31:18,027 INFO  ProjectBuildService - Build script(s): none
+2018-04-11 22:31:18,029 INFO  ProjectBuildService - All script(s): none
+2018-04-11 22:31:18,029 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 22:31:18,029 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-11 22:31:18,029 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 22:31:18,032 INFO  FullProcessService - Found existed APK file in the project: /tmp/rdisk/13/src/sampleProjects/min3dSampleProject1/deploy/min3dSampleProject1_020.apk
+2018-04-11 22:31:18,032 INFO  FullProcessService - Found APK file: /tmp/rdisk/13/src/sampleProjects/min3dSampleProject1/deploy/min3dSampleProject1_020.apk
+2018-04-11 22:31:18,065 ERROR ApkInfoService - Can not parse APK /tmp/rdisk/13/src/sampleProjects/min3dSampleProject1/deploy/min3dSampleProject1_020.apk
+java.util.zip.ZipException: invalid END header (bad central directory offset)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:169)
+	at net.dongliu.apk.parser.ApkFile.<init>(ApkFile.java:32)
+	at com.github.vbauer.apkmaster.service.ApkInfoService.parse(ApkInfoService.java:79)
+	at com.github.vbauer.apkmaster.service.ApkInfoService.processApkInfo(ApkInfoService.java:54)
+	at com.github.vbauer.apkmaster.service.ApkService.processApkInfo(ApkService.java:36)
+	at com.github.vbauer.apkmaster.service.FullProcessService.scanApkFile(FullProcessService.java:118)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:40)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

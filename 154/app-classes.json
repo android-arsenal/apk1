@@ -1,0 +1,8 @@
+{
+  "android.support.v4.a" : [ "a", "b", "c", "d", "e" ],
+  "android.support.v4.b" : [ "a", "b", "c", "d", "e" ],
+  "android.support.v4.view" : [ "ViewPager", "a", "aa", "ab", "ac", "ad", "ae", "af", "ag", "ah", "ai", "aj", "ak", "al", "am", "an", "ao", "ap", "aq", "ar", "as", "at", "au", "av", "aw", "ax", "ay", "az", "b", "ba", "bb", "bc", "bd", "be", "bf", "bg", "bh", "bi", "bj", "bk", "bl", "bm", "bn", "bo", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" ],
+  "android.support.v4.view.a" : [ "a", "aa", "ab", "ac", "ad", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" ],
+  "io.klpu.emoji" : [ "EmojiView", "PagerSlidingTabStrip", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w" ],
+  "io.klpu.emoji.sample" : [ "MainActivity", "a" ]
+}

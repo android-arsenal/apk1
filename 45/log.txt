@@ -1,0 +1,195 @@
+2018-04-11 21:39:43,362 INFO  DownloadService - Downloading "https://github.com/path/android-priority-jobqueue/archive/master.zip", attempt 3
+2018-04-11 21:40:43,800 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 21:40:44,474 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 21:40:44,474 INFO  DownloadService - Downloading "https://github.com/path/android-priority-jobqueue/archive/master.zip", attempt 3
+2018-04-11 21:41:45,847 DEBUG FullProcessService - Repository https://github.com/path/android-priority-jobqueue available: true
+2018-04-11 21:41:45,847 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 21:41:45,847 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/path/android-priority-jobqueue, /tmp/rdisk/45/src]
+2018-04-11 21:41:48,547 INFO  SysUtils - 
+2018-04-11 21:41:48,554 INFO  GitService - Deleted "/tmp/rdisk/45/src/.git": true
+2018-04-11 21:41:48,559 INFO  FullProcessService - Size of directory with sources: 10 MB
+2018-04-11 21:41:48,559 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/45/src]
+2018-04-11 21:41:48,569 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/45/src/.git/
+
+2018-04-11 21:41:48,573 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/45/src/jobqueue/gradlew /tmp/rdisk/45/src/examples/twitter/TwitterClient/gradlew
+2018-04-11 21:41:48,578 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/45/src/examples/twitter/TwitterClient/build.gradle /tmp/rdisk/45/src/jobqueue/build.gradle
+2018-04-11 21:41:48,581 INFO  ProjectBuildService - All script(s): /tmp/rdisk/45/src/jobqueue/build.gradle /tmp/rdisk/45/src/examples/twitter/TwitterClient/build.gradle
+2018-04-11 21:41:48,582 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 21:41:48,582 INFO  ProjectFixService - Fixing project...
+2018-04-11 21:41:48,590 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/45/src/examples/twitter/TwitterClient/local.properties
+2018-04-11 21:41:48,591 INFO  ProjectFixService - Build info for "/tmp/rdisk/45/src/examples/twitter/TwitterClient/build.gradle": [buildToolsVersion=19.0.1,compileSdkVersion=17,minSdkVersion=15,targetSdkVersion=17]
+2018-04-11 21:41:48,591 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/45/src/examples/twitter/TwitterClient/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=17,minSdkVersion=15,targetSdkVersion=17]
+2018-04-11 21:41:48,591 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/45/src/jobqueue/local.properties
+2018-04-11 21:41:48,592 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.10-bin.zip
+2018-04-11 21:41:48,593 INFO  ProjectFixService - Build info for "/tmp/rdisk/45/src/jobqueue/build.gradle": [buildToolsVersion=19.0.1,compileSdkVersion=19,minSdkVersion=15,targetSdkVersion=17]
+2018-04-11 21:41:48,593 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/45/src/jobqueue/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=15,targetSdkVersion=17]
+2018-04-11 21:41:48,594 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 21:41:48,594 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:41:48,594 INFO  SysUtils - Execute command: [/tmp/rdisk/45/src/examples/twitter/TwitterClient/gradlew, -b, /tmp/rdisk/45/src/examples/twitter/TwitterClient/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:41:48,702 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-11 21:41:48,702 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-11 21:41:48,702 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-11 21:41:48,702 INFO  SysUtils - Execute command: [/tmp/rdisk/45/src/examples/twitter/TwitterClient/gradlew, -b, /tmp/rdisk/45/src/examples/twitter/TwitterClient/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-11 21:41:48,815 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 21:41:48,815 INFO  SysUtils - Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain
+
+2018-04-11 21:41:48,820 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:41:48,820 INFO  SysUtils - Execute command: [/tmp/rdisk/45/src/jobqueue/gradlew, -b, /tmp/rdisk/45/src/jobqueue/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:41:57,998 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-11 21:41:57,998 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-11 21:41:57,998 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-11 21:41:57,999 INFO  SysUtils - Execute command: [/tmp/rdisk/45/src/jobqueue/gradlew, -b, /tmp/rdisk/45/src/jobqueue/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-11 21:42:03,648 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 21:42:03,648 INFO  SysUtils - Configuration on demand is an incubating feature.
+version name:1.1.2
+checking variant debug
+checking variant release
+found release variant
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/tmp/rdisk/45/src/jobqueue/build.gradle' line: 91
+
+* What went wrong:
+A problem occurred configuring root project 'jobqueue'.
+> No such property: sonatypeUsername for class: org.gradle.api.publication.maven.internal.ant.DefaultGroovyMavenDeployer
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring root project 'jobqueue'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:507)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:82)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:28)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: groovy.lang.MissingPropertyException: No such property: sonatypeUsername for class: org.gradle.api.publication.maven.internal.ant.DefaultGroovyMavenDeployer
+	at build_7cg0h49e3n15pq7torcg6scgh8$_run_closure5_closure13_closure15_closure16.doCall(/tmp/rdisk/45/src/jobqueue/build.gradle:91)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:58)
+	at org.gradle.api.internal.artifacts.DefaultArtifactRepositoryContainer.addRepository(DefaultArtifactRepositoryContainer.java:185)
+	at org.gradle.api.publication.maven.internal.DefaultMavenRepositoryHandlerConvention.mavenDeployer(DefaultMavenRepositoryHandlerConvention.java:43)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:246)
+	at org.gradle.api.internal.BeanDynamicObject.invokeMethod(BeanDynamicObject.java:134)
+	at org.gradle.api.internal.plugins.DefaultConvention$ExtensionsDynamicObject.invokeMethod(DefaultConvention.java:218)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:147)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:147)
+	at org.gradle.api.internal.artifacts.dsl.DefaultRepositoryHandler_Decorated.invokeMethod(Unknown Source)
+	at build_7cg0h49e3n15pq7torcg6scgh8$_run_closure5_closure13_closure15.doCall(/tmp/rdisk/45/src/jobqueue/build.gradle:87)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:58)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:110)
+	at org.gradle.api.internal.artifacts.DefaultArtifactRepositoryContainer.configure(DefaultArtifactRepositoryContainer.java:73)
+	at org.gradle.api.internal.artifacts.DefaultArtifactRepositoryContainer.configure(DefaultArtifactRepositoryContainer.java:41)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:50)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:91)
+	at org.gradle.api.tasks.Upload.repositories(Upload.java:118)
+	at build_7cg0h49e3n15pq7torcg6scgh8$_run_closure5_closure13.doCall(/tmp/rdisk/45/src/jobqueue/build.gradle:86)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:58)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:110)
+	at org.gradle.api.internal.AbstractTask.configure(AbstractTask.java:439)
+	at org.gradle.api.internal.AbstractTask.configure(AbstractTask.java:59)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:50)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:91)
+	at org.gradle.api.internal.DefaultNamedDomainObjectCollection$ContainerElementsDynamicObject.invokeMethod(DefaultNamedDomainObjectCollection.java:324)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:147)
+	at org.gradle.groovy.scripts.BasicScript.methodMissing(BasicScript.java:79)
+	at build_7cg0h49e3n15pq7torcg6scgh8$_run_closure5.doCall(/tmp/rdisk/45/src/jobqueue/build.gradle:85)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:79)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:31)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy14.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 29 more
+
+
+BUILD FAILED
+
+Total time: 5.208 secs
+
+2018-04-11 21:42:03,652 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 21:42:03,656 ERROR FullProcessService - Could not find generated or existed APK file

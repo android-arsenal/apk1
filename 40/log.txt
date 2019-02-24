@@ -1,0 +1,21 @@
+2018-04-11 21:49:00,088 INFO  DownloadService - Downloading "https://github.com/vbartacek/aacdecoder-android/archive/master.zip", attempt 3
+2018-04-11 21:50:00,611 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 21:50:01,498 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 21:50:01,498 INFO  DownloadService - Downloading "https://github.com/vbartacek/aacdecoder-android/archive/master.zip", attempt 3
+2018-04-11 21:51:02,744 DEBUG FullProcessService - Repository https://github.com/vbartacek/aacdecoder-android available: true
+2018-04-11 21:51:02,744 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 21:51:02,744 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/vbartacek/aacdecoder-android, /tmp/rdisk/40/src]
+2018-04-11 21:51:07,019 INFO  SysUtils - 
+2018-04-11 21:51:07,031 INFO  GitService - Deleted "/tmp/rdisk/40/src/.git": true
+2018-04-11 21:51:07,033 INFO  FullProcessService - Size of directory with sources: 245 KB
+2018-04-11 21:51:07,034 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/40/src]
+2018-04-11 21:51:07,038 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/40/src/.git/
+
+2018-04-11 21:51:07,043 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-11 21:51:07,043 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-11 21:51:07,045 INFO  ProjectBuildService - Build script(s): none
+2018-04-11 21:51:07,046 INFO  ProjectBuildService - All script(s): none
+2018-04-11 21:51:07,046 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 21:51:07,046 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-11 21:51:07,046 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 21:51:07,048 ERROR FullProcessService - Could not find generated or existed APK file

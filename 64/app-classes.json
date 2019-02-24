@@ -1,0 +1,4 @@
+{
+  "com.facebook.buck.android.agent" : [ "AgentMain" ],
+  "com.facebook.buck.android.agent.util" : [ "AgentUtil" ]
+}

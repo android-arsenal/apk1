@@ -1,0 +1,9 @@
+2018-04-11 20:55:58,019 INFO  DownloadService - Downloading "https://github.com/Triple-T/simpleprovider/archive/master.zip", attempt 3
+2018-04-11 20:55:58,019 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 20:55:58,523 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 20:55:58,523 INFO  DownloadService - Downloading "https://github.com/Triple-T/simpleprovider/archive/master.zip", attempt 3
+2018-04-11 20:55:58,524 DEBUG FullProcessService - Repository https://github.com/Triple-T/simpleprovider available: false
+2018-04-11 20:55:58,524 ERROR FullProcessService - Could not find directory with sources
+2018-04-11 20:55:58,524 ERROR FullProcessService - Project will not be processed
+2018-04-11 20:55:58,524 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 20:55:58,524 ERROR FullProcessService - Could not find generated or existed APK file

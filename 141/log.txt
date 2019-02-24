@@ -1,0 +1,1445 @@
+2018-04-11 10:56:47,511 INFO  DownloadService - Downloading "https://github.com/negusoft/holoaccent/archive/master.zip", attempt 3
+2018-04-11 10:57:47,991 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 10:57:48,748 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 10:57:48,748 INFO  DownloadService - Downloading "https://github.com/negusoft/holoaccent/archive/master.zip", attempt 3
+2018-04-11 10:58:49,932 DEBUG FullProcessService - Repository https://github.com/negusoft/holoaccent available: true
+2018-04-11 10:58:49,932 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 10:58:49,932 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/negusoft/holoaccent, /tmp/rdisk/141/src]
+2018-04-11 10:58:52,651 INFO  SysUtils - 
+2018-04-11 10:58:52,659 INFO  GitService - Deleted "/tmp/rdisk/141/src/.git": true
+2018-04-11 10:58:52,672 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-11 10:58:52,672 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/141/src]
+2018-04-11 10:58:52,676 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/141/src/.git/
+
+2018-04-11 10:58:52,684 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/141/src/gradlew
+2018-04-11 10:58:52,693 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/141/src/HoloAccent/build.gradle /tmp/rdisk/141/src/HoloAccentExample/build.gradle /tmp/rdisk/141/src/build.gradle
+2018-04-11 10:58:52,701 INFO  ProjectBuildService - All script(s): /tmp/rdisk/141/src/settings.gradle /tmp/rdisk/141/src/build.gradle /tmp/rdisk/141/src/HoloAccentExample/build.gradle /tmp/rdisk/141/src/HoloAccent/build.gradle
+2018-04-11 10:58:52,701 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-11 10:59:53,043 ERROR RemoteScriptService - Could not download content from "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 10:59:53,043 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 10:59:53,043 INFO  ProjectFixService - Fixing project...
+2018-04-11 10:59:53,061 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/141/src/HoloAccent/local.properties
+2018-04-11 10:59:53,062 INFO  ProjectFixService - Build info for "/tmp/rdisk/141/src/HoloAccent/build.gradle": [buildToolsVersion=21.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-11 10:59:53,062 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/141/src/HoloAccentExample/local.properties
+2018-04-11 10:59:53,062 INFO  ProjectFixService - Build info for "/tmp/rdisk/141/src/HoloAccentExample/build.gradle": [buildToolsVersion=21.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-11 10:59:53,062 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/141/src/local.properties
+2018-04-11 10:59:53,063 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.12-all.zip
+2018-04-11 10:59:53,063 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.12-bin.zip)
+2018-04-11 10:59:53,063 INFO  ProjectFixService - Build info for "/tmp/rdisk/141/src/build.gradle": [buildToolsVersion=21.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-11 10:59:53,064 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 10:59:53,064 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 10:59:53,064 INFO  SysUtils - Execute command: [/tmp/rdisk/141/src/gradlew, -b, /tmp/rdisk/141/src/HoloAccent/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 11:00:02,785 INFO  ProjectTaskService - Detected possible tasks: 50
+2018-04-11 11:00:02,785 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-11 11:00:02,786 INFO  SysUtils - Execute command: [/tmp/rdisk/141/src/gradlew, -b, /tmp/rdisk/141/src/HoloAccent/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-11 11:00:14,544 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 11:00:14,544 INFO  SysUtils - Configuration on demand is an incubating feature.
+:HoloAccent:androidJavadocs/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentTimePicker.java:25: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:44: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSearchView.java:12: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentRatingBar.java:29: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentQuickContactBadge.java:24: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentNumberPicker.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentDatePicker.java:25: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/preference/SwitchPreference.java:26: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/UnderlineInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/ToggleInterceptor.java:24: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/SpinnerInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/SolidColorInterceptor.java:24: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/SearchViewTextFieldInterceptor.java:8: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/ScrubberInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/RoundRectInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/RectInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/PagerTabStripInterceptor.java:24: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/NativeInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/IndeterminateInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/FastScrollInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/ContactBadgeInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/CircleInterceptor.java:24: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/ActionBarBackgroundInterceptor.java:24: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/AccentColorInterceptor.java:7: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/ToggleForegroundDrawable.java:29: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressLegacyDrawable.java:30: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressDrawable.java:31: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/ActionBarBackgroundDrawable.java:32: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:274: error: cannot find symbol
+    @TargetApi(Build.VERSION_CODES.L)
+                                  ^
+  symbol:   variable L
+  location: class VERSION_CODES
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:290: error: cannot find symbol
+    @TargetApi(Build.VERSION_CODES.L)
+                                  ^
+  symbol:   variable L
+  location: class VERSION_CODES
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:253: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_switchTextAppearance
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:255: warning: no @param for context
+	public void setSwitchTextAppearance(Context context, int resid) {
+	            ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:255: warning: no @param for resid
+	public void setSwitchTextAppearance(Context context, int resid) {
+	            ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:350: error: unknown tag: attr
+	 * @attr ref android.R.styleable#TextView_typeface
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:351: error: unknown tag: attr
+	 * @attr ref android.R.styleable#TextView_textStyle
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:353: warning: no @param for tf
+	public void setSwitchTypeface(Typeface tf) {
+	            ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:369: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_switchPadding
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:382: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_switchPadding
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:396: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_switchMinWidth
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:410: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_switchMinWidth
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:422: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_thumbTextPadding
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:434: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_thumbTextPadding
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:446: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_track
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:459: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_track
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:470: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_track
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:483: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_thumb
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:497: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_thumb
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:509: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_thumb
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:518: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_textOn
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:520: warning: no @return
+	public CharSequence getTextOn() {
+	                    ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:527: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_textOn
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:529: warning: no @param for textOn
+	public void setTextOn(CharSequence textOn) {
+	            ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:537: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_textOff
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:539: warning: no @return
+	public CharSequence getTextOff() {
+	                    ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:546: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_textOff
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:548: warning: no @param for textOff
+	public void setTextOff(CharSequence textOff) {
+	            ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:52: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:52: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:63: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_textOn
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:64: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_textOff
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:65: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_switchMinWidth
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:66: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_switchPadding
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:67: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_switchTextAppearance
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:68: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_thumb
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:69: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_thumbTextPadding
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:70: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_track
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:78: warning: no @param for res
+        public int getColor(Resources res, AccentPalette palette, int resId);
+                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:78: warning: no @param for palette
+        public int getColor(Resources res, AccentPalette palette, int resId);
+                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:78: warning: no @param for resId
+        public int getColor(Resources res, AccentPalette palette, int resId);
+                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:73: warning: no @param for res
+		public Drawable getDrawable(Resources res, AccentPalette palette, int resId);
+		                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:73: warning: no @param for palette
+		public Drawable getDrawable(Resources res, AccentPalette palette, int resId);
+		                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:73: warning: no @param for resId
+		public Drawable getDrawable(Resources res, AccentPalette palette, int resId);
+		                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/BitmapUtils.java:232: warning: no @param for bitmap
+	public static void writeToFile(Bitmap bitmap, String dir, String filename) throws FileNotFoundException, IOException {
+	                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/BitmapUtils.java:232: warning: no @param for dir
+	public static void writeToFile(Bitmap bitmap, String dir, String filename) throws FileNotFoundException, IOException {
+	                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/BitmapUtils.java:232: warning: no @param for filename
+	public static void writeToFile(Bitmap bitmap, String dir, String filename) throws FileNotFoundException, IOException {
+	                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/BitmapUtils.java:232: warning: no @throws for java.io.FileNotFoundException
+	public static void writeToFile(Bitmap bitmap, String dir, String filename) throws FileNotFoundException, IOException {
+	                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/BitmapUtils.java:232: warning: no @throws for java.io.IOException
+	public static void writeToFile(Bitmap bitmap, String dir, String filename) throws FileNotFoundException, IOException {
+	                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:18: warning: no @param for name
+    public static int getIdentifier(String name) {
+                      ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:18: warning: no @return
+    public static int getIdentifier(String name) {
+                      ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:24: warning: no @param for name
+    public static int getStringIdentifier(String name) {
+                      ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:24: warning: no @return
+    public static int getStringIdentifier(String name) {
+                      ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:30: warning: no @param for name
+    public static String getString(String name) {
+                         ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:30: warning: no @return
+    public static String getString(String name) {
+                         ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:37: warning: no @param for name
+    public static int getDrawableIdentifier(String name) {
+                      ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:37: warning: no @return
+    public static int getDrawableIdentifier(String name) {
+                      ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:43: warning: no @param for name
+    public static Drawable getDrawable(String name) {
+                           ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:43: warning: no @return
+    public static Drawable getDrawable(String name) {
+                           ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/preference/SwitchPreference.java:34: error: unknown tag: attr
+ * @attr ref android.R.styleable#SwitchPreference_summaryOff
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/preference/SwitchPreference.java:35: error: unknown tag: attr
+ * @attr ref android.R.styleable#SwitchPreference_summaryOn
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/preference/SwitchPreference.java:36: error: unknown tag: attr
+ * @attr ref android.R.styleable#SwitchPreference_switchTextOff
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/preference/SwitchPreference.java:37: error: unknown tag: attr
+ * @attr ref android.R.styleable#SwitchPreference_switchTextOn
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/preference/SwitchPreference.java:38: error: unknown tag: attr
+ * @attr ref android.R.styleable#SwitchPreference_disableDependentsState
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:34: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:34: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:38: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:38: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:99: warning: no @param for titleId
+        public Builder setTitle(int titleId) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:109: warning: no @param for title
+        public Builder setTitle(CharSequence title) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:135: warning: no @param for messageId
+        public Builder setMessage(int messageId) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:145: warning: no @param for message
+        public Builder setMessage(CharSequence message) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:155: warning: no @param for iconId
+        public Builder setIcon(int iconId) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:165: warning: no @param for icon
+        public Builder setIcon(Drawable icon) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:175: warning: no @return
+        public Builder setIconAttribute(int attrId) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:257: warning: no @param for cancelable
+        public Builder setCancelable(boolean cancelable) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:275: warning: no @param for onCancelListener
+        public Builder setOnCancelListener(OnCancelListener onCancelListener) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:286: warning: no @param for onDismissListener
+		public Builder setOnDismissListener(OnDismissListener onDismissListener) {
+		               ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:296: warning: no @param for onKeyListener
+        public Builder setOnKeyListener(OnKeyListener onKeyListener) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:307: warning: no @param for itemsId
+        public Builder setItems(int itemsId, final OnClickListener listener) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:307: warning: no @param for listener
+        public Builder setItems(int itemsId, final OnClickListener listener) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:318: warning: no @param for items
+        public Builder setItems(CharSequence[] items, final OnClickListener listener) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:318: warning: no @param for listener
+        public Builder setItems(CharSequence[] items, final OnClickListener listener) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:591: warning: no @return
+        public AlertDialog create() {
+                           ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:607: warning: no @return
+        public AlertDialog show() {
+                           ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressDrawable.java:36: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressDrawable.java:36: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressDrawable.java:68: warning: no @param for c
+	public IndeterminedProgressDrawable(Context c, int frameIndex, int frameCount) {
+	       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressDrawable.java:68: warning: no @param for frameIndex
+	public IndeterminedProgressDrawable(Context c, int frameIndex, int frameCount) {
+	       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressDrawable.java:68: warning: no @param for frameCount
+	public IndeterminedProgressDrawable(Context c, int frameIndex, int frameCount) {
+	       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressLegacyDrawable.java:35: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressLegacyDrawable.java:35: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/RoundRectDrawable.java:34: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/RoundRectDrawable.java:34: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentHelper.java:72: warning: no @param for context
+    public static AccentPalette getPalette(Context context) {
+                                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentHelper.java:132: warning: no @param for c
+	public Resources getResources(Context c, Resources resources) {
+	                 ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentHelper.java:132: warning: no @param for resources
+	public Resources getResources(Context c, Resources resources) {
+	                 ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentHelper.java:142: warning: no @param for c
+	public void prepareDialog(Context c, Window window) {
+	            ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentHelper.java:142: warning: no @param for window
+	public void prepareDialog(Context c, Window window) {
+	            ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentPalette.java:103: warning: no @return
+	public int getAccentColor(int alpha) {
+	           ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentPalette.java:116: warning: no @return
+    public int getDarkAccentColor(int alpha) {
+               ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentPalette.java:129: warning: no @return
+    public int getActionBarAccentColor(int alpha) {
+               ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentPalette.java:48: warning: no @param for color
+	public AccentPalette(int color) {
+	       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentPalette.java:69: warning: no @param for color
+	public AccentPalette(int color, int colorDark, int colorActionBar) {
+	       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentPalette.java:69: warning: no @param for colorDark
+	public AccentPalette(int color, int colorDark, int colorActionBar) {
+	       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentPalette.java:69: warning: no @param for colorActionBar
+	public AccentPalette(int color, int colorDark, int colorActionBar) {
+	       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:326: warning: no @return
+    public AccentPalette getPalette() {
+                         ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:336: warning: no @param for interceptor
+    public void addInterceptor(Interceptor interceptor) {
+                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:344: warning: no @param for interceptor
+    public void addColorInterceptor(ColorInterceptor interceptor) {
+                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:349: warning: no @param for resId
+    public void addTintResourceId(int resId) {
+                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:356: warning: no @param for resId
+    public void addTintTransformationResourceId(int resId) {
+                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:60: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:60: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:64: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:64: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/activity/AccentActivity.java:52: warning: no @return
+    public AccentHelper getAccentHelper() {
+                        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/activity/AccentActivity.java:60: warning: no @param for resources
+    public void onInitAccentResources(AccentResources resources) {
+                ^
+
+48 errors
+97 warnings
+:HoloAccent:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':HoloAccent:androidJavadocs'.
+> Javadoc generation failed.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':HoloAccent:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:289)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:86)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:67)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:54)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:166)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed.
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:145)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:129)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:212)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:201)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:533)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:516)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 46 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:143)
+	... 55 more
+
+
+BUILD FAILED
+
+Total time: 11.3 secs
+
+2018-04-11 11:00:14,555 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 11:00:14,556 INFO  SysUtils - Execute command: [/tmp/rdisk/141/src/gradlew, -b, /tmp/rdisk/141/src/HoloAccentExample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 11:00:25,170 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-11 11:00:25,170 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-11 11:00:25,170 INFO  SysUtils - Execute command: [/tmp/rdisk/141/src/gradlew, -b, /tmp/rdisk/141/src/HoloAccentExample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-11 11:00:34,734 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 11:00:34,734 INFO  SysUtils - Configuration on demand is an incubating feature.
+:HoloAccentExample:preBuild
+:HoloAccentExample:compileDebugNdk
+:HoloAccent:compileLint
+:HoloAccent:copyReleaseLint UP-TO-DATE
+:HoloAccent:mergeReleaseProguardFiles
+:HoloAccent:preBuild
+:HoloAccent:preReleaseBuild
+:HoloAccent:checkReleaseManifest
+:HoloAccent:prepareReleaseDependencies
+:HoloAccent:compileReleaseAidl
+:HoloAccent:compileReleaseRenderscript
+:HoloAccent:generateReleaseBuildConfig
+:HoloAccent:generateReleaseAssets UP-TO-DATE
+:HoloAccent:mergeReleaseAssets
+:HoloAccent:generateReleaseResValues
+:HoloAccent:generateReleaseResources
+:HoloAccent:packageReleaseResources
+:HoloAccent:processReleaseManifest
+:HoloAccent:processReleaseResources
+:HoloAccent:generateReleaseSources
+:HoloAccent:compileReleaseJava/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:274: error: cannot find symbol
+    @TargetApi(Build.VERSION_CODES.L)
+                                  ^
+  symbol:   variable L
+  location: class VERSION_CODES
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:290: error: cannot find symbol
+    @TargetApi(Build.VERSION_CODES.L)
+                                  ^
+  symbol:   variable L
+  location: class VERSION_CODES
+2 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+ FAILED
+Execution failed for task ':HoloAccent:compileReleaseJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':HoloAccent:compileReleaseJava'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:289)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:86)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:67)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:54)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:166)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.jdk6.Jdk6JavaCompiler.execute(Jdk6JavaCompiler.java:47)
+	at org.gradle.api.internal.tasks.compile.jdk6.Jdk6JavaCompiler.execute(Jdk6JavaCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:96)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:49)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:35)
+	at org.gradle.api.internal.tasks.compile.DelegatingJavaCompiler.execute(DelegatingJavaCompiler.java:29)
+	at org.gradle.api.internal.tasks.compile.DelegatingJavaCompiler.execute(DelegatingJavaCompiler.java:20)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:33)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:24)
+	at org.gradle.api.tasks.compile.Compile.performCompilation(Compile.java:165)
+	at org.gradle.api.tasks.compile.Compile.compile(Compile.java:153)
+	at org.gradle.api.tasks.compile.Compile.compile(Compile.java:87)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:236)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:212)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:223)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:201)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:533)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:516)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 46 more
+
+
+BUILD FAILED
+
+Total time: 9.134 secs
+
+2018-04-11 11:00:34,752 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 11:00:34,752 INFO  SysUtils - Execute command: [/tmp/rdisk/141/src/gradlew, -b, /tmp/rdisk/141/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 11:00:42,251 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-11 11:00:42,251 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-11 11:00:42,251 INFO  SysUtils - Execute command: [/tmp/rdisk/141/src/gradlew, -b, /tmp/rdisk/141/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-11 11:00:53,999 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 11:00:53,999 INFO  SysUtils - Configuration on demand is an incubating feature.
+:HoloAccent:androidJavadocs/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentTimePicker.java:25: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:44: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSearchView.java:12: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentRatingBar.java:29: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentQuickContactBadge.java:24: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentNumberPicker.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentDatePicker.java:25: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/preference/SwitchPreference.java:26: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/UnderlineInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/ToggleInterceptor.java:24: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/SpinnerInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/SolidColorInterceptor.java:24: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/SearchViewTextFieldInterceptor.java:8: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/ScrubberInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/RoundRectInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/RectInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/PagerTabStripInterceptor.java:24: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/NativeInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/IndeterminateInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/FastScrollInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/ContactBadgeInterceptor.java:23: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/CircleInterceptor.java:24: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/ActionBarBackgroundInterceptor.java:24: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/interceptor/AccentColorInterceptor.java:7: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/ToggleForegroundDrawable.java:29: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressLegacyDrawable.java:30: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressDrawable.java:31: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/ActionBarBackgroundDrawable.java:32: error: cannot find symbol
+import com.negusoft.holoaccent.R;
+                              ^
+  symbol:   class R
+  location: package com.negusoft.holoaccent
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:274: error: cannot find symbol
+    @TargetApi(Build.VERSION_CODES.L)
+                                  ^
+  symbol:   variable L
+  location: class VERSION_CODES
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:290: error: cannot find symbol
+    @TargetApi(Build.VERSION_CODES.L)
+                                  ^
+  symbol:   variable L
+  location: class VERSION_CODES
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:253: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_switchTextAppearance
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:255: warning: no @param for context
+	public void setSwitchTextAppearance(Context context, int resid) {
+	            ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:255: warning: no @param for resid
+	public void setSwitchTextAppearance(Context context, int resid) {
+	            ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:350: error: unknown tag: attr
+	 * @attr ref android.R.styleable#TextView_typeface
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:351: error: unknown tag: attr
+	 * @attr ref android.R.styleable#TextView_textStyle
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:353: warning: no @param for tf
+	public void setSwitchTypeface(Typeface tf) {
+	            ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:369: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_switchPadding
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:382: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_switchPadding
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:396: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_switchMinWidth
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:410: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_switchMinWidth
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:422: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_thumbTextPadding
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:434: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_thumbTextPadding
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:446: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_track
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:459: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_track
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:470: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_track
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:483: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_thumb
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:497: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_thumb
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:509: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_thumb
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:518: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_textOn
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:520: warning: no @return
+	public CharSequence getTextOn() {
+	                    ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:527: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_textOn
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:529: warning: no @param for textOn
+	public void setTextOn(CharSequence textOn) {
+	            ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:537: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_textOff
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:539: warning: no @return
+	public CharSequence getTextOff() {
+	                    ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:546: error: unknown tag: attr
+	 * @attr ref android.R.styleable#Switch_textOff
+	   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:548: warning: no @param for textOff
+	public void setTextOff(CharSequence textOff) {
+	            ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:52: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:52: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:63: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_textOn
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:64: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_textOff
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:65: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_switchMinWidth
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:66: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_switchPadding
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:67: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_switchTextAppearance
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:68: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_thumb
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:69: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_thumbTextPadding
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/widget/AccentSwitch.java:70: error: unknown tag: attr
+ * @attr ref android.R.styleable#Switch_track
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:78: warning: no @param for res
+        public int getColor(Resources res, AccentPalette palette, int resId);
+                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:78: warning: no @param for palette
+        public int getColor(Resources res, AccentPalette palette, int resId);
+                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:78: warning: no @param for resId
+        public int getColor(Resources res, AccentPalette palette, int resId);
+                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:73: warning: no @param for res
+		public Drawable getDrawable(Resources res, AccentPalette palette, int resId);
+		                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:73: warning: no @param for palette
+		public Drawable getDrawable(Resources res, AccentPalette palette, int resId);
+		                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:73: warning: no @param for resId
+		public Drawable getDrawable(Resources res, AccentPalette palette, int resId);
+		                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/BitmapUtils.java:232: warning: no @param for bitmap
+	public static void writeToFile(Bitmap bitmap, String dir, String filename) throws FileNotFoundException, IOException {
+	                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/BitmapUtils.java:232: warning: no @param for dir
+	public static void writeToFile(Bitmap bitmap, String dir, String filename) throws FileNotFoundException, IOException {
+	                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/BitmapUtils.java:232: warning: no @param for filename
+	public static void writeToFile(Bitmap bitmap, String dir, String filename) throws FileNotFoundException, IOException {
+	                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/BitmapUtils.java:232: warning: no @throws for java.io.FileNotFoundException
+	public static void writeToFile(Bitmap bitmap, String dir, String filename) throws FileNotFoundException, IOException {
+	                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/BitmapUtils.java:232: warning: no @throws for java.io.IOException
+	public static void writeToFile(Bitmap bitmap, String dir, String filename) throws FileNotFoundException, IOException {
+	                   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:18: warning: no @param for name
+    public static int getIdentifier(String name) {
+                      ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:18: warning: no @return
+    public static int getIdentifier(String name) {
+                      ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:24: warning: no @param for name
+    public static int getStringIdentifier(String name) {
+                      ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:24: warning: no @return
+    public static int getStringIdentifier(String name) {
+                      ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:30: warning: no @param for name
+    public static String getString(String name) {
+                         ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:30: warning: no @return
+    public static String getString(String name) {
+                         ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:37: warning: no @param for name
+    public static int getDrawableIdentifier(String name) {
+                      ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:37: warning: no @return
+    public static int getDrawableIdentifier(String name) {
+                      ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:43: warning: no @param for name
+    public static Drawable getDrawable(String name) {
+                           ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/util/NativeResources.java:43: warning: no @return
+    public static Drawable getDrawable(String name) {
+                           ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/preference/SwitchPreference.java:34: error: unknown tag: attr
+ * @attr ref android.R.styleable#SwitchPreference_summaryOff
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/preference/SwitchPreference.java:35: error: unknown tag: attr
+ * @attr ref android.R.styleable#SwitchPreference_summaryOn
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/preference/SwitchPreference.java:36: error: unknown tag: attr
+ * @attr ref android.R.styleable#SwitchPreference_switchTextOff
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/preference/SwitchPreference.java:37: error: unknown tag: attr
+ * @attr ref android.R.styleable#SwitchPreference_switchTextOn
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/preference/SwitchPreference.java:38: error: unknown tag: attr
+ * @attr ref android.R.styleable#SwitchPreference_disableDependentsState
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:34: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:34: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:38: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:38: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:99: warning: no @param for titleId
+        public Builder setTitle(int titleId) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:109: warning: no @param for title
+        public Builder setTitle(CharSequence title) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:135: warning: no @param for messageId
+        public Builder setMessage(int messageId) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:145: warning: no @param for message
+        public Builder setMessage(CharSequence message) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:155: warning: no @param for iconId
+        public Builder setIcon(int iconId) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:165: warning: no @param for icon
+        public Builder setIcon(Drawable icon) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:175: warning: no @return
+        public Builder setIconAttribute(int attrId) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:257: warning: no @param for cancelable
+        public Builder setCancelable(boolean cancelable) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:275: warning: no @param for onCancelListener
+        public Builder setOnCancelListener(OnCancelListener onCancelListener) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:286: warning: no @param for onDismissListener
+		public Builder setOnDismissListener(OnDismissListener onDismissListener) {
+		               ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:296: warning: no @param for onKeyListener
+        public Builder setOnKeyListener(OnKeyListener onKeyListener) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:307: warning: no @param for itemsId
+        public Builder setItems(int itemsId, final OnClickListener listener) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:307: warning: no @param for listener
+        public Builder setItems(int itemsId, final OnClickListener listener) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:318: warning: no @param for items
+        public Builder setItems(CharSequence[] items, final OnClickListener listener) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:318: warning: no @param for listener
+        public Builder setItems(CharSequence[] items, final OnClickListener listener) {
+                       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:591: warning: no @return
+        public AlertDialog create() {
+                           ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/dialog/AccentAlertDialog.java:607: warning: no @return
+        public AlertDialog show() {
+                           ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressDrawable.java:36: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressDrawable.java:36: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressDrawable.java:68: warning: no @param for c
+	public IndeterminedProgressDrawable(Context c, int frameIndex, int frameCount) {
+	       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressDrawable.java:68: warning: no @param for frameIndex
+	public IndeterminedProgressDrawable(Context c, int frameIndex, int frameCount) {
+	       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressDrawable.java:68: warning: no @param for frameCount
+	public IndeterminedProgressDrawable(Context c, int frameIndex, int frameCount) {
+	       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressLegacyDrawable.java:35: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/IndeterminedProgressLegacyDrawable.java:35: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/RoundRectDrawable.java:34: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/drawable/RoundRectDrawable.java:34: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentHelper.java:72: warning: no @param for context
+    public static AccentPalette getPalette(Context context) {
+                                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentHelper.java:132: warning: no @param for c
+	public Resources getResources(Context c, Resources resources) {
+	                 ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentHelper.java:132: warning: no @param for resources
+	public Resources getResources(Context c, Resources resources) {
+	                 ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentHelper.java:142: warning: no @param for c
+	public void prepareDialog(Context c, Window window) {
+	            ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentHelper.java:142: warning: no @param for window
+	public void prepareDialog(Context c, Window window) {
+	            ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentPalette.java:103: warning: no @return
+	public int getAccentColor(int alpha) {
+	           ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentPalette.java:116: warning: no @return
+    public int getDarkAccentColor(int alpha) {
+               ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentPalette.java:129: warning: no @return
+    public int getActionBarAccentColor(int alpha) {
+               ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentPalette.java:48: warning: no @param for color
+	public AccentPalette(int color) {
+	       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentPalette.java:69: warning: no @param for color
+	public AccentPalette(int color, int colorDark, int colorActionBar) {
+	       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentPalette.java:69: warning: no @param for colorDark
+	public AccentPalette(int color, int colorDark, int colorActionBar) {
+	       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentPalette.java:69: warning: no @param for colorActionBar
+	public AccentPalette(int color, int colorDark, int colorActionBar) {
+	       ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:326: warning: no @return
+    public AccentPalette getPalette() {
+                         ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:336: warning: no @param for interceptor
+    public void addInterceptor(Interceptor interceptor) {
+                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:344: warning: no @param for interceptor
+    public void addColorInterceptor(ColorInterceptor interceptor) {
+                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:349: warning: no @param for resId
+    public void addTintResourceId(int resId) {
+                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:356: warning: no @param for resId
+    public void addTintTransformationResourceId(int resId) {
+                ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:60: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:60: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:64: error: self-closing element not allowed
+ * <br/><br/>
+   ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/AccentResources.java:64: error: self-closing element not allowed
+ * <br/><br/>
+        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/activity/AccentActivity.java:52: warning: no @return
+    public AccentHelper getAccentHelper() {
+                        ^
+/tmp/rdisk/141/src/HoloAccent/src/com/negusoft/holoaccent/activity/AccentActivity.java:60: warning: no @param for resources
+    public void onInitAccentResources(AccentResources resources) {
+                ^
+
+48 errors
+97 warnings
+:HoloAccent:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':HoloAccent:androidJavadocs'.
+> Javadoc generation failed.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':HoloAccent:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:289)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:86)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:67)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:54)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:166)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed.
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:145)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:129)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:212)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:201)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:533)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:516)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 46 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:143)
+	... 55 more
+
+
+BUILD FAILED
+
+Total time: 11.311 secs
+
+2018-04-11 11:00:54,020 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 11:00:54,038 ERROR FullProcessService - Could not find generated or existed APK file

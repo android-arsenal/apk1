@@ -1,0 +1,877 @@
+2018-04-12 08:31:19,778 INFO  DownloadService - Downloading "https://github.com/nostra13/Android-Universal-Image-Loader/archive/master.zip", attempt 3
+2018-04-12 08:31:21,904 INFO  DownloadService - Downloaded https://github.com/nostra13/Android-Universal-Image-Loader/archive/master.zip, attempt 3
+2018-04-12 08:31:21,905 INFO  DownloadService - Size of file "/tmp/rdisk/210/master.zip": 2 MB
+2018-04-12 08:31:21,905 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-12 08:31:21,905 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/210/master.zip: true
+2018-04-12 08:31:21,906 DEBUG ZipUtil - Extracting '/tmp/rdisk/210/master.zip' into '/tmp/rdisk/210/src'.
+2018-04-12 08:31:21,944 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-12 08:31:21,945 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/210/src]
+2018-04-12 08:31:21,950 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/210/src/.git/
+
+2018-04-12 08:31:21,955 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/gradlew
+2018-04-12 08:31:21,960 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/build.gradle /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/build.gradle /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/build.gradle
+2018-04-12 08:31:21,964 INFO  ProjectBuildService - All script(s): /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/settings.gradle /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/build.gradle /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/build.gradle /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/gradle/maven_push.gradle /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/build.gradle
+2018-04-12 08:31:21,965 INFO  ProjectBuildService - Remote scripts: none
+2018-04-12 08:31:21,965 INFO  ProjectFixService - Fixing project...
+2018-04-12 08:31:21,980 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/local.properties
+2018-04-12 08:31:21,980 INFO  ProjectFixService - Build info for "/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=5,targetSdkVersion=22]
+2018-04-12 08:31:21,980 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=22]
+2018-04-12 08:31:21,981 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/local.properties
+2018-04-12 08:31:21,981 INFO  ProjectFixService - Build info for "/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=5,targetSdkVersion=22]
+2018-04-12 08:31:21,981 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=22]
+2018-04-12 08:31:21,982 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/local.properties
+2018-04-12 08:31:21,982 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.5-all.zip
+2018-04-12 08:31:21,983 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.5-bin.zip)
+2018-04-12 08:31:21,984 INFO  ProjectFixService - Build info for "/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=7,targetSdkVersion=22]
+2018-04-12 08:31:21,984 INFO  ProjectFixService - Project was maybe fixed
+2018-04-12 08:31:21,984 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-12 08:31:21,984 INFO  SysUtils - Execute command: [/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/gradlew, -b, /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-12 08:31:35,583 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-12 08:31:35,584 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-12 08:31:35,584 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-12 08:31:35,584 INFO  SysUtils - Execute command: [/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/gradlew, -b, /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-12 08:31:44,857 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-12 08:31:44,857 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocs/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/DiskCacheUtils.java:35: warning: no @param for imageUri
+	public static File findInCache(String imageUri, DiskCache diskCache) {
+	                   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/DiskCacheUtils.java:35: warning: no @param for diskCache
+	public static File findInCache(String imageUri, DiskCache diskCache) {
+	                   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/DiskCacheUtils.java:35: warning: no @return
+	public static File findInCache(String imageUri, DiskCache diskCache) {
+	                   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/DiskCacheUtils.java:45: warning: no @param for imageUri
+	public static boolean removeFromCache(String imageUri, DiskCache diskCache) {
+	                      ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/DiskCacheUtils.java:45: warning: no @param for diskCache
+	public static boolean removeFromCache(String imageUri, DiskCache diskCache) {
+	                      ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/DiskCacheUtils.java:23: error: self-closing element not allowed
+ * Utility for convenient work with disk cache.<br />
+                                               ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:51: error: self-closing element not allowed
+	 * parameters or device display dimensions.<br />
+	                                           ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:53: warning: no @param for imageAware
+	public static ImageSize defineTargetSizeForView(ImageAware imageAware, ImageSize maxImageSize) {
+	                        ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:53: warning: no @param for maxImageSize
+	public static ImageSize defineTargetSizeForView(ImageAware imageAware, ImageSize maxImageSize) {
+	                        ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:53: warning: no @return
+	public static ImageSize defineTargetSizeForView(ImageAware imageAware, ImageSize maxImageSize) {
+	                        ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:67: error: self-closing element not allowed
+	 * decoding image} to bitmap.<br />
+	                             ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:68: error: self-closing element not allowed
+	 * <br />
+	   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:69: error: self-closing element not allowed
+	 * <b>Examples:</b><br />
+	                   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:70: error: self-closing element not allowed
+	 * <p/>
+	   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:70: warning: empty <p> tag
+	 * <p/>
+	   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:72: error: bad use of '>'
+	 * srcSize(100x100), targetSize(10x10), powerOf2Scale = true -> sampleSize = 8
+	                                                              ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:73: error: bad use of '>'
+	 * srcSize(100x100), targetSize(10x10), powerOf2Scale = false -> sampleSize = 10
+	                                                               ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:75: error: bad use of '>'
+	 * srcSize(100x100), targetSize(20x40), viewScaleType = FIT_INSIDE -> sampleSize = 5
+	                                                                    ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:76: error: bad use of '>'
+	 * srcSize(100x100), targetSize(20x40), viewScaleType = CROP       -> sampleSize = 2
+	                                                                    ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:78: error: self-closing element not allowed
+	 * <p/>
+	   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:79: error: self-closing element not allowed
+	 * <br />
+	   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:82: error: malformed HTML
+	 * the number of pixels. Any value <= 1 is treated the same as 1.
+	                                   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:147: error: self-closing element not allowed
+	 * texture size.<br />
+	                ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:167: error: self-closing element not allowed
+	 * Computes scale of target size (<b>targetSize</b>) to source size (<b>srcSize</b>).<br />
+	                                                                                     ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:168: error: self-closing element not allowed
+	 * <br />
+	   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:169: error: self-closing element not allowed
+	 * <b>Examples:</b><br />
+	                   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:170: error: self-closing element not allowed
+	 * <p/>
+	   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:170: warning: empty <p> tag
+	 * <p/>
+	   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:172: error: bad use of '>'
+	 * srcSize(40x40), targetSize(10x10) -> scale = 0.25
+	                                      ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:174: error: bad use of '>'
+	 * srcSize(10x10), targetSize(20x20), stretch = false -> scale = 1
+	                                                       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:175: error: bad use of '>'
+	 * srcSize(10x10), targetSize(20x20), stretch = true  -> scale = 2
+	                                                       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:177: error: bad use of '>'
+	 * srcSize(100x100), targetSize(20x40), viewScaleType = FIT_INSIDE -> scale = 0.2
+	                                                                    ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/ImageSizeUtils.java:178: error: bad use of '>'
+	 * srcSize(100x100), targetSize(20x40), viewScaleType = CROP       -> scale = 0.4
+	                                                                    ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/IoUtils.java:49: warning: no description for @throws
+	 * @throws IOException
+	   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/IoUtils.java:64: warning: no description for @throws
+	 * @throws IOException
+	   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/L.java:59: error: self-closing element not allowed
+	 * ImageLoader logging completely (even error logs)<br />
+	                                                   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/L.java:62: warning: no @param for writeDebugLogs
+	public static void writeDebugLogs(boolean writeDebugLogs) {
+	                   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/L.java:67: warning: no @param for writeLogs
+	public static void writeLogs(boolean writeLogs) {
+	                   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:43: error: self-closing element not allowed
+	 * Generates key for memory cache for incoming image (URI + size).<br />
+	                                                                  ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:46: warning: no @param for imageUri
+	public static String generateKey(String imageUri, ImageSize targetSize) {
+	                     ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:46: warning: no @param for targetSize
+	public static String generateKey(String imageUri, ImageSize targetSize) {
+	                     ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:46: warning: no @return
+	public static String generateKey(String imageUri, ImageSize targetSize) {
+	                     ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:62: error: self-closing element not allowed
+	 * Searches all bitmaps in memory cache which are corresponded to incoming URI.<br />
+	                                                                               ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:67: warning: no @param for imageUri
+	public static List<Bitmap> findCachedBitmapsForImageUri(String imageUri, MemoryCache memoryCache) {
+	                           ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:67: warning: no @param for memoryCache
+	public static List<Bitmap> findCachedBitmapsForImageUri(String imageUri, MemoryCache memoryCache) {
+	                           ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:67: warning: no @return
+	public static List<Bitmap> findCachedBitmapsForImageUri(String imageUri, MemoryCache memoryCache) {
+	                           ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:78: error: self-closing element not allowed
+	 * Searches all keys in memory cache which are corresponded to incoming URI.<br />
+	                                                                            ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:83: warning: no @param for imageUri
+	public static List<String> findCacheKeysForImageUri(String imageUri, MemoryCache memoryCache) {
+	                           ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:83: warning: no @param for memoryCache
+	public static List<String> findCacheKeysForImageUri(String imageUri, MemoryCache memoryCache) {
+	                           ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:83: warning: no @return
+	public static List<String> findCacheKeysForImageUri(String imageUri, MemoryCache memoryCache) {
+	                           ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:94: error: self-closing element not allowed
+	 * Removes from memory cache all images for incoming URI.<br />
+	                                                         ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:99: warning: no @param for imageUri
+	public static void removeFromCache(String imageUri, MemoryCache memoryCache) {
+	                   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java:99: warning: no @param for memoryCache
+	public static void removeFromCache(String imageUri, MemoryCache memoryCache) {
+	                   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/StorageUtils.java:47: error: self-closing element not allowed
+	 * @return Cache {@link File directory}.<br />
+	                                        ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/StorageUtils.java:62: error: self-closing element not allowed
+	 * @return Cache {@link File directory}.<br />
+	                                        ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/utils/StorageUtils.java:149: warning: no @param for preferExternal
+	public static File getOwnCacheDirectory(Context context, String cacheDir, boolean preferExternal) {
+	                   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:409: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:409: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:430: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:430: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:446: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:446: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:463: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:463: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:485: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:485: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:497: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:497: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:508: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:508: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:520: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:520: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:536: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:536: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:548: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:548: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:562: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:562: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:608: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:608: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:192: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:192: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:281: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:362: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:362: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:386: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:386: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:406: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:406: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:418: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:418: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:431: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:431: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:443: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:443: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:460: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:460: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:478: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:478: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:498: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:498: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:18: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:18: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:27: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:27: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:28: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:28: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:92: error: no summary or caption for table
+ * </table>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:93: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:93: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:97: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:97: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:102: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:102: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:103: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:103: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:158: error: no summary or caption for table
+ * </table>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:159: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:159: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:166: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java:166: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:23: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:23: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:33: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:33: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:36: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:36: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:37: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:37: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:72: error: no summary or caption for table
+ * </table>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:73: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:73: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:79: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:79: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:80: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:80: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:110: error: no summary or caption for table
+ * </table>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:111: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:111: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:117: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:117: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:118: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:118: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:136: error: no summary or caption for table
+ * </table>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:137: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:137: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:141: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:141: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:145: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:145: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:148: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:148: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:156: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/Deque.java:156: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:607: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:607: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:647: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:647: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:673: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:673: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:692: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:692: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:769: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:769: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:861: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:861: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:865: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:865: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:891: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:891: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:896: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:896: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:901: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:901: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:905: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:905: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:990: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:990: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:1008: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:1008: warning: empty <p> tag
+     * <p/>
+       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:20: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:20: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:26: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:26: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:33: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:33: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:37: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java:37: warning: empty <p> tag
+ * <p/>
+   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/cache/disc/impl/BaseDiskCache.java:166: warning: no @param for imageUri
+	protected File getFile(String imageUri) {
+	               ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/cache/disc/impl/BaseDiskCache.java:166: warning: no @return
+	protected File getFile(String imageUri) {
+	               ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/cache/disc/DiskCache.java:57: warning: no description for @throws
+	 * @throws java.io.IOException
+	   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/cache/disc/DiskCache.java:67: warning: no description for @throws
+	 * @throws IOException
+	   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/cache/disc/impl/BaseDiskCache.java:39: error: syntax error in reference
+	/** {@value */
+	    ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/cache/disc/impl/LimitedAgeDiskCache.java:56: warning: no @param for reserveCacheDir
+	public LimitedAgeDiskCache(File cacheDir, File reserveCacheDir, long maxAge) {
+	       ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/download/BaseImageDownloader.java:142: warning: no description for @throws
+	 * @throws IOException
+	   ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/download/ImageDownloader.java:78: warning: no @param for path
+		public String wrap(String path) {
+		              ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/download/ImageDownloader.java:78: warning: no @return
+		public String wrap(String path) {
+		              ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/download/ImageDownloader.java:83: warning: no @param for uri
+		public String crop(String uri) {
+		              ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/download/ImageDownloader.java:83: warning: no @return
+		public String crop(String uri) {
+		              ^
+/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/src/main/java/com/nostra13/universalimageloader/core/decode/ImageDecoder.java:34: warning: no description for @param
+	 * @param imageDecodingInfo
+	   ^
+
+100 errors
+100 warnings
+:library:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':library:androidJavadocs'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/build/tmp/androidJavadocs/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':library:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:208)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:186)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:62)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:111)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher$6.run(DefaultGradleLauncher.java:174)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:47)
+	at org.gradle.initialization.DefaultGradleLauncher.runBuildOperation(DefaultGradleLauncher.java:189)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:171)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:104)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:97)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.runRootBuildOperation(DefaultGradleLauncher.java:184)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:97)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:93)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:27)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:72)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:44)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/library/build/tmp/androidJavadocs/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:57)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:143)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:131)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 61 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:366)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 72 more
+
+
+BUILD FAILED
+
+Total time: 8.851 secs
+
+2018-04-12 08:31:44,866 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-12 08:31:44,867 INFO  SysUtils - Execute command: [/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/gradlew, -b, /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-12 08:31:51,437 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-12 08:31:51,438 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-12 08:31:51,438 INFO  SysUtils - Execute command: [/tmp/rdisk/210/src/Android-Universal-Image-Loader-master/gradlew, -b, /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-12 08:32:15,289 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseRenderscript
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:compileReleaseAidl
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNative_libsWithMergeJniLibsForRelease
+:library:transformNative_libsWithSyncJniLibsForRelease
+:library:bundleRelease
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareAndroidUniversalImageLoaderMasterLibraryUnspecifiedLibrary
+:sample:prepareComAndroidSupportSupportV42311Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+AAPT: /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/src/main/res/drawable-xxxhdpi/ic_launcher.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/src/main/res/drawable-mdpi/ic_launcher.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/src/main/res/drawable-ldpi/ic_launcher.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/src/main/res/drawable-xhdpi/ic_launcher.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/src/main/res/drawable-xxhdpi/ic_launcher.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/src/main/res/drawable-hdpi/ic_launcher.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:transformClassesWithDexForDebug
+:sample:mergeDebugJniLibFolders
+:sample:transformNative_libsWithMergeJniLibsForDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+AAPT: /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/src/main/res/drawable-xhdpi/ic_launcher.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/src/main/res/drawable-xxxhdpi/ic_launcher.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/src/main/res/drawable-mdpi/ic_launcher.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/src/main/res/drawable-hdpi/ic_launcher.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/src/main/res/drawable-ldpi/ic_launcher.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/src/main/res/drawable-xxhdpi/ic_launcher.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:transformClassesWithDexForRelease
+:sample:mergeReleaseJniLibFolders
+:sample:transformNative_libsWithMergeJniLibsForRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.34 secs
+
+2018-04-12 08:32:15,310 INFO  FullProcessService - Found APK file: /tmp/rdisk/210/src/Android-Universal-Image-Loader-master/sample/build/outputs/apk/sample-release-unsigned.apk

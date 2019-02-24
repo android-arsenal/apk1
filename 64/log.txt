@@ -1,0 +1,7 @@
+2016-07-16 03:20:41,998 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/facebook/buck/archive/master.zip", attempt 3
+2016-07-16 03:20:44,967 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/facebook/buck/archive/master.zip, attempt 3
+2016-07-16 03:21:49,701 INFO  c.g.v.a.s.FullProcessService - Archive with sources does not contain any build script
+2016-07-16 03:21:49,702 ERROR c.g.v.a.s.FullProcessService - Could not find directory with sources
+2016-07-16 03:21:49,702 ERROR c.g.v.a.s.FullProcessService - Project will not be processed
+2016-07-16 03:21:49,703 ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+2016-07-16 03:21:49,733 ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

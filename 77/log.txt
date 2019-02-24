@@ -1,0 +1,161 @@
+2018-04-11 20:56:07,104 INFO  DownloadService - Downloading "https://github.com/iainconnor/ObjectCache/archive/master.zip", attempt 3
+2018-04-11 20:56:07,104 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 20:56:08,654 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 20:56:08,654 INFO  DownloadService - Downloading "https://github.com/iainconnor/ObjectCache/archive/master.zip", attempt 3
+2018-04-11 20:57:09,986 DEBUG FullProcessService - Repository https://github.com/iainconnor/ObjectCache available: true
+2018-04-11 20:57:09,986 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 20:57:09,986 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/iainconnor/ObjectCache, /tmp/rdisk/77/src]
+2018-04-11 20:57:11,978 INFO  SysUtils - 
+2018-04-11 20:57:11,983 INFO  GitService - Deleted "/tmp/rdisk/77/src/.git": true
+2018-04-11 20:57:11,988 INFO  FullProcessService - Size of directory with sources: 901 KB
+2018-04-11 20:57:11,988 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/77/src]
+2018-04-11 20:57:11,993 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/77/src/.git/
+
+2018-04-11 20:57:11,997 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/77/src/gradlew
+2018-04-11 20:57:12,005 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/77/src/objectcache/build.gradle /tmp/rdisk/77/src/build.gradle
+2018-04-11 20:57:12,008 INFO  ProjectBuildService - All script(s): /tmp/rdisk/77/src/settings.gradle /tmp/rdisk/77/src/objectcache/build.gradle /tmp/rdisk/77/src/build.gradle
+2018-04-11 20:57:12,008 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 20:57:12,008 INFO  ProjectFixService - Fixing project...
+2018-04-11 20:57:12,016 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/77/src/objectcache/local.properties
+2018-04-11 20:57:12,016 INFO  ProjectFixService - Build info for "/tmp/rdisk/77/src/objectcache/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-11 20:57:12,017 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/77/src/local.properties
+2018-04-11 20:57:12,017 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-11 20:57:12,017 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-11 20:57:12,018 INFO  ProjectFixService - Build info for "/tmp/rdisk/77/src/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-11 20:57:12,018 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 20:57:12,018 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 20:57:12,018 INFO  SysUtils - Execute command: [/tmp/rdisk/77/src/gradlew, -b, /tmp/rdisk/77/src/objectcache/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 20:57:21,884 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-11 20:57:21,884 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-11 20:57:21,884 INFO  SysUtils - Execute command: [/tmp/rdisk/77/src/gradlew, -b, /tmp/rdisk/77/src/objectcache/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-11 20:57:29,217 INFO  SysUtils - Configuration on demand is an incubating feature.
+:objectcache:compileLint
+:objectcache:copyDebugLint UP-TO-DATE
+:objectcache:mergeDebugProguardFiles
+:objectcache:preBuild UP-TO-DATE
+:objectcache:preDebugBuild UP-TO-DATE
+:objectcache:checkDebugManifest
+:objectcache:prepareDebugDependencies
+:objectcache:compileDebugAidl
+:objectcache:compileDebugRenderscript
+:objectcache:generateDebugBuildConfig
+:objectcache:generateDebugAssets UP-TO-DATE
+:objectcache:mergeDebugAssets
+:objectcache:generateDebugResValues
+:objectcache:generateDebugResources
+:objectcache:packageDebugResources
+:objectcache:processDebugManifest
+:objectcache:processDebugResources
+:objectcache:generateDebugSources
+:objectcache:processDebugJavaRes UP-TO-DATE
+:objectcache:compileDebugJava
+:objectcache:packageDebugJar
+:objectcache:compileDebugNdk UP-TO-DATE
+:objectcache:packageDebugJniLibs UP-TO-DATE
+:objectcache:packageDebugLocalJar UP-TO-DATE
+:objectcache:packageDebugRenderscript UP-TO-DATE
+:objectcache:bundleDebug
+:objectcache:compileDebugSources
+:objectcache:assembleDebug
+:objectcache:copyReleaseLint UP-TO-DATE
+:objectcache:mergeReleaseProguardFiles
+:objectcache:preReleaseBuild UP-TO-DATE
+:objectcache:checkReleaseManifest
+:objectcache:prepareReleaseDependencies
+:objectcache:compileReleaseAidl
+:objectcache:compileReleaseRenderscript
+:objectcache:generateReleaseBuildConfig
+:objectcache:generateReleaseAssets UP-TO-DATE
+:objectcache:mergeReleaseAssets
+:objectcache:generateReleaseResValues
+:objectcache:generateReleaseResources
+:objectcache:packageReleaseResources
+:objectcache:processReleaseManifest
+:objectcache:processReleaseResources
+:objectcache:generateReleaseSources
+:objectcache:processReleaseJavaRes UP-TO-DATE
+:objectcache:compileReleaseJava
+:objectcache:packageReleaseJar
+:objectcache:compileReleaseNdk UP-TO-DATE
+:objectcache:packageReleaseJniLibs UP-TO-DATE
+:objectcache:packageReleaseLocalJar UP-TO-DATE
+:objectcache:packageReleaseRenderscript UP-TO-DATE
+:objectcache:bundleRelease
+:objectcache:compileReleaseSources
+:objectcache:assembleRelease
+:objectcache:assemble
+:objectcache:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.895 secs
+
+2018-04-11 20:57:29,224 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 20:57:29,224 INFO  SysUtils - Execute command: [/tmp/rdisk/77/src/gradlew, -b, /tmp/rdisk/77/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 20:57:35,530 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-11 20:57:35,530 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-11 20:57:35,530 INFO  SysUtils - Execute command: [/tmp/rdisk/77/src/gradlew, -b, /tmp/rdisk/77/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-11 20:57:41,718 INFO  SysUtils - Configuration on demand is an incubating feature.
+:objectcache:compileLint
+:objectcache:copyDebugLint UP-TO-DATE
+:objectcache:mergeDebugProguardFiles UP-TO-DATE
+:objectcache:preBuild UP-TO-DATE
+:objectcache:preDebugBuild UP-TO-DATE
+:objectcache:checkDebugManifest
+:objectcache:prepareDebugDependencies
+:objectcache:compileDebugAidl UP-TO-DATE
+:objectcache:compileDebugRenderscript UP-TO-DATE
+:objectcache:generateDebugBuildConfig UP-TO-DATE
+:objectcache:generateDebugAssets UP-TO-DATE
+:objectcache:mergeDebugAssets UP-TO-DATE
+:objectcache:generateDebugResValues UP-TO-DATE
+:objectcache:generateDebugResources UP-TO-DATE
+:objectcache:packageDebugResources UP-TO-DATE
+:objectcache:processDebugManifest UP-TO-DATE
+:objectcache:processDebugResources UP-TO-DATE
+:objectcache:generateDebugSources UP-TO-DATE
+:objectcache:processDebugJavaRes UP-TO-DATE
+:objectcache:compileDebugJava UP-TO-DATE
+:objectcache:packageDebugJar UP-TO-DATE
+:objectcache:compileDebugNdk UP-TO-DATE
+:objectcache:packageDebugJniLibs UP-TO-DATE
+:objectcache:packageDebugLocalJar UP-TO-DATE
+:objectcache:packageDebugRenderscript UP-TO-DATE
+:objectcache:bundleDebug UP-TO-DATE
+:objectcache:compileDebugSources UP-TO-DATE
+:objectcache:assembleDebug UP-TO-DATE
+:objectcache:copyReleaseLint UP-TO-DATE
+:objectcache:mergeReleaseProguardFiles UP-TO-DATE
+:objectcache:preReleaseBuild UP-TO-DATE
+:objectcache:checkReleaseManifest
+:objectcache:prepareReleaseDependencies
+:objectcache:compileReleaseAidl UP-TO-DATE
+:objectcache:compileReleaseRenderscript UP-TO-DATE
+:objectcache:generateReleaseBuildConfig UP-TO-DATE
+:objectcache:generateReleaseAssets UP-TO-DATE
+:objectcache:mergeReleaseAssets UP-TO-DATE
+:objectcache:generateReleaseResValues UP-TO-DATE
+:objectcache:generateReleaseResources UP-TO-DATE
+:objectcache:packageReleaseResources UP-TO-DATE
+:objectcache:processReleaseManifest UP-TO-DATE
+:objectcache:processReleaseResources UP-TO-DATE
+:objectcache:generateReleaseSources UP-TO-DATE
+:objectcache:processReleaseJavaRes UP-TO-DATE
+:objectcache:compileReleaseJava UP-TO-DATE
+:objectcache:packageReleaseJar UP-TO-DATE
+:objectcache:compileReleaseNdk UP-TO-DATE
+:objectcache:packageReleaseJniLibs UP-TO-DATE
+:objectcache:packageReleaseLocalJar UP-TO-DATE
+:objectcache:packageReleaseRenderscript UP-TO-DATE
+:objectcache:bundleRelease UP-TO-DATE
+:objectcache:compileReleaseSources UP-TO-DATE
+:objectcache:assembleRelease UP-TO-DATE
+:objectcache:assemble UP-TO-DATE
+:objectcache:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.724 secs
+
+2018-04-11 20:57:41,725 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 20:57:41,732 ERROR FullProcessService - Could not find generated or existed APK file

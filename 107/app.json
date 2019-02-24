@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.aphidmobile.fliptouch",
+    "label" : "Touch Flip Demo",
+    "icon" : "res/drawable-ldpi/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : null,
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-ldpi/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 24,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.aphidmobile.fliptouch\">\n\t<uses-sdk android:minSdkVersion=\"8\" />\n\t<application android:label=\"Touch Flip Demo\" android:icon=\"res/drawable-ldpi/ic_launcher.png\" android:debuggable=\"true\">\n\t\t<activity android:name=\"com.aphidmobile.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 87738,
+  "crc32" : 2500970518,
+  "sha256" : "e99d248228088d1bb0006679020cbe2094f705479716be2bc61d8a6c86887036",
+  "buildTime" : 1523479258000
+}

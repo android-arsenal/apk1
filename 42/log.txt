@@ -1,0 +1,21 @@
+2018-04-11 21:44:18,866 INFO  DownloadService - Downloading "https://github.com/google/patchfield/archive/master.zip", attempt 3
+2018-04-11 21:45:19,323 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 21:45:20,054 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 21:45:20,054 INFO  DownloadService - Downloading "https://github.com/google/patchfield/archive/master.zip", attempt 3
+2018-04-11 21:46:21,389 DEBUG FullProcessService - Repository https://github.com/google/patchfield available: true
+2018-04-11 21:46:21,389 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 21:46:21,390 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/google/patchfield, /tmp/rdisk/42/src]
+2018-04-11 21:46:24,718 INFO  SysUtils - 
+2018-04-11 21:46:24,729 INFO  GitService - Deleted "/tmp/rdisk/42/src/.git": true
+2018-04-11 21:46:24,739 INFO  FullProcessService - Size of directory with sources: 28 MB
+2018-04-11 21:46:24,739 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/42/src]
+2018-04-11 21:46:24,746 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/42/src/.git/
+
+2018-04-11 21:46:24,754 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-11 21:46:24,754 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-11 21:46:24,761 INFO  ProjectBuildService - Build script(s): none
+2018-04-11 21:46:24,769 INFO  ProjectBuildService - All script(s): none
+2018-04-11 21:46:24,769 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 21:46:24,769 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-11 21:46:24,769 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 21:46:24,777 ERROR FullProcessService - Could not find generated or existed APK file

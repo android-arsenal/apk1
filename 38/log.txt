@@ -1,0 +1,1513 @@
+2018-04-11 21:51:07,091 INFO  DownloadService - Downloading "https://github.com/square/mortar/archive/master.zip", attempt 3
+2018-04-11 21:52:07,550 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 21:52:08,354 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 21:52:08,354 INFO  DownloadService - Downloading "https://github.com/square/mortar/archive/master.zip", attempt 3
+2018-04-11 21:53:09,707 DEBUG FullProcessService - Repository https://github.com/square/mortar available: true
+2018-04-11 21:53:09,707 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 21:53:09,707 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/square/mortar, /tmp/rdisk/38/src]
+2018-04-11 21:53:11,533 INFO  SysUtils - 
+2018-04-11 21:53:11,538 INFO  GitService - Deleted "/tmp/rdisk/38/src/.git": true
+2018-04-11 21:53:11,543 INFO  FullProcessService - Size of directory with sources: 512 KB
+2018-04-11 21:53:11,543 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/38/src]
+2018-04-11 21:53:11,553 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/38/src/.git/
+
+2018-04-11 21:53:11,557 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/38/src/gradlew
+2018-04-11 21:53:11,561 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/38/src/mortar-dagger1/build.gradle /tmp/rdisk/38/src/mortar-hellodagger2/build.gradle /tmp/rdisk/38/src/mortar-helloworld/build.gradle /tmp/rdisk/38/src/mortar-sample/build.gradle /tmp/rdisk/38/src/mortar/build.gradle /tmp/rdisk/38/src/build.gradle
+2018-04-11 21:53:11,565 INFO  ProjectBuildService - All script(s): /tmp/rdisk/38/src/settings.gradle /tmp/rdisk/38/src/mortar/build.gradle /tmp/rdisk/38/src/mortar-sample/build.gradle /tmp/rdisk/38/src/mortar-helloworld/build.gradle /tmp/rdisk/38/src/mortar-hellodagger2/build.gradle /tmp/rdisk/38/src/mortar-dagger1/build.gradle /tmp/rdisk/38/src/gradle-mvn-push.gradle /tmp/rdisk/38/src/build.gradle
+2018-04-11 21:53:11,566 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 21:53:11,566 INFO  ProjectFixService - Fixing project...
+2018-04-11 21:53:11,578 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/38/src/mortar-dagger1/local.properties
+2018-04-11 21:53:11,582 INFO  ProjectFixService - Build info for "/tmp/rdisk/38/src/mortar-dagger1/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-11 21:53:11,582 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/38/src/mortar-dagger1/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-11 21:53:11,582 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/38/src/mortar-hellodagger2/local.properties
+2018-04-11 21:53:11,587 INFO  ProjectFixService - Build info for "/tmp/rdisk/38/src/mortar-hellodagger2/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-11 21:53:11,587 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/38/src/mortar-hellodagger2/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-11 21:53:11,587 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/38/src/mortar-helloworld/local.properties
+2018-04-11 21:53:11,591 INFO  ProjectFixService - Build info for "/tmp/rdisk/38/src/mortar-helloworld/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-11 21:53:11,591 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/38/src/mortar-helloworld/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-11 21:53:11,592 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/38/src/mortar-sample/local.properties
+2018-04-11 21:53:11,596 INFO  ProjectFixService - Build info for "/tmp/rdisk/38/src/mortar-sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-11 21:53:11,596 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/38/src/mortar-sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-11 21:53:11,597 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/38/src/mortar/local.properties
+2018-04-11 21:53:11,601 INFO  ProjectFixService - Build info for "/tmp/rdisk/38/src/mortar/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-11 21:53:11,601 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/38/src/mortar/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-11 21:53:11,601 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/38/src/local.properties
+2018-04-11 21:53:11,602 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.3-all.zip
+2018-04-11 21:53:11,602 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.3-bin.zip)
+2018-04-11 21:53:11,606 INFO  ProjectFixService - Build info for "/tmp/rdisk/38/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-11 21:53:11,606 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/38/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-11 21:53:11,606 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 21:53:11,606 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:53:11,607 INFO  SysUtils - Execute command: [/tmp/rdisk/38/src/gradlew, -b, /tmp/rdisk/38/src/mortar-dagger1/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:53:32,858 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-11 21:53:32,858 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-11 21:53:32,858 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-11 21:53:32,858 INFO  SysUtils - Execute command: [/tmp/rdisk/38/src/gradlew, -b, /tmp/rdisk/38/src/mortar-dagger1/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-11 21:53:42,385 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 21:53:42,385 INFO  SysUtils - Configuration on demand is an incubating feature.
+:mortar-dagger1:androidJavadocs/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:5: error: package dagger does not exist
+import dagger.ObjectGraph;
+             ^
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:6: error: cannot find symbol
+import mortar.MortarScope;
+             ^
+  symbol:   class MortarScope
+  location: package mortar
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:18: error: cannot find symbol
+  public static ObjectGraph create(MortarScope parent, Object... daggerModules) {
+                                   ^
+  symbol:   class MortarScope
+  location: class ObjectGraphService
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:18: error: cannot find symbol
+  public static ObjectGraph create(MortarScope parent, Object... daggerModules) {
+                ^
+  symbol:   class ObjectGraph
+  location: class ObjectGraphService
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:25: error: cannot find symbol
+  public static ObjectGraph getObjectGraph(Context context) {
+                ^
+  symbol:   class ObjectGraph
+  location: class ObjectGraphService
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:30: error: cannot find symbol
+  public static ObjectGraph getObjectGraph(MortarScope scope) {
+                                           ^
+  symbol:   class MortarScope
+  location: class ObjectGraphService
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:30: error: cannot find symbol
+  public static ObjectGraph getObjectGraph(MortarScope scope) {
+                ^
+  symbol:   class ObjectGraph
+  location: class ObjectGraphService
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:48: error: cannot find symbol
+  public static void inject(MortarScope scope, Object object) {
+                            ^
+  symbol:   class MortarScope
+  location: class ObjectGraphService
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:15: error: reference not found
+   * Create a new {@link ObjectGraph} based on the given module. The new graph will extend
+                         ^
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:16: error: reference not found
+   * the graph found in the parent scope (via {@link ObjectGraph#plus}), if there is one.
+                                                     ^
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:18: warning: no @param for parent
+  public static ObjectGraph create(MortarScope parent, Object... daggerModules) {
+                            ^
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:18: warning: no @param for daggerModules
+  public static ObjectGraph create(MortarScope parent, Object... daggerModules) {
+                            ^
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:39: warning: no @param for context
+  public static void inject(Context context, Object object) {
+                     ^
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:39: warning: no @param for object
+  public static void inject(Context context, Object object) {
+                     ^
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:48: warning: no @param for scope
+  public static void inject(MortarScope scope, Object object) {
+                     ^
+/tmp/rdisk/38/src/mortar-dagger1/src/main/java/mortar/dagger1support/ObjectGraphService.java:48: warning: no @param for object
+  public static void inject(MortarScope scope, Object object) {
+                     ^
+
+2 errors
+14 warnings
+:mortar-dagger1:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':mortar-dagger1:androidJavadocs'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/38/src/mortar-dagger1/build/tmp/androidJavadocs/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':mortar-dagger1:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/38/src/mortar-dagger1/build/tmp/androidJavadocs/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:57)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:141)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:129)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 9.1 secs
+
+2018-04-11 21:53:42,390 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:53:42,390 INFO  SysUtils - Execute command: [/tmp/rdisk/38/src/gradlew, -b, /tmp/rdisk/38/src/mortar-hellodagger2/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:53:51,914 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-11 21:53:51,914 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-11 21:53:51,914 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-11 21:53:51,914 INFO  SysUtils - Execute command: [/tmp/rdisk/38/src/gradlew, -b, /tmp/rdisk/38/src/mortar-hellodagger2/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-11 21:54:01,250 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 21:54:01,250 INFO  SysUtils - Configuration on demand is an incubating feature.
+:mortar:androidJavadocs/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/Bundler.java:27: warning: no @param for scope
+  void onEnterScope(MortarScope scope);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/Bundler.java:33: warning: no @return
+  String getMortarBundleKey();
+         ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleService.java:49: warning: no @param for bundler
+  public void register(Bundler bundler) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleServiceRunner.java:64: warning: no @param for savedInstanceState
+  public void onCreate(Bundle savedInstanceState) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleServiceRunner.java:81: warning: no @param for outState
+  public void onSaveInstanceState(Bundle outState) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Scoped.java:22: warning: no @param for scope
+  void onEnterScope(MortarScope scope);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:41: warning: no @param for context
+  public static MortarScope getScope(Context context) {
+                            ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:91: warning: no @return
+  public final String getName() {
+                      ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:104: warning: no @param for serviceName
+  public boolean hasService(String serviceName) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:104: warning: no @return
+  public boolean hasService(String serviceName) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @param for <T>
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @param for serviceName
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @return
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:185: warning: no @param for scoped
+  public void register(Scoped scoped) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:207: warning: no @param for childName
+  public MortarScope findChild(String childName) {
+                     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:207: warning: no @return
+  public MortarScope findChild(String childName) {
+                     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:220: warning: no @param for parentContext
+  public Context createContext(Context parentContext) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:220: warning: no @return
+  public Context createContext(Context parentContext) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:225: warning: no @return
+  public boolean isDestroyed() {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @param for serviceName
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @param for service
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @return
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @param for serviceName
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @param for service
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @return
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScopeDevHelper.java:16: warning: no @param for mortarScope
+  public static String scopeHierarchyToString(MortarScope mortarScope) {
+                       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScopeDevHelper.java:16: warning: no @return
+  public static String scopeHierarchyToString(MortarScope mortarScope) {
+                       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for info
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for withFlourish
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for presenter
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:57: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:61: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:67: warning: no @param for view
+  public final void takeView(V view) {
+                    ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:82: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:91: warning: no @param for view
+  public void dropView(V view) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:104: warning: no @param for view
+  protected abstract BundleService extractBundleService(V view);
+                                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:104: warning: no @return
+  protected abstract BundleService extractBundleService(V view);
+                                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:110: warning: no @return
+  protected final V getView() {
+                    ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:123: warning: no @param for scope
+  protected void onEnterScope(MortarScope scope) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:133: warning: no @param for savedInstanceState
+  protected void onLoad(Bundle savedInstanceState) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:137: warning: no @param for outState
+  protected void onSave(Bundle outState) {
+                 ^
+
+3 errors
+38 warnings
+:mortar:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':mortar:androidJavadocs'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/38/src/mortar/build/tmp/androidJavadocs/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':mortar:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/38/src/mortar/build/tmp/androidJavadocs/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:57)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:141)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:129)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 8.906 secs
+
+2018-04-11 21:54:01,255 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:54:01,255 INFO  SysUtils - Execute command: [/tmp/rdisk/38/src/gradlew, -b, /tmp/rdisk/38/src/mortar-helloworld/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:54:10,504 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-11 21:54:10,505 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-11 21:54:10,505 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-11 21:54:10,505 INFO  SysUtils - Execute command: [/tmp/rdisk/38/src/gradlew, -b, /tmp/rdisk/38/src/mortar-helloworld/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-11 21:54:21,867 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 21:54:21,867 INFO  SysUtils - Configuration on demand is an incubating feature.
+:mortar:compileLint
+:mortar:copyReleaseLint UP-TO-DATE
+:mortar:mergeReleaseProguardFiles
+:mortar:preBuild UP-TO-DATE
+:mortar:preReleaseBuild UP-TO-DATE
+:mortar:checkReleaseManifest
+:mortar:prepareReleaseDependencies
+:mortar:compileReleaseAidl
+:mortar:compileReleaseRenderscript
+:mortar:generateReleaseBuildConfig
+:mortar:generateReleaseAssets UP-TO-DATE
+:mortar:mergeReleaseAssets
+:mortar:generateReleaseResValues
+:mortar:generateReleaseResources
+:mortar:packageReleaseResources
+:mortar:processReleaseManifest
+:mortar:processReleaseResources
+:mortar:generateReleaseSources
+:mortar:processReleaseJavaRes UP-TO-DATE
+:mortar:compileReleaseJava
+:mortar:packageReleaseJar
+:mortar:compileReleaseNdk UP-TO-DATE
+:mortar:packageReleaseJniLibs UP-TO-DATE
+:mortar:packageReleaseLocalJar UP-TO-DATE
+:mortar:packageReleaseRenderscript UP-TO-DATE
+:mortar:bundleRelease
+:mortar-dagger1:compileLint
+:mortar-dagger1:copyReleaseLint UP-TO-DATE
+:mortar-dagger1:mergeReleaseProguardFiles
+:mortar:androidJavadocs/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/Bundler.java:27: warning: no @param for scope
+  void onEnterScope(MortarScope scope);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/Bundler.java:33: warning: no @return
+  String getMortarBundleKey();
+         ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleService.java:49: warning: no @param for bundler
+  public void register(Bundler bundler) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleServiceRunner.java:64: warning: no @param for savedInstanceState
+  public void onCreate(Bundle savedInstanceState) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleServiceRunner.java:81: warning: no @param for outState
+  public void onSaveInstanceState(Bundle outState) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Scoped.java:22: warning: no @param for scope
+  void onEnterScope(MortarScope scope);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:41: warning: no @param for context
+  public static MortarScope getScope(Context context) {
+                            ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:91: warning: no @return
+  public final String getName() {
+                      ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:104: warning: no @param for serviceName
+  public boolean hasService(String serviceName) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:104: warning: no @return
+  public boolean hasService(String serviceName) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @param for <T>
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @param for serviceName
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @return
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:185: warning: no @param for scoped
+  public void register(Scoped scoped) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:207: warning: no @param for childName
+  public MortarScope findChild(String childName) {
+                     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:207: warning: no @return
+  public MortarScope findChild(String childName) {
+                     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:220: warning: no @param for parentContext
+  public Context createContext(Context parentContext) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:220: warning: no @return
+  public Context createContext(Context parentContext) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:225: warning: no @return
+  public boolean isDestroyed() {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @param for serviceName
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @param for service
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @return
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @param for serviceName
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @param for service
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @return
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScopeDevHelper.java:16: warning: no @param for mortarScope
+  public static String scopeHierarchyToString(MortarScope mortarScope) {
+                       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScopeDevHelper.java:16: warning: no @return
+  public static String scopeHierarchyToString(MortarScope mortarScope) {
+                       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for info
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for withFlourish
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for presenter
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:57: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:61: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:67: warning: no @param for view
+  public final void takeView(V view) {
+                    ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:82: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:91: warning: no @param for view
+  public void dropView(V view) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:104: warning: no @param for view
+  protected abstract BundleService extractBundleService(V view);
+                                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:104: warning: no @return
+  protected abstract BundleService extractBundleService(V view);
+                                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:110: warning: no @return
+  protected final V getView() {
+                    ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:123: warning: no @param for scope
+  protected void onEnterScope(MortarScope scope) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:133: warning: no @param for savedInstanceState
+  protected void onLoad(Bundle savedInstanceState) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:137: warning: no @param for outState
+  protected void onSave(Bundle outState) {
+                 ^
+
+3 errors
+38 warnings
+:mortar:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':mortar:androidJavadocs'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/38/src/mortar/build/tmp/androidJavadocs/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':mortar:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/38/src/mortar/build/tmp/androidJavadocs/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:57)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:141)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:129)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 10.929 secs
+
+2018-04-11 21:54:21,874 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:54:21,875 INFO  SysUtils - Execute command: [/tmp/rdisk/38/src/gradlew, -b, /tmp/rdisk/38/src/mortar-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:54:31,565 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-11 21:54:31,565 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-11 21:54:31,565 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-11 21:54:31,565 INFO  SysUtils - Execute command: [/tmp/rdisk/38/src/gradlew, -b, /tmp/rdisk/38/src/mortar-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-11 21:54:41,678 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 21:54:41,678 INFO  SysUtils - Configuration on demand is an incubating feature.
+:mortar:compileLint
+:mortar:copyReleaseLint UP-TO-DATE
+:mortar:mergeReleaseProguardFiles UP-TO-DATE
+:mortar:preBuild UP-TO-DATE
+:mortar:preReleaseBuild UP-TO-DATE
+:mortar:checkReleaseManifest
+:mortar:prepareReleaseDependencies
+:mortar:compileReleaseAidl UP-TO-DATE
+:mortar:compileReleaseRenderscript UP-TO-DATE
+:mortar:generateReleaseBuildConfig UP-TO-DATE
+:mortar:generateReleaseAssets UP-TO-DATE
+:mortar:mergeReleaseAssets UP-TO-DATE
+:mortar:generateReleaseResValues UP-TO-DATE
+:mortar:generateReleaseResources UP-TO-DATE
+:mortar:packageReleaseResources UP-TO-DATE
+:mortar:processReleaseManifest UP-TO-DATE
+:mortar:processReleaseResources UP-TO-DATE
+:mortar:generateReleaseSources UP-TO-DATE
+:mortar:processReleaseJavaRes UP-TO-DATE
+:mortar:compileReleaseJava UP-TO-DATE
+:mortar:packageReleaseJar UP-TO-DATE
+:mortar:compileReleaseNdk UP-TO-DATE
+:mortar:packageReleaseJniLibs UP-TO-DATE
+:mortar:packageReleaseLocalJar UP-TO-DATE
+:mortar:packageReleaseRenderscript UP-TO-DATE
+:mortar:bundleRelease UP-TO-DATE
+:mortar-dagger1:compileLint
+:mortar-dagger1:copyReleaseLint UP-TO-DATE
+:mortar-dagger1:mergeReleaseProguardFiles UP-TO-DATE
+:mortar:androidJavadocs/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/Bundler.java:27: warning: no @param for scope
+  void onEnterScope(MortarScope scope);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/Bundler.java:33: warning: no @return
+  String getMortarBundleKey();
+         ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleService.java:49: warning: no @param for bundler
+  public void register(Bundler bundler) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleServiceRunner.java:64: warning: no @param for savedInstanceState
+  public void onCreate(Bundle savedInstanceState) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleServiceRunner.java:81: warning: no @param for outState
+  public void onSaveInstanceState(Bundle outState) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Scoped.java:22: warning: no @param for scope
+  void onEnterScope(MortarScope scope);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:41: warning: no @param for context
+  public static MortarScope getScope(Context context) {
+                            ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:91: warning: no @return
+  public final String getName() {
+                      ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:104: warning: no @param for serviceName
+  public boolean hasService(String serviceName) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:104: warning: no @return
+  public boolean hasService(String serviceName) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @param for <T>
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @param for serviceName
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @return
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:185: warning: no @param for scoped
+  public void register(Scoped scoped) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:207: warning: no @param for childName
+  public MortarScope findChild(String childName) {
+                     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:207: warning: no @return
+  public MortarScope findChild(String childName) {
+                     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:220: warning: no @param for parentContext
+  public Context createContext(Context parentContext) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:220: warning: no @return
+  public Context createContext(Context parentContext) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:225: warning: no @return
+  public boolean isDestroyed() {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @param for serviceName
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @param for service
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @return
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @param for serviceName
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @param for service
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @return
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScopeDevHelper.java:16: warning: no @param for mortarScope
+  public static String scopeHierarchyToString(MortarScope mortarScope) {
+                       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScopeDevHelper.java:16: warning: no @return
+  public static String scopeHierarchyToString(MortarScope mortarScope) {
+                       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for info
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for withFlourish
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for presenter
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:57: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:61: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:67: warning: no @param for view
+  public final void takeView(V view) {
+                    ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:82: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:91: warning: no @param for view
+  public void dropView(V view) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:104: warning: no @param for view
+  protected abstract BundleService extractBundleService(V view);
+                                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:104: warning: no @return
+  protected abstract BundleService extractBundleService(V view);
+                                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:110: warning: no @return
+  protected final V getView() {
+                    ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:123: warning: no @param for scope
+  protected void onEnterScope(MortarScope scope) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:133: warning: no @param for savedInstanceState
+  protected void onLoad(Bundle savedInstanceState) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:137: warning: no @param for outState
+  protected void onSave(Bundle outState) {
+                 ^
+
+3 errors
+38 warnings
+:mortar:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':mortar:androidJavadocs'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/38/src/mortar/build/tmp/androidJavadocs/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':mortar:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/38/src/mortar/build/tmp/androidJavadocs/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:57)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:141)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:129)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 9.691 secs
+
+2018-04-11 21:54:41,686 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:54:41,686 INFO  SysUtils - Execute command: [/tmp/rdisk/38/src/gradlew, -b, /tmp/rdisk/38/src/mortar/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:54:50,773 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-11 21:54:50,773 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-11 21:54:50,773 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-11 21:54:50,773 INFO  SysUtils - Execute command: [/tmp/rdisk/38/src/gradlew, -b, /tmp/rdisk/38/src/mortar/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-11 21:54:58,491 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 21:54:58,492 INFO  SysUtils - Configuration on demand is an incubating feature.
+:mortar:androidJavadocs/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/Bundler.java:27: warning: no @param for scope
+  void onEnterScope(MortarScope scope);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/Bundler.java:33: warning: no @return
+  String getMortarBundleKey();
+         ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleService.java:49: warning: no @param for bundler
+  public void register(Bundler bundler) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleServiceRunner.java:64: warning: no @param for savedInstanceState
+  public void onCreate(Bundle savedInstanceState) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleServiceRunner.java:81: warning: no @param for outState
+  public void onSaveInstanceState(Bundle outState) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Scoped.java:22: warning: no @param for scope
+  void onEnterScope(MortarScope scope);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:41: warning: no @param for context
+  public static MortarScope getScope(Context context) {
+                            ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:91: warning: no @return
+  public final String getName() {
+                      ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:104: warning: no @param for serviceName
+  public boolean hasService(String serviceName) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:104: warning: no @return
+  public boolean hasService(String serviceName) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @param for <T>
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @param for serviceName
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @return
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:185: warning: no @param for scoped
+  public void register(Scoped scoped) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:207: warning: no @param for childName
+  public MortarScope findChild(String childName) {
+                     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:207: warning: no @return
+  public MortarScope findChild(String childName) {
+                     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:220: warning: no @param for parentContext
+  public Context createContext(Context parentContext) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:220: warning: no @return
+  public Context createContext(Context parentContext) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:225: warning: no @return
+  public boolean isDestroyed() {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @param for serviceName
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @param for service
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @return
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @param for serviceName
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @param for service
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @return
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScopeDevHelper.java:16: warning: no @param for mortarScope
+  public static String scopeHierarchyToString(MortarScope mortarScope) {
+                       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScopeDevHelper.java:16: warning: no @return
+  public static String scopeHierarchyToString(MortarScope mortarScope) {
+                       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for info
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for withFlourish
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for presenter
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:57: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:61: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:67: warning: no @param for view
+  public final void takeView(V view) {
+                    ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:82: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:91: warning: no @param for view
+  public void dropView(V view) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:104: warning: no @param for view
+  protected abstract BundleService extractBundleService(V view);
+                                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:104: warning: no @return
+  protected abstract BundleService extractBundleService(V view);
+                                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:110: warning: no @return
+  protected final V getView() {
+                    ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:123: warning: no @param for scope
+  protected void onEnterScope(MortarScope scope) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:133: warning: no @param for savedInstanceState
+  protected void onLoad(Bundle savedInstanceState) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:137: warning: no @param for outState
+  protected void onSave(Bundle outState) {
+                 ^
+
+3 errors
+38 warnings
+:mortar:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':mortar:androidJavadocs'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/38/src/mortar/build/tmp/androidJavadocs/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':mortar:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/38/src/mortar/build/tmp/androidJavadocs/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:57)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:141)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:129)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 7.282 secs
+
+2018-04-11 21:54:58,499 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:54:58,499 INFO  SysUtils - Execute command: [/tmp/rdisk/38/src/gradlew, -b, /tmp/rdisk/38/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:55:08,061 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-11 21:55:08,061 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-11 21:55:08,061 INFO  SysUtils - Execute command: [/tmp/rdisk/38/src/gradlew, -b, /tmp/rdisk/38/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-11 21:55:18,741 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 21:55:18,742 INFO  SysUtils - Configuration on demand is an incubating feature.
+:mortar:androidJavadocs/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/Bundler.java:27: warning: no @param for scope
+  void onEnterScope(MortarScope scope);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/Bundler.java:33: warning: no @return
+  String getMortarBundleKey();
+         ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleService.java:49: warning: no @param for bundler
+  public void register(Bundler bundler) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleServiceRunner.java:64: warning: no @param for savedInstanceState
+  public void onCreate(Bundle savedInstanceState) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/bundler/BundleServiceRunner.java:81: warning: no @param for outState
+  public void onSaveInstanceState(Bundle outState) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Scoped.java:22: warning: no @param for scope
+  void onEnterScope(MortarScope scope);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:41: warning: no @param for context
+  public static MortarScope getScope(Context context) {
+                            ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:91: warning: no @return
+  public final String getName() {
+                      ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:104: warning: no @param for serviceName
+  public boolean hasService(String serviceName) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:104: warning: no @return
+  public boolean hasService(String serviceName) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @param for <T>
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @param for serviceName
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:115: warning: no @return
+  public <T> T getService(String serviceName) {
+               ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:185: warning: no @param for scoped
+  public void register(Scoped scoped) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:207: warning: no @param for childName
+  public MortarScope findChild(String childName) {
+                     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:207: warning: no @return
+  public MortarScope findChild(String childName) {
+                     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:220: warning: no @param for parentContext
+  public Context createContext(Context parentContext) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:220: warning: no @return
+  public Context createContext(Context parentContext) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:225: warning: no @return
+  public boolean isDestroyed() {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @param for serviceName
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @param for service
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:279: warning: no @return
+    public Builder withService(String serviceName, Object service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @param for serviceName
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @param for service
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScope.java:293: warning: no @return
+    public Builder withService(String serviceName, Scoped service) {
+                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScopeDevHelper.java:16: warning: no @param for mortarScope
+  public static String scopeHierarchyToString(MortarScope mortarScope) {
+                       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/MortarScopeDevHelper.java:16: warning: no @return
+  public static String scopeHierarchyToString(MortarScope mortarScope) {
+                       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for info
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for withFlourish
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Popup.java:34: warning: no @param for presenter
+  void show(D info, boolean withFlourish, PopupPresenter<D, R> presenter);
+       ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:57: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:61: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:67: warning: no @param for view
+  public final void takeView(V view) {
+                    ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:82: error: self-closing element not allowed
+   * <p/>
+     ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:91: warning: no @param for view
+  public void dropView(V view) {
+              ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:104: warning: no @param for view
+  protected abstract BundleService extractBundleService(V view);
+                                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:104: warning: no @return
+  protected abstract BundleService extractBundleService(V view);
+                                   ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:110: warning: no @return
+  protected final V getView() {
+                    ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:123: warning: no @param for scope
+  protected void onEnterScope(MortarScope scope) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:133: warning: no @param for savedInstanceState
+  protected void onLoad(Bundle savedInstanceState) {
+                 ^
+/tmp/rdisk/38/src/mortar/src/main/java/mortar/Presenter.java:137: warning: no @param for outState
+  protected void onSave(Bundle outState) {
+                 ^
+
+3 errors
+38 warnings
+:mortar:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':mortar:androidJavadocs'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/38/src/mortar/build/tmp/androidJavadocs/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':mortar:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:306)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/38/src/mortar/build/tmp/androidJavadocs/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:57)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:141)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:129)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 10.259 secs
+
+2018-04-11 21:55:18,749 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 21:55:18,756 ERROR FullProcessService - Could not find generated or existed APK file

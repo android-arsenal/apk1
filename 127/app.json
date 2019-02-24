@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.squareup.timessquare.sample",
+    "label" : "TimesSquare Sample",
+    "icon" : "res/drawable-mdpi-v4/icon.png",
+    "versionName" : "1.0.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "9",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/icon.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 68,
+  "locales" : [ "", "in", "pt", "fr", "ru", "ja", "sr", "ko", "de", "es", "eo", "nl", "pl" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0.0\" package=\"com.squareup.timessquare.sample\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"9\" android:targetSdkVersion=\"25\" />\n\t<application android:label=\"TimesSquare Sample\" android:icon=\"res/drawable-mdpi-v4/icon.png\" android:allowBackup=\"false\" android:supportsRtl=\"true\">\n\t\t<activity android:label=\"TimesSquare Sample\" android:name=\"com.squareup.timessquare.sample.SampleTimesSquareActivity\" android:configChanges=\"0x4a0\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 69017,
+  "crc32" : 2869255819,
+  "sha256" : "8d9078b6ba5375d72603ed02247902cd01f7361ba6f4017ff998e1730c328db3",
+  "buildTime" : 1526364219000
+}

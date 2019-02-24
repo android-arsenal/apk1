@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.devddagnet.bright.sample",
+    "label" : "Bright ¤ - Luminance Calculator",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.1",
+    "versionCode" : 5,
+    "installLocation" : null,
+    "minSdkVersion" : "11",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE", "android.permission.WRITE_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABpFBMVEUAAAD////////////////////////////////+/v7+/v79/f38/Pz+/v79/f3w8PAAAAD8/Pz8/Pz9/f39/f3o6Ojy8vLIyMjW1tb7+/vi4uIRERE9PT3c3Nzy8vKwsLDIyMj7+/sPDw8AAAA6Ojrd3d2qqqro6Ojg4OCNjY0+Pj47Ozt1dXV2dnbt7e3u7u6QkJB3d3dCQkIFBQXv7+/q6urr6+vNzc1ZWVns7OyTk5Pw8PDw8PDy8vJaWlo8PDzl5eXx8fHo6OjPz88/Pz/j4+Px8fHp6emkpKRERETk5OTz8/N5eXny8vJAQEDq6ur09PR6enrz8/PR0dH19fVbW1v09PSWlpbr6+v29vb19fXs7Oz39/f29va3t7f4+Pj39/ft7e3Ly8v5+fmmpqatra36+vr39/f39/f6+vrp6emHh4eqqqoAAADb29v////KysoAAAA3NzfLy8vr6+vv7+/u7u7k5OTm5ubn5+fo6Ojp6enq6urr6+vm5ubExMQ0NDQAAAAAAABGRkZgYGBcXFxbW1tdXV1mZmYAAAAAAAC/v78kRz9aAAAAjHRSTlMAAwQCEx4dCpbo7JaY//+aAer5/fz86hcl7//////vKiXu/////yr////////////////////////////8//////zv/////+8q//////z/7////P////z/7//87//8///87yf/Kxzs/fn/7CIDCKn/rQMqsO3w7/Dw8PDw8PDtsSwJIEJNS0xNBQsOBHmIVV0AAAKNSURBVEjHvZbtQ9JAHMeHYGbFKmU9APbAJEWFRS4KBsFKCRgi0KRYEJg9UZhZWTxUpkZp/dPddpvbDWT6xu+rO/b53G53t/3AsOOKacAgJgQ3m42H1DKgaRk80TeDFglT+KGTw6cMMnx6aN8wY2esuHHOnpMFE2Y5j4+M2pAQBNofHbFeuIjBJx/ALl3GbehododzDP3FZr1yFaBQuHZdJ9hdJDnu1gs3VEF3B5HXG/2ECQcpxTlpJHimpLhIOdMzUt9zoDBF9ozXd1SBog4h3PTfmpWbfoqijYXbgcCdu4pA07ShEAgEgsGQdBM/4JmwsRAMBn0hWWCYcKRbmHBpBZH3+e6BZjTGMAwbua8X7A7t0kCeeiBOam6eibORhwlUsLtIVBB5ikqKnWgqznI6QceTMk+nSWgs6ATCodstmadDsJshuEVUcHYJEq8KWVSwjY3rBMgzOXhwY3m9gLtRQ+aZJOS5bgF3O1FB4h+Jy5qJcVye7xLwyWmtIPHMkjj+BMdxhR4CPqMRIP9YbKYBny3wTxJ9zxLkZ2Uhmy0UjQQw/yXYTAM+KxgJoVxSeYHSgOeF4tPEYV/RHOB5oXQUgef5ci/B4/X6QaIK6UyD5HLPAF/sKeDwPMTm5PMjrr84f8AXy5VeAg73dz4qnweVL1YRQf0Yw/1KRfV8qVpZVoXnmm+ryMfjqUwG5UvVleUXsmDCXr6yqgUlHGZZdoEg8vl8oVAQBKFcLlerr9/U3r7D6nLJWn1fW7OuKUFHLlUqlRWQWvbD6n6NW//46fPGlw0lXxuNRrPZbLVa7Xb7m5TF7z82f66rZXRre+dXp9P5fUDApT8721vaQr2799cge7to8a//M0j92P7F/AemjDeitBAUGwAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 628,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"5\" android:versionName=\"1.1\" package=\"com.devddagnet.bright.sample\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"11\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f080077\" android:label=\"Bright ¤ - Luminance Calculator\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Bright ¤ - Luminance Calculator\" android:name=\"com.devddagnet.bright.sample.BrightActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 614905,
+  "crc32" : 1763883689,
+  "sha256" : "fbe0f11c052c9ad9b360b32731fa877e926f28e35e5b2fb7814f14165452db36",
+  "buildTime" : 1508188449000
+}

@@ -1,0 +1,309 @@
+2018-04-11 09:56:54,175 INFO  DownloadService - Downloading "https://github.com/HackPlan/AndroidCharts/archive/master.zip", attempt 3
+2018-04-11 09:57:54,828 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 09:57:54,836 INFO  GithubDownloadService - Default branch of this repository: null
+2018-04-11 09:57:54,836 ERROR GithubDownloadService - Could not detect default branch for Github repository
+2018-04-11 09:57:55,679 DEBUG FullProcessService - Repository https://github.com/HackPlan/AndroidCharts available: true
+2018-04-11 09:57:55,679 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 09:57:55,679 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/HackPlan/AndroidCharts, /tmp/rdisk/172/src]
+2018-04-11 09:57:58,032 INFO  SysUtils - 
+2018-04-11 09:57:58,047 INFO  GitService - Deleted "/tmp/rdisk/172/src/.git": true
+2018-04-11 09:57:58,050 INFO  FullProcessService - Size of directory with sources: 864 KB
+2018-04-11 09:57:58,050 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/172/src]
+2018-04-11 09:57:58,055 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/172/src/.git/
+
+2018-04-11 09:57:58,058 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/172/src/gradlew /tmp/rdisk/172/src/gradle/gradlew
+2018-04-11 09:57:58,061 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/172/src/AndroidCharts/build.gradle /tmp/rdisk/172/src/AndroidChartsExample/build.gradle /tmp/rdisk/172/src/build.gradle
+2018-04-11 09:57:58,063 INFO  ProjectBuildService - All script(s): /tmp/rdisk/172/src/settings.gradle /tmp/rdisk/172/src/build.gradle /tmp/rdisk/172/src/AndroidChartsExample/build.gradle /tmp/rdisk/172/src/AndroidCharts/build.gradle
+2018-04-11 09:57:58,063 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle", attempt 3
+2018-04-11 09:58:58,065 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 09:58:58,065 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle", attempt 3
+2018-04-11 09:59:58,066 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 09:59:58,066 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 09:59:58,066 INFO  ProjectFixService - Fixing project...
+2018-04-11 09:59:58,072 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/172/src/AndroidCharts/local.properties
+2018-04-11 09:59:58,073 INFO  ProjectFixService - Build info for "/tmp/rdisk/172/src/AndroidCharts/build.gradle": [buildToolsVersion=25.0.1,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-11 09:59:58,073 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/172/src/AndroidChartsExample/local.properties
+2018-04-11 09:59:58,073 INFO  ProjectFixService - Build info for "/tmp/rdisk/172/src/AndroidChartsExample/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-11 09:59:58,074 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/172/src/local.properties
+2018-04-11 09:59:58,074 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-11 09:59:58,074 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-11 09:59:58,075 INFO  ProjectFixService - Build info for "/tmp/rdisk/172/src/build.gradle": [buildToolsVersion=25.0.0,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-11 09:59:58,075 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 09:59:58,075 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 09:59:58,075 INFO  SysUtils - Execute command: [/tmp/rdisk/172/src/gradlew, -b, /tmp/rdisk/172/src/AndroidCharts/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 10:00:07,536 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-11 10:00:07,536 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-11 10:00:07,536 INFO  SysUtils - Execute command: [/tmp/rdisk/172/src/gradlew, -b, /tmp/rdisk/172/src/AndroidCharts/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-11 10:00:22,166 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:AndroidCharts:preBuild UP-TO-DATE
+:AndroidCharts:preDebugBuild UP-TO-DATE
+:AndroidCharts:checkDebugManifest
+:AndroidCharts:prepareDebugDependencies
+:AndroidCharts:compileDebugAidl
+:AndroidCharts:compileDebugNdk UP-TO-DATE
+:AndroidCharts:compileLint
+:AndroidCharts:copyDebugLint UP-TO-DATE
+:AndroidCharts:mergeDebugShaders
+:AndroidCharts:compileDebugShaders
+:AndroidCharts:generateDebugAssets
+:AndroidCharts:mergeDebugAssets
+:AndroidCharts:mergeDebugProguardFiles
+:AndroidCharts:packageDebugRenderscript UP-TO-DATE
+:AndroidCharts:compileDebugRenderscript
+:AndroidCharts:generateDebugResValues
+:AndroidCharts:generateDebugResources
+:AndroidCharts:packageDebugResources
+:AndroidCharts:processDebugManifest
+:AndroidCharts:generateDebugBuildConfig
+:AndroidCharts:processDebugResources
+:AndroidCharts:generateDebugSources
+:AndroidCharts:incrementalDebugJavaCompilationSafeguard
+:AndroidCharts:javaPreCompileDebug
+:AndroidCharts:compileDebugJavaWithJavac
+:AndroidCharts:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/172/src/AndroidCharts/src/main/java/im/dacer/androidcharts/LineView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:AndroidCharts:processDebugJavaRes UP-TO-DATE
+:AndroidCharts:transformResourcesWithMergeJavaResForDebug
+:AndroidCharts:transformClassesAndResourcesWithSyncLibJarsForDebug
+:AndroidCharts:mergeDebugJniLibFolders
+:AndroidCharts:transformNativeLibsWithMergeJniLibsForDebug
+:AndroidCharts:transformNativeLibsWithStripDebugSymbolForDebug
+:AndroidCharts:transformNativeLibsWithSyncJniLibsForDebug
+:AndroidCharts:bundleDebug
+:AndroidCharts:compileDebugSources
+:AndroidCharts:assembleDebug
+:AndroidCharts:preReleaseBuild UP-TO-DATE
+:AndroidCharts:checkReleaseManifest
+:AndroidCharts:prepareReleaseDependencies
+:AndroidCharts:compileReleaseAidl
+:AndroidCharts:compileReleaseNdk UP-TO-DATE
+:AndroidCharts:copyReleaseLint UP-TO-DATE
+:AndroidCharts:mergeReleaseShaders
+:AndroidCharts:compileReleaseShaders
+:AndroidCharts:generateReleaseAssets
+:AndroidCharts:mergeReleaseAssets
+:AndroidCharts:mergeReleaseProguardFiles
+:AndroidCharts:packageReleaseRenderscript UP-TO-DATE
+:AndroidCharts:compileReleaseRenderscript
+:AndroidCharts:generateReleaseResValues
+:AndroidCharts:generateReleaseResources
+:AndroidCharts:packageReleaseResources
+:AndroidCharts:processReleaseManifest
+:AndroidCharts:generateReleaseBuildConfig
+:AndroidCharts:processReleaseResources
+:AndroidCharts:generateReleaseSources
+:AndroidCharts:incrementalReleaseJavaCompilationSafeguard
+:AndroidCharts:javaPreCompileRelease
+:AndroidCharts:compileReleaseJavaWithJavac
+:AndroidCharts:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/172/src/AndroidCharts/src/main/java/im/dacer/androidcharts/LineView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:AndroidCharts:processReleaseJavaRes UP-TO-DATE
+:AndroidCharts:transformResourcesWithMergeJavaResForRelease
+:AndroidCharts:transformClassesAndResourcesWithSyncLibJarsForRelease
+:AndroidCharts:mergeReleaseJniLibFolders
+:AndroidCharts:transformNativeLibsWithMergeJniLibsForRelease
+:AndroidCharts:transformNativeLibsWithStripDebugSymbolForRelease
+:AndroidCharts:transformNativeLibsWithSyncJniLibsForRelease
+:AndroidCharts:bundleRelease
+:AndroidCharts:compileReleaseSources
+:AndroidCharts:assembleRelease
+:AndroidCharts:javadoc/tmp/rdisk/172/src/AndroidCharts/src/main/java/im/dacer/androidcharts/BarView.java:112: warning: no @param for max
+    public void setDataList(ArrayList<Integer> list, int max) {
+                ^
+
+1 warning
+:AndroidCharts:javadocJar
+:AndroidCharts:sourcesJar
+:AndroidCharts:assemble
+:AndroidCharts:build
+
+BUILD SUCCESSFUL
+
+Total time: 14.373 secs
+
+2018-04-11 10:00:22,176 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 10:00:22,176 INFO  SysUtils - Execute command: [/tmp/rdisk/172/src/gradlew, -b, /tmp/rdisk/172/src/AndroidChartsExample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 10:00:31,001 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-11 10:00:31,001 INFO  ProjectTaskService - Excluded tasks (9): mockableAndroidJar deviceCheck lint deviceAndroidTest connectedCheck uninstallAll test check connectedAndroidTest
+2018-04-11 10:00:31,001 INFO  SysUtils - Execute command: [/tmp/rdisk/172/src/gradlew, -b, /tmp/rdisk/172/src/AndroidChartsExample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, build]
+2018-04-11 10:00:48,131 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:AndroidCharts:preBuild UP-TO-DATE
+:AndroidCharts:preReleaseBuild UP-TO-DATE
+:AndroidCharts:checkReleaseManifest
+:AndroidCharts:prepareReleaseDependencies
+:AndroidCharts:compileReleaseAidl UP-TO-DATE
+:AndroidCharts:compileReleaseNdk UP-TO-DATE
+:AndroidCharts:compileLint UP-TO-DATE
+:AndroidCharts:copyReleaseLint UP-TO-DATE
+:AndroidCharts:mergeReleaseShaders UP-TO-DATE
+:AndroidCharts:compileReleaseShaders UP-TO-DATE
+:AndroidCharts:generateReleaseAssets UP-TO-DATE
+:AndroidCharts:mergeReleaseAssets UP-TO-DATE
+:AndroidCharts:mergeReleaseProguardFiles UP-TO-DATE
+:AndroidCharts:packageReleaseRenderscript UP-TO-DATE
+:AndroidCharts:compileReleaseRenderscript UP-TO-DATE
+:AndroidCharts:generateReleaseResValues UP-TO-DATE
+:AndroidCharts:generateReleaseResources UP-TO-DATE
+:AndroidCharts:packageReleaseResources UP-TO-DATE
+:AndroidCharts:processReleaseManifest UP-TO-DATE
+:AndroidCharts:generateReleaseBuildConfig UP-TO-DATE
+:AndroidCharts:processReleaseResources UP-TO-DATE
+:AndroidCharts:generateReleaseSources UP-TO-DATE
+:AndroidCharts:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:AndroidCharts:javaPreCompileRelease
+:AndroidCharts:compileReleaseJavaWithJavac UP-TO-DATE
+:AndroidCharts:processReleaseJavaRes UP-TO-DATE
+:AndroidCharts:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:AndroidCharts:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:AndroidCharts:mergeReleaseJniLibFolders UP-TO-DATE
+:AndroidCharts:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:AndroidCharts:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:AndroidCharts:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:AndroidCharts:bundleRelease UP-TO-DATE
+:AndroidChartsExample:preBuild UP-TO-DATE
+:AndroidChartsExample:preDefaultFlavorDebugBuild UP-TO-DATE
+:AndroidChartsExample:checkDefaultFlavorDebugManifest
+:AndroidChartsExample:prepareDefaultFlavorDebugDependencies
+:AndroidChartsExample:compileDefaultFlavorDebugAidl
+:AndroidChartsExample:compileDefaultFlavorDebugRenderscript
+:AndroidChartsExample:generateDefaultFlavorDebugBuildConfig
+:AndroidChartsExample:generateDefaultFlavorDebugResValues
+:AndroidChartsExample:generateDefaultFlavorDebugResources
+:AndroidChartsExample:mergeDefaultFlavorDebugResources
+:AndroidChartsExample:processDefaultFlavorDebugManifest
+:AndroidChartsExample:processDefaultFlavorDebugResources
+:AndroidChartsExample:generateDefaultFlavorDebugSources
+:AndroidChartsExample:incrementalDefaultFlavorDebugJavaCompilationSafeguard
+:AndroidChartsExample:javaPreCompileDefaultFlavorDebug
+:AndroidChartsExample:compileDefaultFlavorDebugJavaWithJavac
+:AndroidChartsExample:compileDefaultFlavorDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:AndroidChartsExample:compileDefaultFlavorDebugNdk UP-TO-DATE
+:AndroidChartsExample:compileDefaultFlavorDebugSources
+:AndroidChartsExample:mergeDefaultFlavorDebugShaders
+:AndroidChartsExample:compileDefaultFlavorDebugShaders
+:AndroidChartsExample:generateDefaultFlavorDebugAssets
+:AndroidChartsExample:mergeDefaultFlavorDebugAssets
+:AndroidChartsExample:transformClassesWithDexForDefaultFlavorDebug
+:AndroidChartsExample:mergeDefaultFlavorDebugJniLibFolders
+:AndroidChartsExample:transformNativeLibsWithMergeJniLibsForDefaultFlavorDebug
+:AndroidChartsExample:transformNativeLibsWithStripDebugSymbolForDefaultFlavorDebug
+:AndroidChartsExample:processDefaultFlavorDebugJavaRes UP-TO-DATE
+:AndroidChartsExample:transformResourcesWithMergeJavaResForDefaultFlavorDebug
+:AndroidChartsExample:validateSigningDefaultFlavorDebug
+:AndroidChartsExample:packageDefaultFlavorDebug
+:AndroidChartsExample:assembleDefaultFlavorDebug
+:AndroidChartsExample:assembleDebug
+:AndroidChartsExample:preDefaultFlavorReleaseBuild UP-TO-DATE
+:AndroidChartsExample:checkDefaultFlavorReleaseManifest
+:AndroidChartsExample:prepareDefaultFlavorReleaseDependencies
+:AndroidChartsExample:compileDefaultFlavorReleaseAidl
+:AndroidChartsExample:compileDefaultFlavorReleaseRenderscript
+:AndroidChartsExample:generateDefaultFlavorReleaseBuildConfig
+:AndroidChartsExample:generateDefaultFlavorReleaseResValues
+:AndroidChartsExample:generateDefaultFlavorReleaseResources
+:AndroidChartsExample:mergeDefaultFlavorReleaseResources
+:AndroidChartsExample:processDefaultFlavorReleaseManifest
+:AndroidChartsExample:processDefaultFlavorReleaseResources
+:AndroidChartsExample:generateDefaultFlavorReleaseSources
+:AndroidChartsExample:incrementalDefaultFlavorReleaseJavaCompilationSafeguard
+:AndroidChartsExample:javaPreCompileDefaultFlavorRelease
+:AndroidChartsExample:compileDefaultFlavorReleaseJavaWithJavac
+:AndroidChartsExample:compileDefaultFlavorReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:AndroidChartsExample:compileDefaultFlavorReleaseNdk UP-TO-DATE
+:AndroidChartsExample:compileDefaultFlavorReleaseSources
+:AndroidChartsExample:lintVitalDefaultFlavorRelease
+:AndroidChartsExample:mergeDefaultFlavorReleaseShaders
+:AndroidChartsExample:compileDefaultFlavorReleaseShaders
+:AndroidChartsExample:generateDefaultFlavorReleaseAssets
+:AndroidChartsExample:mergeDefaultFlavorReleaseAssets
+:AndroidChartsExample:transformClassesWithDexForDefaultFlavorRelease
+:AndroidChartsExample:mergeDefaultFlavorReleaseJniLibFolders
+:AndroidChartsExample:transformNativeLibsWithMergeJniLibsForDefaultFlavorRelease
+:AndroidChartsExample:transformNativeLibsWithStripDebugSymbolForDefaultFlavorRelease
+:AndroidChartsExample:processDefaultFlavorReleaseJavaRes UP-TO-DATE
+:AndroidChartsExample:transformResourcesWithMergeJavaResForDefaultFlavorRelease
+:AndroidChartsExample:packageDefaultFlavorRelease
+:AndroidChartsExample:assembleDefaultFlavorRelease
+:AndroidChartsExample:assembleRelease
+:AndroidChartsExample:assemble
+:AndroidChartsExample:build
+
+BUILD SUCCESSFUL
+
+Total time: 16.868 secs
+
+2018-04-11 10:00:48,150 INFO  FullProcessService - Found APK file: /tmp/rdisk/172/src/AndroidChartsExample/build/outputs/apk/AndroidChartsExample-defaultFlavor-release-unsigned.apk

@@ -1,0 +1,8 @@
+2016-07-16 05:24:26,180 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/JetBrains/intellij-community/archive/master.zip", attempt 3
+2016-07-16 05:24:31,001 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/JetBrains/intellij-community/archive/master.zip, attempt 3
+2016-07-16 05:26:09,384 DEBUG o.z.z.ZipUtil - Extracting '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468625065624-0/master.zip' into '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468625065624-0/src'.
+2016-07-16 05:26:49,369 INFO  c.g.v.a.s.FullProcessService - Size of directory with sources: 677 MB
+2016-07-16 05:26:49,370 ERROR c.g.v.a.s.FullProcessService - Source directory should be less than 40 MB
+2016-07-16 05:26:49,370 ERROR c.g.v.a.s.FullProcessService - Project will not be processed
+2016-07-16 05:26:49,370 ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+2016-07-16 05:26:53,446 ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

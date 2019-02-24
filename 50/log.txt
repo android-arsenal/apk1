@@ -1,0 +1,262 @@
+2017-06-18 14:21:20,278 INFO  DownloadService - Downloading "https://github.com/Prototik/HoloEverywhere/archive/master.zip", attempt 3
+2017-06-18 14:21:22,699 INFO  DownloadService - Downloaded https://github.com/Prototik/HoloEverywhere/archive/master.zip, attempt 3
+2017-06-18 14:21:22,701 INFO  DownloadService - Size of file "/tmp/rdisk/50/master.zip": 3 MB
+2017-06-18 14:21:22,701 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2017-06-18 14:21:22,704 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/50/master.zip: true
+2017-06-18 14:21:22,704 DEBUG ZipUtil - Extracting '/tmp/rdisk/50/master.zip' into '/tmp/rdisk/50/src'.
+2017-06-18 14:21:22,911 INFO  FullProcessService - Size of directory with sources: 7 MB
+2017-06-18 14:21:22,912 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/50/src]
+2017-06-18 14:21:22,915 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/50/src/.git/
+
+2017-06-18 14:21:22,927 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/50/src/HoloEverywhere-master/gradlew
+2017-06-18 14:21:22,939 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/50/src/HoloEverywhere-master/build.gradle /tmp/rdisk/50/src/HoloEverywhere-master/addons/preferences/build.gradle /tmp/rdisk/50/src/HoloEverywhere-master/addons/slider/build.gradle /tmp/rdisk/50/src/HoloEverywhere-master/demo/build.gradle /tmp/rdisk/50/src/HoloEverywhere-master/issues/build.gradle /tmp/rdisk/50/src/HoloEverywhere-master/library/build.gradle
+2017-06-18 14:21:22,951 INFO  ProjectBuildService - All script(s): /tmp/rdisk/50/src/HoloEverywhere-master/settings.gradle /tmp/rdisk/50/src/HoloEverywhere-master/library/build.gradle /tmp/rdisk/50/src/HoloEverywhere-master/issues/build.gradle /tmp/rdisk/50/src/HoloEverywhere-master/demo/build.gradle /tmp/rdisk/50/src/HoloEverywhere-master/build.gradle /tmp/rdisk/50/src/HoloEverywhere-master/android_default.gradle /tmp/rdisk/50/src/HoloEverywhere-master/addons/slider/build.gradle /tmp/rdisk/50/src/HoloEverywhere-master/addons/preferences/build.gradle
+2017-06-18 14:21:22,952 INFO  ProjectBuildService - Remote scripts: none
+2017-06-18 14:21:22,952 INFO  ProjectFixService - Fixing project...
+2017-06-18 14:21:22,975 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/50/src/HoloEverywhere-master/local.properties
+2017-06-18 14:21:22,976 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.11-all.zip
+2017-06-18 14:21:22,976 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.11-bin.zip)
+2017-06-18 14:21:22,978 INFO  ProjectFixService - Build info for "/tmp/rdisk/50/src/HoloEverywhere-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2017-06-18 14:21:22,979 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/50/src/HoloEverywhere-master/addons/preferences/local.properties
+2017-06-18 14:21:22,981 INFO  ProjectFixService - Build info for "/tmp/rdisk/50/src/HoloEverywhere-master/addons/preferences/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2017-06-18 14:21:22,982 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/50/src/HoloEverywhere-master/addons/slider/local.properties
+2017-06-18 14:21:22,984 INFO  ProjectFixService - Build info for "/tmp/rdisk/50/src/HoloEverywhere-master/addons/slider/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2017-06-18 14:21:22,984 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/50/src/HoloEverywhere-master/demo/local.properties
+2017-06-18 14:21:22,986 INFO  ProjectFixService - Build info for "/tmp/rdisk/50/src/HoloEverywhere-master/demo/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2017-06-18 14:21:22,986 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/50/src/HoloEverywhere-master/issues/local.properties
+2017-06-18 14:21:22,988 INFO  ProjectFixService - Build info for "/tmp/rdisk/50/src/HoloEverywhere-master/issues/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2017-06-18 14:21:22,989 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/50/src/HoloEverywhere-master/library/local.properties
+2017-06-18 14:21:22,991 INFO  ProjectFixService - Build info for "/tmp/rdisk/50/src/HoloEverywhere-master/library/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=7,targetSdkVersion=19]
+2017-06-18 14:21:22,991 INFO  ProjectFixService - Project was maybe fixed
+2017-06-18 14:21:22,991 INFO  ProjectTaskService - Detecting possible tasks...
+2017-06-18 14:21:22,991 INFO  SysUtils - Execute command: [/tmp/rdisk/50/src/HoloEverywhere-master/gradlew, -b, /tmp/rdisk/50/src/HoloEverywhere-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2017-06-18 14:25:51,534 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2017-06-18 14:25:51,534 INFO  ProjectTaskService - Detected possible tasks: 0
+2017-06-18 14:25:51,535 INFO  ProjectTaskService - Excluded tasks (0): none
+2017-06-18 14:25:51,535 INFO  SysUtils - Execute command: [/tmp/rdisk/50/src/HoloEverywhere-master/gradlew, -b, /tmp/rdisk/50/src/HoloEverywhere-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2017-06-18 14:30:11,814 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:72)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:46)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:200)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:127)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$0(BuildProcessorServiceImpl.java:110)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-06-18 14:30:11,815 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/tmp/rdisk/50/src/HoloEverywhere-master/build.gradle' line: 25
+
+* What went wrong:
+A problem occurred evaluating root project 'HoloEverywhere-master'.
+> A problem occurred configuring project ':library'.
+   > Could not resolve all dependencies for configuration ':library:_debugCompile'.
+      > Could not resolve com.android.support:support-v4:19.2.0.
+        Required by:
+            org.holoeverywhere:library:2.1.1-SNAPSHOT
+         > Could not GET 'http://192.241.191.41/repo/com/android/support/support-v4/19.2.0/support-v4-19.2.0.pom'.
+            > Connection to http://192.241.191.41 refused
+         > Could not GET 'http://192.241.191.41/snapshot/com/android/support/support-v4/19.2.0/support-v4-19.2.0.pom'.
+            > Connection to http://192.241.191.41 refused
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.GradleScriptException: A problem occurred evaluating root project 'HoloEverywhere-master'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:54)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:177)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:38)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:25)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:55)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:507)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:82)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:28)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':library'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:507)
+	at org.gradle.api.internal.project.AbstractProject.evaluationDependsOn(AbstractProject.java:611)
+	at org.gradle.api.internal.project.AbstractProject.evaluationDependsOnChildren(AbstractProject.java:594)
+	at org.gradle.api.Project$evaluationDependsOnChildren.call(Unknown Source)
+	at com.android.build.gradle.ReportingPlugin.apply(ReportingPlugin.groovy:43)
+	at com.android.build.gradle.ReportingPlugin.apply(ReportingPlugin.groovy)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.providePlugin(DefaultPluginContainer.java:104)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.addPluginInternal(DefaultPluginContainer.java:68)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.apply(DefaultPluginContainer.java:34)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.applyPlugin(DefaultObjectConfigurationAction.java:101)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.access$200(DefaultObjectConfigurationAction.java:32)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction$3.run(DefaultObjectConfigurationAction.java:72)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.execute(DefaultObjectConfigurationAction.java:114)
+	at org.gradle.api.internal.project.AbstractPluginAware.apply(AbstractPluginAware.java:39)
+	at org.gradle.api.Project$apply.call(Unknown Source)
+	at org.gradle.api.internal.project.ProjectScript.apply(ProjectScript.groovy:34)
+	at org.gradle.api.Script$apply.callCurrent(Unknown Source)
+	at build_2pm1ahvnub52m42rs0sa7d9u0o.run(/tmp/rdisk/50/src/HoloEverywhere-master/build.gradle:25)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:52)
+	... 33 more
+Caused by: org.gradle.api.artifacts.ResolveException: Could not resolve all dependencies for configuration ':library:_debugCompile'.
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfiguration.rethrowFailure(DefaultLenientConfiguration.java:52)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultResolvedConfiguration.rethrowFailure(DefaultResolvedConfiguration.java:36)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultResolvedConfiguration.getResolvedArtifacts(DefaultResolvedConfiguration.java:59)
+	at org.gradle.api.internal.artifacts.ivyservice.SelfResolvingDependencyResolver$FilesAggregatingResolvedConfiguration.getResolvedArtifacts(SelfResolvingDependencyResolver.java:86)
+	at org.gradle.api.internal.artifacts.ivyservice.ErrorHandlingArtifactDependencyResolver$ErrorHandlingResolvedConfiguration.getResolvedArtifacts(ErrorHandlingArtifactDependencyResolver.java:208)
+	at com.android.build.gradle.BasePlugin.collectArtifacts(BasePlugin.groovy:2184)
+	at com.android.build.gradle.BasePlugin.resolveDependencyForConfig(BasePlugin.groovy:2093)
+	at com.android.build.gradle.BasePlugin.this$2$resolveDependencyForConfig(BasePlugin.groovy)
+	at com.android.build.gradle.BasePlugin$this$2$resolveDependencyForConfig.callCurrent(Unknown Source)
+	at com.android.build.gradle.BasePlugin.resolveDependencies(BasePlugin.groovy:2042)
+	at com.android.build.gradle.internal.VariantManager.createTasksForDefaultBuild(VariantManager.java:304)
+	at com.android.build.gradle.internal.VariantManager.createAndroidTasks(VariantManager.java:167)
+	at com.android.build.gradle.internal.VariantManager$createAndroidTasks.call(Unknown Source)
+	at com.android.build.gradle.LibraryPlugin.doCreateAndroidTasks(LibraryPlugin.groovy:52)
+	at com.android.build.gradle.BasePlugin.createAndroidTasks(BasePlugin.groovy:370)
+	at com.android.build.gradle.BasePlugin$_apply_closure7.doCall(BasePlugin.groovy:308)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:79)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:31)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy14.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 53 more
+Caused by: org.gradle.api.internal.artifacts.ivyservice.ModuleVersionResolveException: Could not resolve com.android.support:support-v4:19.2.0.
+Required by:
+    org.holoeverywhere:library:2.1.1-SNAPSHOT
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain.resolve(UserResolverChain.java:67)
+	at org.gradle.api.internal.artifacts.ivyservice.clientmodule.ClientModuleResolver.resolve(ClientModuleResolver.java:34)
+	at org.gradle.api.internal.artifacts.ivyservice.projectmodule.ProjectDependencyResolver.resolve(ProjectDependencyResolver.java:48)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.LazyDependencyToModuleResolver$AbstractVersionResolveResult.resolve(LazyDependencyToModuleResolver.java:86)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$ModuleVersionResolveState.resolve(DependencyGraphBuilder.java:650)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$ModuleVersionResolveState.getMetaData(DependencyGraphBuilder.java:661)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$DependencyEdge.calculateTargetConfigurations(DependencyGraphBuilder.java:337)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder$DependencyEdge.attachToTargetConfigurations(DependencyGraphBuilder.java:311)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder.traverseGraph(DependencyGraphBuilder.java:127)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder.resolve(DependencyGraphBuilder.java:67)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver$1.transform(DefaultDependencyResolver.java:108)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver$1.transform(DefaultDependencyResolver.java:77)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultIvyContextManager.withIvy(DefaultIvyContextManager.java:61)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver.resolve(DefaultDependencyResolver.java:77)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver$1.create(CacheLockingArtifactDependencyResolver.java:39)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver$1.create(CacheLockingArtifactDependencyResolver.java:37)
+	at org.gradle.cache.internal.DefaultCacheAccess.useCache(DefaultCacheAccess.java:187)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.useCache(DefaultPersistentDirectoryStore.java:102)
+	at org.gradle.cache.internal.DefaultCacheFactory$ReferenceTrackingCache.useCache(DefaultCacheFactory.java:189)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultCacheLockingManager.useCache(DefaultCacheLockingManager.java:61)
+	at org.gradle.api.internal.artifacts.ivyservice.CacheLockingArtifactDependencyResolver.resolve(CacheLockingArtifactDependencyResolver.java:37)
+	at org.gradle.api.internal.artifacts.ivyservice.SelfResolvingDependencyResolver.resolve(SelfResolvingDependencyResolver.java:41)
+	at org.gradle.api.internal.artifacts.ivyservice.ShortcircuitEmptyConfigsArtifactDependencyResolver.resolve(ShortcircuitEmptyConfigsArtifactDependencyResolver.java:51)
+	at org.gradle.api.internal.artifacts.ivyservice.ErrorHandlingArtifactDependencyResolver.resolve(ErrorHandlingArtifactDependencyResolver.java:44)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultConfigurationResolver.resolve(DefaultConfigurationResolver.java:42)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveNow(DefaultConfiguration.java:240)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.getResolvedConfiguration(DefaultConfiguration.java:230)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getResolvedConfiguration(Unknown Source)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.getProperty(BeanDynamicObject.java:153)
+	at org.gradle.api.internal.BeanDynamicObject.getProperty(BeanDynamicObject.java:107)
+	at org.gradle.api.internal.CompositeDynamicObject.getProperty(CompositeDynamicObject.java:78)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration_Decorated.getProperty(Unknown Source)
+	... 71 more
+Caused by: org.gradle.api.internal.externalresource.transport.http.HttpRequestException: Could not GET 'http://192.241.191.41/repo/com/android/support/support-v4/19.2.0/support-v4-19.2.0.pom'.
+	at org.gradle.api.internal.externalresource.transport.http.HttpClientHelper.performRequest(HttpClientHelper.java:80)
+	at org.gradle.api.internal.externalresource.transport.http.HttpClientHelper.performRawGet(HttpClientHelper.java:66)
+	at org.gradle.api.internal.externalresource.transport.http.HttpClientHelper.performGet(HttpClientHelper.java:70)
+	at org.gradle.api.internal.externalresource.transport.http.HttpResourceAccessor.getResource(HttpResourceAccessor.java:46)
+	at org.gradle.api.internal.externalresource.transport.http.HttpResourceAccessor.getResource(HttpResourceAccessor.java:32)
+	at org.gradle.api.internal.externalresource.transfer.ProgressLoggingExternalResourceAccessor.getResource(ProgressLoggingExternalResourceAccessor.java:38)
+	at org.gradle.api.internal.externalresource.transfer.DefaultCacheAwareExternalResourceAccessor.getResource(DefaultCacheAwareExternalResourceAccessor.java:60)
+	at org.gradle.api.internal.externalresource.transport.DefaultExternalResourceRepository.getResource(DefaultExternalResourceRepository.java:65)
+	at org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver.getResource(ExternalResourceResolver.java:427)
+	at org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver.findStaticResourceUsingPatterns(ExternalResourceResolver.java:307)
+	at org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver.findMetaDataFileUsingAnyPattern(ExternalResourceResolver.java:266)
+	at org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver.findStaticDependency(ExternalResourceResolver.java:170)
+	at org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver.getDependency(ExternalResourceResolver.java:165)
+	at org.gradle.api.internal.artifacts.repositories.resolver.MavenResolver.getDependency(MavenResolver.java:81)
+	at org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver.getDependency(ExternalResourceResolver.java:157)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CacheLockingModuleVersionRepository$1.run(CacheLockingModuleVersionRepository.java:46)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.cache.internal.DefaultCacheAccess.longRunningOperation(DefaultCacheAccess.java:237)
+	at org.gradle.cache.internal.DefaultCacheAccess.longRunningOperation(DefaultCacheAccess.java:308)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.longRunningOperation(DefaultPersistentDirectoryStore.java:114)
+	at org.gradle.cache.internal.DefaultCacheFactory$ReferenceTrackingCache.longRunningOperation(DefaultCacheFactory.java:185)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultCacheLockingManager.longRunningOperation(DefaultCacheLockingManager.java:57)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CacheLockingModuleVersionRepository.getDependency(CacheLockingModuleVersionRepository.java:44)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository.getDependency(CachingModuleVersionRepository.java:90)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.CachedRepository.getDependency(CachedRepository.java:55)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain$RepositoryResolveState.resolve(UserResolverChain.java:184)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain.findLatestModule(UserResolverChain.java:98)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain.findLatestModule(UserResolverChain.java:81)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain.resolve(UserResolverChain.java:56)
+	... 102 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://192.241.191.41 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.DecompressingHttpClient.execute(DecompressingHttpClient.java:137)
+	at org.apache.http.impl.client.DecompressingHttpClient.execute(DecompressingHttpClient.java:118)
+	at org.gradle.api.internal.externalresource.transport.http.HttpClientHelper.performHttpRequest(HttpClientHelper.java:111)
+	at org.gradle.api.internal.externalresource.transport.http.HttpClientHelper.executeGetOrHead(HttpClientHelper.java:87)
+	at org.gradle.api.internal.externalresource.transport.http.HttpClientHelper.performRequest(HttpClientHelper.java:78)
+	... 130 more
+Caused by: java.net.ConnectException: Connection timed out (Connection timed out)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	... 139 more
+
+
+BUILD FAILED
+
+Total time: 4 mins 19.869 secs
+
+2017-06-18 14:30:11,828 INFO  ProjectTaskService - Detecting possible tasks...
+2017-06-18 14:30:11,829 INFO  SysUtils - Execute command: [/tmp/rdisk/50/src/HoloEverywhere-master/gradlew, -b, /tmp/rdisk/50/src/HoloEverywhere-master/addons/preferences/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]

@@ -1,0 +1,119 @@
+2018-04-11 10:30:33,117 INFO  DownloadService - Downloading "https://github.com/crossle/KitKatEmoji/archive/master.zip", attempt 3
+2018-04-11 10:31:33,609 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 10:31:34,327 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 10:31:34,327 INFO  DownloadService - Downloading "https://github.com/crossle/KitKatEmoji/archive/master.zip", attempt 3
+2018-04-11 10:32:35,587 DEBUG FullProcessService - Repository https://github.com/crossle/KitKatEmoji available: true
+2018-04-11 10:32:35,587 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 10:32:35,587 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/crossle/KitKatEmoji, /tmp/rdisk/154/src]
+2018-04-11 10:32:43,096 INFO  SysUtils - 
+2018-04-11 10:32:43,107 INFO  GitService - Deleted "/tmp/rdisk/154/src/.git": true
+2018-04-11 10:32:43,127 INFO  FullProcessService - Size of directory with sources: 4 MB
+2018-04-11 10:32:43,127 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/154/src]
+2018-04-11 10:32:43,131 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/154/src/.git/
+
+2018-04-11 10:32:43,143 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/154/src/gradlew
+2018-04-11 10:32:43,156 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/154/src/KitKatEmoji-sample/build.gradle /tmp/rdisk/154/src/KitKatEmoji/build.gradle /tmp/rdisk/154/src/build.gradle
+2018-04-11 10:32:43,169 INFO  ProjectBuildService - All script(s): /tmp/rdisk/154/src/settings.gradle /tmp/rdisk/154/src/gradle-mvn-push.gradle /tmp/rdisk/154/src/build.gradle /tmp/rdisk/154/src/KitKatEmoji/build.gradle /tmp/rdisk/154/src/KitKatEmoji-sample/build.gradle
+2018-04-11 10:32:43,169 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 10:32:43,169 INFO  ProjectFixService - Fixing project...
+2018-04-11 10:32:43,197 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/154/src/KitKatEmoji-sample/local.properties
+2018-04-11 10:32:43,198 INFO  ProjectFixService - Build info for "/tmp/rdisk/154/src/KitKatEmoji-sample/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-11 10:32:43,198 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/154/src/KitKatEmoji/local.properties
+2018-04-11 10:32:43,198 INFO  ProjectFixService - Build info for "/tmp/rdisk/154/src/KitKatEmoji/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-11 10:32:43,198 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/154/src/local.properties
+2018-04-11 10:32:43,199 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-bin.zip
+2018-04-11 10:32:43,201 INFO  ProjectFixService - Build info for "/tmp/rdisk/154/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-11 10:32:43,201 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 10:32:43,201 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 10:32:43,201 INFO  SysUtils - Execute command: [/tmp/rdisk/154/src/gradlew, -b, /tmp/rdisk/154/src/KitKatEmoji-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 10:32:57,347 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-11 10:32:57,347 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-11 10:32:57,347 INFO  SysUtils - Execute command: [/tmp/rdisk/154/src/gradlew, -b, /tmp/rdisk/154/src/KitKatEmoji-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-11 10:33:25,116 INFO  SysUtils - Configuration on demand is an incubating feature.
+:KitKatEmoji-sample:preBuild
+:KitKatEmoji-sample:compileDebugNdk
+:KitKatEmoji:compileLint
+:KitKatEmoji:copyReleaseLint UP-TO-DATE
+:KitKatEmoji:preBuild
+:KitKatEmoji:preReleaseBuild
+:KitKatEmoji:checkReleaseManifest
+:KitKatEmoji:preDebugBuild
+:KitKatEmoji:preDebugTestBuild
+:KitKatEmoji:prepareComAndroidSupportSupportV42103Library
+:KitKatEmoji:prepareReleaseDependencies
+:KitKatEmoji:compileReleaseAidl
+:KitKatEmoji:compileReleaseRenderscript
+:KitKatEmoji:generateReleaseBuildConfig
+:KitKatEmoji:generateReleaseAssets UP-TO-DATE
+:KitKatEmoji:mergeReleaseAssets
+:KitKatEmoji:generateReleaseResValues
+:KitKatEmoji:generateReleaseResources
+:KitKatEmoji:mergeReleaseResources
+:KitKatEmoji:processReleaseManifest
+:KitKatEmoji:processReleaseResources
+:KitKatEmoji:generateReleaseSources
+:KitKatEmoji:compileReleaseJava
+:KitKatEmoji:extractReleaseAnnotations
+:KitKatEmoji:mergeReleaseProguardFiles
+:KitKatEmoji:processReleaseJavaRes UP-TO-DATE
+:KitKatEmoji:packageReleaseJar
+:KitKatEmoji:compileReleaseNdk
+:KitKatEmoji:packageReleaseJniLibs UP-TO-DATE
+:KitKatEmoji:packageReleaseLocalJar UP-TO-DATE
+:KitKatEmoji:packageReleaseRenderscript UP-TO-DATE
+:KitKatEmoji:packageReleaseResources
+:KitKatEmoji:bundleRelease
+:KitKatEmoji-sample:preDebugBuild
+:KitKatEmoji-sample:checkDebugManifest
+:KitKatEmoji-sample:preReleaseBuild
+:KitKatEmoji-sample:prepareComAndroidSupportSupportV42103Library
+:KitKatEmoji-sample:prepareSrcKitKatEmojiUnspecifiedLibrary
+:KitKatEmoji-sample:prepareDebugDependencies
+:KitKatEmoji-sample:compileDebugAidl
+:KitKatEmoji-sample:compileDebugRenderscript
+:KitKatEmoji-sample:generateDebugBuildConfig
+:KitKatEmoji-sample:generateDebugAssets UP-TO-DATE
+:KitKatEmoji-sample:mergeDebugAssets
+:KitKatEmoji-sample:generateDebugResValues
+:KitKatEmoji-sample:generateDebugResources
+:KitKatEmoji-sample:mergeDebugResources
+:KitKatEmoji-sample:processDebugManifest
+:KitKatEmoji-sample:processDebugResources
+:KitKatEmoji-sample:generateDebugSources
+:KitKatEmoji-sample:compileDebugJava
+:KitKatEmoji-sample:preDexDebug
+:KitKatEmoji-sample:dexDebug
+:KitKatEmoji-sample:processDebugJavaRes UP-TO-DATE
+:KitKatEmoji-sample:validateDebugSigning
+:KitKatEmoji-sample:packageDebug
+:KitKatEmoji-sample:zipalignDebug
+:KitKatEmoji-sample:assembleDebug
+:KitKatEmoji-sample:checkReleaseManifest
+:KitKatEmoji-sample:prepareReleaseDependencies
+:KitKatEmoji-sample:compileReleaseAidl
+:KitKatEmoji-sample:compileReleaseRenderscript
+:KitKatEmoji-sample:generateReleaseBuildConfig
+:KitKatEmoji-sample:generateReleaseAssets UP-TO-DATE
+:KitKatEmoji-sample:mergeReleaseAssets
+:KitKatEmoji-sample:generateReleaseResValues
+:KitKatEmoji-sample:generateReleaseResources
+:KitKatEmoji-sample:mergeReleaseResources
+:KitKatEmoji-sample:processReleaseManifest
+:KitKatEmoji-sample:processReleaseResources
+:KitKatEmoji-sample:generateReleaseSources
+:KitKatEmoji-sample:compileReleaseJava
+:KitKatEmoji-sample:lintVitalRelease
+:KitKatEmoji-sample:compileReleaseNdk
+:KitKatEmoji-sample:proguardRelease
+:KitKatEmoji-sample:dexRelease
+:KitKatEmoji-sample:processReleaseJavaRes UP-TO-DATE
+:KitKatEmoji-sample:packageRelease
+:KitKatEmoji-sample:assembleRelease
+:KitKatEmoji-sample:assemble
+:KitKatEmoji-sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.341 secs
+
+2018-04-11 10:33:25,198 INFO  FullProcessService - Found APK file: /tmp/rdisk/154/src/KitKatEmoji-sample/build/outputs/apk/KitKatEmoji-sample-release-unsigned.apk

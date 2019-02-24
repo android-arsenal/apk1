@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.comcast.freeflow.examples.artbook",
+    "label" : "Artbook",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "18",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAACXlBMVEUAAAD////////////8/Pz9/f3////////////////8/Pz19fX////09PT9/f3//////////PL/+eX/993/////////////////////++3/8MT/6KH/4Yb/3HX/3HP/////////////////////9+D/6KT/3Xf/////////////+uz/////////////////8sz/337//////////////vz/7LL/3HT/56D6+vr/////3Xf/6af/89D/+OL/9NH/7LL/4YX/4IP/89H/8MP/6qv/4Yf/4or//vr/+OT///3/9+D/5JL/////////+/D///728Nz48+L//v353or/////3Xn/+urt2p7x0Gvvz2rs1Yr69eX82nL/7LP17M7513D57MT/////3nr/++/13pX/8sz65ab/////6KL79+v62HP634v/////8cj57cf8+vP72nX/////+OX656z/557789v//////vn745j/7LT77sb/4Yj94In/8sr86bD/45D+34L/9tv85Z7+5JP+33//+un84Y/+4o//3Xb//fX93oP/5Zn/337+3n792nP/883/3XX/3n3/7rr/4Yb/5Zj/88//4IH39/f36sH//fj+6q/////01378+fH07NL8+vL+/fru37D01HD+23Ls1Yvu4bbw0W/05rnz687p0IP31W709PTqz3rs3rH069Dt37Lpz3321W701HHr2qXz6s3u4bno0or+23P41m/w0Gv62HDwz2r21G7////////////////////////y8vL////7+/v////8/Pz8/Pz////GARvkAAAAynRSTlMAGl2VweL6/+LBXRoDSKn2/vv7/ahIAkXD/Pv7+/7/wkMVnvz7+/6dN9n82DY/8Pv97z7u/vr/+51E////////////////////////R6n///////+n////////////////XP//////k//////A/////+H/////+f//////////////////////////////////////////W////xn///////////////////9G//////////////////////9CnNcUNe09PUJGXJRb2ciXUQAAAtBJREFUSMfVVldbE0EUBQK5xJYGkbShJKEkSHqwRVERG4IlalTsBVEUsWAXe8HeSxR7V+wCFordf+VmdtmdkNnNM/che76Zc76ZuXPn3CQlDYBITpGlpskB5OkK2aDBidhDhg5TAqjUGq1Wo1YBKDMydVL84VkAeoPRZEZMmE1Ggx4gO0eUnptnAastHxGRb7OCpSCXzi8sArvNjPqF2WYHRzGNP6IEnC5ECZcT3B4K3+vzBxA1An6fN05RWOIrRaJR6nP321VuEfiRRPjBEXvyPHAGpAQBJ4wk+aMsdheSDJfdQtyHLgtsxOToMWODwXHjyyZMnFQ+uW/QBtnCnWeClch/RRBwTJnK/EybPoO7DytU8oKZ5AIVVVF29azZc1jdXH6JEF+fSr1QD/PmY/6C8MJFmL+4pq9K9MpkTpACBmGBJZi2dBlC5Rgt52cMsIITyMDIj65chWmrGbgGo7X8lBFqOYFCZeJH12FW3Xom9XhvsIGfMqnqOUGaWsjRRszaxKCy6ihq2CzUrbqRE8g1whG2YMFWBm3DaDtxP5omTgBa4Qg7MG0nA3dhtJsQaCFesIfN/V4G7sNoP01AbKmZFRxg4EGMDtG2lC4c+jArOMLAoxgdQ5RDE2k9zgrKEDpxEqMWREkrcXEtOJdwCqHTLDqDKBdHlMbZOkw7d/7CRXatS5evXOVL4xql+K6zvKob7BeYSrnJF1+kr1wzhPK+dZtjtt5hv3fv3Y8r76RK4QE9eNiAaY8eP8H8p8+e8w/ohfBEs4Ulal6+amt7/eYtevf+Q+vHT+F2/v0odCIm0NHZ2RH9fg5/+dpOmMA30jYKEttMV6yRORIZWXdPrPUVu6Wt0tvb31w9kmb8/Ue8fXvcEnb/k9Ygih1iDaW7V6RlFdBbVlePaJfLUcQ3xdRfUm1UVxmKbbuh37pErTry5299YxNAU2N97b/IQPgr8h+7ON2XXmF8DQAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 1234,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.comcast.freeflow.examples.artbook\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"18\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f060001\" android:label=\"Artbook\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Artbook\" android:name=\"com.comcast.freeflow.examples.artbook.ArtbookActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.comcast.freeflow.examples.artbook.AboutActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 596570,
+  "crc32" : 3005254866,
+  "sha256" : "fc20f89446780b276fab8141abec36bb7439351a2b800db112ad5f1cf6a42d51",
+  "buildTime" : 1523386941000
+}

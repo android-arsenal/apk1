@@ -1,0 +1,21 @@
+2018-04-11 21:24:21,540 INFO  DownloadService - Downloading "https://github.com/Coolred/barcodefraglibv2/archive/master.zip", attempt 3
+2018-04-11 21:25:22,133 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 21:25:23,211 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 21:25:23,211 INFO  DownloadService - Downloading "https://github.com/Coolred/barcodefraglibv2/archive/master.zip", attempt 3
+2018-04-11 21:26:24,455 DEBUG FullProcessService - Repository https://github.com/Coolred/barcodefraglibv2 available: true
+2018-04-11 21:26:24,456 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 21:26:24,456 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Coolred/barcodefraglibv2, /tmp/rdisk/55/src]
+2018-04-11 21:26:26,470 INFO  SysUtils - 
+2018-04-11 21:26:26,475 INFO  GitService - Deleted "/tmp/rdisk/55/src/.git": true
+2018-04-11 21:26:26,478 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-11 21:26:26,479 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/55/src]
+2018-04-11 21:26:26,483 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/55/src/.git/
+
+2018-04-11 21:26:26,486 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-11 21:26:26,486 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-11 21:26:26,488 INFO  ProjectBuildService - Build script(s): none
+2018-04-11 21:26:26,491 INFO  ProjectBuildService - All script(s): none
+2018-04-11 21:26:26,491 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 21:26:26,491 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-11 21:26:26,491 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 21:26:26,493 ERROR FullProcessService - Could not find generated or existed APK file

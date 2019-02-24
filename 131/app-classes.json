@@ -1,0 +1,10 @@
+{
+  "android.a.a" : [ "a", "b", "c", "d", "e", "f" ],
+  "android.support.a.a" : [ "a" ],
+  "android.support.annotation" : [ "Keep" ],
+  "butterknife" : [ "BindAnim", "BindArray", "BindBitmap", "BindBool", "BindColor", "BindDimen", "BindDrawable", "BindFloat", "BindFont", "BindFont$TypefaceStyle", "BindInt", "BindString", "BindView", "BindViews", "ButterKnife", "ButterKnife$Action", "ButterKnife$Setter", "OnCheckedChanged", "OnClick", "OnEditorAction", "OnFocusChange", "OnItemClick", "OnItemLongClick", "OnItemSelected", "OnItemSelected$Callback", "OnLongClick", "OnPageChange", "OnPageChange$Callback", "OnTextChanged", "OnTextChanged$Callback", "OnTouch", "Optional", "R", "R$attr", "R$bool", "R$color", "R$dimen", "R$drawable", "R$id", "R$integer", "R$layout", "R$string", "R$style", "R$styleable", "Unbinder", "Unbinder$1" ],
+  "butterknife.a" : [ "a", "a$1", "b", "c" ],
+  "com.example.butterknife" : [ "SimpleApp" ],
+  "com.example.butterknife.library" : [ "SimpleActivity", "SimpleActivity$1", "SimpleActivity_ViewBinding", "SimpleActivity_ViewBinding$1", "SimpleActivity_ViewBinding$2", "SimpleActivity_ViewBinding$3", "SimpleAdapter", "SimpleAdapter$ViewHolder", "SimpleAdapter$ViewHolder_ViewBinding" ],
+  "com.example.butterknife.unbinder" : [ "A", "A_ViewBinding", "B", "B_ViewBinding", "C", "C_ViewBinding", "D", "D_ViewBinding", "E", "E_ViewBinding", "F", "F_ViewBinding", "G", "G_ViewBinding", "G_ViewBinding$1", "H", "H_ViewBinding" ]
+}

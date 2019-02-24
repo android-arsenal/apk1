@@ -1,0 +1,12 @@
+2016-07-16 03:17:57,483 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/sbt/sbt/archive/master.zip", attempt 3
+2016-07-16 03:18:05,021 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/sbt/sbt/archive/master.zip", attempt 2
+2016-07-16 03:18:11,536 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/sbt/sbt/archive/master.zip", attempt 1
+2016-07-16 03:18:13,241 INFO  c.g.v.a.s.g.GithubDownloadService - Could not find ZIP archive for master branch
+2016-07-16 03:18:14,835 INFO  c.g.v.a.s.g.GithubDownloadService - Default branch of this repository: 1.0.x
+2016-07-16 03:18:14,835 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/sbt/sbt/archive/1.0.x.zip", attempt 3
+2016-07-16 03:18:16,624 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/sbt/sbt/archive/1.0.x.zip, attempt 3
+2016-07-16 03:18:18,924 INFO  c.g.v.a.s.FullProcessService - Archive with sources does not contain any build script
+2016-07-16 03:18:18,925 ERROR c.g.v.a.s.FullProcessService - Could not find directory with sources
+2016-07-16 03:18:18,925 ERROR c.g.v.a.s.FullProcessService - Project will not be processed
+2016-07-16 03:18:18,925 ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+2016-07-16 03:18:18,946 ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

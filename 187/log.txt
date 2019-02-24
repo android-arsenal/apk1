@@ -1,0 +1,204 @@
+2018-04-10 19:01:31,688 INFO  DownloadService - Downloading "https://github.com/Comcast/FreeFlow/archive/master.zip", attempt 3
+2018-04-10 19:01:32,342 INFO  DownloadService - Downloaded https://github.com/Comcast/FreeFlow/archive/master.zip, attempt 3
+2018-04-10 19:01:32,342 INFO  DownloadService - Size of file "/tmp/rdisk/187/master.zip": 1 MB
+2018-04-10 19:01:32,342 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-10 19:01:32,343 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/187/master.zip: true
+2018-04-10 19:01:32,343 DEBUG ZipUtil - Extracting '/tmp/rdisk/187/master.zip' into '/tmp/rdisk/187/src'.
+2018-04-10 19:01:32,378 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-10 19:01:32,378 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/187/src]
+2018-04-10 19:01:32,383 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/187/src/.git/
+
+2018-04-10 19:01:32,388 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/187/src/FreeFlow-master/gradlew /tmp/rdisk/187/src/FreeFlow-master/gradle/gradlew
+2018-04-10 19:01:32,393 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/187/src/FreeFlow-master/FreeFlow/build.gradle /tmp/rdisk/187/src/FreeFlow-master/examples/Artbook/build.gradle /tmp/rdisk/187/src/FreeFlow-master/examples/PhotoGrid/build.gradle /tmp/rdisk/187/src/FreeFlow-master/build.gradle
+2018-04-10 19:01:32,398 INFO  ProjectBuildService - All script(s): /tmp/rdisk/187/src/FreeFlow-master/settings.gradle /tmp/rdisk/187/src/FreeFlow-master/maven_push.gradle /tmp/rdisk/187/src/FreeFlow-master/examples/PhotoGrid/build.gradle /tmp/rdisk/187/src/FreeFlow-master/examples/Artbook/build.gradle /tmp/rdisk/187/src/FreeFlow-master/build.gradle /tmp/rdisk/187/src/FreeFlow-master/FreeFlow/build.gradle
+2018-04-10 19:01:32,399 INFO  ProjectBuildService - Remote scripts: none
+2018-04-10 19:01:32,399 INFO  ProjectFixService - Fixing project...
+2018-04-10 19:01:32,412 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/187/src/FreeFlow-master/FreeFlow/local.properties
+2018-04-10 19:01:32,413 INFO  ProjectFixService - Build info for "/tmp/rdisk/187/src/FreeFlow-master/FreeFlow/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 19:01:32,413 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/187/src/FreeFlow-master/FreeFlow/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 19:01:32,414 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/187/src/FreeFlow-master/examples/Artbook/local.properties
+2018-04-10 19:01:32,415 INFO  ProjectFixService - Build info for "/tmp/rdisk/187/src/FreeFlow-master/examples/Artbook/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 19:01:32,416 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/187/src/FreeFlow-master/examples/Artbook/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 19:01:32,416 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/187/src/FreeFlow-master/examples/PhotoGrid/local.properties
+2018-04-10 19:01:32,417 INFO  ProjectFixService - Build info for "/tmp/rdisk/187/src/FreeFlow-master/examples/PhotoGrid/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 19:01:32,418 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/187/src/FreeFlow-master/examples/PhotoGrid/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 19:01:32,418 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/187/src/FreeFlow-master/local.properties
+2018-04-10 19:01:32,418 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2-all.zip
+2018-04-10 19:01:32,418 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2-bin.zip)
+2018-04-10 19:01:32,421 INFO  ProjectFixService - Build info for "/tmp/rdisk/187/src/FreeFlow-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 19:01:32,421 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/187/src/FreeFlow-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 19:01:32,421 INFO  ProjectFixService - Project was maybe fixed
+2018-04-10 19:01:32,421 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 19:01:32,421 INFO  SysUtils - Execute command: [/tmp/rdisk/187/src/FreeFlow-master/gradlew, -b, /tmp/rdisk/187/src/FreeFlow-master/FreeFlow/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 19:01:41,534 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-10 19:01:41,535 INFO  ProjectTaskService - Excluded tasks (15): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll androidJavadocsJar testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-10 19:01:41,535 INFO  SysUtils - Execute command: [/tmp/rdisk/187/src/FreeFlow-master/gradlew, -b, /tmp/rdisk/187/src/FreeFlow-master/FreeFlow/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, androidJavadocsJar, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-10 19:01:51,048 INFO  SysUtils - Configuration on demand is an incubating feature.
+:FreeFlow:androidSourcesJar
+:FreeFlow:compileLint
+:FreeFlow:copyDebugLint UP-TO-DATE
+:FreeFlow:preBuild UP-TO-DATE
+:FreeFlow:preDebugBuild UP-TO-DATE
+:FreeFlow:checkDebugManifest
+:FreeFlow:preDebugAndroidTestBuild UP-TO-DATE
+:FreeFlow:preReleaseBuild UP-TO-DATE
+:FreeFlow:prepareComAndroidSupportSupportV42102Library
+:FreeFlow:prepareDebugDependencies
+:FreeFlow:compileDebugAidl
+:FreeFlow:compileDebugRenderscript
+:FreeFlow:generateDebugBuildConfig
+:FreeFlow:generateDebugAssets UP-TO-DATE
+:FreeFlow:mergeDebugAssets
+:FreeFlow:generateDebugResValues
+:FreeFlow:generateDebugResources
+:FreeFlow:mergeDebugResources
+:FreeFlow:processDebugManifest
+:FreeFlow:processDebugResources
+:FreeFlow:generateDebugSources
+:FreeFlow:compileDebugJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:FreeFlow:extractDebugAnnotations
+:FreeFlow:mergeDebugProguardFiles
+:FreeFlow:processDebugJavaRes UP-TO-DATE
+:FreeFlow:packageDebugJar
+:FreeFlow:compileDebugNdk UP-TO-DATE
+:FreeFlow:packageDebugJniLibs UP-TO-DATE
+:FreeFlow:packageDebugLocalJar UP-TO-DATE
+:FreeFlow:packageDebugRenderscript UP-TO-DATE
+:FreeFlow:packageDebugResources
+:FreeFlow:bundleDebug
+:FreeFlow:assembleDebug
+:FreeFlow:copyReleaseLint UP-TO-DATE
+:FreeFlow:checkReleaseManifest
+:FreeFlow:prepareReleaseDependencies
+:FreeFlow:compileReleaseAidl
+:FreeFlow:compileReleaseRenderscript
+:FreeFlow:generateReleaseBuildConfig
+:FreeFlow:generateReleaseAssets UP-TO-DATE
+:FreeFlow:mergeReleaseAssets
+:FreeFlow:generateReleaseResValues
+:FreeFlow:generateReleaseResources
+:FreeFlow:mergeReleaseResources
+:FreeFlow:processReleaseManifest
+:FreeFlow:processReleaseResources
+:FreeFlow:generateReleaseSources
+:FreeFlow:compileReleaseJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:FreeFlow:extractReleaseAnnotations
+:FreeFlow:mergeReleaseProguardFiles
+:FreeFlow:processReleaseJavaRes UP-TO-DATE
+:FreeFlow:packageReleaseJar
+:FreeFlow:compileReleaseNdk UP-TO-DATE
+:FreeFlow:packageReleaseJniLibs UP-TO-DATE
+:FreeFlow:packageReleaseLocalJar UP-TO-DATE
+:FreeFlow:packageReleaseRenderscript UP-TO-DATE
+:FreeFlow:packageReleaseResources
+:FreeFlow:bundleRelease
+:FreeFlow:assembleRelease
+:FreeFlow:signArchives SKIPPED
+:FreeFlow:assemble
+:FreeFlow:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.085 secs
+
+2018-04-10 19:01:51,060 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 19:01:51,060 INFO  SysUtils - Execute command: [/tmp/rdisk/187/src/FreeFlow-master/gradlew, -b, /tmp/rdisk/187/src/FreeFlow-master/examples/Artbook/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 19:01:58,736 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-10 19:01:58,737 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-10 19:01:58,737 INFO  SysUtils - Execute command: [/tmp/rdisk/187/src/FreeFlow-master/gradlew, -b, /tmp/rdisk/187/src/FreeFlow-master/examples/Artbook/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-10 19:02:21,517 INFO  SysUtils - Configuration on demand is an incubating feature.
+:examples:Artbook:preBuild UP-TO-DATE
+:examples:Artbook:preDebugBuild UP-TO-DATE
+:examples:Artbook:compileDebugNdk UP-TO-DATE
+:FreeFlow:compileLint
+:FreeFlow:copyReleaseLint UP-TO-DATE
+:FreeFlow:preBuild UP-TO-DATE
+:FreeFlow:preReleaseBuild UP-TO-DATE
+:FreeFlow:checkReleaseManifest
+:FreeFlow:preDebugAndroidTestBuild UP-TO-DATE
+:FreeFlow:preDebugBuild UP-TO-DATE
+:FreeFlow:prepareComAndroidSupportSupportV42102Library UP-TO-DATE
+:FreeFlow:prepareReleaseDependencies
+:FreeFlow:compileReleaseAidl UP-TO-DATE
+:FreeFlow:compileReleaseRenderscript UP-TO-DATE
+:FreeFlow:generateReleaseBuildConfig UP-TO-DATE
+:FreeFlow:generateReleaseAssets UP-TO-DATE
+:FreeFlow:mergeReleaseAssets UP-TO-DATE
+:FreeFlow:generateReleaseResValues UP-TO-DATE
+:FreeFlow:generateReleaseResources UP-TO-DATE
+:FreeFlow:mergeReleaseResources UP-TO-DATE
+:FreeFlow:processReleaseManifest UP-TO-DATE
+:FreeFlow:processReleaseResources UP-TO-DATE
+:FreeFlow:generateReleaseSources UP-TO-DATE
+:FreeFlow:compileReleaseJava UP-TO-DATE
+:FreeFlow:extractReleaseAnnotations UP-TO-DATE
+:FreeFlow:mergeReleaseProguardFiles UP-TO-DATE
+:FreeFlow:processReleaseJavaRes UP-TO-DATE
+:FreeFlow:packageReleaseJar UP-TO-DATE
+:FreeFlow:compileReleaseNdk UP-TO-DATE
+:FreeFlow:packageReleaseJniLibs UP-TO-DATE
+:FreeFlow:packageReleaseLocalJar UP-TO-DATE
+:FreeFlow:packageReleaseRenderscript UP-TO-DATE
+:FreeFlow:packageReleaseResources UP-TO-DATE
+:FreeFlow:bundleRelease UP-TO-DATE
+:examples:Artbook:checkDebugManifest
+:examples:Artbook:preReleaseBuild UP-TO-DATE
+:examples:Artbook:prepareComAndroidSupportSupportV42102Library
+:examples:Artbook:prepareFreeFlowMasterFreeFlowUnspecifiedLibrary
+:examples:Artbook:prepareDebugDependencies
+:examples:Artbook:compileDebugAidl
+:examples:Artbook:compileDebugRenderscript
+:examples:Artbook:generateDebugBuildConfig
+:examples:Artbook:generateDebugAssets UP-TO-DATE
+:examples:Artbook:mergeDebugAssets
+:examples:Artbook:generateDebugResValues
+:examples:Artbook:generateDebugResources
+:examples:Artbook:mergeDebugResources
+:examples:Artbook:processDebugManifest
+:examples:Artbook:processDebugResources
+:examples:Artbook:generateDebugSources
+:examples:Artbook:compileDebugJavaNote: /tmp/rdisk/187/src/FreeFlow-master/examples/Artbook/src/com/comcast/freeflow/examples/artbook/ArtbookActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:examples:Artbook:preDexDebug
+:examples:Artbook:dexDebug
+:examples:Artbook:processDebugJavaRes UP-TO-DATE
+:examples:Artbook:validateDebugSigning
+:examples:Artbook:packageDebug
+:examples:Artbook:zipalignDebug
+:examples:Artbook:assembleDebug
+:examples:Artbook:checkReleaseManifest
+:examples:Artbook:prepareReleaseDependencies
+:examples:Artbook:compileReleaseAidl
+:examples:Artbook:compileReleaseRenderscript
+:examples:Artbook:generateReleaseBuildConfig
+:examples:Artbook:generateReleaseAssets UP-TO-DATE
+:examples:Artbook:mergeReleaseAssets
+:examples:Artbook:generateReleaseResValues
+:examples:Artbook:generateReleaseResources
+:examples:Artbook:mergeReleaseResources
+:examples:Artbook:processReleaseManifest
+:examples:Artbook:processReleaseResources
+:examples:Artbook:generateReleaseSources
+:examples:Artbook:compileReleaseJavaNote: /tmp/rdisk/187/src/FreeFlow-master/examples/Artbook/src/com/comcast/freeflow/examples/artbook/ArtbookActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:examples:Artbook:lintVitalRelease
+:examples:Artbook:compileReleaseNdk UP-TO-DATE
+:examples:Artbook:preDexRelease
+:examples:Artbook:dexRelease
+:examples:Artbook:processReleaseJavaRes UP-TO-DATE
+:examples:Artbook:packageRelease
+:examples:Artbook:assembleRelease
+:examples:Artbook:assemble
+:examples:Artbook:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.359 secs
+
+2018-04-10 19:02:21,535 INFO  FullProcessService - Found APK file: /tmp/rdisk/187/src/FreeFlow-master/examples/Artbook/build/outputs/apk/Artbook-release-unsigned.apk

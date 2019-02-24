@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "de.timroes.android.listviewdemo",
+    "label" : "EnhancedListView Demo",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "0.2.0",
+    "versionCode" : 4,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABpFBMVEUAAACdvDmcvTqevDqcvTmZszOevjqbsTeXuTqevTievjoA/wCiuTqcvjqdvTufvjufvTuevzkAAACdvTqZuDj//wCdvTqdvTufvzufvzuevzmWtDWevTmevDWauzmfvzuhwUCmw0mfwDucvDmavDifwDvp8NL7/Pe40G+auDiewDufvzz5+/L////G2Yufvjqevjq0zWfE2IaiwUGiuS6fvDudvTqdvDqevjufvjufvzqfvzufwTmWwzzI25Di7MTQ356fvzufvzufvjqbvDjb57Xl7cmfvzugvzuZuzOzzGO/1Hy2zmqfwDudvjy60XLL3JXA1X6gvzucwTnZ5rLm7szD14Wlw0i4z22jwkO40G6uyVu0zWXu9N2sx1XN3pnn787S4aTc6Ljj7cavyVu3z22wy1+903jQ4KDE14afvzufvzufvzCevTmfvjqfvzuevTnV46rH2o2fvzyVqkCcuzmhvDafvzygvjmfvzufwDqfvzufvzufwDugvzuVv0CfvzuZwj2Oqjmevjuetj2dvDqfvjqdvjufwDqfwDuevzqbtzeRiH5aAAAAjHRSTlMAa11cbAq1FxYyngEWS3CCcEwBnjIBscT3/7IisiJH6P//6UhE9f///0Th/////+GJ////C0VGOY5SvHAtEf///zjf7lf//8frD/////Ev////8zH/////////////////////////////yOwQOuLvWf//8AwxE29D/mW3v/3DDPgZCfQVvcknyfnGLi48QukAAAHYSURBVEjH3ZZXV8IwGIbjRkVxIXwu3Lhw4G5Bxb0V3HvvvScuwPmnTageSU/aeOGF+lwkbXifQ0i+piD0+wkKDrwLCeUKYeERXzea8DD+V0RGRWtjYnW6uHhNQmLSN+akTzYYwY/RkKLn51PTIIC0dF4+wwSZWZ/xrEzIzlHP5+YB5JsLpHyBOR8gr1Atry0CKC6xlEpCqaWkGKBMqyKUk1yFtVISKq0VpCtXzleZgEF2laJQDUxqFIXaOia1P1d49QKTekVBZP8GkVmkNjsRGhppmj4Eu01Wto5maGnFQpuFpl0SWlug2UEJHXi8s0uE7h6aXr/Q1YnbDkroIx/0izAwSOP0C/2k7aMEFxkaEmFYNqURvzBEWhdTGG2jGeQJmLFxGRMcYVI2K8sUR5iekTHLERg7rSLMzdMs8IRF2fyXeMLyCs2qkvC502vrNBtKO72JR7a2lXZ6ewu3m5Swswt7+7hanQc0h1K17h/B7g5d38cnpwidsZf1DKHTk2PWU3R+wcpfnCs/1JdXwrWbhG4E4Yb07mvh6lL9ILi9I8F7hO5Jf3fLPTn+g/DgIYvjRchLlsvzwD8vfTj3iF+G+kd84fvGAfv0/PL6Ri7eXl+en/7AXxH0Dnrvz96YKecGAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 831,
+  "locales" : [ "", "sl", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "pt", "ar", "ru", "fa", "sk", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "es", "hy_AM", "tr", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "fr", "ja", "lo_LA", "iw", "de", "en_IN", "es_US", "nb", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"4\" android:versionName=\"0.2.0\" package=\"de.timroes.android.listviewdemo\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"19\" />\n\t<application android:theme=\"resourceId:0x7f0c002f\" android:label=\"EnhancedListView Demo\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"EnhancedListView Demo\" android:name=\"de.timroes.android.listviewdemo.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 763913,
+  "crc32" : 3413035154,
+  "sha256" : "4f21649a8aab5bc8420d23a3f2283406449a65a05dddf0456a03b77a4b09c9b5",
+  "buildTime" : 1523385967000
+}

@@ -1,0 +1,21 @@
+2018-04-11 20:59:45,863 INFO  DownloadService - Downloading "https://github.com/eveliotc/carbonite/archive/master.zip", attempt 3
+2018-04-11 21:00:46,366 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 21:00:47,267 INFO  GithubDownloadService - Default branch of this repository: develop
+2018-04-11 21:00:47,267 INFO  DownloadService - Downloading "https://github.com/eveliotc/carbonite/archive/develop.zip", attempt 3
+2018-04-11 21:01:48,585 DEBUG FullProcessService - Repository https://github.com/eveliotc/carbonite available: true
+2018-04-11 21:01:48,585 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 21:01:48,585 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/eveliotc/carbonite, /tmp/rdisk/75/src]
+2018-04-11 21:01:50,275 INFO  SysUtils - 
+2018-04-11 21:01:50,288 INFO  GitService - Deleted "/tmp/rdisk/75/src/.git": true
+2018-04-11 21:01:50,290 INFO  FullProcessService - Size of directory with sources: 201 KB
+2018-04-11 21:01:50,290 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/75/src]
+2018-04-11 21:01:50,294 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/75/src/.git/
+
+2018-04-11 21:01:50,296 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-11 21:01:50,296 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-11 21:01:50,298 INFO  ProjectBuildService - Build script(s): none
+2018-04-11 21:01:50,300 INFO  ProjectBuildService - All script(s): none
+2018-04-11 21:01:50,300 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 21:01:50,300 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-11 21:01:50,300 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 21:01:50,302 ERROR FullProcessService - Could not find generated or existed APK file

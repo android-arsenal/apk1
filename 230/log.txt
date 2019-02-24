@@ -1,0 +1,7 @@
+2016-08-20 07:01:54,163 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/FasterXML/jackson-core/archive/master.zip", attempt 3
+2016-08-20 07:01:57,621 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/FasterXML/jackson-core/archive/master.zip, attempt 3
+2016-08-20 07:01:58,591 INFO  c.g.v.a.s.FullProcessService - Archive with sources does not contain any build script
+2016-08-20 07:01:58,592 ERROR c.g.v.a.s.FullProcessService - Could not find directory with sources
+2016-08-20 07:01:58,592 ERROR c.g.v.a.s.FullProcessService - Project will not be processed
+2016-08-20 07:01:58,592 ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+2016-08-20 07:01:58,613 ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

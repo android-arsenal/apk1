@@ -1,0 +1,8 @@
+2016-07-16 03:15:38,643 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/gradle/gradle/archive/master.zip", attempt 3
+2016-07-16 03:15:41,427 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/gradle/gradle/archive/master.zip, attempt 3
+2016-07-16 03:15:50,648 DEBUG o.z.z.ZipUtil - Extracting '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468617337955-0/master.zip' into '/var/folders/3k/mymj0cx15f9c3m0kv4gch66h0000gn/T/1468617337955-0/src'.
+2016-07-16 03:15:55,048 INFO  c.g.v.a.s.FullProcessService - Size of directory with sources: 44 MB
+2016-07-16 03:15:55,048 ERROR c.g.v.a.s.FullProcessService - Source directory should be less than 40 MB
+2016-07-16 03:15:55,048 ERROR c.g.v.a.s.FullProcessService - Project will not be processed
+2016-07-16 03:15:55,049 ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+2016-07-16 03:15:55,967 ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,45 @@
+2018-04-11 10:06:33,438 INFO  DownloadService - Downloading "https://github.com/JakeWharton/sdk-manager-plugin/archive/master.zip", attempt 3
+2018-04-11 10:07:33,908 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 10:07:34,561 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 10:07:34,561 INFO  DownloadService - Downloading "https://github.com/JakeWharton/sdk-manager-plugin/archive/master.zip", attempt 3
+2018-04-11 10:08:35,798 DEBUG FullProcessService - Repository https://github.com/JakeWharton/sdk-manager-plugin available: true
+2018-04-11 10:08:35,798 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 10:08:35,799 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/JakeWharton/sdk-manager-plugin, /tmp/rdisk/169/src]
+2018-04-11 10:08:37,266 INFO  SysUtils - 
+2018-04-11 10:08:37,277 INFO  GitService - Deleted "/tmp/rdisk/169/src/.git": true
+2018-04-11 10:08:37,289 INFO  FullProcessService - Size of directory with sources: 131 KB
+2018-04-11 10:08:37,289 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/169/src]
+2018-04-11 10:08:37,292 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/169/src/.git/
+
+2018-04-11 10:08:37,302 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/169/src/gradlew
+2018-04-11 10:08:37,311 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/169/src/build.gradle
+2018-04-11 10:08:37,320 INFO  ProjectBuildService - All script(s): /tmp/rdisk/169/src/build.gradle
+2018-04-11 10:08:37,320 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 10:08:37,320 INFO  ProjectFixService - Fixing project...
+2018-04-11 10:08:37,339 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/169/src/local.properties
+2018-04-11 10:08:37,340 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-11 10:08:37,340 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-11 10:08:37,341 INFO  ProjectFixService - Build info for "/tmp/rdisk/169/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-11 10:08:37,344 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/169/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-11 10:08:37,346 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 10:08:37,346 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 10:08:37,346 INFO  SysUtils - Execute command: [/tmp/rdisk/169/src/gradlew, -b, /tmp/rdisk/169/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 10:08:44,681 INFO  ProjectTaskService - Detected possible tasks: 56
+2018-04-11 10:08:44,682 INFO  ProjectTaskService - Excluded tasks (5): javadocJar javadoc sourcesJar test check
+2018-04-11 10:08:44,682 INFO  SysUtils - Execute command: [/tmp/rdisk/169/src/gradlew, -b, /tmp/rdisk/169/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadocJar, -x, javadoc, -x, sourcesJar, -x, test, -x, check, build]
+2018-04-11 10:08:53,805 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJava UP-TO-DATE
+:compileGroovy
+:processResources
+:classes
+:jar
+:signArchives SKIPPED
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.671 secs
+
+2018-04-11 10:08:53,814 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 10:08:53,824 ERROR FullProcessService - Could not find generated or existed APK file

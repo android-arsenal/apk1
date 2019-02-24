@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.actionbarsherlock.sample.demos",
+    "label" : "UpdateChecker Demo",
+    "icon" : "res/drawable-ldpi-v4/ic_launcher.png",
+    "versionName" : "4.0.9",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-ldpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 537,
+  "locales" : [ "", "ar", "fr", "ru", "ja", "it", "ko", "pt_BR", "sk", "de", "es", "lv", "et", "sv", "hr", "ca", "nl", "hu", "lt", "pl" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"4.0.9\" package=\"com.actionbarsherlock.sample.demos\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"19\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<application android:theme=\"resourceId:0x7f080000\" android:label=\"UpdateChecker Demo\" android:icon=\"res/drawable-ldpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"UpdateChecker Demo\" android:name=\"com.actionbarsherlock.sample.demos.StandardActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.actionbarsherlock.sample.demos.Infos\" android:parentActivityName=\"com.actionbarsherlock.sample.demos.StandardActivity\">\n\t\t\t<meta-data android:name=\"android.support.PARENT_ACTIVITY\" android:value=\".StandardActivity\" />\n\t\t</activity>\n\t\t<activity android:name=\"com.actionbarsherlock.sample.demos.CustomActivity\" android:parentActivityName=\"com.actionbarsherlock.sample.demos.StandardActivity\">\n\t\t\t<meta-data android:name=\"android.support.PARENT_ACTIVITY\" android:value=\".StandardActivity\" />\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 350711,
+  "crc32" : 3097372855,
+  "sha256" : "8bf2ebc34f2cc365288be1d8f67f5a36b73a4aaa58ca06e54dc6ec003ca30a46",
+  "buildTime" : 1523443779000
+}

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.example.picasso",
+    "label" : "Picasso Samples",
+    "icon" : "res/drawable-mdpi-v4/icon.png",
+    "versionName" : null,
+    "versionCode" : null,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "P",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE", "android.permission.READ_EXTERNAL_STORAGE", "android.permission.READ_CONTACTS" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/icon.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1356,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "en_CA", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "en_XC", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"com.example.picasso\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"P\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.READ_CONTACTS\" />\n\t<application android:theme=\"resourceId:0x7f0a0005\" android:label=\"Picasso Samples\" android:icon=\"res/drawable-mdpi-v4/icon.png\" android:testOnly=\"true\" android:allowBackup=\"false\" android:supportsRtl=\"false\">\n\t\t<activity android:label=\"Picasso Samples\" android:name=\"com.example.picasso.SampleGridViewActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t\t<category android:name=\"android.intent.category.DEFAULT\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.example.picasso.SampleContactsActivity\" />\n\t\t<activity android:name=\"com.example.picasso.SampleGalleryActivity\" />\n\t\t<activity android:name=\"com.example.picasso.SampleListDetailActivity\" />\n\t\t<receiver android:name=\"com.example.picasso.SampleWidgetProvider\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.appwidget.action.APPWIDGET_UPDATE\" />\n\t\t\t</intent-filter>\n\t\t\t<meta-data android:name=\"android.appwidget.provider\" android:resource=\"res/xml/sample_widget_info.xml\" />\n\t\t</receiver>\n\t\t<provider android:name=\"com.squareup.picasso3.provider.PicassoContentProvider\" android:exported=\"false\" android:authorities=\"com.example.picasso.com.squareup.picasso3\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 902819,
+  "crc32" : 2604087065,
+  "sha256" : "2e2b238a43199f92b58aabc89973367600eee4efa7f94f2ad4b153fc9c7f11f5",
+  "buildTime" : 1526362373000
+}

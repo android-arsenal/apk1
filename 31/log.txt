@@ -1,0 +1,247 @@
+2018-04-11 22:07:58,931 INFO  DownloadService - Downloading "https://github.com/nvanbenschoten/motion/archive/master.zip", attempt 3
+2018-04-11 22:08:59,373 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 22:09:00,072 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 22:09:00,072 INFO  DownloadService - Downloading "https://github.com/nvanbenschoten/motion/archive/master.zip", attempt 3
+2018-04-11 22:10:01,388 DEBUG FullProcessService - Repository https://github.com/nvanbenschoten/motion available: true
+2018-04-11 22:10:01,388 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 22:10:01,388 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/nvanbenschoten/motion, /tmp/rdisk/31/src]
+2018-04-11 22:10:08,775 INFO  SysUtils - 
+2018-04-11 22:10:08,790 INFO  GitService - Deleted "/tmp/rdisk/31/src/.git": true
+2018-04-11 22:10:08,792 INFO  FullProcessService - Size of directory with sources: 21 MB
+2018-04-11 22:10:08,792 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/31/src]
+2018-04-11 22:10:08,797 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/31/src/.git/
+
+2018-04-11 22:10:08,799 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/31/src/gradlew
+2018-04-11 22:10:08,802 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/31/src/motion-sample/build.gradle /tmp/rdisk/31/src/motion/build.gradle /tmp/rdisk/31/src/build.gradle
+2018-04-11 22:10:08,803 INFO  ProjectBuildService - All script(s): /tmp/rdisk/31/src/settings.gradle /tmp/rdisk/31/src/motion/build.gradle /tmp/rdisk/31/src/motion-sample/build.gradle /tmp/rdisk/31/src/build.gradle
+2018-04-11 22:10:08,804 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-11 22:10:09,164 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle, attempt 3
+2018-04-11 22:10:09,164 INFO  ProjectBuildService - Remote scripts: https://raw.githubusercontent.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle
+2018-04-11 22:10:09,164 INFO  ProjectFixService - Fixing project...
+2018-04-11 22:10:09,183 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/31/src/motion-sample/local.properties
+2018-04-11 22:10:09,183 INFO  ProjectFixService - Build info for "/tmp/rdisk/31/src/motion-sample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-11 22:10:09,184 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/31/src/motion/local.properties
+2018-04-11 22:10:09,184 INFO  ProjectFixService - Build info for "/tmp/rdisk/31/src/motion/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-11 22:10:09,184 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/31/src/local.properties
+2018-04-11 22:10:09,184 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.5-all.zip
+2018-04-11 22:10:09,185 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.5-bin.zip)
+2018-04-11 22:10:09,187 INFO  ProjectFixService - Build info for "/tmp/rdisk/31/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-11 22:10:09,187 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 22:10:09,187 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 22:10:09,187 INFO  SysUtils - Execute command: [/tmp/rdisk/31/src/gradlew, -b, /tmp/rdisk/31/src/motion-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 22:10:22,770 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-11 22:10:22,770 INFO  ProjectTaskService - Excluded tasks (22): lintDebug mockableAndroidJar androidJavadocs deviceCheck lint androidSourcesJar testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll androidJavadocsJar test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-11 22:10:22,770 INFO  SysUtils - Execute command: [/tmp/rdisk/31/src/gradlew, -b, /tmp/rdisk/31/src/motion-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, androidJavadocsJar, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-11 22:10:29,845 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 22:10:29,845 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'androidJavadocs' not found in project ':motion-sample'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'androidJavadocs' not found in project ':motion-sample'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:100)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:63)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher$5.run(DefaultGradleLauncher.java:162)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:47)
+	at org.gradle.initialization.DefaultGradleLauncher.runBuildOperation(DefaultGradleLauncher.java:189)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:159)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:104)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:97)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.runRootBuildOperation(DefaultGradleLauncher.java:184)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:97)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:93)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:27)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:72)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:44)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+
+BUILD FAILED
+
+Total time: 6.614 secs
+
+2018-04-11 22:10:29,845 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-04-11 22:10:29,845 INFO  SysUtils - Execute command: [/tmp/rdisk/31/src/gradlew, -b, /tmp/rdisk/31/src/motion-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-11 22:10:52,830 INFO  SysUtils - Configuration on demand is an incubating feature.
+:motion:compileLint
+:motion:copyReleaseLint UP-TO-DATE
+:motion:preBuild UP-TO-DATE
+:motion:preReleaseBuild UP-TO-DATE
+:motion:checkReleaseManifest
+:motion:prepareReleaseDependencies
+:motion:compileReleaseAidl
+:motion:compileReleaseRenderscript
+:motion:generateReleaseBuildConfig
+:motion:generateReleaseAssets UP-TO-DATE
+:motion:mergeReleaseAssets
+:motion:generateReleaseResValues
+:motion:generateReleaseResources
+:motion:packageReleaseResources
+:motion:processReleaseManifest
+:motion:processReleaseResources
+:motion:generateReleaseSources
+:motion:processReleaseJavaRes UP-TO-DATE
+:motion:compileReleaseJavaWithJavac
+:motion:extractReleaseAnnotations
+:motion:mergeReleaseProguardFiles
+:motion:packageReleaseJar
+:motion:compileReleaseNdk UP-TO-DATE
+:motion:packageReleaseJniLibs UP-TO-DATE
+:motion:packageReleaseLocalJar UP-TO-DATE
+:motion:packageReleaseRenderscript UP-TO-DATE
+:motion:bundleRelease
+:motion-sample:preBuild UP-TO-DATE
+:motion-sample:preDebugBuild UP-TO-DATE
+:motion-sample:checkDebugManifest
+:motion-sample:preReleaseBuild UP-TO-DATE
+:motion-sample:prepareSrcMotionUnspecifiedLibrary
+:motion-sample:prepareDebugDependencies
+:motion-sample:compileDebugAidl
+:motion-sample:compileDebugRenderscript
+:motion-sample:generateDebugBuildConfig
+:motion-sample:generateDebugAssets UP-TO-DATE
+:motion-sample:mergeDebugAssets
+:motion-sample:generateDebugResValues
+:motion-sample:generateDebugResources
+:motion-sample:mergeDebugResources
+AAPT: /tmp/rdisk/31/src/motion-sample/src/main/res/drawable-xhdpi/background_pond.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/31/src/motion-sample/src/main/res/drawable-xhdpi/background_ski.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/31/src/motion-sample/src/main/res/drawable-xhdpi/background_rocket_small.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:motion-sample:processDebugManifest
+:motion-sample:processDebugResources
+:motion-sample:generateDebugSources
+:motion-sample:processDebugJavaRes UP-TO-DATE
+:motion-sample:compileDebugJavaWithJavacNote: /tmp/rdisk/31/src/motion-sample/src/main/java/com/nvanbenschoten/motion/motion_sample/ParallaxActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:motion-sample:compileDebugNdk UP-TO-DATE
+:motion-sample:compileDebugSources
+:motion-sample:preDexDebug
+:motion-sample:dexDebug
+:motion-sample:validateDebugSigning
+:motion-sample:packageDebug
+:motion-sample:zipalignDebug
+:motion-sample:assembleDebug
+:motion-sample:checkReleaseManifest
+:motion-sample:prepareReleaseDependencies
+:motion-sample:compileReleaseAidl
+:motion-sample:compileReleaseRenderscript
+:motion-sample:generateReleaseBuildConfig
+:motion-sample:generateReleaseAssets UP-TO-DATE
+:motion-sample:mergeReleaseAssets
+:motion-sample:generateReleaseResValues
+:motion-sample:generateReleaseResources
+:motion-sample:mergeReleaseResources
+AAPT: /tmp/rdisk/31/src/motion-sample/src/main/res/drawable-xhdpi/background_rocket_small.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/31/src/motion-sample/src/main/res/drawable-xhdpi/background_pond.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/31/src/motion-sample/src/main/res/drawable-xhdpi/background_ski.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:motion-sample:processReleaseManifest
+:motion-sample:processReleaseResources
+:motion-sample:generateReleaseSources
+:motion-sample:processReleaseJavaRes UP-TO-DATE
+:motion-sample:compileReleaseJavaWithJavacNote: /tmp/rdisk/31/src/motion-sample/src/main/java/com/nvanbenschoten/motion/motion_sample/ParallaxActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:motion-sample:compileReleaseNdk UP-TO-DATE
+:motion-sample:compileReleaseSources
+:motion-sample:preDexRelease
+:motion-sample:dexRelease
+:motion-sample:packageRelease
+:motion-sample:assembleRelease
+:motion-sample:assemble
+:motion-sample:compileLint
+:motion-sample:lint
+Ran lint on variant release: 9 issues found
+Ran lint on variant debug: 9 issues found
+Wrote HTML report to file:/tmp/rdisk/31/src/motion-sample/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/31/src/motion-sample/build/outputs/lint-results.xml
+:motion-sample:preDebugUnitTestBuild UP-TO-DATE
+:motion-sample:prepareDebugUnitTestDependencies
+:motion-sample:processDebugUnitTestJavaRes UP-TO-DATE
+:motion-sample:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:motion-sample:compileDebugUnitTestSources UP-TO-DATE
+:motion-sample:mockableAndroidJar
+:motion-sample:assembleDebugUnitTest
+:motion-sample:testDebugUnitTest
+:motion-sample:preReleaseUnitTestBuild UP-TO-DATE
+:motion-sample:prepareReleaseUnitTestDependencies
+:motion-sample:processReleaseUnitTestJavaRes UP-TO-DATE
+:motion-sample:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:motion-sample:compileReleaseUnitTestSources UP-TO-DATE
+:motion-sample:assembleReleaseUnitTest
+:motion-sample:testReleaseUnitTest
+:motion-sample:test
+:motion-sample:check
+:motion-sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.573 secs
+
+2018-04-11 22:10:52,840 INFO  FullProcessService - Found APK file: /tmp/rdisk/31/src/motion-sample/build/outputs/apk/motion-sample-release-unsigned.apk

@@ -1,0 +1,281 @@
+2018-04-11 21:34:40,318 INFO  DownloadService - Downloading "https://github.com/lucasr/smoothie/archive/master.zip", attempt 3
+2018-04-11 21:35:40,771 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 21:35:41,598 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 21:35:41,598 INFO  DownloadService - Downloading "https://github.com/lucasr/smoothie/archive/master.zip", attempt 3
+2018-04-11 21:36:42,947 DEBUG FullProcessService - Repository https://github.com/lucasr/smoothie available: true
+2018-04-11 21:36:42,947 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 21:36:42,947 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/lucasr/smoothie, /tmp/rdisk/47/src]
+2018-04-11 21:36:44,455 INFO  SysUtils - 
+2018-04-11 21:36:44,469 INFO  GitService - Deleted "/tmp/rdisk/47/src/.git": true
+2018-04-11 21:36:44,471 INFO  FullProcessService - Size of directory with sources: 173 KB
+2018-04-11 21:36:44,472 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/47/src]
+2018-04-11 21:36:44,477 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/47/src/.git/
+
+2018-04-11 21:36:44,479 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/47/src/gradlew
+2018-04-11 21:36:44,482 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/47/src/library/build.gradle /tmp/rdisk/47/src/samples/bitmap-cache/build.gradle /tmp/rdisk/47/src/samples/gallery/build.gradle /tmp/rdisk/47/src/build.gradle
+2018-04-11 21:36:44,484 INFO  ProjectBuildService - All script(s): /tmp/rdisk/47/src/settings.gradle /tmp/rdisk/47/src/samples/gallery/build.gradle /tmp/rdisk/47/src/samples/bitmap-cache/build.gradle /tmp/rdisk/47/src/library/build.gradle /tmp/rdisk/47/src/build.gradle
+2018-04-11 21:36:44,484 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-11 21:36:45,209 INFO  DownloadService - Downloaded https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle, attempt 3
+2018-04-11 21:36:45,209 INFO  ProjectBuildService - Remote scripts: https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle
+2018-04-11 21:36:45,209 INFO  ProjectFixService - Fixing project...
+2018-04-11 21:36:45,217 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/47/src/library/local.properties
+2018-04-11 21:36:45,218 INFO  ProjectFixService - Build info for "/tmp/rdisk/47/src/library/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-11 21:36:45,218 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/47/src/library/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-11 21:36:45,218 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/47/src/samples/bitmap-cache/local.properties
+2018-04-11 21:36:45,219 INFO  ProjectFixService - Build info for "/tmp/rdisk/47/src/samples/bitmap-cache/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-11 21:36:45,219 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/47/src/samples/bitmap-cache/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-11 21:36:45,219 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/47/src/samples/gallery/local.properties
+2018-04-11 21:36:45,220 INFO  ProjectFixService - Build info for "/tmp/rdisk/47/src/samples/gallery/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-11 21:36:45,220 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/47/src/samples/gallery/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-11 21:36:45,221 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/47/src/local.properties
+2018-04-11 21:36:45,221 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-11 21:36:45,221 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-11 21:36:45,222 INFO  ProjectFixService - Build info for "/tmp/rdisk/47/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-11 21:36:45,222 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/47/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=19,minSdkVersion=27,targetSdkVersion=27]
+2018-04-11 21:36:45,222 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 21:36:45,222 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:36:45,222 INFO  SysUtils - Execute command: [/tmp/rdisk/47/src/gradlew, -b, /tmp/rdisk/47/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:36:57,112 INFO  ProjectTaskService - Detected possible tasks: 58
+2018-04-11 21:36:57,113 INFO  ProjectTaskService - Excluded tasks (11): lintDebug androidJavadocs deviceCheck lint androidSourcesJar connectedCheck uninstallAll androidJavadocsJar check connectedAndroidTest lintRelease
+2018-04-11 21:36:57,113 INFO  SysUtils - Execute command: [/tmp/rdisk/47/src/gradlew, -b, /tmp/rdisk/47/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, connectedCheck, -x, uninstallAll, -x, androidJavadocsJar, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-11 21:37:05,265 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:mergeDebugProguardFiles
+:library:preBuild
+:library:preDebugBuild
+:library:checkDebugManifest
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJava
+:library:processDebugJavaRes UP-TO-DATE
+:library:packageDebugJar
+:library:compileDebugNdk
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:bundleDebug
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJava
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar
+:library:compileReleaseNdk
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.699 secs
+
+2018-04-11 21:37:05,272 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:37:05,272 INFO  SysUtils - Execute command: [/tmp/rdisk/47/src/gradlew, -b, /tmp/rdisk/47/src/samples/bitmap-cache/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:37:12,921 INFO  ProjectTaskService - Detected possible tasks: 57
+2018-04-11 21:37:12,921 INFO  ProjectTaskService - Excluded tasks (14): lintDebug androidJavadocs deviceCheck lint androidSourcesJar uninstallRelease connectedCheck uninstallAll androidJavadocsJar check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-11 21:37:12,921 INFO  SysUtils - Execute command: [/tmp/rdisk/47/src/gradlew, -b, /tmp/rdisk/47/src/samples/bitmap-cache/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, androidJavadocsJar, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-11 21:37:19,777 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-11 21:37:19,778 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'androidJavadocs' not found in project ':samples:bitmap-cache'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'androidJavadocs' not found in project ':samples:bitmap-cache'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:101)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:64)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+
+
+BUILD FAILED
+
+Total time: 6.425 secs
+
+2018-04-11 21:37:19,778 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-04-11 21:37:19,778 INFO  SysUtils - Execute command: [/tmp/rdisk/47/src/gradlew, -b, /tmp/rdisk/47/src/samples/bitmap-cache/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-11 21:37:36,387 INFO  SysUtils - Configuration on demand is an incubating feature.
+:samples:bitmap-cache:preBuild
+:samples:bitmap-cache:compileDebugNdk
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:preBuild
+:library:preReleaseBuild
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:samples:bitmap-cache:preDebugBuild
+:samples:bitmap-cache:checkDebugManifest
+:samples:bitmap-cache:preReleaseBuild
+:samples:bitmap-cache:prepareSrcLibraryUnspecifiedLibrary
+:samples:bitmap-cache:prepareDebugDependencies
+:samples:bitmap-cache:compileDebugAidl
+:samples:bitmap-cache:compileDebugRenderscript
+:samples:bitmap-cache:generateDebugBuildConfig
+:samples:bitmap-cache:generateDebugAssets UP-TO-DATE
+:samples:bitmap-cache:mergeDebugAssets
+:samples:bitmap-cache:generateDebugResValues
+:samples:bitmap-cache:generateDebugResources
+:samples:bitmap-cache:mergeDebugResources
+:samples:bitmap-cache:processDebugManifest
+:samples:bitmap-cache:processDebugResources
+:samples:bitmap-cache:generateDebugSources
+:samples:bitmap-cache:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:samples:bitmap-cache:preDexDebug
+:samples:bitmap-cache:dexDebug
+:samples:bitmap-cache:processDebugJavaRes UP-TO-DATE
+:samples:bitmap-cache:validateDebugSigning
+:samples:bitmap-cache:packageDebug
+:samples:bitmap-cache:zipalignDebug
+:samples:bitmap-cache:assembleDebug
+:samples:bitmap-cache:checkReleaseManifest
+:samples:bitmap-cache:prepareReleaseDependencies
+:samples:bitmap-cache:compileReleaseAidl
+:samples:bitmap-cache:compileReleaseRenderscript
+:samples:bitmap-cache:generateReleaseBuildConfig
+:samples:bitmap-cache:generateReleaseAssets UP-TO-DATE
+:samples:bitmap-cache:mergeReleaseAssets
+:samples:bitmap-cache:generateReleaseResValues
+:samples:bitmap-cache:generateReleaseResources
+:samples:bitmap-cache:mergeReleaseResources
+:samples:bitmap-cache:processReleaseManifest
+:samples:bitmap-cache:processReleaseResources
+:samples:bitmap-cache:generateReleaseSources
+:samples:bitmap-cache:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:samples:bitmap-cache:lintVitalRelease SKIPPED
+:samples:bitmap-cache:compileReleaseNdk
+:samples:bitmap-cache:preDexRelease
+:samples:bitmap-cache:dexRelease
+:samples:bitmap-cache:processReleaseJavaRes UP-TO-DATE
+:samples:bitmap-cache:packageRelease
+:samples:bitmap-cache:assembleRelease
+:samples:bitmap-cache:assemble
+:samples:bitmap-cache:compileLint
+:samples:bitmap-cache:lint
+Ran lint on variant debug: 4 issues found
+Ran lint on variant release: 4 issues found
+Wrote HTML report to file:/tmp/rdisk/47/src/samples/bitmap-cache/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/47/src/samples/bitmap-cache/build/outputs/lint-results.xml
+:samples:bitmap-cache:check
+:samples:bitmap-cache:build
+
+BUILD SUCCESSFUL
+
+Total time: 16.176 secs
+
+2018-04-11 21:37:36,399 INFO  FullProcessService - Found APK file: /tmp/rdisk/47/src/samples/bitmap-cache/build/outputs/apk/bitmap-cache-release-unsigned.apk

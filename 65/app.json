@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.fractalwrench.androidbootstrap.sample",
+    "label" : "Android Bootstrap",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "2.3.2",
+    "versionCode" : 232,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 876,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"232\" android:versionName=\"2.3.2\" package=\"com.fractalwrench.androidbootstrap.sample\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"25\" />\n\t<meta-data android:name=\"android.support.VERSION\" android:value=\"25.3.1\" />\n\t<application android:theme=\"resourceId:0x7f0800a3\" android:label=\"Android Bootstrap\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:name=\"com.fractalwrench.androidbootstrap.sample.SampleApplication\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Android Bootstrap Examples\" android:name=\"com.fractalwrench.androidbootstrap.sample.HomeActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"BootstrapButton\" android:name=\"com.fractalwrench.androidbootstrap.sample.BootstrapButtonExample\" />\n\t\t<activity android:label=\"BootstrapLabel\" android:name=\"com.fractalwrench.androidbootstrap.sample.BootstrapLabelExample\" />\n\t\t<activity android:label=\"AwesomeTextView\" android:name=\"com.fractalwrench.androidbootstrap.sample.AwesomeTextViewExample\" />\n\t\t<activity android:label=\"BootstrapProgressBar\" android:name=\"com.fractalwrench.androidbootstrap.sample.BootstrapProgressBarExample\" />\n\t\t<activity android:label=\"BootstrapButtonGroup\" android:name=\"com.fractalwrench.androidbootstrap.sample.BootstrapButtonGroupExample\" />\n\t\t<activity android:label=\"BootstrapCircleThumbnail\" android:name=\"com.fractalwrench.androidbootstrap.sample.BootstrapCircleThumbnailExample\" />\n\t\t<activity android:label=\"BootstrapThumbnail\" android:name=\"com.fractalwrench.androidbootstrap.sample.BootstrapThumbnailExample\" />\n\t\t<activity android:label=\"BootstrapEditTextExample\" android:name=\"com.fractalwrench.androidbootstrap.sample.BootstrapEditTextExample\" />\n\t\t<activity android:label=\"BootstrapWell\" android:name=\"com.fractalwrench.androidbootstrap.sample.BootstrapWellExample\" />\n\t\t<activity android:label=\"BootstrapDropDownExample\" android:name=\"com.fractalwrench.androidbootstrap.sample.BootstrapDropDownExample\" />\n\t\t<activity android:label=\"BootstrapBadgeExample\" android:name=\"com.fractalwrench.androidbootstrap.sample.BootstrapBadgeExample\" />\n\t\t<activity android:label=\"BootstrapAlertExample\" android:name=\"com.fractalwrench.androidbootstrap.sample.BootstrapAlertExample\" />\n\t\t<activity android:label=\"BootstrapProgressBarGroupExample\" android:name=\"com.fractalwrench.androidbootstrap.sample.BootstrapProgressBarGroupExample\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1673321,
+  "crc32" : 1555495982,
+  "sha256" : "ac5c3b08fa54d44c7ac6a1d01f4b8ea90e21b1928c2b9bf8b15a8f8b374a281f",
+  "buildTime" : 1523481854000
+}

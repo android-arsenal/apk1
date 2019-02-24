@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.avast.dialogs",
+    "label" : "StyledDialogs Demo",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "2.3.4-SNAPSHOT",
+    "versionCode" : 14,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1522,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"14\" android:versionName=\"2.3.4-SNAPSHOT\" package=\"com.avast.dialogs\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f080083\" android:label=\"StyledDialogs Demo\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"com.avast.dialogs.DemoActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1583423,
+  "crc32" : 4166798766,
+  "sha256" : "33be798f27bacff67661d58084507de6da8afd0c5820d2e7796e91702e69f8fd",
+  "buildTime" : 1523444070000
+}

@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "net.rdrei.android.dirchooser.sample",
+    "label" : "DirChooserSample",
+    "icon" : "res/drawable-ldpi-v4/ic_launcher.png",
+    "versionName" : "1.5",
+    "versionCode" : 6,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.WRITE_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-ldpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAEg0lEQVRYw+2YzY4lNxmGn9flwwzRgFBgBQikcBVBrNlxA1xHFtxFFlwCexB7NixYIX4SCYGEENIAIwEJMEpE+pT9fS8Lu6qrupsElJFmM5Z87FM+bT9+vx+7Gl6VV+XTFQG8/+f3v430HUlVRUhCgq2PhIpS4t9Cf0L8Cnj3tc+/9vyFA/396XtfFPww1us3BSEJChNqgDH7APXxo1CtH2DeBf/I5ifA08+9/uT6IoCq7UfAk3L5TJMINnU2ZbY+o02DejwBvgW8CTyz+e3zvz1/avgQO2yEwRhsbHAa24xHPlQgLdu/cPrH1WE8FrU3G475kJljU06ZQSQDMZ9+FfS1IwDMZoNhAxkw5Nbf4CiYd4x+VjMSdkXOaiAQ2/Pd5WZTkIMl32OJZyz8q4h1rJI5qhNnjk3koPA2lt7HnCnF9euPP/z1d+vgkU9QE2JrThwy8sql/2V5vL5TL/HHpegjWQYVcEIkZJCtUzCxjjZ7H2NOcu2UAnHtFIFb+9JS+1v1C3/4/lc+ev3NJ2hZJIbTFI3JVXZfGnCravxDl3i6XOJZKbqRy4LLwtjRUGTbebbAEn0NiiDbGCtAa+ayiGs3lyIi5EfKWj/715++/eifv3yDslRKgVJgme2sWpbZBxVDKbgs5LIMRysxfEYazpsJmFw7KsJrwxJuHUdijK8N14KvHRfh3nB0Va/rG+RNYV/0PpQP32/7CYrxG2kqNJ05c5i4B2DUE2EUgcLISbFRDxabEsOvHE2Va5ezwdw5iw5gyzDfHcVOdZrYW3Tu4QOOwIB7H20kjgGXPUjAPUhMRuBoVK9NzmYWP7Bg/BeYCa3Zn5Hp+eER87gn1ljUG2BuYyNruMdICwNI1Wsvzn6r0N1Fl7nwIrRDHEDKCEdvyWpLQgZNtTRDXjP8labMtFASSiaZHa/rAUh5H+YOoEtBuzq6VYjp0AceOGTmCZR7jppZOhPbZCR2wE2jeu04G2iZOz4seg9O+Gimu/VgNvCtedK7WqRHrtqT5QyC7PbNSvW1QV5G+MKuxIO+Us4wKlv2vFXpINGIrPRIqCeopBjIQAZFggNfmytrx+4TyLtKe3sCOQP5lDRvz8BJNSJrO0Dt2wjMMcYWhZE4A9+srtl6mMTleCnJuXhOE+YZ9FTP/nMsOwjDLJ5K4SQ9nHkIFdtREzWCNS+L8bIZfzTSOOq3Ku0Ccqq6vevp5NUHfwJS09G3PkTMpaIAdgStRrKmi9Fy3uRxIk9T+WF1Tv5z/Fuf55vpae8rywDa7i5Jq2G1pNpUdE/zg1r8jzCbWt7U1iTYQHS4DB38JDFWq5G0ZDGqd7Z0p+QBQg9Elu6qewZhA2He+o63+s3CSa9hmrXYLJ984d0D8XBROoLooMxRKW/+o4fnBETaptV5HKJ7Rv84MN+qoE/YwKGjj3/5QZhayZpuOofE/1H8gt7G3FTIWqtySTft9n5Zb4fuKspaL4qaNNkvi2b6JV1FsdRa8nfp9g2c5aW+QztUin9eK/m9dPsN+Mu8TKMpfy/lD179d+NV+bTlP9I1VoYYyrLjAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 2858,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "et", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "be", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"6\" android:versionName=\"1.5\" package=\"net.rdrei.android.dirchooser.sample\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<meta-data android:name=\"android.support.VERSION\" android:value=\"25.3.1\" />\n\t<application android:theme=\"resourceId:0x7f0700ce\" android:label=\"DirChooserSample\" android:icon=\"res/drawable-ldpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"net.rdrei.android.dirchooser.sample.DirChooserSample\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"net.rdrei.android.dirchooser.DirectoryChooserActivity\" />\n\t\t<activity android:label=\"DirChooserSample\" android:name=\"net.rdrei.android.dirchooser.sample.DirChooserFragmentSample\" android:configChanges=\"0x480\" android:parentActivityName=\"net.rdrei.android.dirchooser.sample.DirChooserSample\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2262423,
+  "crc32" : 1176954453,
+  "sha256" : "fc9b67a68a8e5ced4fe4e0ce0f531ce7698bcff66d3c2278431014417ce696a7",
+  "buildTime" : 1526363448000
+}

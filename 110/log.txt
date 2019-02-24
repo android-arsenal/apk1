@@ -1,0 +1,21 @@
+2018-04-11 20:30:41,635 INFO  DownloadService - Downloading "https://github.com/SalmanJawed/transitionviewpager/archive/master.zip", attempt 3
+2018-04-11 20:31:42,342 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 20:31:43,178 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 20:31:43,179 INFO  DownloadService - Downloading "https://github.com/SalmanJawed/transitionviewpager/archive/master.zip", attempt 3
+2018-04-11 20:32:44,471 DEBUG FullProcessService - Repository https://github.com/SalmanJawed/transitionviewpager available: true
+2018-04-11 20:32:44,472 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 20:32:44,472 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/SalmanJawed/transitionviewpager, /tmp/rdisk/110/src]
+2018-04-11 20:32:46,563 INFO  SysUtils - 
+2018-04-11 20:32:46,572 INFO  GitService - Deleted "/tmp/rdisk/110/src/.git": true
+2018-04-11 20:32:46,573 INFO  FullProcessService - Size of directory with sources: 529 KB
+2018-04-11 20:32:46,573 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/110/src]
+2018-04-11 20:32:46,578 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/110/src/.git/
+
+2018-04-11 20:32:46,579 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-11 20:32:46,579 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-11 20:32:46,581 INFO  ProjectBuildService - Build script(s): none
+2018-04-11 20:32:46,582 INFO  ProjectBuildService - All script(s): none
+2018-04-11 20:32:46,582 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 20:32:46,582 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-11 20:32:46,582 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 20:32:46,583 ERROR FullProcessService - Could not find generated or existed APK file

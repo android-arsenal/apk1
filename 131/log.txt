@@ -1,0 +1,412 @@
+2018-05-15 05:57:41,893 INFO  DownloadService - Downloading "https://github.com/JakeWharton/butterknife/archive/master.zip", attempt 3
+2018-05-15 05:58:42,387 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-15 05:58:43,112 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-15 05:58:43,112 INFO  DownloadService - Downloading "https://github.com/JakeWharton/butterknife/archive/master.zip", attempt 3
+2018-05-15 05:59:44,491 DEBUG FullProcessService - Repository https://github.com/JakeWharton/butterknife available: true
+2018-05-15 05:59:44,491 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-15 05:59:44,491 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/JakeWharton/butterknife, /tmp/rdisk/131/src]
+2018-05-15 05:59:48,377 INFO  SysUtils - 
+2018-05-15 05:59:48,385 INFO  GitService - Deleted "/tmp/rdisk/131/src/.git": true
+2018-05-15 05:59:48,393 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-05-15 05:59:48,393 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/131/src]
+2018-05-15 05:59:48,404 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/131/src/.git/
+
+2018-05-15 05:59:48,411 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/131/src/gradlew
+2018-05-15 05:59:48,419 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/131/src/butterknife-gradle-plugin/src/test/build.gradle /tmp/rdisk/131/src/butterknife-integration-test/build.gradle /tmp/rdisk/131/src/butterknife/build.gradle /tmp/rdisk/131/src/sample/app/build.gradle /tmp/rdisk/131/src/sample/library/build.gradle /tmp/rdisk/131/src/build.gradle /tmp/rdisk/131/src/butterknife-annotations/build.gradle /tmp/rdisk/131/src/butterknife-compiler/build.gradle /tmp/rdisk/131/src/butterknife-gradle-plugin/build.gradle /tmp/rdisk/131/src/butterknife-lint/build.gradle
+2018-05-15 05:59:48,425 INFO  ProjectBuildService - All script(s): /tmp/rdisk/131/src/settings.gradle /tmp/rdisk/131/src/sample/library/build.gradle /tmp/rdisk/131/src/sample/app/build.gradle /tmp/rdisk/131/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/131/src/butterknife/build.gradle /tmp/rdisk/131/src/butterknife-lint/build.gradle /tmp/rdisk/131/src/butterknife-integration-test/build.gradle /tmp/rdisk/131/src/butterknife-gradle-plugin/src/test/build.gradle /tmp/rdisk/131/src/butterknife-gradle-plugin/build.gradle /tmp/rdisk/131/src/butterknife-compiler/build.gradle /tmp/rdisk/131/src/butterknife-annotations/build.gradle /tmp/rdisk/131/src/build.gradle
+2018-05-15 05:59:48,426 INFO  ProjectBuildService - Remote scripts: none
+2018-05-15 05:59:48,426 INFO  ProjectFixService - Fixing project...
+2018-05-15 05:59:48,447 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/131/src/butterknife-gradle-plugin/src/test/local.properties
+2018-05-15 05:59:48,450 INFO  ProjectFixService - Build info for "/tmp/rdisk/131/src/butterknife-gradle-plugin/src/test/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,450 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/131/src/butterknife-gradle-plugin/src/test/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,451 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/131/src/butterknife-integration-test/local.properties
+2018-05-15 05:59:48,458 INFO  ProjectFixService - Build info for "/tmp/rdisk/131/src/butterknife-integration-test/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,458 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/131/src/butterknife-integration-test/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,458 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/131/src/butterknife/local.properties
+2018-05-15 05:59:48,464 INFO  ProjectFixService - Build info for "/tmp/rdisk/131/src/butterknife/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,464 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/131/src/butterknife/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,464 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/131/src/sample/app/local.properties
+2018-05-15 05:59:48,470 INFO  ProjectFixService - Build info for "/tmp/rdisk/131/src/sample/app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,470 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/131/src/sample/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,470 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/131/src/sample/library/local.properties
+2018-05-15 05:59:48,476 INFO  ProjectFixService - Build info for "/tmp/rdisk/131/src/sample/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,476 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/131/src/sample/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,476 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/131/src/local.properties
+2018-05-15 05:59:48,477 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.5.1-all.zip
+2018-05-15 05:59:48,477 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.5.1-bin.zip)
+2018-05-15 05:59:48,483 INFO  ProjectFixService - Build info for "/tmp/rdisk/131/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,483 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/131/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,484 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/131/src/butterknife-annotations/local.properties
+2018-05-15 05:59:48,490 INFO  ProjectFixService - Build info for "/tmp/rdisk/131/src/butterknife-annotations/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,490 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/131/src/butterknife-annotations/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,491 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/131/src/butterknife-compiler/local.properties
+2018-05-15 05:59:48,497 INFO  ProjectFixService - Build info for "/tmp/rdisk/131/src/butterknife-compiler/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,497 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/131/src/butterknife-compiler/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,498 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/131/src/butterknife-gradle-plugin/local.properties
+2018-05-15 05:59:48,504 INFO  ProjectFixService - Build info for "/tmp/rdisk/131/src/butterknife-gradle-plugin/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,504 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/131/src/butterknife-gradle-plugin/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,504 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/131/src/butterknife-lint/local.properties
+2018-05-15 05:59:48,510 INFO  ProjectFixService - Build info for "/tmp/rdisk/131/src/butterknife-lint/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,510 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/131/src/butterknife-lint/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-15 05:59:48,511 INFO  ProjectFixService - Project was maybe fixed
+2018-05-15 05:59:48,511 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 05:59:48,511 INFO  SysUtils - Execute command: [/tmp/rdisk/131/src/gradlew, -b, /tmp/rdisk/131/src/butterknife-gradle-plugin/src/test/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 05:59:54,367 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-05-15 05:59:54,368 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-15 05:59:54,368 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-15 05:59:54,368 INFO  SysUtils - Execute command: [/tmp/rdisk/131/src/gradlew, -b, /tmp/rdisk/131/src/butterknife-gradle-plugin/src/test/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-15 05:59:57,088 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-15 05:59:57,089 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/tmp/1520552723997-0/src/butterknife-master/butterknife-gradle-plugin/src/test/build.gradle' line: 2
+
+* What went wrong:
+Plugin [id: 'com.android.application'] was not found in any of the following sources:
+
+- Gradle Core Plugins (plugin is not in 'org.gradle' namespace)
+- Plugin Repositories (plugin dependency must include a version number for this source)
+
+* Try:
+Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Exception is:
+org.gradle.api.plugins.UnknownPluginException: Plugin [id: 'com.android.application'] was not found in any of the following sources:
+
+- Gradle Core Plugins (plugin is not in 'org.gradle' namespace)
+- Plugin Repositories (plugin dependency must include a version number for this source)
+	at org.gradle.plugin.use.internal.DefaultPluginRequestApplicator.resolveToFoundResult(DefaultPluginRequestApplicator.java:262)
+	at org.gradle.plugin.use.internal.DefaultPluginRequestApplicator.access$100(DefaultPluginRequestApplicator.java:63)
+	at org.gradle.plugin.use.internal.DefaultPluginRequestApplicator$1.transform(DefaultPluginRequestApplicator.java:91)
+	at org.gradle.plugin.use.internal.DefaultPluginRequestApplicator$1.transform(DefaultPluginRequestApplicator.java:88)
+	at org.gradle.util.CollectionUtils.collect(CollectionUtils.java:203)
+	at org.gradle.util.CollectionUtils.collect(CollectionUtils.java:198)
+	at org.gradle.plugin.use.internal.DefaultPluginRequestApplicator.applyPlugins(DefaultPluginRequestApplicator.java:88)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:184)
+	at org.gradle.configuration.BuildOperationScriptPlugin$1.run(BuildOperationScriptPlugin.java:61)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.configuration.BuildOperationScriptPlugin.apply(BuildOperationScriptPlugin.java:58)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:41)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.doConfigure(LifecycleProjectEvaluator.java:64)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.access$100(LifecycleProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$ConfigureProject.run(LifecycleProjectEvaluator.java:110)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:50)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:667)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:136)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$ConfigureBuild.run(DefaultGradleLauncher.java:249)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.initialization.DefaultGradleLauncher.configureBuild(DefaultGradleLauncher.java:167)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:126)
+	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:109)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:78)
+	at org.gradle.internal.invocation.GradleBuildController$1.call(GradleBuildController.java:75)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:152)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:100)
+	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:75)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$1.run(RunAsBuildOperationBuildActionRunner.java:43)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:40)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionRunner.run(SubscribableBuildActionRunner.java:51)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:49)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:32)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:39)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:53)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:57)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:32)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:43)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:64)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:45)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:30)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:290)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:263)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:256)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:190)
+	at org.gradle.launcher.Main.doAction(Main.java:36)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:31)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:108)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+See https://docs.gradle.org/4.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 2s
+
+2018-05-15 05:59:57,096 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 05:59:57,096 INFO  SysUtils - Execute command: [/tmp/rdisk/131/src/gradlew, -b, /tmp/rdisk/131/src/butterknife-integration-test/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 06:00:13,683 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-05-15 06:00:13,684 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-15 06:00:13,684 INFO  SysUtils - Execute command: [/tmp/rdisk/131/src/gradlew, -b, /tmp/rdisk/131/src/butterknife-integration-test/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-15 06:00:49,550 INFO  SysUtils - Configuration on demand is an incubating feature.
+:butterknife:preBuild UP-TO-DATE
+:butterknife:preDebugBuild UP-TO-DATE
+:butterknife:compileDebugAidl
+:butterknife:compileDebugRenderscript
+:butterknife:checkDebugManifest
+:butterknife:generateDebugBuildConfig SKIPPED
+:butterknife:generateDebugResValues
+:butterknife:generateDebugResources
+:butterknife:packageDebugResources
+:butterknife:platformAttrExtractor
+:butterknife:processDebugManifest
+:butterknife-lint:compileJava
+:butterknife-lint:processResources NO-SOURCE
+:butterknife-lint:classes
+:butterknife-lint:jar
+:butterknife:prepareLintJar
+:butterknife-annotations:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:butterknife-annotations:processResources NO-SOURCE
+:butterknife-annotations:classes
+:butterknife-annotations:jar
+:butterknife:javaPreCompileDebug
+:butterknife:processDebugJavaRes NO-SOURCE
+:butterknife-compiler:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+
+:butterknife-compiler:processResources NO-SOURCE
+:butterknife-compiler:classes
+:butterknife-compiler:jar
+:butterknife-integration-test:preBuild UP-TO-DATE
+:butterknife-integration-test:preDebugBuild
+:butterknife-integration-test:compileDebugAidl
+:butterknife:packageDebugRenderscript NO-SOURCE
+:butterknife-integration-test:compileDebugRenderscript
+:butterknife-integration-test:checkDebugManifest
+:butterknife-integration-test:generateDebugBuildConfig
+:butterknife-integration-test:prepareLintJar
+:butterknife-integration-test:mainApkListPersistenceDebug
+:butterknife-integration-test:generateDebugResValues
+:butterknife-integration-test:generateDebugResources
+:butterknife-integration-test:mergeDebugResources
+:butterknife-integration-test:createDebugCompatibleScreenManifests
+:butterknife-integration-test:processDebugManifest
+:butterknife-integration-test:splitsDiscoveryTaskDebug
+:butterknife-integration-test:compileDebugNdk NO-SOURCE
+:butterknife:mergeDebugShaders
+:butterknife:compileDebugShaders
+:butterknife:generateDebugAssets
+:butterknife:packageDebugAssets
+:butterknife-integration-test:mergeDebugShaders
+:butterknife-integration-test:compileDebugShaders
+:butterknife-integration-test:generateDebugAssets
+:butterknife-integration-test:mergeDebugAssets
+:butterknife:compileDebugNdk NO-SOURCE
+:butterknife:mergeDebugJniLibFolders
+:butterknife:transformNativeLibsWithMergeJniLibsForDebug
+:butterknife:transformNativeLibsWithStripDebugSymbolForDebug
+:butterknife:transformNativeLibsWithIntermediateJniLibsForDebug
+:butterknife-integration-test:mergeDebugJniLibFolders
+:butterknife-integration-test:processDebugJavaRes NO-SOURCE
+:butterknife-integration-test:validateSigningDebug
+:butterknife:preReleaseBuild UP-TO-DATE
+:butterknife:compileReleaseAidl
+:butterknife:compileReleaseRenderscript
+:butterknife:checkReleaseManifest
+:butterknife:generateReleaseBuildConfig SKIPPED
+:butterknife:generateReleaseResValues
+:butterknife:generateReleaseResources
+:butterknife:packageReleaseResources
+:butterknife:processReleaseManifest
+:butterknife:javaPreCompileRelease
+:butterknife:processReleaseJavaRes NO-SOURCE
+:butterknife-integration-test:extractProguardFiles
+:butterknife-integration-test:preReleaseBuild
+:butterknife-integration-test:compileReleaseAidl
+:butterknife:packageReleaseRenderscript NO-SOURCE
+:butterknife-integration-test:compileReleaseRenderscript
+:butterknife-integration-test:checkReleaseManifest
+:butterknife-integration-test:generateReleaseBuildConfig
+:butterknife-integration-test:mainApkListPersistenceRelease
+:butterknife-integration-test:generateReleaseResValues
+:butterknife-integration-test:generateReleaseResources
+:butterknife-integration-test:mergeReleaseResources
+:butterknife-integration-test:createReleaseCompatibleScreenManifests
+:butterknife-integration-test:processReleaseManifest
+:butterknife-integration-test:splitsDiscoveryTaskRelease
+:butterknife-integration-test:compileReleaseNdk NO-SOURCE
+:butterknife:mergeReleaseShaders
+:butterknife:compileReleaseShaders
+:butterknife:generateReleaseAssets
+:butterknife:packageReleaseAssets
+:butterknife-integration-test:mergeReleaseShaders
+:butterknife-integration-test:compileReleaseShaders
+:butterknife-integration-test:generateReleaseAssets
+:butterknife-integration-test:mergeReleaseAssets
+:butterknife:mergeReleaseConsumerProguardFiles
+:butterknife-integration-test:processReleaseJavaRes NO-SOURCE
+:butterknife:compileReleaseNdk NO-SOURCE
+:butterknife:mergeReleaseJniLibFolders
+:butterknife:transformNativeLibsWithMergeJniLibsForRelease
+:butterknife:transformNativeLibsWithStripDebugSymbolForRelease
+:butterknife:transformNativeLibsWithIntermediateJniLibsForRelease
+:butterknife-integration-test:mergeReleaseJniLibFolders
+:butterknife:generateDebugRFile
+:butterknife:generateDebugSources
+:butterknife:compileDebugJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:butterknife:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:butterknife-integration-test:processDebugResources
+:butterknife-integration-test:generateDebugSources
+:butterknife-integration-test:javaPreCompileDebug
+:butterknife-integration-test:compileDebugJavaWithJavac
+:butterknife-integration-test:compileDebugSources
+:butterknife-integration-test:transformClassesWithDexBuilderForDebug
+D8 is used to build dex.
+:butterknife-integration-test:transformDexArchiveWithExternalLibsDexMergerForDebug
+:butterknife-integration-test:transformDexArchiveWithDexMergerForDebug
+D8 is used to merge dex.
+:butterknife-integration-test:transformNativeLibsWithMergeJniLibsForDebug
+:butterknife-integration-test:transformNativeLibsWithStripDebugSymbolForDebug
+:butterknife-integration-test:transformResourcesWithMergeJavaResForDebug
+:butterknife-integration-test:packageDebug
+:butterknife-integration-test:assembleDebug
+:butterknife:generateReleaseRFile
+:butterknife:generateReleaseSources
+:butterknife:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:butterknife:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:butterknife-integration-test:processReleaseResources
+:butterknife-integration-test:generateReleaseSources
+:butterknife-integration-test:javaPreCompileRelease
+:butterknife-integration-test:compileReleaseJavaWithJavac
+:butterknife-integration-test:compileReleaseSources
+:butterknife-integration-test:transformResourcesWithMergeJavaResForRelease
+:butterknife-integration-test:transformClassesAndResourcesWithProguardForRelease
+Request to incrementing alive workforce from 0. Current workforce (dead or alive) 0
+ProGuard, version 5.3.3
+Reading input...
+thread-pool size=4
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/e98f5c374982a38bc14a8d199f67f335/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.2/b9ef4342c934a1a8b107506273dc8061662a322/support-annotations-27.0.2.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/24b14d4d9ca719637944d6eee8fef669/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/131/src/butterknife/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/131/src/butterknife-annotations/build/libs/butterknife-annotations-9.0.0-SNAPSHOT.jar] (filtered)
+Reading program directory [/tmp/rdisk/131/src/butterknife-integration-test/build/intermediates/classes/release] (filtered)
+Reading program jar [/tmp/rdisk/131/src/butterknife-integration-test/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4610
+  Final number of library classes:    791
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/131/src/butterknife-integration-test/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 577
+  Final number of program classes:    85
+Inlining subroutines...
+Obfuscating...
+Printing mapping to [/tmp/rdisk/131/src/butterknife-integration-test/build/outputs/mapping/release/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/131/src/butterknife-integration-test/build/intermediates/transforms/proguard/release/0.jar]
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/e98f5c374982a38bc14a8d199f67f335/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.2/b9ef4342c934a1a8b107506273dc8061662a322/support-annotations-27.0.2.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/24b14d4d9ca719637944d6eee8fef669/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/131/src/butterknife/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/131/src/butterknife-annotations/build/libs/butterknife-annotations-9.0.0-SNAPSHOT.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/131/src/butterknife-integration-test/build/intermediates/classes/release] (filtered)
+  Copying resources from program jar [/tmp/rdisk/131/src/butterknife-integration-test/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Printing classes to [/tmp/rdisk/131/src/butterknife-integration-test/build/outputs/mapping/release/dump.txt]...
+:butterknife-integration-test:transformClassesWithDexBuilderForRelease
+D8 is used to build dex.
+:butterknife-integration-test:transformDexArchiveWithDexMergerForRelease
+D8 is used to merge dex.
+:butterknife-integration-test:transformNativeLibsWithMergeJniLibsForRelease
+:butterknife-integration-test:transformNativeLibsWithStripDebugSymbolForRelease
+:butterknife-integration-test:packageRelease
+:butterknife-integration-test:assembleRelease
+:butterknife-integration-test:assemble
+:butterknife-integration-test:build
+
+BUILD SUCCESSFUL in 35s
+96 actionable tasks: 96 executed
+
+2018-05-15 06:00:49,600 INFO  FullProcessService - Found APK file: /tmp/rdisk/131/src/butterknife-integration-test/build/outputs/apk/release/butterknife-integration-test-release-unsigned.apk

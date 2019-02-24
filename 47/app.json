@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "org.lucasr.smoothie.samples.bitmapcache",
+    "label" : "Smoothie with Bitmap Cache",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "Alpha 1",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "4",
+    "targetSdkVersion" : "16",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.WRITE_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 270,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"Alpha 1\" package=\"org.lucasr.smoothie.samples.bitmapcache\" platformBuildVersionCode=\"19\" platformBuildVersionName=\"4.4.2-1456859\">\n\t<uses-sdk android:minSdkVersion=\"4\" android:targetSdkVersion=\"16\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<application android:label=\"Smoothie with Bitmap Cache\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:name=\"org.lucasr.smoothie.samples.bitmapcache.App\">\n\t\t<activity android:name=\"org.lucasr.smoothie.samples.bitmapcache.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 159467,
+  "crc32" : 599242162,
+  "sha256" : "5491dd8692d244899ffc00a26e3aa1e2bb908bb9f271bc52b0a2fc2c5312bcbf",
+  "buildTime" : 1523482652000
+}

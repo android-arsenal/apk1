@@ -1,0 +1,9 @@
+2016-09-22 02:33:21,139 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/nicolasgramlich/AndEngine/archive/master.zip", attempt 3
+2016-09-22 02:33:25,091 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/nicolasgramlich/AndEngine/archive/master.zip, attempt 3
+2016-09-22 02:33:25,092 INFO  c.g.v.a.u.ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2016-09-22 02:33:25,115 INFO  c.g.v.a.u.ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/1/master.zip: false
+2016-09-22 02:33:25,115 INFO  c.g.v.a.s.FullProcessService - Archive with sources does not contain any build script
+2016-09-22 02:33:25,116 ERROR c.g.v.a.s.FullProcessService - Could not find directory with sources
+2016-09-22 02:33:25,116 ERROR c.g.v.a.s.FullProcessService - Project will not be processed
+2016-09-22 02:33:25,116 ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+2016-09-22 02:33:25,137 ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

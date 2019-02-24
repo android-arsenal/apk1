@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.example.android.jobscheduler",
+    "label" : "JobScheduler",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : null,
+    "versionCode" : null,
+    "installLocation" : null,
+    "minSdkVersion" : "21",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.RECEIVE_BOOT_COMPLETED" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1569,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "en_CA", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "en_XC", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"com.example.android.jobscheduler\">\n\t<uses-sdk android:minSdkVersion=\"21\" android:targetSdkVersion=\"27\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\" />\n\t<application android:theme=\"resourceId:0x7f0b0006\" android:label=\"JobScheduler\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\">\n\t\t<activity android:label=\"JobScheduler\" android:name=\"com.example.android.jobscheduler.MainActivity\" android:windowSoftInputMode=\"0x2\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<service android:name=\"com.example.android.jobscheduler.service.MyJobService\" android:permission=\"android.permission.BIND_JOB_SERVICE\" android:exported=\"true\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1371524,
+  "crc32" : 1242525279,
+  "sha256" : "8f92cb69d241b942769733ce8c9f065a89cac929d6f917f556689519b430c576",
+  "buildTime" : 1523386356000
+}

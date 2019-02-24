@@ -1,0 +1,632 @@
+2018-04-10 18:47:08,338 INFO  DownloadService - Downloading "https://github.com/amlcurran/ShowcaseView/archive/master.zip", attempt 3
+2018-04-10 18:47:09,023 INFO  DownloadService - Downloaded https://github.com/amlcurran/ShowcaseView/archive/master.zip, attempt 3
+2018-04-10 18:47:09,023 INFO  DownloadService - Size of file "/tmp/rdisk/243/master.zip": 2 MB
+2018-04-10 18:47:09,023 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-10 18:47:09,024 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/243/master.zip: true
+2018-04-10 18:47:09,024 DEBUG ZipUtil - Extracting '/tmp/rdisk/243/master.zip' into '/tmp/rdisk/243/src'.
+2018-04-10 18:47:09,063 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-04-10 18:47:09,063 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/243/src]
+2018-04-10 18:47:09,069 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/243/src/.git/
+
+2018-04-10 18:47:09,072 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/243/src/ShowcaseView-master/gradlew
+2018-04-10 18:47:09,076 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/243/src/ShowcaseView-master/library/build.gradle /tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle /tmp/rdisk/243/src/ShowcaseView-master/build.gradle
+2018-04-10 18:47:09,079 INFO  ProjectBuildService - All script(s): /tmp/rdisk/243/src/ShowcaseView-master/settings.gradle /tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle /tmp/rdisk/243/src/ShowcaseView-master/release.gradle /tmp/rdisk/243/src/ShowcaseView-master/library/gradle-mvn-push.gradle /tmp/rdisk/243/src/ShowcaseView-master/library/build.gradle /tmp/rdisk/243/src/ShowcaseView-master/build.gradle
+2018-04-10 18:47:09,079 INFO  ProjectBuildService - Remote scripts: none
+2018-04-10 18:47:09,079 INFO  ProjectFixService - Fixing project...
+2018-04-10 18:47:09,091 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/243/src/ShowcaseView-master/library/local.properties
+2018-04-10 18:47:09,096 INFO  ProjectFixService - Build info for "/tmp/rdisk/243/src/ShowcaseView-master/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 18:47:09,096 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/243/src/ShowcaseView-master/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 18:47:09,097 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/243/src/ShowcaseView-master/sample/local.properties
+2018-04-10 18:47:09,101 INFO  ProjectFixService - Build info for "/tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 18:47:09,101 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 18:47:09,102 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/243/src/ShowcaseView-master/local.properties
+2018-04-10 18:47:09,102 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-10 18:47:09,102 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-10 18:47:09,111 INFO  ProjectFixService - Build info for "/tmp/rdisk/243/src/ShowcaseView-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-10 18:47:09,111 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/243/src/ShowcaseView-master/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-10 18:47:09,111 INFO  ProjectFixService - Project was maybe fixed
+2018-04-10 18:47:09,111 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 18:47:09,112 INFO  SysUtils - Execute command: [/tmp/rdisk/243/src/ShowcaseView-master/gradlew, -b, /tmp/rdisk/243/src/ShowcaseView-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 18:47:15,922 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-10 18:47:15,922 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-10 18:47:15,922 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-10 18:47:15,922 INFO  SysUtils - Execute command: [/tmp/rdisk/243/src/ShowcaseView-master/gradlew, -b, /tmp/rdisk/243/src/ShowcaseView-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-10 18:47:24,162 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-10 18:47:24,163 INFO  SysUtils - Configuration on demand is an incubating feature.
+using default version no.
+using default version no.
+using default version no.
+No resolved dependencies found when searching for the jacoco version.
+No version name supplied, using default
+No version name supplied, using default (mvn-push)
+No version name supplied, using default (mvn-push)
+:library:androidJavadocs/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/StandardShowcaseDrawer.java:26: error: package android.support.v4.content.res does not exist
+import android.support.v4.content.res.ResourcesCompat;
+                                     ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseDrawer.java:21: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:28: error: package android.support.annotation does not exist
+import android.support.annotation.IntDef;
+                                 ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:62: error: cannot find symbol
+    @IntDef({UNDEFINED, LEFT_OF_SHOWCASE, RIGHT_OF_SHOWCASE, ABOVE_SHOWCASE, BELOW_SHOWCASE})
+     ^
+  symbol:   class IntDef
+  location: class ShowcaseView
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseDrawer.java:34: error: cannot find symbol
+    void setShowcaseColour(@ColorInt int color);
+                            ^
+  symbol:   class ColorInt
+  location: interface ShowcaseDrawer
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseDrawer.java:65: error: cannot find symbol
+    void setBackgroundColour(@ColorInt int backgroundColor);
+                              ^
+  symbol:   class ColorInt
+  location: interface ShowcaseDrawer
+javadoc: warning - Error reading file: /Applications/Android Studio.app/sdk/docs/reference/package-list
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseDrawer.java:65: warning: no @param for backgroundColor
+    void setBackgroundColour(@ColorInt int backgroundColor);
+         ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/OnShowcaseEventListener.java:30: warning: no @param for showcaseView
+    void onShowcaseViewHide(ShowcaseView showcaseView);
+         ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/OnShowcaseEventListener.java:35: warning: no @param for showcaseView
+    void onShowcaseViewDidHide(ShowcaseView showcaseView);
+         ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/OnShowcaseEventListener.java:40: warning: no @param for showcaseView
+    void onShowcaseViewShow(ShowcaseView showcaseView);
+         ^
+javadoc: warning - Class ColorInt not found.
+javadoc: warning - Class ColorInt not found.
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:698: warning: no @param for shouldCentreText
+    public void setShouldCentreText(boolean shouldCentreText) {
+                ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:725: warning: no @param for textAlignment
+    public void setDetailTextAlignment(Layout.Alignment textAlignment) {
+                ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:734: warning: no @param for textAlignment
+    public void setTitleTextAlignment(Layout.Alignment textAlignment) {
+                ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:743: warning: no @param for fadeInMillis
+    public void setFadeDurations(long fadeInMillis, long fadeOutMillis) {
+                ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:743: warning: no @param for fadeOutMillis
+    public void setFadeDurations(long fadeInMillis, long fadeOutMillis) {
+                ^
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:470: error: self-closing element not allowed
+         * Draw a holo-style showcase. This is the default.<br/>
+                                                           ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:471: error: self-closing element not allowed
+         * <img alt="Holo showcase example" src="../../../../../../../../example2.png" />
+           ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:473: warning: no @return
+        public Builder withHoloShowcase() {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:478: error: self-closing element not allowed
+         * Draw a new-style showcase.<br/>
+                                     ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:479: error: self-closing element not allowed
+         * <img alt="Holo showcase example" src="../../../../../../../../example.png" />
+           ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:481: warning: no @return
+        public Builder withNewStyleShowcase() {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:487: error: self-closing element not allowed
+         * <img alt="Material showcase" src="../../../../../../../../material.png" />
+           ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:489: warning: no @return
+        public Builder withMaterialShowcase() {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:496: warning: no @param for showcaseDrawer
+        public Builder setShowcaseDrawer(ShowcaseDrawer showcaseDrawer) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:496: warning: no @return
+        public Builder setShowcaseDrawer(ShowcaseDrawer showcaseDrawer) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:504: warning: no @param for resId
+        public Builder setContentTitle(int resId) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:504: warning: no @return
+        public Builder setContentTitle(int resId) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:511: warning: no @param for title
+        public Builder setContentTitle(CharSequence title) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:511: warning: no @return
+        public Builder setContentTitle(CharSequence title) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:519: warning: no @param for resId
+        public Builder setContentText(int resId) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:519: warning: no @return
+        public Builder setContentText(int resId) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:526: warning: no @param for text
+        public Builder setContentText(CharSequence text) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:526: warning: no @return
+        public Builder setContentText(CharSequence text) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:537: warning: no @return
+        public Builder setTarget(Target target) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:545: warning: no @param for theme
+        public Builder setStyle(int theme) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:545: warning: no @return
+        public Builder setStyle(int theme) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:552: error: self-closing element not allowed
+         * <p/>
+           ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:555: warning: no @param for onClickListener
+        public Builder setOnClickListener(OnClickListener onClickListener) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:555: warning: no @return
+        public Builder setOnClickListener(OnClickListener onClickListener) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:563: error: self-closing element not allowed
+         * <p/>
+           ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:566: warning: no @return
+        public Builder doNotBlockTouches() {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:574: error: self-closing element not allowed
+         * <p/>
+           ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:577: warning: no @return
+        public Builder hideOnTouchOutside() {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:589: warning: no @return
+        public Builder singleShot(long shotId) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:610: warning: no @param for textPaint
+        public Builder setContentTextPaint(TextPaint textPaint) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:610: warning: no @return
+        public Builder setContentTextPaint(TextPaint textPaint) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:620: warning: no @param for textPaint
+        public Builder setContentTitlePaint(TextPaint textPaint) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:620: warning: no @return
+        public Builder setContentTitlePaint(TextPaint textPaint) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:629: warning: no @param for button
+        public Builder replaceEndButton(Button button) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:629: warning: no @return
+        public Builder replaceEndButton(Button button) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:638: warning: no @param for buttonResourceId
+        public Builder replaceEndButton(int buttonResourceId) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:638: warning: no @return
+        public Builder replaceEndButton(int buttonResourceId) {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:649: warning: no @return
+        public Builder blockAllTouches() {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:658: warning: no @return
+        public Builder useDecorViewAsParent() {
+                       ^
+/tmp/rdisk/243/src/ShowcaseView-master/library/src/main/java/com/github/amlcurran/showcaseview/ShowcaseView.java:451: warning: no @param for activity
+        public Builder(Activity activity, boolean useNewStyle) {
+               ^
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+javadoc: warning - Class IntDef not found.
+
+8 errors
+57 warnings
+:library:androidJavadocs FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':library:androidJavadocs'.
+> Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/243/src/ShowcaseView-master/library/build/tmp/androidJavadocs/javadoc.options'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':library:androidJavadocs'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:305)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: org.gradle.api.GradleException: Javadoc generation failed. Generated Javadoc options file (useful for troubleshooting): '/tmp/rdisk/243/src/ShowcaseView-master/library/build/tmp/androidJavadocs/javadoc.options'
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:55)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:31)
+	at org.gradle.api.tasks.javadoc.Javadoc.executeExternalJavadoc(Javadoc.java:140)
+	at org.gradle.api.tasks.javadoc.Javadoc.generate(Javadoc.java:128)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:218)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:211)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:200)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:579)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:562)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 47 more
+Caused by: org.gradle.process.internal.ExecException: Process 'command '/usr/lib/jvm/java-8-oracle/bin/javadoc'' finished with non-zero exit value 1
+	at org.gradle.process.internal.DefaultExecHandle$ExecResultImpl.assertNormalExitValue(DefaultExecHandle.java:365)
+	at org.gradle.process.internal.DefaultExecAction.execute(DefaultExecAction.java:31)
+	at org.gradle.api.tasks.javadoc.internal.JavadocGenerator.execute(JavadocGenerator.java:52)
+	... 58 more
+
+
+BUILD FAILED
+
+Total time: 7.812 secs
+
+2018-04-10 18:47:24,168 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 18:47:24,169 INFO  SysUtils - Execute command: [/tmp/rdisk/243/src/ShowcaseView-master/gradlew, -b, /tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 18:47:28,491 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-10 18:47:28,492 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-10 18:47:28,492 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-10 18:47:28,492 INFO  SysUtils - Execute command: [/tmp/rdisk/243/src/ShowcaseView-master/gradlew, -b, /tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-10 18:47:32,871 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-10 18:47:32,871 INFO  SysUtils - Configuration on demand is an incubating feature.
+using default version no.
+using default version no.
+using default version no.
+No resolved dependencies found when searching for the jacoco version.
+No version name supplied, using default
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle' line: 57
+
+* What went wrong:
+A problem occurred evaluating project ':sample'.
+> Neither path nor baseDir may be null or empty string. path='' basedir='/tmp/rdisk/243/src/ShowcaseView-master/sample'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.GradleScriptException: A problem occurred evaluating project ':sample'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:54)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:148)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:39)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:59)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:504)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:83)
+	at org.gradle.execution.TaskPathProjectEvaluator.configureHierarchy(TaskPathProjectEvaluator.java:42)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:85)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:76)
+	at org.gradle.execution.commandline.CommandLineTaskParser.parseTasks(CommandLineTaskParser.java:42)
+	at org.gradle.execution.TaskNameResolvingBuildConfigurationAction.configure(TaskNameResolvingBuildConfigurationAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:47)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: java.lang.IllegalArgumentException: Neither path nor baseDir may be null or empty string. path='' basedir='/tmp/rdisk/243/src/ShowcaseView-master/sample'
+	at org.gradle.api.internal.file.BaseDirFileResolver.doResolve(BaseDirFileResolver.java:65)
+	at org.gradle.api.internal.file.AbstractFileResolver.resolve(AbstractFileResolver.java:77)
+	at org.gradle.api.internal.file.AbstractFileResolver.resolve(AbstractFileResolver.java:60)
+	at org.gradle.api.internal.file.DefaultFileOperations.file(DefaultFileOperations.java:69)
+	at org.gradle.api.internal.project.AbstractProject.file(AbstractProject.java:620)
+	at org.gradle.groovy.scripts.DefaultScript.file(DefaultScript.java:113)
+	at org.gradle.api.internal.BeanDynamicObject$GroovyObjectAdapter.invokeMethod(BeanDynamicObject.java:268)
+	at org.gradle.api.internal.BeanDynamicObject.invokeMethod(BeanDynamicObject.java:129)
+	at org.gradle.api.internal.ConfigureDelegate.invokeMethod(ConfigureDelegate.java:78)
+	at build_6ben5vr2j0e8d661z9fgp24un$_run_closure3_closure6_closure9.doCall(/tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle:57)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:63)
+	at org.gradle.api.internal.AbstractNamedDomainObjectContainer.create(AbstractNamedDomainObjectContainer.java:59)
+	at org.gradle.api.internal.AbstractNamedDomainObjectContainer.create(AbstractNamedDomainObjectContainer.java:52)
+	at org.gradle.api.internal.NamedDomainObjectContainerConfigureDelegate._configure(NamedDomainObjectContainerConfigureDelegate.java:39)
+	at org.gradle.api.internal.ConfigureDelegate.invokeMethod(ConfigureDelegate.java:73)
+	at build_6ben5vr2j0e8d661z9fgp24un$_run_closure3_closure6.doCall(/tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle:56)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:63)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:91)
+	at org.gradle.api.internal.AbstractNamedDomainObjectContainer.configure(AbstractNamedDomainObjectContainer.java:68)
+	at org.gradle.api.internal.AbstractNamedDomainObjectContainer.configure(AbstractNamedDomainObjectContainer.java:24)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:55)
+	at com.android.build.gradle.BaseExtension.signingConfigs(BaseExtension.java:374)
+	at com.android.build.gradle.AppExtension_Decorated.signingConfigs(Unknown Source)
+	at build_6ben5vr2j0e8d661z9fgp24un$_run_closure3.doCall(/tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle:55)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:63)
+	at org.gradle.api.internal.plugins.ExtensionsStorage$ExtensionHolder.configure(ExtensionsStorage.java:145)
+	at org.gradle.api.internal.plugins.ExtensionsStorage.configureExtension(ExtensionsStorage.java:69)
+	at org.gradle.api.internal.plugins.DefaultConvention$ExtensionsDynamicObject.invokeMethod(DefaultConvention.java:207)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:147)
+	at org.gradle.groovy.scripts.BasicScript.methodMissing(BasicScript.java:79)
+	at build_6ben5vr2j0e8d661z9fgp24un.run(/tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle:44)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:52)
+	... 48 more
+
+
+BUILD FAILED
+
+Total time: 3.93 secs
+
+2018-04-10 18:47:32,876 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 18:47:32,876 INFO  SysUtils - Execute command: [/tmp/rdisk/243/src/ShowcaseView-master/gradlew, -b, /tmp/rdisk/243/src/ShowcaseView-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 18:47:38,706 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-10 18:47:38,706 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-10 18:47:38,706 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-10 18:47:38,707 INFO  SysUtils - Execute command: [/tmp/rdisk/243/src/ShowcaseView-master/gradlew, -b, /tmp/rdisk/243/src/ShowcaseView-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-10 18:47:44,755 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-10 18:47:44,756 INFO  SysUtils - Configuration on demand is an incubating feature.
+using default version no.
+using default version no.
+using default version no.
+No resolved dependencies found when searching for the jacoco version.
+No version name supplied, using default
+No version name supplied, using default (mvn-push)
+No version name supplied, using default (mvn-push)
+No resolved dependencies found when searching for the jacoco version.
+No version name supplied, using default
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle' line: 57
+
+* What went wrong:
+A problem occurred evaluating project ':sample'.
+> Neither path nor baseDir may be null or empty string. path='' basedir='/tmp/rdisk/243/src/ShowcaseView-master/sample'
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.GradleScriptException: A problem occurred evaluating project ':sample'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:54)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:148)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:39)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:59)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:504)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:83)
+	at org.gradle.execution.TaskPathProjectEvaluator.configureHierarchy(TaskPathProjectEvaluator.java:47)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:85)
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:76)
+	at org.gradle.execution.commandline.CommandLineTaskParser.parseTasks(CommandLineTaskParser.java:42)
+	at org.gradle.execution.TaskNameResolvingBuildConfigurationAction.configure(TaskNameResolvingBuildConfigurationAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:47)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+Caused by: java.lang.IllegalArgumentException: Neither path nor baseDir may be null or empty string. path='' basedir='/tmp/rdisk/243/src/ShowcaseView-master/sample'
+	at org.gradle.api.internal.file.BaseDirFileResolver.doResolve(BaseDirFileResolver.java:65)
+	at org.gradle.api.internal.file.AbstractFileResolver.resolve(AbstractFileResolver.java:77)
+	at org.gradle.api.internal.file.AbstractFileResolver.resolve(AbstractFileResolver.java:60)
+	at org.gradle.api.internal.file.DefaultFileOperations.file(DefaultFileOperations.java:69)
+	at org.gradle.api.internal.project.AbstractProject.file(AbstractProject.java:620)
+	at org.gradle.groovy.scripts.DefaultScript.file(DefaultScript.java:113)
+	at org.gradle.api.internal.BeanDynamicObject$GroovyObjectAdapter.invokeMethod(BeanDynamicObject.java:268)
+	at org.gradle.api.internal.BeanDynamicObject.invokeMethod(BeanDynamicObject.java:129)
+	at org.gradle.api.internal.ConfigureDelegate.invokeMethod(ConfigureDelegate.java:78)
+	at build_6ben5vr2j0e8d661z9fgp24un$_run_closure3_closure6_closure9.doCall(/tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle:57)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:63)
+	at org.gradle.api.internal.AbstractNamedDomainObjectContainer.create(AbstractNamedDomainObjectContainer.java:59)
+	at org.gradle.api.internal.AbstractNamedDomainObjectContainer.create(AbstractNamedDomainObjectContainer.java:52)
+	at org.gradle.api.internal.NamedDomainObjectContainerConfigureDelegate._configure(NamedDomainObjectContainerConfigureDelegate.java:39)
+	at org.gradle.api.internal.ConfigureDelegate.invokeMethod(ConfigureDelegate.java:73)
+	at build_6ben5vr2j0e8d661z9fgp24un$_run_closure3_closure6.doCall(/tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle:56)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:63)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:91)
+	at org.gradle.api.internal.AbstractNamedDomainObjectContainer.configure(AbstractNamedDomainObjectContainer.java:68)
+	at org.gradle.api.internal.AbstractNamedDomainObjectContainer.configure(AbstractNamedDomainObjectContainer.java:24)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:55)
+	at com.android.build.gradle.BaseExtension.signingConfigs(BaseExtension.java:374)
+	at com.android.build.gradle.AppExtension_Decorated.signingConfigs(Unknown Source)
+	at build_6ben5vr2j0e8d661z9fgp24un$_run_closure3.doCall(/tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle:55)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:63)
+	at org.gradle.api.internal.plugins.ExtensionsStorage$ExtensionHolder.configure(ExtensionsStorage.java:145)
+	at org.gradle.api.internal.plugins.ExtensionsStorage.configureExtension(ExtensionsStorage.java:69)
+	at org.gradle.api.internal.plugins.DefaultConvention$ExtensionsDynamicObject.invokeMethod(DefaultConvention.java:207)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:147)
+	at org.gradle.groovy.scripts.BasicScript.methodMissing(BasicScript.java:79)
+	at build_6ben5vr2j0e8d661z9fgp24un.run(/tmp/rdisk/243/src/ShowcaseView-master/sample/build.gradle:44)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:52)
+	... 48 more
+
+
+BUILD FAILED
+
+Total time: 5.604 secs
+
+2018-04-10 18:47:44,760 ERROR FullProcessService - Project build has not produced APK file
+2018-04-10 18:47:44,765 ERROR FullProcessService - Could not find generated or existed APK file

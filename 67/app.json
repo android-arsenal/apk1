@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.dd.sample.progressbutton",
+    "label" : "Circular Progress Button",
+    "icon" : "res/drawable-hdpi-v4/ic_launcher.png",
+    "versionName" : "1.1.3",
+    "versionCode" : 10,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-hdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAABblBMVEUAAAAAAAAAAAAAAAAAAABYWl5jZWpkZmsAAAAqLTMwMzoAAAAAAAAwNDoyNDpgbjk+QzoxNDs/RDpESjqlxDiWsTgwMztARDqlxThESzowNDszNTpaZDhcaDkyNDs0NTpHTjphbzl2iTmFnDmPqTiVsDhGTToyNTo+RDpJUDp1iDmbtzinxziatzhaYziLozihvzimxThDRzmSrDeEmzlARjpdaTlcaTk0Njp1hzl0hjkzNjs1NzqAlTh/lDkzNjp+kjh9kjlufzltfjlUXTmmxjiqyT/a6Kzw9d3c6K+rykFSXTo7PjqbuDjX5aP////Z56jW5aM5PTro8Mvq8s/q8tBCRzmkwzjQ4ZTS4pjP4ZN3iTioxznN343i7b7O4JCoyDo5PDo3OzpdaDlbaDmBljiAljk1NjqeuzhESTlCSDpXYDlVYDpkcTljcTltfDhsfDmEmjhbZzkvMjklKC0XGRwYGh0AAAAAAAAAAABTxOo0AAAAenRSTlMAAQMEB////xD//xUX/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yYzNpHyZkIAAAHcSURBVFjD7djrVxJBGMBhWRZdXFh4FbZic1FQJ2iytSLpopaKlxKp1CjNS6FGd0sN++9DWJA9MrOzZ/jE2d/H98w858DMhz3T09PVeQTBy5EgeExH9PX2cdTrE+uSIPn7ufJLQh2SeSG5DnkDvFDA60Iu5ELdAAU7BCmhMH0fDISAAYLBSDSs0pxr0es3GKCYdpMqXThDOstPgzhNqjkK259tkQBArwZAdsjH35CCoA2PJJKjY2OjycTIOIL2DuUe1aRbKJW+jVu6k061dWgXEuITkehdfCVjcgipjm62cu8+btuDDDiAVPTQwISMKWCGIPsIU3r8hBGCp9OY2swsE6Rmn2GbniMWCM1h2+bBHtIXcrW1i0vLKy8su1smuZcxOwhW8/W1a4VC4ZUFet0yyb+xg1DjwNar2zYs0MVks3l0QIfgbdFc+a667b0F2mqdFDN0SNturPyws7u3b4GskwTQIPhoYMaMTzRIL2HmDlQKpB2yQ0dAhoKfy+xQGZEh+IId9JUM6d+cQN/JkPLDCfQTiBD65QQ6JkNK6beD/pAhQFqcOQ3cLzYXciEXakInPM7JJXTq5+rUhAT57C9XZ+YjiyBVzv9xdF4xn308oiQHOJIl0dPZp7HO9B8dKHsg44Z5qwAAAABJRU5ErkJggg=="
+  },
+  "dexClasses" : 58,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"10\" android:versionName=\"1.1.3\" package=\"com.dd.sample.progressbutton\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"21\" />\n\t<application android:theme=\"resourceId:0x7f080000\" android:label=\"Circular Progress Button\" android:icon=\"res/drawable-hdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:theme=\"@android:style/Theme.Holo.Light\" android:label=\"Circular Progress Button\" android:name=\"com.dd.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:theme=\"@android:style/Theme.Holo.Light\" android:name=\"com.dd.sample.Sample1Activity\" />\n\t\t<activity android:theme=\"@android:style/Theme.Holo.Light\" android:name=\"com.dd.sample.Sample2Activity\" />\n\t\t<activity android:theme=\"@android:style/Theme.Holo.Light\" android:name=\"com.dd.sample.Sample3Activity\" />\n\t\t<activity android:theme=\"@android:style/Theme.Holo.Light\" android:name=\"com.dd.sample.Sample4Activity\" />\n\t\t<activity android:theme=\"@android:style/Theme.Holo.Light\" android:name=\"com.dd.sample.Sample5Activity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 46123,
+  "crc32" : 2107995237,
+  "sha256" : "82c6316b1207ea2d0eaf628fb1463d3894e6acf77f2a80b48610873ce5aca041",
+  "buildTime" : 1526366187000
+}

@@ -1,0 +1,158 @@
+2018-04-10 19:06:28,082 INFO  DownloadService - Downloading "https://github.com/limccn/Android-Charts/archive/master.zip", attempt 3
+2018-04-10 19:06:28,636 INFO  DownloadService - Downloaded https://github.com/limccn/Android-Charts/archive/master.zip, attempt 3
+2018-04-10 19:06:28,636 INFO  DownloadService - Size of file "/tmp/rdisk/173/master.zip": 807 KB
+2018-04-10 19:06:28,636 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-10 19:06:28,637 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/173/master.zip: true
+2018-04-10 19:06:28,637 DEBUG ZipUtil - Extracting '/tmp/rdisk/173/master.zip' into '/tmp/rdisk/173/src'.
+2018-04-10 19:06:28,689 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-04-10 19:06:28,689 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/173/src]
+2018-04-10 19:06:28,698 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/173/src/.git/
+
+2018-04-10 19:06:28,705 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/173/src/Android-Charts-master/gradlew
+2018-04-10 19:06:28,710 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/173/src/Android-Charts-master/src/build.gradle /tmp/rdisk/173/src/Android-Charts-master/build.gradle
+2018-04-10 19:06:28,715 INFO  ProjectBuildService - All script(s): /tmp/rdisk/173/src/Android-Charts-master/src/build.gradle /tmp/rdisk/173/src/Android-Charts-master/settings.gradle /tmp/rdisk/173/src/Android-Charts-master/build.gradle
+2018-04-10 19:06:28,715 INFO  ProjectBuildService - Remote scripts: none
+2018-04-10 19:06:28,715 INFO  ProjectFixService - Fixing project...
+2018-04-10 19:06:28,726 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/173/src/Android-Charts-master/src/local.properties
+2018-04-10 19:06:28,726 INFO  ProjectFixService - Build info for "/tmp/rdisk/173/src/Android-Charts-master/src/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=20,minSdkVersion=7,targetSdkVersion=18]
+2018-04-10 19:06:28,727 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/173/src/Android-Charts-master/local.properties
+2018-04-10 19:06:28,727 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.12-all.zip
+2018-04-10 19:06:28,727 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.12-bin.zip)
+2018-04-10 19:06:28,728 INFO  ProjectFixService - Build info for "/tmp/rdisk/173/src/Android-Charts-master/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=20,minSdkVersion=7,targetSdkVersion=18]
+2018-04-10 19:06:28,728 INFO  ProjectFixService - Project was maybe fixed
+2018-04-10 19:06:28,728 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 19:06:28,728 INFO  SysUtils - Execute command: [/tmp/rdisk/173/src/Android-Charts-master/gradlew, -b, /tmp/rdisk/173/src/Android-Charts-master/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 19:06:33,929 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-10 19:06:33,929 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-10 19:06:33,930 INFO  SysUtils - Execute command: [/tmp/rdisk/173/src/Android-Charts-master/gradlew, -b, /tmp/rdisk/173/src/Android-Charts-master/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-10 19:06:43,431 INFO  SysUtils - Configuration on demand is an incubating feature.
+:src:compileLint
+:src:copyDebugLint UP-TO-DATE
+:src:mergeDebugProguardFiles
+:src:preBuild
+:src:preDebugBuild
+:src:checkDebugManifest
+:src:prepareDebugDependencies
+:src:compileDebugAidl
+:src:compileDebugRenderscript
+:src:generateDebugBuildConfig
+:src:generateDebugAssets UP-TO-DATE
+:src:mergeDebugAssets
+:src:generateDebugResValues
+:src:generateDebugResources
+:src:packageDebugResources
+:src:processDebugManifest
+:src:processDebugResources
+:src:generateDebugSources
+:src:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:src:processDebugJavaRes UP-TO-DATE
+:src:packageDebugJar
+:src:compileDebugNdk
+:src:packageDebugJniLibs UP-TO-DATE
+:src:packageDebugLocalJar UP-TO-DATE
+:src:packageDebugRenderscript UP-TO-DATE
+:src:bundleDebug
+:src:assembleDebug
+:src:copyReleaseLint UP-TO-DATE
+:src:mergeReleaseProguardFiles
+:src:preReleaseBuild
+:src:checkReleaseManifest
+:src:prepareReleaseDependencies
+:src:compileReleaseAidl
+:src:compileReleaseRenderscript
+:src:generateReleaseBuildConfig
+:src:generateReleaseAssets UP-TO-DATE
+:src:mergeReleaseAssets
+:src:generateReleaseResValues
+:src:generateReleaseResources
+:src:packageReleaseResources
+:src:processReleaseManifest
+:src:processReleaseResources
+:src:generateReleaseSources
+:src:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:src:processReleaseJavaRes UP-TO-DATE
+:src:packageReleaseJar
+:src:compileReleaseNdk
+:src:packageReleaseJniLibs UP-TO-DATE
+:src:packageReleaseLocalJar UP-TO-DATE
+:src:packageReleaseRenderscript UP-TO-DATE
+:src:bundleRelease
+:src:assembleRelease
+:src:assemble
+:src:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.046 secs
+
+2018-04-10 19:06:43,445 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 19:06:43,445 INFO  SysUtils - Execute command: [/tmp/rdisk/173/src/Android-Charts-master/gradlew, -b, /tmp/rdisk/173/src/Android-Charts-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 19:06:48,815 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-10 19:06:48,815 INFO  ProjectTaskService - Excluded tasks (8): lintDebug deviceCheck lint connectedCheck uninstallAll check connectedAndroidTest lintRelease
+2018-04-10 19:06:48,815 INFO  SysUtils - Execute command: [/tmp/rdisk/173/src/Android-Charts-master/gradlew, -b, /tmp/rdisk/173/src/Android-Charts-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-10 19:06:54,938 INFO  SysUtils - Configuration on demand is an incubating feature.
+:src:compileLint
+:src:copyDebugLint UP-TO-DATE
+:src:mergeDebugProguardFiles UP-TO-DATE
+:src:preBuild
+:src:preDebugBuild
+:src:checkDebugManifest
+:src:prepareDebugDependencies
+:src:compileDebugAidl UP-TO-DATE
+:src:compileDebugRenderscript UP-TO-DATE
+:src:generateDebugBuildConfig UP-TO-DATE
+:src:generateDebugAssets UP-TO-DATE
+:src:mergeDebugAssets UP-TO-DATE
+:src:generateDebugResValues UP-TO-DATE
+:src:generateDebugResources UP-TO-DATE
+:src:packageDebugResources UP-TO-DATE
+:src:processDebugManifest UP-TO-DATE
+:src:processDebugResources UP-TO-DATE
+:src:generateDebugSources UP-TO-DATE
+:src:compileDebugJava UP-TO-DATE
+:src:processDebugJavaRes UP-TO-DATE
+:src:packageDebugJar UP-TO-DATE
+:src:compileDebugNdk UP-TO-DATE
+:src:packageDebugJniLibs UP-TO-DATE
+:src:packageDebugLocalJar UP-TO-DATE
+:src:packageDebugRenderscript UP-TO-DATE
+:src:bundleDebug
+:src:assembleDebug
+:src:copyReleaseLint UP-TO-DATE
+:src:mergeReleaseProguardFiles UP-TO-DATE
+:src:preReleaseBuild
+:src:checkReleaseManifest
+:src:prepareReleaseDependencies
+:src:compileReleaseAidl UP-TO-DATE
+:src:compileReleaseRenderscript UP-TO-DATE
+:src:generateReleaseBuildConfig UP-TO-DATE
+:src:generateReleaseAssets UP-TO-DATE
+:src:mergeReleaseAssets UP-TO-DATE
+:src:generateReleaseResValues UP-TO-DATE
+:src:generateReleaseResources UP-TO-DATE
+:src:packageReleaseResources UP-TO-DATE
+:src:processReleaseManifest UP-TO-DATE
+:src:processReleaseResources UP-TO-DATE
+:src:generateReleaseSources UP-TO-DATE
+:src:compileReleaseJava UP-TO-DATE
+:src:processReleaseJavaRes UP-TO-DATE
+:src:packageReleaseJar UP-TO-DATE
+:src:compileReleaseNdk UP-TO-DATE
+:src:packageReleaseJniLibs UP-TO-DATE
+:src:packageReleaseLocalJar UP-TO-DATE
+:src:packageReleaseRenderscript UP-TO-DATE
+:src:bundleRelease
+:src:assembleRelease
+:src:assemble
+:src:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.399 secs
+
+2018-04-10 19:06:54,952 ERROR FullProcessService - Project build has not produced APK file
+2018-04-10 19:06:54,965 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,5 @@
+{
+  "android.support.annotation" : [ "AnimRes", "AnimatorRes", "AnyRes", "ArrayRes", "AttrRes", "BinderThread", "BoolRes", "CallSuper", "CheckResult", "ColorInt", "ColorRes", "DimenRes", "DrawableRes", "FloatRange", "FractionRes", "IdRes", "IntDef", "IntRange", "IntegerRes", "InterpolatorRes", "Keep", "LayoutRes", "MainThread", "MenuRes", "NonNull", "Nullable", "PluralsRes", "RawRes", "RequiresPermission", "RequiresPermission$Read", "RequiresPermission$Write", "Size", "StringDef", "StringRes", "StyleRes", "StyleableRes", "TransitionRes", "UiThread", "VisibleForTesting", "WorkerThread", "XmlRes" ],
+  "com.nvanbenschoten.motion" : [ "BuildConfig", "ParallaxImageView", "ParallaxImageView$1", "R", "R$attr", "R$styleable", "SensorInterpreter" ],
+  "com.nvanbenschoten.motion.motion_sample" : [ "BuildConfig", "ParallaxActivity", "ParallaxActivity$ParallaxFragment", "ParallaxActivity$ParallaxFragment$1", "ParallaxActivity$ParallaxFragment$2", "R", "R$attr", "R$dimen", "R$drawable", "R$id", "R$layout", "R$menu", "R$string", "R$style", "R$styleable" ]
+}

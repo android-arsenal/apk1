@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "com.facebook.buck.android.agent",
+    "label" : null,
+    "icon" : null,
+    "versionName" : "3",
+    "versionCode" : 3,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "19",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 2,
+  "locales" : [ ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"3\" android:versionName=\"3\" package=\"com.facebook.buck.android.agent\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"19\" />\n\t<application />\n</manifest>\n",
+  "fileSize" : 68558,
+  "crc32" : 4150212598,
+  "sha256" : "45ade395ebec65b99a061ab7d3ed5ac414bd9f5d6cff8bf224aefe939fffd060",
+  "buildTime" : 1496784446000
+}

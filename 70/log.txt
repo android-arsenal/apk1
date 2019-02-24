@@ -1,0 +1,21 @@
+2018-04-11 21:10:13,651 INFO  DownloadService - Downloading "https://github.com/f2prateek/progressbutton/archive/master.zip", attempt 3
+2018-04-11 21:11:14,087 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 21:11:14,819 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 21:11:14,819 INFO  DownloadService - Downloading "https://github.com/f2prateek/progressbutton/archive/master.zip", attempt 3
+2018-04-11 21:12:16,163 DEBUG FullProcessService - Repository https://github.com/f2prateek/progressbutton available: true
+2018-04-11 21:12:16,173 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 21:12:16,173 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/f2prateek/progressbutton, /tmp/rdisk/70/src]
+2018-04-11 21:12:17,757 INFO  SysUtils - 
+2018-04-11 21:12:17,770 INFO  GitService - Deleted "/tmp/rdisk/70/src/.git": true
+2018-04-11 21:12:17,772 INFO  FullProcessService - Size of directory with sources: 530 KB
+2018-04-11 21:12:17,772 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/70/src]
+2018-04-11 21:12:17,782 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/70/src/.git/
+
+2018-04-11 21:12:17,784 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-11 21:12:17,784 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-11 21:12:17,786 INFO  ProjectBuildService - Build script(s): none
+2018-04-11 21:12:17,787 INFO  ProjectBuildService - All script(s): none
+2018-04-11 21:12:17,787 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 21:12:17,787 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-11 21:12:17,787 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 21:12:17,789 ERROR FullProcessService - Could not find generated or existed APK file

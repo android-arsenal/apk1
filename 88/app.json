@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "yuku.ambilwarna.demo",
+    "label" : "AmbilWarna Demo",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "2.0.1",
+    "versionCode" : 3,
+    "installLocation" : null,
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : true,
+    "smallScreens" : true,
+    "normalScreens" : true,
+    "largeScreens" : true,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEdklEQVRo3s2aTUxcVRTH/+c+3gzDDLQg0mgMtglVawmZL6Y0aILddVVjnBJQuoMaV7XSwEYz0U01WnWlsCxR+bBNd7qqLEoKzAxDyLQN1qSWVJsi/aDMdDozvHdcQDG0Q6f3zdc7yWwm7953fjnnf+659z5CHqxpMrZDJdtbENQC4FUADQRsZ6AKAAi4z8A9AH8CmIfOk2lO/D7X4riV67vJ6MDGi8s1VuHoJKIuEJoBkpyLGYwgMw8l9dhP0f3b7hQFwD3x4EVhKf+YgaMEsucjggyOEzCgpx5+PdNa8U9BALyDYZWdzo9A9Gm+HM8EAubPaHb2m1CPJ503APdUcrcQ6ihAThTFeFbX04dn9lmvZntSZHd+9ZAQaqh4zgMAOYVQQ+6p1UM5AXiDWrcQ4gxAVSi6UZUQ4ow3qHUbSiFPUOshiAGYwBj60XCzMvjMAN7p1bdB4heAFJjCWAPr74Z8ZeeyAqwLNgxQJUxlvKLrac/jwhaPl0pB6oj5nAcAqhSkjngHw+qWAOxyHgORC2Y1Ihe7nMcyptD6CjsPkCOHMP/FjDGQfn5VT0W1hWuLAKDU76orE5ZGsDhABD9AO3N4RwwPE6+E3rTfBICyjVCo5b2GnWde0Jn7I79+PsKBgJ7hiRvrv98oEOh3HfykXRCdBFG9gTA4YLWdAHB8IwKvT99/zkaO60ZaBAb/mIwvfRBtq4tJNYPji45ye+0AQJ1GWo4Ex16+7Ku6LQDAxvYOY/0Nn5rxKV2yzgNAtK0uFvYp7wN8Sr4DJbuN7R0bIiaiLgNpMxz2Kb3MzIazmZnDPqUXzMPyel7zmZomYzssSsVNqX6eeSGevtN4pbV2JR/FZc/EUqVdrYnKaYI5pT14QaiKrU12M6Iz9+fLeQC40lq7ojP3y8ZAVWxtAqD9sqUysnB2NN8lPrJwdpTB1+VcoRaxvoeVsRH2+7W8Nwp+v0bAsKSaXxMAGqQG6fr5gq208nM3CAKqZUZoeupSofyXnZuA7QKA1OqbvnHt30IBxO/9vSQ5pFLARPbHwd1JyUpkFQCkVlH1pV3PmwlaMHBXZoAiLHtNBYC14z6JEeKA2QDmJce009iYYiIAvigpnJ2u+ncOmwYgrSXGAbmOUhCd3DOxZIp9s5hrcdwCIyjZR9XbLTU/EBGZQQNg5iEDW7tOz7T2VakhBAAkKP4zg+MGII67p7WhxvFFR0kBLvuqbhNj0NBJB+i98oraS+4prYMCgaKv7AU/Von696ZkZvAG5QrKpvz1BLUTBPFlKXM61Py/ppouLFdbrI4jAH0BkHXLFNqgicx+C+aIWWr83Bvb7oaale8A7nuqBjboezxpndPtAK/ARJZKxk4/EwAAzOyzXgXrRwDWSuFs04Xlaukq9EQe+srOMfjDUgCs5Xz2/zKK+MmKoHUD9H1xLzo4CXDfo7TJJuKsq+jaJZ84XZp7MskyujVEsa9Zc9RARmFHIj5mvc9Yy1HiCGyKRgE+NSgqwCPL/WOPEgNsqt1P+dyGQJZCAvwHZOO1RvfOrqUAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 39,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"3\" android:versionName=\"2.0.1\" package=\"yuku.ambilwarna.demo\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"27\" />\n\t<supports-screens android:anyDensity=\"true\" android:smallScreens=\"true\" android:normalScreens=\"true\" android:largeScreens=\"true\" android:resizeable=\"true\" />\n\t<application android:label=\"AmbilWarna Demo\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\">\n\t\t<activity android:name=\"yuku.ambilwarna.demo.AmbilWarnaDemoActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"yuku.ambilwarna.demo.AmbilWarnaDemoPreferenceActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 42085,
+  "crc32" : 707021428,
+  "sha256" : "4042d2bc32a1c72e3eded487a826551b8a17bf94297cdf2f3f284843a795c00f",
+  "buildTime" : 1526365087000
+}

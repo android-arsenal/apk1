@@ -1,0 +1,404 @@
+2018-04-10 19:02:31,719 INFO  DownloadService - Downloading "https://github.com/nicolasjafelle/PagingGridView/archive/master.zip", attempt 3
+2018-04-10 19:02:32,093 INFO  DownloadService - Downloaded https://github.com/nicolasjafelle/PagingGridView/archive/master.zip, attempt 3
+2018-04-10 19:02:32,094 INFO  DownloadService - Size of file "/tmp/rdisk/184/master.zip": 133 KB
+2018-04-10 19:02:32,094 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-10 19:02:32,094 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/184/master.zip: true
+2018-04-10 19:02:32,094 DEBUG ZipUtil - Extracting '/tmp/rdisk/184/master.zip' into '/tmp/rdisk/184/src'.
+2018-04-10 19:02:32,101 INFO  FullProcessService - Size of directory with sources: 159 KB
+2018-04-10 19:02:32,102 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/184/src]
+2018-04-10 19:02:32,107 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/184/src/.git/
+
+2018-04-10 19:02:32,109 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/gradlew
+2018-04-10 19:02:32,111 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/PagingGridView/build.gradle /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/PagingGridViewSample/build.gradle /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/build.gradle
+2018-04-10 19:02:32,113 INFO  ProjectBuildService - All script(s): /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/settings.gradle /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/build.gradle /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/PagingGridViewSample/build.gradle /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/PagingGridView/build.gradle
+2018-04-10 19:02:32,113 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-04-10 19:02:32,419 INFO  DownloadService - Downloaded https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle, attempt 3
+2018-04-10 19:02:32,419 INFO  ProjectBuildService - Remote scripts: https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle
+2018-04-10 19:02:32,419 INFO  ProjectFixService - Fixing project...
+2018-04-10 19:02:32,425 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/PagingGridView/local.properties
+2018-04-10 19:02:32,425 INFO  ProjectFixService - Build info for "/tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/PagingGridView/build.gradle": [buildToolsVersion=19.0.3,compileSdkVersion=19,minSdkVersion=9,targetSdkVersion=19]
+2018-04-10 19:02:32,425 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/PagingGridView/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=9,targetSdkVersion=19]
+2018-04-10 19:02:32,426 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/PagingGridViewSample/local.properties
+2018-04-10 19:02:32,426 INFO  ProjectFixService - Build info for "/tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/PagingGridViewSample/build.gradle": [buildToolsVersion=19.0.3,compileSdkVersion=19,minSdkVersion=9,targetSdkVersion=19]
+2018-04-10 19:02:32,426 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/PagingGridViewSample/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=9,targetSdkVersion=19]
+2018-04-10 19:02:32,426 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/local.properties
+2018-04-10 19:02:32,427 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.11-all.zip
+2018-04-10 19:02:32,427 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.11-bin.zip)
+2018-04-10 19:02:32,427 INFO  ProjectFixService - Build info for "/tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=9,targetSdkVersion=19]
+2018-04-10 19:02:32,427 INFO  ProjectFixService - Project was maybe fixed
+2018-04-10 19:02:32,427 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 19:02:32,428 INFO  SysUtils - Execute command: [/tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/gradlew, -b, /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/PagingGridView/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 19:02:39,261 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-10 19:02:39,261 INFO  ProjectTaskService - Detected possible tasks: 4
+2018-04-10 19:02:39,261 INFO  ProjectTaskService - Excluded tasks (3): androidJavadocsJar androidJavadocs androidSourcesJar
+2018-04-10 19:02:39,261 INFO  SysUtils - Execute command: [/tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/gradlew, -b, /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/PagingGridView/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, androidJavadocsJar, -x, androidJavadocs, -x, androidSourcesJar, build]
+2018-04-10 19:02:45,801 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-10 19:02:45,802 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Script 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle' line: 97
+
+* What went wrong:
+A problem occurred configuring project ':PagingGridView'.
+> org.gradle.api.internal.MissingMethodException: Could not find method getBootClasspath() for arguments [] on com.android.build.gradle.LibraryExtension_Decorated@38159384.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':PagingGridView'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:507)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:82)
+	at org.gradle.execution.TaskPathProjectEvaluator.evaluateByPath(TaskPathProjectEvaluator.java:41)
+	at org.gradle.execution.ProjectEvaluatingAction.configure(ProjectEvaluatingAction.java:50)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:155)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: org.gradle.api.internal.MissingMethodException: Could not find method getBootClasspath() for arguments [] on com.android.build.gradle.LibraryExtension_Decorated@38159384.
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:79)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:31)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy14.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 32 more
+Caused by: org.gradle.api.internal.MissingMethodException: Could not find method getBootClasspath() for arguments [] on com.android.build.gradle.LibraryExtension_Decorated@38159384.
+	at org.gradle.api.internal.AbstractDynamicObject.methodMissingException(AbstractDynamicObject.java:68)
+	at org.gradle.api.internal.AbstractDynamicObject.invokeMethod(AbstractDynamicObject.java:56)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:172)
+	at com.android.build.gradle.LibraryExtension_Decorated.invokeMethod(Unknown Source)
+	at gradle_mvn_push_1uslct06794lqcnn3dd7el7lq3$_run_closure1_closure4.doCall(https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle:97)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:58)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:110)
+	at org.gradle.api.internal.AbstractTask.configure(AbstractTask.java:439)
+	at org.gradle.api.internal.project.AbstractProject.task(AbstractProject.java:962)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:225)
+	at org.gradle.api.internal.BeanDynamicObject.invokeMethod(BeanDynamicObject.java:129)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:147)
+	at org.gradle.groovy.scripts.BasicScript.methodMissing(BasicScript.java:79)
+	at gradle_mvn_push_1uslct06794lqcnn3dd7el7lq3$_run_closure1.doCall(https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle:95)
+	... 39 more
+
+
+BUILD FAILED
+
+Total time: 6.096 secs
+
+2018-04-10 19:02:45,804 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 19:02:45,804 INFO  SysUtils - Execute command: [/tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/gradlew, -b, /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/PagingGridViewSample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 19:02:52,978 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-10 19:02:52,978 INFO  ProjectTaskService - Detected possible tasks: 4
+2018-04-10 19:02:52,978 INFO  ProjectTaskService - Excluded tasks (3): androidJavadocsJar androidJavadocs androidSourcesJar
+2018-04-10 19:02:52,978 INFO  SysUtils - Execute command: [/tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/gradlew, -b, /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/PagingGridViewSample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, androidJavadocsJar, -x, androidJavadocs, -x, androidSourcesJar, build]
+2018-04-10 19:02:59,960 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-10 19:02:59,960 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Script 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle' line: 97
+
+* What went wrong:
+A problem occurred configuring project ':PagingGridViewSample'.
+> A problem occurred configuring project ':PagingGridView'.
+   > org.gradle.api.internal.MissingMethodException: Could not find method getBootClasspath() for arguments [] on com.android.build.gradle.LibraryExtension_Decorated@18c7f6b5.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':PagingGridViewSample'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:507)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:82)
+	at org.gradle.execution.TaskPathProjectEvaluator.evaluateByPath(TaskPathProjectEvaluator.java:41)
+	at org.gradle.execution.ProjectEvaluatingAction.configure(ProjectEvaluatingAction.java:50)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:155)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':PagingGridView'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:507)
+	at org.gradle.api.internal.project.AbstractProject.evaluationDependsOn(AbstractProject.java:611)
+	at org.gradle.api.internal.project.AbstractProject.evaluationDependsOn(AbstractProject.java:603)
+	at org.gradle.api.Project$evaluationDependsOn.call(Unknown Source)
+	at com.android.build.gradle.BasePlugin$_ensureConfigured_closure132.doCall(BasePlugin.groovy:2168)
+	at com.android.build.gradle.BasePlugin.ensureConfigured(BasePlugin.groovy:2167)
+	at com.android.build.gradle.BasePlugin.resolveDependencyForConfig(BasePlugin.groovy:2085)
+	at com.android.build.gradle.BasePlugin.this$2$resolveDependencyForConfig(BasePlugin.groovy)
+	at com.android.build.gradle.BasePlugin$this$2$resolveDependencyForConfig.callCurrent(Unknown Source)
+	at com.android.build.gradle.BasePlugin.resolveDependencies(BasePlugin.groovy:2042)
+	at com.android.build.gradle.internal.VariantManager.createTasksForDefaultBuild(VariantManager.java:304)
+	at com.android.build.gradle.internal.VariantManager.createAndroidTasks(VariantManager.java:167)
+	at com.android.build.gradle.internal.VariantManager$createAndroidTasks.call(Unknown Source)
+	at com.android.build.gradle.AppPlugin.doCreateAndroidTasks(AppPlugin.groovy:60)
+	at com.android.build.gradle.BasePlugin.createAndroidTasks(BasePlugin.groovy:370)
+	at com.android.build.gradle.BasePlugin$_apply_closure7.doCall(BasePlugin.groovy:308)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:79)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:31)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy14.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 32 more
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: org.gradle.api.internal.MissingMethodException: Could not find method getBootClasspath() for arguments [] on com.android.build.gradle.LibraryExtension_Decorated@18c7f6b5.
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:79)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:31)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy14.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 56 more
+Caused by: org.gradle.api.internal.MissingMethodException: Could not find method getBootClasspath() for arguments [] on com.android.build.gradle.LibraryExtension_Decorated@18c7f6b5.
+	at org.gradle.api.internal.AbstractDynamicObject.methodMissingException(AbstractDynamicObject.java:68)
+	at org.gradle.api.internal.AbstractDynamicObject.invokeMethod(AbstractDynamicObject.java:56)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:172)
+	at com.android.build.gradle.LibraryExtension_Decorated.invokeMethod(Unknown Source)
+	at gradle_mvn_push_1uslct06794lqcnn3dd7el7lq3$_run_closure1_closure4.doCall(https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle:97)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:58)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:110)
+	at org.gradle.api.internal.AbstractTask.configure(AbstractTask.java:439)
+	at org.gradle.api.internal.project.AbstractProject.task(AbstractProject.java:962)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:225)
+	at org.gradle.api.internal.BeanDynamicObject.invokeMethod(BeanDynamicObject.java:129)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:147)
+	at org.gradle.groovy.scripts.BasicScript.methodMissing(BasicScript.java:79)
+	at gradle_mvn_push_1uslct06794lqcnn3dd7el7lq3$_run_closure1.doCall(https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle:95)
+	... 63 more
+
+
+BUILD FAILED
+
+Total time: 6.558 secs
+
+2018-04-10 19:02:59,963 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-10 19:02:59,963 INFO  SysUtils - Execute command: [/tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/gradlew, -b, /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-10 19:03:06,588 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-10 19:03:06,588 INFO  ProjectTaskService - Detected possible tasks: 4
+2018-04-10 19:03:06,589 INFO  ProjectTaskService - Excluded tasks (3): androidJavadocsJar androidJavadocs androidSourcesJar
+2018-04-10 19:03:06,589 INFO  SysUtils - Execute command: [/tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/gradlew, -b, /tmp/rdisk/184/src/PagingGridView-master/PagingGridViewProject/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, androidJavadocsJar, -x, androidJavadocs, -x, androidSourcesJar, build]
+2018-04-10 19:03:13,086 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-10 19:03:13,086 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Script 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle' line: 97
+
+* What went wrong:
+A problem occurred configuring project ':PagingGridView'.
+> org.gradle.api.internal.MissingMethodException: Could not find method getBootClasspath() for arguments [] on com.android.build.gradle.LibraryExtension_Decorated@38159384.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.ProjectConfigurationException: A problem occurred configuring project ':PagingGridView'.
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.addConfigurationFailure(LifecycleProjectEvaluator.java:79)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:74)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:507)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:82)
+	at org.gradle.execution.TaskPathProjectEvaluator.evaluateByPath(TaskPathProjectEvaluator.java:43)
+	at org.gradle.execution.ProjectEvaluatingAction.configure(ProjectEvaluatingAction.java:50)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:155)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: org.gradle.api.internal.MissingMethodException: Could not find method getBootClasspath() for arguments [] on com.android.build.gradle.LibraryExtension_Decorated@38159384.
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:40)
+	at org.gradle.listener.ClosureBackedMethodInvocationDispatch.dispatch(ClosureBackedMethodInvocationDispatch.java:25)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:79)
+	at org.gradle.listener.BroadcastDispatch.dispatch(BroadcastDispatch.java:31)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy14.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	... 32 more
+Caused by: org.gradle.api.internal.MissingMethodException: Could not find method getBootClasspath() for arguments [] on com.android.build.gradle.LibraryExtension_Decorated@38159384.
+	at org.gradle.api.internal.AbstractDynamicObject.methodMissingException(AbstractDynamicObject.java:68)
+	at org.gradle.api.internal.AbstractDynamicObject.invokeMethod(AbstractDynamicObject.java:56)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:172)
+	at com.android.build.gradle.LibraryExtension_Decorated.invokeMethod(Unknown Source)
+	at gradle_mvn_push_1uslct06794lqcnn3dd7el7lq3$_run_closure1_closure4.doCall(https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle:97)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:58)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:130)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:110)
+	at org.gradle.api.internal.AbstractTask.configure(AbstractTask.java:439)
+	at org.gradle.api.internal.project.AbstractProject.task(AbstractProject.java:962)
+	at org.gradle.api.internal.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:225)
+	at org.gradle.api.internal.BeanDynamicObject.invokeMethod(BeanDynamicObject.java:129)
+	at org.gradle.api.internal.CompositeDynamicObject.invokeMethod(CompositeDynamicObject.java:147)
+	at org.gradle.groovy.scripts.BasicScript.methodMissing(BasicScript.java:79)
+	at gradle_mvn_push_1uslct06794lqcnn3dd7el7lq3$_run_closure1.doCall(https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle:95)
+	... 39 more
+
+
+BUILD FAILED
+
+Total time: 6.054 secs
+
+2018-04-10 19:03:13,089 ERROR FullProcessService - Project build has not produced APK file
+2018-04-10 19:03:13,091 ERROR FullProcessService - Could not find generated or existed APK file

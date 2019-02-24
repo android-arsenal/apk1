@@ -1,0 +1,793 @@
+2018-04-11 21:20:55,426 INFO  DownloadService - Downloading "https://github.com/Bearded-Hen/Android-Bootstrap/archive/master.zip", attempt 3
+2018-04-11 21:21:56,042 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 21:21:57,782 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 21:21:57,782 INFO  DownloadService - Downloading "https://github.com/Bearded-Hen/Android-Bootstrap/archive/master.zip", attempt 3
+2018-04-11 21:22:59,034 DEBUG FullProcessService - Repository https://github.com/Bearded-Hen/Android-Bootstrap available: true
+2018-04-11 21:22:59,034 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 21:22:59,034 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Bearded-Hen/Android-Bootstrap, /tmp/rdisk/65/src]
+2018-04-11 21:23:01,286 INFO  SysUtils - 
+2018-04-11 21:23:01,292 INFO  GitService - Deleted "/tmp/rdisk/65/src/.git": true
+2018-04-11 21:23:01,297 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-04-11 21:23:01,297 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/65/src]
+2018-04-11 21:23:01,303 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/65/src/.git/
+
+2018-04-11 21:23:01,306 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/65/src/gradlew
+2018-04-11 21:23:01,309 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/65/src/AndroidBootstrap/build.gradle /tmp/rdisk/65/src/sample/build.gradle /tmp/rdisk/65/src/build.gradle
+2018-04-11 21:23:01,312 INFO  ProjectBuildService - All script(s): /tmp/rdisk/65/src/settings.gradle /tmp/rdisk/65/src/sample/build.gradle /tmp/rdisk/65/src/build.gradle /tmp/rdisk/65/src/AndroidBootstrap/push.gradle /tmp/rdisk/65/src/AndroidBootstrap/build.gradle
+2018-04-11 21:23:01,313 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 21:23:01,313 INFO  ProjectFixService - Fixing project...
+2018-04-11 21:23:01,322 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/65/src/AndroidBootstrap/local.properties
+2018-04-11 21:23:01,324 INFO  ProjectFixService - Build info for "/tmp/rdisk/65/src/AndroidBootstrap/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-11 21:23:01,324 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/65/src/AndroidBootstrap/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-11 21:23:01,324 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/65/src/sample/local.properties
+2018-04-11 21:23:01,326 INFO  ProjectFixService - Build info for "/tmp/rdisk/65/src/sample/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-11 21:23:01,326 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/65/src/sample/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-11 21:23:01,327 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/65/src/local.properties
+2018-04-11 21:23:01,327 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-11 21:23:01,327 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-11 21:23:01,329 INFO  ProjectFixService - Build info for "/tmp/rdisk/65/src/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-11 21:23:01,329 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/65/src/build.gradle": [buildToolsVersion=25.0.3,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-11 21:23:01,330 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 21:23:01,330 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:23:01,330 INFO  SysUtils - Execute command: [/tmp/rdisk/65/src/gradlew, -b, /tmp/rdisk/65/src/AndroidBootstrap/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:23:09,718 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-11 21:23:09,718 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-11 21:23:09,718 INFO  SysUtils - Execute command: [/tmp/rdisk/65/src/gradlew, -b, /tmp/rdisk/65/src/AndroidBootstrap/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-11 21:23:32,277 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:AndroidBootstrap:androidJavadocs/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/DrawableUtils.java:7: error: package android.support.annotation does not exist
+import android.support.annotation.DrawableRes;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/DimenUtils.java:5: error: package android.support.annotation does not exist
+import android.support.annotation.DimenRes;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/ColorUtils.java:6: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/ColorUtils.java:7: error: package android.support.annotation does not exist
+import android.support.annotation.ColorRes;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/font/Typicon.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.StringDef;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/font/Typicon.java:38: error: cannot find symbol
+    @StringDef({
+     ^
+  symbol:   class StringDef
+  location: class Typicon
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/font/FontAwesome.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.StringDef;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/font/FontAwesome.java:39: error: cannot find symbol
+    @StringDef({
+     ^
+  symbol:   class StringDef
+  location: class FontAwesome
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/font/AwesomeTypefaceSpan.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/ButtonModeView.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapTextView.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapHeadingView.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapBrandView.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/attributes/BootstrapBrand.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapBadgeView.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapBadge.java:6: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapHeading.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.DimenRes;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapHeading.java:6: error: cannot find symbol
+import com.beardedhen.androidbootstrap.R;
+                                      ^
+  symbol:   class R
+  location: package com.beardedhen.androidbootstrap
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapBrand.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapBrand.java:6: error: cannot find symbol
+import com.beardedhen.androidbootstrap.R;
+                                      ^
+  symbol:   class R
+  location: package com.beardedhen.androidbootstrap
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapBaseThumbnail.java:13: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapBaseThumbnail.java:14: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapGroup.java:4: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapProgressBar.java:19: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapProgressBar.java:20: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapLabel.java:9: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/AwesomeTextView.java:7: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/AwesomeTextView.java:8: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapEditText.java:8: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapDropDown.java:10: error: package android.support.v4.widget does not exist
+import android.support.v4.widget.PopupWindowCompat;
+                                ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapDrawableFactory.java:17: error: package android.support.annotation does not exist
+import android.support.annotation.ColorInt;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapCircleThumbnail.java:12: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapButtonGroup.java:7: error: package android.support.annotation does not exist
+import android.support.annotation.IdRes;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapButtonGroup.java:8: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapButton.java:8: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapButton.java:9: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/DrawableUtils.java:12: error: cannot find symbol
+    public static Drawable resolveDrawable(@DrawableRes int resId, Context context) {
+                                            ^
+  symbol:   class DrawableRes
+  location: class DrawableUtils
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/DimenUtils.java:19: error: cannot find symbol
+    public static float pixelsFromSpResource(Context context, @DimenRes int sizeRes) {
+                                                               ^
+  symbol:   class DimenRes
+  location: class DimenUtils
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/DimenUtils.java:31: error: cannot find symbol
+    public static float pixelsFromDpResource(Context context, @DimenRes int res) {
+                                                               ^
+  symbol:   class DimenRes
+  location: class DimenUtils
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/ColorUtils.java:27: error: cannot find symbol
+    public static @ColorInt int resolveColor(@ColorRes int color, Context context) {
+                                              ^
+  symbol:   class ColorRes
+  location: class ColorUtils
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/ColorUtils.java:27: error: cannot find symbol
+    public static @ColorInt int resolveColor(@ColorRes int color, Context context) {
+                   ^
+  symbol:   class ColorInt
+  location: class ColorUtils
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/ColorUtils.java:45: error: cannot find symbol
+                                                    @ColorRes int res, float percent) {
+                                                     ^
+  symbol:   class ColorRes
+  location: class ColorUtils
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/ColorUtils.java:44: error: cannot find symbol
+    @ColorInt public static int decreaseRgbChannels(Context context,
+     ^
+  symbol:   class ColorInt
+  location: class ColorUtils
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/ColorUtils.java:72: error: cannot find symbol
+    @ColorInt public static int increaseOpacity(Context context, @ColorRes int res, int alpha) {
+                                                                  ^
+  symbol:   class ColorRes
+  location: class ColorUtils
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/ColorUtils.java:72: error: cannot find symbol
+    @ColorInt public static int increaseOpacity(Context context, @ColorRes int res, int alpha) {
+     ^
+  symbol:   class ColorInt
+  location: class ColorUtils
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/ColorUtils.java:77: error: cannot find symbol
+    @ColorInt public static int increaseOpacityFromInt(Context context, @ColorInt int c, int
+                                                                         ^
+  symbol:   class ColorInt
+  location: class ColorUtils
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/utils/ColorUtils.java:77: error: cannot find symbol
+    @ColorInt public static int increaseOpacityFromInt(Context context, @ColorInt int c, int
+     ^
+  symbol:   class ColorInt
+  location: class ColorUtils
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/font/AwesomeTypefaceSpan.java:24: error: cannot find symbol
+    @Override public void updateDrawState(@NonNull TextPaint ds) {
+                                           ^
+  symbol:   class NonNull
+  location: class AwesomeTypefaceSpan
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/font/AwesomeTypefaceSpan.java:28: error: cannot find symbol
+    @Override public void updateMeasureState(@NonNull TextPaint paint) {
+                                              ^
+  symbol:   class NonNull
+  location: class AwesomeTypefaceSpan
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/ButtonModeView.java:15: error: cannot find symbol
+    @NonNull ButtonMode getButtonMode();
+     ^
+  symbol:   class NonNull
+  location: interface ButtonModeView
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/ButtonModeView.java:22: error: cannot find symbol
+    void setButtonMode(@NonNull ButtonMode buttonMode);
+                        ^
+  symbol:   class NonNull
+  location: interface ButtonModeView
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapTextView.java:19: error: cannot find symbol
+    void setBootstrapText(@Nullable BootstrapText bootstrapText);
+                           ^
+  symbol:   class Nullable
+  location: interface BootstrapTextView
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapTextView.java:24: error: cannot find symbol
+    @Nullable BootstrapText getBootstrapText();
+     ^
+  symbol:   class Nullable
+  location: interface BootstrapTextView
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapTextView.java:32: error: cannot find symbol
+    void setMarkdownText(@Nullable String text);
+                          ^
+  symbol:   class Nullable
+  location: interface BootstrapTextView
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapHeadingView.java:20: error: cannot find symbol
+    void setBootstrapHeading(@NonNull BootstrapHeading bootstrapHeading);
+                              ^
+  symbol:   class NonNull
+  location: interface BootstrapHeadingView
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapHeadingView.java:25: error: cannot find symbol
+    @NonNull BootstrapHeading getBootstrapHeading();
+     ^
+  symbol:   class NonNull
+  location: interface BootstrapHeadingView
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapBrandView.java:19: error: cannot find symbol
+    void setBootstrapBrand(@NonNull BootstrapBrand bootstrapBrand);
+                            ^
+  symbol:   class NonNull
+  location: interface BootstrapBrandView
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapBrandView.java:24: error: cannot find symbol
+    @NonNull BootstrapBrand getBootstrapBrand();
+     ^
+  symbol:   class NonNull
+  location: interface BootstrapBrandView
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/attributes/BootstrapBrand.java:22: error: cannot find symbol
+    @ColorInt int defaultFill(Context context);
+     ^
+  symbol:   class ColorInt
+  location: interface BootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/attributes/BootstrapBrand.java:30: error: cannot find symbol
+    @ColorInt int defaultEdge(Context context);
+     ^
+  symbol:   class ColorInt
+  location: interface BootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/attributes/BootstrapBrand.java:38: error: cannot find symbol
+    @ColorInt int defaultTextColor(Context context);
+     ^
+  symbol:   class ColorInt
+  location: interface BootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/attributes/BootstrapBrand.java:46: error: cannot find symbol
+    @ColorInt int activeFill(Context context);
+     ^
+  symbol:   class ColorInt
+  location: interface BootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/attributes/BootstrapBrand.java:54: error: cannot find symbol
+    @ColorInt int activeEdge(Context context);
+     ^
+  symbol:   class ColorInt
+  location: interface BootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/attributes/BootstrapBrand.java:62: error: cannot find symbol
+    @ColorInt int activeTextColor(Context context);
+     ^
+  symbol:   class ColorInt
+  location: interface BootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/attributes/BootstrapBrand.java:70: error: cannot find symbol
+    @ColorInt int disabledFill(Context context);
+     ^
+  symbol:   class ColorInt
+  location: interface BootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/attributes/BootstrapBrand.java:78: error: cannot find symbol
+    @ColorInt int disabledEdge(Context context);
+     ^
+  symbol:   class ColorInt
+  location: interface BootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/attributes/BootstrapBrand.java:86: error: cannot find symbol
+    @ColorInt int disabledTextColor(Context context);
+     ^
+  symbol:   class ColorInt
+  location: interface BootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/attributes/BootstrapBrand.java:88: error: cannot find symbol
+    @ColorInt int getColor();
+     ^
+  symbol:   class ColorInt
+  location: interface BootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapBadgeView.java:12: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: interface BootstrapBadgeView
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/view/BootstrapBadgeView.java:20: error: cannot find symbol
+    void setBadgeText(@Nullable String badgeText);
+                       ^
+  symbol:   class Nullable
+  location: interface BootstrapBadgeView
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapBadge.java:100: error: cannot find symbol
+    public void setBootstrapBrand(@NonNull BootstrapBrand bootstrapBrand) {
+                                   ^
+  symbol:   class NonNull
+  location: class BootstrapBadge
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapBadge.java:105: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class BootstrapBadge
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapHeading.java:40: error: cannot find symbol
+    private final @DimenRes int textSize;
+                   ^
+  symbol:   class DimenRes
+  location: class DefaultBootstrapHeading
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapHeading.java:41: error: cannot find symbol
+    private final @DimenRes int vertPadding;
+                   ^
+  symbol:   class DimenRes
+  location: class DefaultBootstrapHeading
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapHeading.java:42: error: cannot find symbol
+    private final @DimenRes int horiPadding;
+                   ^
+  symbol:   class DimenRes
+  location: class DefaultBootstrapHeading
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapBrand.java:65: error: cannot find symbol
+    @ColorInt public int defaultFill(Context context) {
+     ^
+  symbol:   class ColorInt
+  location: class DefaultBootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapBrand.java:69: error: cannot find symbol
+    @ColorInt public int defaultEdge(Context context) {
+     ^
+  symbol:   class ColorInt
+  location: class DefaultBootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapBrand.java:73: error: cannot find symbol
+    @ColorInt public int activeFill(Context context) {
+     ^
+  symbol:   class ColorInt
+  location: class DefaultBootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapBrand.java:77: error: cannot find symbol
+    @ColorInt public int activeEdge(Context context) {
+     ^
+  symbol:   class ColorInt
+  location: class DefaultBootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapBrand.java:81: error: cannot find symbol
+    @ColorInt public int disabledFill(Context context) {
+     ^
+  symbol:   class ColorInt
+  location: class DefaultBootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapBrand.java:85: error: cannot find symbol
+    @ColorInt public int disabledEdge(Context context) {
+     ^
+  symbol:   class ColorInt
+  location: class DefaultBootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapBrand.java:89: error: cannot find symbol
+    @ColorInt public int defaultTextColor(Context context) {
+     ^
+  symbol:   class ColorInt
+  location: class DefaultBootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapBrand.java:93: error: cannot find symbol
+    @ColorInt public int activeTextColor(Context context) {
+     ^
+  symbol:   class ColorInt
+  location: class DefaultBootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapBrand.java:97: error: cannot find symbol
+    @ColorInt public int disabledTextColor(Context context) {
+     ^
+  symbol:   class ColorInt
+  location: class DefaultBootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/api/defaults/DefaultBootstrapBrand.java:101: error: cannot find symbol
+    @ColorInt public int getColor() {
+     ^
+  symbol:   class ColorInt
+  location: class DefaultBootstrapBrand
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapBaseThumbnail.java:138: error: cannot find symbol
+    @Nullable private Bitmap getBitmapForView() {
+     ^
+  symbol:   class Nullable
+  location: class BootstrapBaseThumbnail
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapBaseThumbnail.java:195: error: cannot find symbol
+    @Override public void setBootstrapBrand(@NonNull BootstrapBrand bootstrapBrand) {
+                                             ^
+  symbol:   class NonNull
+  location: class BootstrapBaseThumbnail
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapBaseThumbnail.java:200: error: cannot find symbol
+    @NonNull @Override public BootstrapBrand getBootstrapBrand() {
+     ^
+  symbol:   class NonNull
+  location: class BootstrapBaseThumbnail
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapProgressBar.java:192: error: cannot find symbol
+    private int getStripeColor(@ColorInt int color) {
+                                ^
+  symbol:   class ColorInt
+  location: class BootstrapProgressBar
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapProgressBar.java:529: error: cannot find symbol
+    public void setBootstrapBrand(@NonNull BootstrapBrand bootstrapBrand) {
+                                   ^
+  symbol:   class NonNull
+  location: class BootstrapProgressBar
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapProgressBar.java:535: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class BootstrapProgressBar
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapLabel.java:132: error: cannot find symbol
+    @Override public void setBootstrapHeading(@NonNull BootstrapHeading bootstrapHeading) {
+                                               ^
+  symbol:   class NonNull
+  location: class BootstrapLabel
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapLabel.java:137: error: cannot find symbol
+    @NonNull @Override public BootstrapHeading getBootstrapHeading() {
+     ^
+  symbol:   class NonNull
+  location: class BootstrapLabel
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/AwesomeTextView.java:268: error: cannot find symbol
+    @Nullable @Override public BootstrapText getBootstrapText() {
+     ^
+  symbol:   class Nullable
+  location: class AwesomeTextView
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/AwesomeTextView.java:272: error: cannot find symbol
+    @Override public void setBootstrapBrand(@NonNull BootstrapBrand bootstrapBrand) {
+                                             ^
+  symbol:   class NonNull
+  location: class AwesomeTextView
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/AwesomeTextView.java:277: error: cannot find symbol
+    @NonNull @Override public BootstrapBrand getBootstrapBrand() {
+     ^
+  symbol:   class NonNull
+  location: class AwesomeTextView
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapEditText.java:141: error: cannot find symbol
+    @Override public void setBootstrapBrand(@NonNull BootstrapBrand bootstrapBrand) {
+                                             ^
+  symbol:   class NonNull
+  location: class BootstrapEditText
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapEditText.java:146: error: cannot find symbol
+    @NonNull @Override public BootstrapBrand getBootstrapBrand() {
+     ^
+  symbol:   class NonNull
+  location: class BootstrapEditText
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapDrawableFactory.java:152: error: cannot find symbol
+                                             @ColorInt int outerBorderWidth,
+                                              ^
+  symbol:   class ColorInt
+  location: class BootstrapDrawableFactory
+/tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapDrawableFactory.java:153: error: cannot find symbol
+                                             @ColorInt int bg) {
+                                              ^
+  symbol:   class ColorInt
+  location: class BootstrapDrawableFactory
+
+100 warnings
+:AndroidBootstrap:androidJavadocsJar
+:AndroidBootstrap:androidSourcesJar
+:AndroidBootstrap:preBuild UP-TO-DATE
+:AndroidBootstrap:preDebugBuild UP-TO-DATE
+:AndroidBootstrap:checkDebugManifest
+:AndroidBootstrap:preDebugAndroidTestBuild UP-TO-DATE
+:AndroidBootstrap:preDebugUnitTestBuild UP-TO-DATE
+:AndroidBootstrap:preReleaseBuild UP-TO-DATE
+:AndroidBootstrap:preReleaseUnitTestBuild UP-TO-DATE
+:AndroidBootstrap:prepareComAndroidSupportSupportCompat2531Library
+:AndroidBootstrap:prepareComAndroidSupportSupportCoreUi2531Library
+:AndroidBootstrap:prepareComAndroidSupportSupportCoreUtils2531Library
+:AndroidBootstrap:prepareComAndroidSupportSupportFragment2531Library
+:AndroidBootstrap:prepareComAndroidSupportSupportMediaCompat2531Library
+:AndroidBootstrap:prepareComAndroidSupportSupportV42531Library
+:AndroidBootstrap:prepareDebugDependencies
+:AndroidBootstrap:compileDebugAidl
+:AndroidBootstrap:compileDebugNdk UP-TO-DATE
+:AndroidBootstrap:compileLint
+:AndroidBootstrap:copyDebugLint UP-TO-DATE
+:AndroidBootstrap:compileDebugRenderscript
+:AndroidBootstrap:generateDebugBuildConfig
+:AndroidBootstrap:generateDebugResValues
+:AndroidBootstrap:generateDebugResources
+:AndroidBootstrap:mergeDebugResources
+:AndroidBootstrap:processDebugManifest
+:AndroidBootstrap:processDebugResources
+:AndroidBootstrap:generateDebugSources
+:AndroidBootstrap:incrementalDebugJavaCompilationSafeguard
+:AndroidBootstrap:javaPreCompileDebug
+:AndroidBootstrap:compileDebugJavaWithJavac
+:AndroidBootstrap:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapAlert.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:AndroidBootstrap:extractDebugAnnotations
+:AndroidBootstrap:mergeDebugShaders
+:AndroidBootstrap:compileDebugShaders
+:AndroidBootstrap:generateDebugAssets
+:AndroidBootstrap:mergeDebugAssets
+:AndroidBootstrap:mergeDebugProguardFiles
+:AndroidBootstrap:packageDebugRenderscript UP-TO-DATE
+:AndroidBootstrap:packageDebugResources
+:AndroidBootstrap:processDebugJavaRes UP-TO-DATE
+:AndroidBootstrap:transformResourcesWithMergeJavaResForDebug
+:AndroidBootstrap:transformClassesAndResourcesWithSyncLibJarsForDebug
+:AndroidBootstrap:mergeDebugJniLibFolders
+:AndroidBootstrap:transformNativeLibsWithMergeJniLibsForDebug
+:AndroidBootstrap:transformNativeLibsWithStripDebugSymbolForDebug
+:AndroidBootstrap:transformNativeLibsWithSyncJniLibsForDebug
+:AndroidBootstrap:bundleDebug
+:AndroidBootstrap:compileDebugSources
+:AndroidBootstrap:assembleDebug
+:AndroidBootstrap:checkReleaseManifest
+:AndroidBootstrap:prepareReleaseDependencies
+:AndroidBootstrap:compileReleaseAidl
+:AndroidBootstrap:compileReleaseNdk UP-TO-DATE
+:AndroidBootstrap:copyReleaseLint UP-TO-DATE
+:AndroidBootstrap:compileReleaseRenderscript
+:AndroidBootstrap:generateReleaseBuildConfig
+:AndroidBootstrap:generateReleaseResValues
+:AndroidBootstrap:generateReleaseResources
+:AndroidBootstrap:mergeReleaseResources
+:AndroidBootstrap:processReleaseManifest
+:AndroidBootstrap:processReleaseResources
+:AndroidBootstrap:generateReleaseSources
+:AndroidBootstrap:incrementalReleaseJavaCompilationSafeguard
+:AndroidBootstrap:javaPreCompileRelease
+:AndroidBootstrap:compileReleaseJavaWithJavac
+:AndroidBootstrap:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/65/src/AndroidBootstrap/src/main/java/com/beardedhen/androidbootstrap/BootstrapAlert.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:AndroidBootstrap:extractReleaseAnnotations
+:AndroidBootstrap:mergeReleaseShaders
+:AndroidBootstrap:compileReleaseShaders
+:AndroidBootstrap:generateReleaseAssets
+:AndroidBootstrap:mergeReleaseAssets
+:AndroidBootstrap:mergeReleaseProguardFiles
+:AndroidBootstrap:packageReleaseRenderscript UP-TO-DATE
+:AndroidBootstrap:packageReleaseResources
+:AndroidBootstrap:processReleaseJavaRes UP-TO-DATE
+:AndroidBootstrap:transformResourcesWithMergeJavaResForRelease
+:AndroidBootstrap:transformClassesAndResourcesWithSyncLibJarsForRelease
+:AndroidBootstrap:mergeReleaseJniLibFolders
+:AndroidBootstrap:transformNativeLibsWithMergeJniLibsForRelease
+:AndroidBootstrap:transformNativeLibsWithStripDebugSymbolForRelease
+:AndroidBootstrap:transformNativeLibsWithSyncJniLibsForRelease
+:AndroidBootstrap:bundleRelease
+:AndroidBootstrap:compileReleaseSources
+:AndroidBootstrap:assembleRelease
+:AndroidBootstrap:signArchives SKIPPED
+:AndroidBootstrap:assemble
+:AndroidBootstrap:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.313 secs
+
+2018-04-11 21:23:32,293 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:23:32,293 INFO  SysUtils - Execute command: [/tmp/rdisk/65/src/gradlew, -b, /tmp/rdisk/65/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:23:40,121 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-11 21:23:40,121 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-11 21:23:40,121 INFO  SysUtils - Execute command: [/tmp/rdisk/65/src/gradlew, -b, /tmp/rdisk/65/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-11 21:24:14,488 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:AndroidBootstrap:preBuild UP-TO-DATE
+:AndroidBootstrap:preReleaseBuild UP-TO-DATE
+:AndroidBootstrap:checkReleaseManifest
+:AndroidBootstrap:preDebugAndroidTestBuild UP-TO-DATE
+:AndroidBootstrap:preDebugBuild UP-TO-DATE
+:AndroidBootstrap:preDebugUnitTestBuild UP-TO-DATE
+:AndroidBootstrap:preReleaseUnitTestBuild UP-TO-DATE
+:AndroidBootstrap:prepareComAndroidSupportSupportCompat2531Library
+:AndroidBootstrap:prepareComAndroidSupportSupportCoreUi2531Library
+:AndroidBootstrap:prepareComAndroidSupportSupportCoreUtils2531Library
+:AndroidBootstrap:prepareComAndroidSupportSupportFragment2531Library
+:AndroidBootstrap:prepareComAndroidSupportSupportMediaCompat2531Library
+:AndroidBootstrap:prepareComAndroidSupportSupportV42531Library
+:AndroidBootstrap:prepareReleaseDependencies
+:AndroidBootstrap:compileReleaseAidl UP-TO-DATE
+:AndroidBootstrap:compileReleaseNdk UP-TO-DATE
+:AndroidBootstrap:compileLint UP-TO-DATE
+:AndroidBootstrap:copyReleaseLint UP-TO-DATE
+:AndroidBootstrap:compileReleaseRenderscript UP-TO-DATE
+:AndroidBootstrap:generateReleaseBuildConfig UP-TO-DATE
+:AndroidBootstrap:generateReleaseResValues UP-TO-DATE
+:AndroidBootstrap:generateReleaseResources UP-TO-DATE
+:AndroidBootstrap:mergeReleaseResources UP-TO-DATE
+:AndroidBootstrap:processReleaseManifest UP-TO-DATE
+:AndroidBootstrap:processReleaseResources UP-TO-DATE
+:AndroidBootstrap:generateReleaseSources UP-TO-DATE
+:AndroidBootstrap:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:AndroidBootstrap:javaPreCompileRelease
+:AndroidBootstrap:compileReleaseJavaWithJavac UP-TO-DATE
+:AndroidBootstrap:extractReleaseAnnotations UP-TO-DATE
+:AndroidBootstrap:mergeReleaseShaders UP-TO-DATE
+:AndroidBootstrap:compileReleaseShaders UP-TO-DATE
+:AndroidBootstrap:generateReleaseAssets UP-TO-DATE
+:AndroidBootstrap:mergeReleaseAssets UP-TO-DATE
+:AndroidBootstrap:mergeReleaseProguardFiles UP-TO-DATE
+:AndroidBootstrap:packageReleaseRenderscript UP-TO-DATE
+:AndroidBootstrap:packageReleaseResources UP-TO-DATE
+:AndroidBootstrap:processReleaseJavaRes UP-TO-DATE
+:AndroidBootstrap:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:AndroidBootstrap:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:AndroidBootstrap:mergeReleaseJniLibFolders UP-TO-DATE
+:AndroidBootstrap:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:AndroidBootstrap:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:AndroidBootstrap:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:AndroidBootstrap:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:extractProguardFiles
+:sample:preReleaseBuild
+:sample:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:sample:prepareComAndroidSupportAppcompatV72531Library
+:sample:prepareComAndroidSupportSupportCompat2531Library
+:sample:prepareComAndroidSupportSupportCoreUi2531Library
+:sample:prepareComAndroidSupportSupportCoreUtils2531Library
+:sample:prepareComAndroidSupportSupportFragment2531Library
+:sample:prepareComAndroidSupportSupportMediaCompat2531Library
+:sample:prepareComAndroidSupportSupportV42531Library
+:sample:prepareComAndroidSupportSupportVectorDrawable2531Library
+:sample:prepareComJakewhartonButterknife840Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:incrementalDebugJavaCompilationSafeguard
+:sample:javaPreCompileDebug
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:mergeDebugShaders
+:sample:compileDebugShaders
+:sample:generateDebugAssets
+:sample:mergeDebugAssets
+:sample:transformClassesWithDexForDebug
+:sample:mergeDebugJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForDebug
+:sample:transformNativeLibsWithStripDebugSymbolForDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateSigningDebug
+:sample:packageDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:incrementalReleaseJavaCompilationSafeguard
+:sample:javaPreCompileRelease
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:mergeReleaseShaders
+:sample:compileReleaseShaders
+:sample:generateReleaseAssets
+:sample:mergeReleaseAssets
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:transformClassesAndResourcesWithProguardForRelease
+ProGuard, version 5.3.2
+Reading input...
+Reading program jar [/root/.android/build-cache/edc6082b913ecbb7489bfdfe5ec5cb94012cc7e5/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/d037f003e0b71e6fb898a228c9dbcc4cc3a5a362/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/d48f51d05d563779628cf56adaa484a2e5754d49/output/jars/classes.jar] (filtered)
+Reading program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar] (filtered)
+Reading program jar [/root/.android/build-cache/94b67ef6ab0ca04600749eaf13e4ef596a84ab3e/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/f568d10c7902ce186a0e8af2c51a15e9df5c94ac/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar] (filtered)
+Reading program jar [/root/.android/build-cache/00614ad4519da4927bdb26a08f9a1fe8db1ace3b/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/4de0d516d9f36107157f9a876791bb97e8756472/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/043579c699ba8895cf1a70abda82c2e7dcdc4b82/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/46727d0bcceedde7b9127db8688be3200f6898c7/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/22800697db8d147ba926ddd3d4f94f61a3bb8639/output/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/65/src/AndroidBootstrap/build/intermediates/bundles/default/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/65/src/sample/build/intermediates/classes/release] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.AwesomeTextView { void setBootstrapText(com.beardedhen.androidbootstrap.BootstrapText); }', but not the descriptor class 'com.beardedhen.androidbootstrap.BootstrapText'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.AwesomeTextView { void setBootstrapBrand(com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapAlert { void setVisibilityChangeListener(com.beardedhen.androidbootstrap.BootstrapAlert$VisibilityChangeListener); }', but not the descriptor class 'com.beardedhen.androidbootstrap.BootstrapAlert$VisibilityChangeListener'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapBadge { void setBootstrapBrand(com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapBadge { void setBootstrapSize(com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapBaseThumbnail { void setBootstrapBrand(com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapBaseThumbnail { void setBootstrapSize(com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapButton { void setButtonMode(com.beardedhen.androidbootstrap.api.defaults.ButtonMode); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.defaults.ButtonMode'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapButton { void setBootstrapSize(com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapButton { void setOnCheckedChangedListener(com.beardedhen.androidbootstrap.BootstrapButton$OnCheckedChangedListener); }', but not the descriptor class 'com.beardedhen.androidbootstrap.BootstrapButton$OnCheckedChangedListener'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapButtonGroup { void setBootstrapSize(com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapButtonGroup { void setButtonMode(com.beardedhen.androidbootstrap.api.defaults.ButtonMode); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.defaults.ButtonMode'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapButtonGroup { void setBootstrapBrand(com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapCircleThumbnail { void setBootstrapSize(com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapCircleThumbnail { void setBootstrapBrand(com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapDropDown { void setOnDropDownItemClickListener(com.beardedhen.androidbootstrap.BootstrapDropDown$OnDropDownItemClickListener); }', but not the descriptor class 'com.beardedhen.androidbootstrap.BootstrapDropDown$OnDropDownItemClickListener'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapDropDown { void setExpandDirection(com.beardedhen.androidbootstrap.api.defaults.ExpandDirection); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.defaults.ExpandDirection'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapEditText { void setBootstrapBrand(com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapEditText { void setBootstrapSize(com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapLabel { void setBootstrapHeading(com.beardedhen.androidbootstrap.api.attributes.BootstrapHeading); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.attributes.BootstrapHeading'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapProgressBar { void setBootstrapBrand(com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapProgressBar { void setBootstrapSize(com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapThumbnail { void setBootstrapSize(com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.defaults.DefaultBootstrapSize'
+Note: the configuration keeps the entry point 'com.beardedhen.androidbootstrap.BootstrapThumbnail { void setBootstrapBrand(com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand); }', but not the descriptor class 'com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand'
+Note: there were 24 unkept descriptor classes in kept class members.
+      You should consider explicitly keeping the mentioned classes
+      (using '-keep').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#descriptorclass)
+Ignoring unused library classes...
+  Original number of library classes: 4237
+  Final number of library classes:    984
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/65/src/sample/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1892
+  Final number of program classes:    876
+Obfuscating...
+Printing mapping to [/tmp/rdisk/65/src/sample/build/outputs/mapping/release/mapping.txt]...
+Writing output...
+Preparing output jar [/tmp/rdisk/65/src/sample/build/intermediates/transforms/proguard/release/jars/3/1f/main.jar]
+  Copying resources from program jar [/root/.android/build-cache/edc6082b913ecbb7489bfdfe5ec5cb94012cc7e5/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/d037f003e0b71e6fb898a228c9dbcc4cc3a5a362/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/d48f51d05d563779628cf56adaa484a2e5754d49/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/94b67ef6ab0ca04600749eaf13e4ef596a84ab3e/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/f568d10c7902ce186a0e8af2c51a15e9df5c94ac/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/00614ad4519da4927bdb26a08f9a1fe8db1ace3b/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/4de0d516d9f36107157f9a876791bb97e8756472/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/043579c699ba8895cf1a70abda82c2e7dcdc4b82/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/46727d0bcceedde7b9127db8688be3200f6898c7/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/22800697db8d147ba926ddd3d4f94f61a3bb8639/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/65/src/AndroidBootstrap/build/intermediates/bundles/default/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/65/src/sample/build/intermediates/classes/release] (filtered)
+Printing classes to [/tmp/rdisk/65/src/sample/build/outputs/mapping/release/dump.txt]...
+:sample:transformClassesWithDexForRelease
+:sample:mergeReleaseJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForRelease
+:sample:transformNativeLibsWithStripDebugSymbolForRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 33.981 secs
+
+2018-04-11 21:24:14,546 INFO  FullProcessService - Found APK file: /tmp/rdisk/65/src/sample/build/outputs/apk/sample-release-unsigned.apk

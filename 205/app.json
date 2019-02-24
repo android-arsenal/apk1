@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.soundcloud.android.crop.example",
+    "label" : "Crop Demo",
+    "icon" : "res/drawable-hdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.1",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "10",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.READ_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-hdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAB41BMVEUAAAD/AAD/QAD/gAD/VgD/VgD/VAD/VgD/VQD/WQD/VQD+VAD9VAD+VADyQwD+VQD9VADyUAAAAAD4VAD/VQD2UgDURgAAAAD2UwD8UwD9UwD6UwDaSQDwTwD7UwDWRgAAAADsTwDTRgDrTgDSRQD9rof99PD9l2X9wqT9/f3tgErnTQDugEroTQDpTQD96d/vgErpUQXylWj9waP9rob9ZRjrWA786eDxeDvuWAzzhlDtTwD1tJPqUAPwgUrxgUr1pn/0lWfuTwDxlWjqTgDrTgDsTgDygUr1lmjvTwDwUADzgkrxUAD0gkryUAD2l2jzUQDzUAD0UADKQwDxUwPxWg7yWg7yVAX0UQDMQwDzUAD1gkr2g0r2eDn1UAD71sT1UQD4tZP6waX4l2j3iFH2UQDNQwD3UQD3UgD2UQDrTwD4UQDNRADrTgD4UgDOQwDoTgDGQQDGQQD8VAD5UgCjOAC/AAAAAAAAAADfSwD+VADKQwAAAAAAAABOGQDSRgD5UwDsTwDIQwBLGACAAABJJAAAAAAAAACNLgC2PAC/PgC9PwC/PwC+PgC5PQC4PQC6PwC5PQC8PwC8PwC8PgCzOwAkAAA5HAAAAAAAAAAAAAAAAAAcAABAAAA3AAA2DQAxDABlPODCAAAAoXRSTlMAAQQCSoOOjI0Uv///vxPA+sICTPr/VAGI+/v/j5f/nQSXnZmf///////////////////////////////////////////////////////////7+5///////5//////+/////////uf+///mPuemv+gkJhe//tpBAMYzfvQGxA+0P//0UECBxoweaWsq6usq6yrrKuqrKUHCSUrLBcJBA4TFSf4r7MAAAMhSURBVFjD7dj5VxJBAMBxFI9qtzKLSCqyQ3TFJfMIj/KgQ3dVBMsiU9lSA6LssrT7VrtU7NJK7U9tZg/YGVh2dh/v9Ytf8D3evsdH2Jl5jxmLZbP/UF6+ifLSHau5f2/NcKGgsKh4i4GKiwoL0iSrZes2iqKNRm3fgUrgq+6kSkxE7Sq1qO9TvmU3VUKbaI9tL3izCrLvo8rMQI79B+wIVHqQNgWVOQ+VIlD5YXOQw3mkHIWOmoWOZYcqXC5XZS6gKoZhqt05gmrc7pxB7lxBLJsbiGX1JDIIOh6PSaiiSuw4gGpZ9kQdqCpZfUMjMeRikgHoJIPlbTIFedIgxttsAvJkgJiWVjKosroGdkqCTte2gdqVOsDVTp+PbNTcMPaMBHnOgs7BzoNau8DVbp9ayjb80FEg1FEgjiObR3AeShDmyBDHpaTsExJAdRDCHQmCDseTzWzWA6E23GntUSCe58mWiAKhjk+BgMP3kq01CcIcBRKd3l7iRduGOzIkO6JEBLXjjq8PQknH7zcAIQ4Hof6UAyRSCHUUKOkEAoQQ5siQygkEiSDckSC1Ewj6CSHESUGKExjwXyCCUIe/ODh46bLaCRFCmMMj9xk6ALpCAOk7oYEhHageQB1doB5Qn9JV2LDYiOiERvWgBkansOgIulCjVw8SHX2IbvLqQwIJRDe3dHYr9ctdA8L1MbFx0RFGQ7oQnWG8hgE0Jo+X6AgTBBCdPu4KlHRsRBCdNn9kKOUA6AbJr1p8HkqQyrFNCEQQjc1nEVI7tgghRKPrQoGSTpQYopH1NRIOh8fVjgGITlunascIRGdzopEYDt3U3otkcaLx2C0Mup1lU6PtTEZidzDobraNn6YzGRfuYdB92vFAW9JyolO+h+WP1Jvj6ZnHzicO7YLBAdAobAIUgcXj8ano02fTyCGC9fmLl9wrp3bwhg/Bkh8sFosJr9+8ff4O3fi/n52b//Dx02fQF/CEf6kX8OLCwuLi0tIieCwlEsvLieXE12/f5+dmf2AnEfafMyurvwy2uvL7jz3tlGNtfeOvwTbW1zIemNgNt3nGZah/Cfd9OocLxa4AAAAASUVORK5CYII="
+  },
+  "dexClasses" : 1095,
+  "locales" : [ "", "zh_CN", "in", "pt", "ar", "fr", "ru", "ja", "zh_TW", "it", "ko", "fa", "de", "es", "tr", "sv", "ca" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0.1\" package=\"com.soundcloud.android.crop.example\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"10\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f070006\" android:label=\"Crop Demo\" android:icon=\"res/drawable-hdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"com.soundcloud.android.crop.example.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"com.soundcloud.android.crop.CropImageActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 488249,
+  "crc32" : 1957574375,
+  "sha256" : "e83b9389794352cf0ec8cd4f7d5be425a84de5f419e5040ff05c047dfd95a09a",
+  "buildTime" : 1523386820000
+}

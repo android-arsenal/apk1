@@ -1,0 +1,327 @@
+2018-05-15 05:44:25,448 INFO  DownloadService - Downloading "https://github.com/chrisjenx/Calligraphy/archive/master.zip", attempt 3
+2018-05-15 05:45:26,128 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-15 05:45:26,997 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-15 05:45:26,997 INFO  DownloadService - Downloading "https://github.com/chrisjenx/Calligraphy/archive/master.zip", attempt 3
+2018-05-15 05:46:28,380 DEBUG FullProcessService - Repository https://github.com/chrisjenx/Calligraphy available: true
+2018-05-15 05:46:28,380 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-15 05:46:28,380 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/chrisjenx/Calligraphy, /tmp/rdisk/163/src]
+2018-05-15 05:46:35,653 INFO  SysUtils - 
+2018-05-15 05:46:35,667 INFO  GitService - Deleted "/tmp/rdisk/163/src/.git": true
+2018-05-15 05:46:35,669 INFO  FullProcessService - Size of directory with sources: 839 KB
+2018-05-15 05:46:35,669 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/163/src]
+2018-05-15 05:46:35,675 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/163/src/.git/
+
+2018-05-15 05:46:35,678 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/163/src/gradlew
+2018-05-15 05:46:35,680 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/163/src/CalligraphySample/build.gradle /tmp/rdisk/163/src/calligraphy/build.gradle /tmp/rdisk/163/src/build.gradle
+2018-05-15 05:46:35,682 INFO  ProjectBuildService - All script(s): /tmp/rdisk/163/src/settings.gradle /tmp/rdisk/163/src/gradle/deploy.gradle /tmp/rdisk/163/src/calligraphy/build.gradle /tmp/rdisk/163/src/build.gradle /tmp/rdisk/163/src/CalligraphySample/build.gradle
+2018-05-15 05:46:35,683 INFO  ProjectBuildService - Remote scripts: none
+2018-05-15 05:46:35,683 INFO  ProjectFixService - Fixing project...
+2018-05-15 05:46:35,691 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/163/src/CalligraphySample/local.properties
+2018-05-15 05:46:35,694 INFO  ProjectFixService - Build info for "/tmp/rdisk/163/src/CalligraphySample/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-15 05:46:35,694 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/163/src/calligraphy/local.properties
+2018-05-15 05:46:35,697 INFO  ProjectFixService - Build info for "/tmp/rdisk/163/src/calligraphy/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-15 05:46:35,697 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/163/src/local.properties
+2018-05-15 05:46:35,698 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4-all.zip
+2018-05-15 05:46:35,698 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4-bin.zip)
+2018-05-15 05:46:35,698 INFO  ProjectFixService - Build info for "/tmp/rdisk/163/src/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-15 05:46:35,698 INFO  ProjectFixService - Project was maybe fixed
+2018-05-15 05:46:35,698 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 05:46:35,699 INFO  SysUtils - Execute command: [/tmp/rdisk/163/src/gradlew, -b, /tmp/rdisk/163/src/CalligraphySample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 05:46:44,541 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-15 05:46:44,541 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-15 05:46:44,541 INFO  SysUtils - Execute command: [/tmp/rdisk/163/src/gradlew, -b, /tmp/rdisk/163/src/CalligraphySample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-15 05:47:28,364 INFO  SysUtils - Configuration on demand is an incubating feature.
+DEBUG BUILD 2.3.0-SNAPSHOT
+:CalligraphySample:preBuild UP-TO-DATE
+:CalligraphySample:extractProguardFiles
+:calligraphy:preBuild UP-TO-DATE
+:calligraphy:preDebugBuild UP-TO-DATE
+:calligraphy:checkDebugManifest
+:calligraphy:processDebugManifest
+:CalligraphySample:preDebugBuild
+:calligraphy:compileDebugAidl
+:CalligraphySample:compileDebugAidl
+:calligraphy:packageDebugRenderscript NO-SOURCE
+:CalligraphySample:compileDebugRenderscript
+:CalligraphySample:checkDebugManifest
+:CalligraphySample:generateDebugBuildConfig
+:CalligraphySample:prepareLintJar
+:CalligraphySample:mainApkListPersistenceDebug
+:CalligraphySample:generateDebugResValues
+:CalligraphySample:generateDebugResources
+:calligraphy:compileDebugRenderscript
+:calligraphy:generateDebugResValues
+:calligraphy:generateDebugResources
+:calligraphy:packageDebugResources
+:CalligraphySample:mergeDebugResources
+:CalligraphySample:createDebugCompatibleScreenManifests
+:CalligraphySample:processDebugManifest
+:CalligraphySample:splitsDiscoveryTaskDebug
+:calligraphy:platformAttrExtractor
+:calligraphy:generateDebugBuildConfig
+:calligraphy:prepareLintJar
+:calligraphy:javaPreCompileDebug
+:calligraphy:generateDebugRFile
+:CalligraphySample:processDebugResources
+:CalligraphySample:generateDebugSources
+:calligraphy:generateDebugSources
+:calligraphy:compileDebugJavaWithJavac
+:calligraphy:processDebugJavaRes NO-SOURCE
+:calligraphy:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:CalligraphySample:javaPreCompileDebug
+:CalligraphySample:compileDebugJavaWithJavacNote: /tmp/rdisk/163/src/CalligraphySample/src/main/java/uk/co/chrisjenx/calligraphy/sample/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:CalligraphySample:compileDebugNdk NO-SOURCE
+:CalligraphySample:compileDebugSources
+:CalligraphySample:mergeDebugShaders
+:CalligraphySample:compileDebugShaders
+:CalligraphySample:generateDebugAssets
+:calligraphy:mergeDebugShaders
+:calligraphy:compileDebugShaders
+:calligraphy:generateDebugAssets
+:calligraphy:packageDebugAssets
+:CalligraphySample:mergeDebugAssets
+:CalligraphySample:processDebugJavaRes NO-SOURCE
+:CalligraphySample:transformResourcesWithMergeJavaResForDebug
+:calligraphy:mergeDebugConsumerProguardFiles
+:CalligraphySample:transformClassesAndResourcesWithProguardForDebug
+Request to incrementing alive workforce from 0. Current workforce (dead or alive) 0
+ProGuard, version 5.3.3
+thread-pool size=4
+Reading input...
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/leakcanary-android-no-op-1.5.aar/c571c4b81b6adc9eedd6c584d40e485d/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/bb501a3e29a33792b37c53f8483fcce2/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/280c30ae791a0653391f01936fd86c88/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/1c2d21a0047caa1a76b63049a2454c7a/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/56863b872d40be3949e692cff5bde4f3/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/59655bb919df5a392094fc527a87b854/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/0963fbee4b92f57710c8f0d6803406a3/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/30f239e85e5848135c6a8affcc693846/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/9c595bd52e90ff452dcf3699ad97f316/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/b93da483fdd163f2573189c6c7e4554e/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/5ec3bbf09e7b5afd1312422ed192699f/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.1/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/e1dea4cfc4d38215eaf1bb0fdfb4ffa6/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c53396de036bb72b474e15d5969bd069/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/24a94a4616c56e41e0a55ffd7e074657/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/7eaa3d10c7dd1a541849a64c725d964c/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/163/src/calligraphy/build/intermediates/intermediate-jars/debug/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/163/src/CalligraphySample/build/intermediates/classes/debug] (filtered)
+Reading program jar [/tmp/rdisk/163/src/CalligraphySample/build/intermediates/transforms/mergeJavaRes/debug/0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4610
+  Final number of library classes:    1081
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/163/src/CalligraphySample/build/outputs/mapping/debug/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1617
+  Final number of program classes:    773
+Inlining subroutines...
+Obfuscating...
+Printing mapping to [/tmp/rdisk/163/src/CalligraphySample/build/outputs/mapping/debug/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/163/src/CalligraphySample/build/intermediates/transforms/proguard/debug/0.jar]
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/leakcanary-android-no-op-1.5.aar/c571c4b81b6adc9eedd6c584d40e485d/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/bb501a3e29a33792b37c53f8483fcce2/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/280c30ae791a0653391f01936fd86c88/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/1c2d21a0047caa1a76b63049a2454c7a/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/56863b872d40be3949e692cff5bde4f3/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/59655bb919df5a392094fc527a87b854/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/0963fbee4b92f57710c8f0d6803406a3/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/30f239e85e5848135c6a8affcc693846/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/9c595bd52e90ff452dcf3699ad97f316/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/b93da483fdd163f2573189c6c7e4554e/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/5ec3bbf09e7b5afd1312422ed192699f/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.1/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/e1dea4cfc4d38215eaf1bb0fdfb4ffa6/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c53396de036bb72b474e15d5969bd069/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/24a94a4616c56e41e0a55ffd7e074657/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/7eaa3d10c7dd1a541849a64c725d964c/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/163/src/calligraphy/build/intermediates/intermediate-jars/debug/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/163/src/CalligraphySample/build/intermediates/classes/debug] (filtered)
+  Copying resources from program jar [/tmp/rdisk/163/src/CalligraphySample/build/intermediates/transforms/mergeJavaRes/debug/0.jar] (filtered)
+Printing classes to [/tmp/rdisk/163/src/CalligraphySample/build/outputs/mapping/debug/dump.txt]...
+:CalligraphySample:transformClassesWithDexBuilderForDebug
+:CalligraphySample:transformDexArchiveWithDexMergerForDebug
+:CalligraphySample:mergeDebugJniLibFolders
+:calligraphy:compileDebugNdk NO-SOURCE
+:calligraphy:mergeDebugJniLibFolders
+:calligraphy:transformNativeLibsWithMergeJniLibsForDebug
+:calligraphy:transformNativeLibsWithStripDebugSymbolForDebug
+:calligraphy:transformNativeLibsWithIntermediateJniLibsForDebug
+:CalligraphySample:transformNativeLibsWithMergeJniLibsForDebug
+:CalligraphySample:transformNativeLibsWithStripDebugSymbolForDebug
+:CalligraphySample:validateSigningDebug
+:CalligraphySample:packageDebug
+:CalligraphySample:assembleDebug
+:calligraphy:preReleaseBuild UP-TO-DATE
+:calligraphy:checkReleaseManifest
+:calligraphy:processReleaseManifest
+:CalligraphySample:preReleaseBuild
+:calligraphy:compileReleaseAidl
+:CalligraphySample:compileReleaseAidl
+:calligraphy:packageReleaseRenderscript NO-SOURCE
+:CalligraphySample:compileReleaseRenderscript
+:CalligraphySample:checkReleaseManifest
+:CalligraphySample:generateReleaseBuildConfig
+:CalligraphySample:mainApkListPersistenceRelease
+:CalligraphySample:generateReleaseResValues
+:CalligraphySample:generateReleaseResources
+:calligraphy:compileReleaseRenderscript
+:calligraphy:generateReleaseResValues
+:calligraphy:generateReleaseResources
+:calligraphy:packageReleaseResources
+:CalligraphySample:mergeReleaseResources
+:CalligraphySample:createReleaseCompatibleScreenManifests
+:CalligraphySample:processReleaseManifest
+:CalligraphySample:splitsDiscoveryTaskRelease
+:calligraphy:generateReleaseRFile
+:CalligraphySample:processReleaseResources
+:CalligraphySample:generateReleaseSources
+:calligraphy:generateReleaseBuildConfig
+:calligraphy:generateReleaseSources
+:calligraphy:javaPreCompileRelease
+:calligraphy:compileReleaseJavaWithJavac
+:calligraphy:processReleaseJavaRes NO-SOURCE
+:calligraphy:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:CalligraphySample:javaPreCompileRelease
+:CalligraphySample:compileReleaseJavaWithJavacNote: /tmp/rdisk/163/src/CalligraphySample/src/main/java/uk/co/chrisjenx/calligraphy/sample/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:CalligraphySample:compileReleaseNdk NO-SOURCE
+:CalligraphySample:compileReleaseSources
+:CalligraphySample:lintVitalRelease
+:CalligraphySample:mergeReleaseShaders
+:CalligraphySample:compileReleaseShaders
+:CalligraphySample:generateReleaseAssets
+:calligraphy:mergeReleaseShaders
+:calligraphy:compileReleaseShaders
+:calligraphy:generateReleaseAssets
+:calligraphy:packageReleaseAssets
+:CalligraphySample:mergeReleaseAssets
+:CalligraphySample:processReleaseJavaRes NO-SOURCE
+:CalligraphySample:transformResourcesWithMergeJavaResForRelease
+:calligraphy:mergeReleaseConsumerProguardFiles
+:CalligraphySample:transformClassesAndResourcesWithProguardForRelease
+ProGuard, version 5.3.3
+Reading input...
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/bb501a3e29a33792b37c53f8483fcce2/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/280c30ae791a0653391f01936fd86c88/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/1c2d21a0047caa1a76b63049a2454c7a/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/leakcanary-android-no-op-1.5.aar/c571c4b81b6adc9eedd6c584d40e485d/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/56863b872d40be3949e692cff5bde4f3/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/59655bb919df5a392094fc527a87b854/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/0963fbee4b92f57710c8f0d6803406a3/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/30f239e85e5848135c6a8affcc693846/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/9c595bd52e90ff452dcf3699ad97f316/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/b93da483fdd163f2573189c6c7e4554e/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/5ec3bbf09e7b5afd1312422ed192699f/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.1/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.1.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/e1dea4cfc4d38215eaf1bb0fdfb4ffa6/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c53396de036bb72b474e15d5969bd069/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/24a94a4616c56e41e0a55ffd7e074657/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/7eaa3d10c7dd1a541849a64c725d964c/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/163/src/calligraphy/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/163/src/CalligraphySample/build/intermediates/classes/release] (filtered)
+Reading program jar [/tmp/rdisk/163/src/CalligraphySample/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-27/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4610
+  Final number of library classes:    1081
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/163/src/CalligraphySample/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1617
+  Final number of program classes:    773
+Inlining subroutines...
+Obfuscating...
+Printing mapping to [/tmp/rdisk/163/src/CalligraphySample/build/outputs/mapping/release/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/163/src/CalligraphySample/build/intermediates/transforms/proguard/release/0.jar]
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/bb501a3e29a33792b37c53f8483fcce2/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/280c30ae791a0653391f01936fd86c88/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/1c2d21a0047caa1a76b63049a2454c7a/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/leakcanary-android-no-op-1.5.aar/c571c4b81b6adc9eedd6c584d40e485d/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/56863b872d40be3949e692cff5bde4f3/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/59655bb919df5a392094fc527a87b854/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/0963fbee4b92f57710c8f0d6803406a3/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/30f239e85e5848135c6a8affcc693846/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/9c595bd52e90ff452dcf3699ad97f316/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/b93da483fdd163f2573189c6c7e4554e/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/5ec3bbf09e7b5afd1312422ed192699f/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.1.1/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-27.1.1.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/e1dea4cfc4d38215eaf1bb0fdfb4ffa6/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c53396de036bb72b474e15d5969bd069/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/24a94a4616c56e41e0a55ffd7e074657/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/7eaa3d10c7dd1a541849a64c725d964c/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/163/src/calligraphy/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/163/src/CalligraphySample/build/intermediates/classes/release] (filtered)
+  Copying resources from program jar [/tmp/rdisk/163/src/CalligraphySample/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Printing classes to [/tmp/rdisk/163/src/CalligraphySample/build/outputs/mapping/release/dump.txt]...
+:CalligraphySample:transformClassesWithDexBuilderForRelease
+:CalligraphySample:transformDexArchiveWithDexMergerForRelease
+:CalligraphySample:mergeReleaseJniLibFolders
+:calligraphy:compileReleaseNdk NO-SOURCE
+:calligraphy:mergeReleaseJniLibFolders
+:calligraphy:transformNativeLibsWithMergeJniLibsForRelease
+:calligraphy:transformNativeLibsWithStripDebugSymbolForRelease
+:calligraphy:transformNativeLibsWithIntermediateJniLibsForRelease
+:CalligraphySample:transformNativeLibsWithMergeJniLibsForRelease
+:CalligraphySample:transformNativeLibsWithStripDebugSymbolForRelease
+:CalligraphySample:packageRelease
+:CalligraphySample:assembleRelease
+:CalligraphySample:assemble
+:CalligraphySample:build
+
+BUILD SUCCESSFUL in 43s
+94 actionable tasks: 94 executed
+
+2018-05-15 05:47:28,428 INFO  FullProcessService - Found APK file: /tmp/rdisk/163/src/CalligraphySample/build/outputs/apk/release/CalligraphySample-release-unsigned.apk

@@ -1,0 +1,94 @@
+2018-04-11 21:46:24,807 INFO  DownloadService - Downloading "https://github.com/jaydeepw/audio-wife/archive/master.zip", attempt 3
+2018-04-11 21:47:25,284 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 21:47:25,998 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 21:47:25,998 INFO  DownloadService - Downloading "https://github.com/jaydeepw/audio-wife/archive/master.zip", attempt 3
+2018-04-11 21:48:27,240 DEBUG FullProcessService - Repository https://github.com/jaydeepw/audio-wife available: true
+2018-04-11 21:48:27,240 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 21:48:27,240 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jaydeepw/audio-wife, /tmp/rdisk/41/src]
+2018-04-11 21:48:28,957 INFO  SysUtils - 
+2018-04-11 21:48:28,962 INFO  GitService - Deleted "/tmp/rdisk/41/src/.git": true
+2018-04-11 21:48:28,966 INFO  FullProcessService - Size of directory with sources: 448 KB
+2018-04-11 21:48:28,966 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/41/src]
+2018-04-11 21:48:28,971 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/41/src/.git/
+
+2018-04-11 21:48:28,975 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/41/src/libAudioWife/gradlew /tmp/rdisk/41/src/AudioWifeDemo/gradlew
+2018-04-11 21:48:28,979 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/41/src/AudioWifeDemo/app/build.gradle /tmp/rdisk/41/src/libAudioWife/app/build.gradle /tmp/rdisk/41/src/AudioWifeDemo/build.gradle /tmp/rdisk/41/src/libAudioWife/build.gradle
+2018-04-11 21:48:28,982 INFO  ProjectBuildService - All script(s): /tmp/rdisk/41/src/libAudioWife/settings.gradle /tmp/rdisk/41/src/libAudioWife/maven_push.gradle /tmp/rdisk/41/src/libAudioWife/build.gradle /tmp/rdisk/41/src/libAudioWife/app/build.gradle /tmp/rdisk/41/src/AudioWifeDemo/settings.gradle /tmp/rdisk/41/src/AudioWifeDemo/build.gradle /tmp/rdisk/41/src/AudioWifeDemo/app/build.gradle
+2018-04-11 21:48:28,983 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 21:48:28,983 INFO  ProjectFixService - Fixing project...
+2018-04-11 21:48:29,003 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/41/src/AudioWifeDemo/app/local.properties
+2018-04-11 21:48:29,003 INFO  ProjectFixService - Build info for "/tmp/rdisk/41/src/AudioWifeDemo/app/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=14,minSdkVersion=14,targetSdkVersion=14]
+2018-04-11 21:48:29,003 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/41/src/libAudioWife/app/local.properties
+2018-04-11 21:48:29,004 INFO  ProjectFixService - Build info for "/tmp/rdisk/41/src/libAudioWife/app/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=14,minSdkVersion=14,targetSdkVersion=14]
+2018-04-11 21:48:29,004 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/41/src/AudioWifeDemo/local.properties
+2018-04-11 21:48:29,004 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.12-all.zip
+2018-04-11 21:48:29,004 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.12-bin.zip)
+2018-04-11 21:48:29,007 INFO  ProjectFixService - Build info for "/tmp/rdisk/41/src/AudioWifeDemo/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=14,minSdkVersion=14,targetSdkVersion=14]
+2018-04-11 21:48:29,008 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/41/src/libAudioWife/local.properties
+2018-04-11 21:48:29,008 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.12-all.zip
+2018-04-11 21:48:29,008 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.12-bin.zip)
+2018-04-11 21:48:29,010 INFO  ProjectFixService - Build info for "/tmp/rdisk/41/src/libAudioWife/build.gradle": [buildToolsVersion=20.0.0,compileSdkVersion=14,minSdkVersion=14,targetSdkVersion=14]
+2018-04-11 21:48:29,010 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 21:48:29,010 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 21:48:29,010 INFO  SysUtils - Execute command: [/tmp/rdisk/41/src/AudioWifeDemo/gradlew, -b, /tmp/rdisk/41/src/AudioWifeDemo/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 21:48:38,839 INFO  ProjectTaskService - Detected possible tasks: 49
+2018-04-11 21:48:38,840 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-11 21:48:38,840 INFO  SysUtils - Execute command: [/tmp/rdisk/41/src/AudioWifeDemo/gradlew, -b, /tmp/rdisk/41/src/AudioWifeDemo/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-11 21:48:56,940 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:app:prepareComAndroidSupportAppcompatV71800Library
+:app:prepareNetThe4thdimensionAudioWife103Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 17.64 secs
+
+2018-04-11 21:48:56,965 INFO  FullProcessService - Found APK file: /tmp/rdisk/41/src/AudioWifeDemo/app/build/outputs/apk/app-debug.apk

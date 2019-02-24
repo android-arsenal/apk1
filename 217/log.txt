@@ -1,0 +1,10 @@
+2018-04-10 18:55:34,638 INFO  DownloadService - Downloading "https://github.com/chrisbatt/AndroidFastImageProcessing/archive/master.zip", attempt 3
+2018-04-10 18:55:37,821 INFO  DownloadService - Downloaded https://github.com/chrisbatt/AndroidFastImageProcessing/archive/master.zip, attempt 3
+2018-04-10 18:55:37,822 INFO  DownloadService - Size of file "/tmp/rdisk/217/master.zip": 13 MB
+2018-04-10 18:55:37,822 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-04-10 18:55:37,823 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/217/master.zip: false
+2018-04-10 18:55:37,823 INFO  FullProcessService - Archive with sources does not contain any build script
+2018-04-10 18:55:37,823 ERROR FullProcessService - Could not find directory with sources
+2018-04-10 18:55:37,823 ERROR FullProcessService - Project will not be processed
+2018-04-10 18:55:37,823 ERROR FullProcessService - Project build has not produced APK file
+2018-04-10 18:55:37,823 ERROR FullProcessService - Could not find generated or existed APK file

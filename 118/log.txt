@@ -1,0 +1,185 @@
+2016-07-03 07:00:56,466 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/code-troopers/android-betterpickers/archive/master.zip", attempt 3
+2016-07-03 07:00:58,941 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/code-troopers/android-betterpickers/archive/master.zip, attempt 3
+2016-07-03 07:01:00,864 DEBUG o.z.z.ZipUtil - Extracting '/tmp/rdisk/118/master.zip' into '/tmp/rdisk/118/src'.
+2016-07-03 07:01:01,166 INFO  c.g.v.a.s.FullProcessService - Size of directory with sources: 2 MB
+2016-07-03 07:01:01,242 INFO  c.g.v.a.s.a.ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/118/src/android-betterpickers-master/gradlew
+2016-07-03 07:01:01,265 INFO  c.g.v.a.s.a.ProjectBuildService - Build script(s): /tmp/rdisk/118/src/android-betterpickers-master/build.gradle /tmp/rdisk/118/src/android-betterpickers-master/library/build.gradle /tmp/rdisk/118/src/android-betterpickers-master/sample/build.gradle
+2016-07-03 07:01:01,287 INFO  c.g.v.a.s.a.ProjectBuildService - All script(s): /tmp/rdisk/118/src/android-betterpickers-master/build.gradle /tmp/rdisk/118/src/android-betterpickers-master/library/build.gradle /tmp/rdisk/118/src/android-betterpickers-master/sample/build.gradle /tmp/rdisk/118/src/android-betterpickers-master/settings.gradle
+2016-07-03 07:01:01,311 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://raw.githubusercontent.com/shamanland/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2016-07-03 07:01:02,257 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://raw.githubusercontent.com/shamanland/gradle-mvn-push/master/gradle-mvn-push.gradle, attempt 3
+2016-07-03 07:01:02,259 INFO  c.g.v.a.s.a.ProjectBuildService - Remote scripts: https://raw.githubusercontent.com/shamanland/gradle-mvn-push/master/gradle-mvn-push.gradle
+2016-07-03 07:01:02,261 INFO  c.g.v.a.s.a.ProjectFixService - Fixing project...
+2016-07-03 07:01:02,427 INFO  c.g.v.a.s.AndroidToolsService - ANDROID_HOME: /Users/vbauer/Library/Android/sdk
+2016-07-03 07:01:02,428 INFO  c.g.v.a.s.AndroidToolsService - NDK_HOME: /Users/vbauer/Library/Android/ndk
+2016-07-03 07:01:02,432 INFO  c.g.v.a.s.AndroidToolsService - Available build tools: 19.1.0 20.0.0 21.1.1 21.1.2 22.0.0 22.0.1 23.0.1 23.0.2 23.0.3 24.0.0
+2016-07-03 07:01:02,435 INFO  c.g.v.a.s.AndroidToolsService - Available build tools after clean up: 19.1.0 20.0.0 21.1.1 21.1.2 22.0.0 22.0.1 23.0.1 23.0.2 23.0.3 24.0.0
+2016-07-03 07:01:02,439 INFO  c.g.v.a.s.AndroidToolsService - Available platforms: 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 7 8 9 24
+2016-07-03 07:01:02,441 INFO  c.g.v.a.s.AndroidToolsService - Available platforms after clean up: 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+2016-07-03 07:01:02,443 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /tmp/rdisk/118/src/android-betterpickers-master/local.properties
+2016-07-03 07:01:02,445 INFO  c.g.v.a.s.a.f.WrapperPropertiesFixService - Project uses full gradle wrapper: true (https://services.gradle.org/distributions/gradle-2.10-all.zip)
+2016-07-03 07:01:02,446 INFO  c.g.v.a.s.a.f.WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2016-07-03 07:01:02,562 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/tmp/rdisk/118/src/android-betterpickers-master/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-03 07:01:02,598 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/tmp/rdisk/118/src/android-betterpickers-master/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-03 07:01:02,603 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /tmp/rdisk/118/src/android-betterpickers-master/library/local.properties
+2016-07-03 07:01:02,609 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/tmp/rdisk/118/src/android-betterpickers-master/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-03 07:01:02,610 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/tmp/rdisk/118/src/android-betterpickers-master/library/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-03 07:01:02,612 INFO  c.g.v.a.s.a.f.LocalPropertiesFixService - Created fake /tmp/rdisk/118/src/android-betterpickers-master/sample/local.properties
+2016-07-03 07:01:02,619 INFO  c.g.v.a.s.a.ProjectFixService - Build info for "/tmp/rdisk/118/src/android-betterpickers-master/sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2016-07-03 07:01:02,620 INFO  c.g.v.a.s.a.ProjectFixService - Fixed build info for "/tmp/rdisk/118/src/android-betterpickers-master/sample/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=24,targetSdkVersion=24]
+2016-07-03 07:01:02,624 INFO  c.g.v.a.s.a.ProjectFixService - Project was maybe fixed
+2016-07-03 07:01:02,746 INFO  c.g.v.a.s.a.ProjectTaskService - Detecting possible tasks...
+2016-07-03 07:01:02,751 INFO  c.g.v.a.u.SysUtils - Execute command: [/tmp/rdisk/118/src/android-betterpickers-master/gradlew, -b, /tmp/rdisk/118/src/android-betterpickers-master/build.gradle, tasks]
+2016-07-03 07:01:25,469 INFO  c.g.v.a.s.a.ProjectTaskService - Detected possible tasks: 78
+2016-07-03 07:01:25,470 INFO  c.g.v.a.s.a.ProjectTaskService - Excluded tasks: lintDebug androidJavadocs deviceCheck lint androidSourcesJar testReleaseUnitTest deviceAndroidTest connectedCheck androidJavadocsJar test check testDebugUnitTest connectedAndroidTest lintRelease
+2016-07-03 07:01:25,471 INFO  c.g.v.a.u.SysUtils - Execute command: [/tmp/rdisk/118/src/android-betterpickers-master/gradlew, -b, /tmp/rdisk/118/src/android-betterpickers-master/build.gradle, --stacktrace, -x, lintDebug, -x, androidJavadocs, -x, deviceCheck, -x, lint, -x, androidSourcesJar, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, connectedCheck, -x, androidJavadocsJar, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2016-07-03 07:03:00,084 INFO  c.g.v.a.s.a.ProjectBuildService - :library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugNdk UP-TO-DATE
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAnimatedVectorDrawable2340Library
+:library:prepareComAndroidSupportAppcompatV72340Library
+:library:prepareComAndroidSupportSupportV42340Library
+:library:prepareComAndroidSupportSupportVectorDrawable2340Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:processDebugJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForDebug
+:library:transformClassesAndResourcesWithSyncLibJarsForDebug
+:library:mergeDebugJniLibFolders
+:library:transformNative_libsWithMergeJniLibsForDebug
+:library:transformNative_libsWithSyncJniLibsForDebug
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:compileReleaseNdk UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNative_libsWithMergeJniLibsForRelease
+:library:transformNative_libsWithSyncJniLibsForRelease
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAnimatedVectorDrawable2340Library
+:sample:prepareComAndroidSupportAppcompatV72340Library
+:sample:prepareComAndroidSupportSupportV42340Library
+:sample:prepareComAndroidSupportSupportVectorDrawable2340Library
+:sample:prepareComCodeTroopersBetterpickersLibrary300Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /private/tmp/rdisk/118/src/android-betterpickers-master/sample/src/main/java/com/codetroopers/betterpickers/sample/ListSamples.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:transformClassesWithDexForDebug
+:sample:mergeDebugJniLibFolders
+:sample:transformNative_libsWithMergeJniLibsForDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /private/tmp/rdisk/118/src/android-betterpickers-master/sample/src/main/java/com/codetroopers/betterpickers/sample/ListSamples.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:transformClassesWithDexForRelease
+:sample:mergeReleaseJniLibFolders
+:sample:transformNative_libsWithMergeJniLibsForRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:signArchives SKIPPED
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 1 mins 34.026 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.10/userguide/gradle_daemon.html
+

@@ -1,0 +1,86 @@
+2018-04-11 22:20:25,142 INFO  DownloadService - Downloading "https://github.com/Takhion/android-extendedactionbar/archive/master.zip", attempt 3
+2018-04-11 22:21:25,593 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 22:21:26,287 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 22:21:26,287 INFO  DownloadService - Downloading "https://github.com/Takhion/android-extendedactionbar/archive/master.zip", attempt 3
+2018-04-11 22:22:27,557 DEBUG FullProcessService - Repository https://github.com/Takhion/android-extendedactionbar available: true
+2018-04-11 22:22:27,557 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 22:22:27,558 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Takhion/android-extendedactionbar, /tmp/rdisk/17/src]
+2018-04-11 22:22:29,139 INFO  SysUtils - 
+2018-04-11 22:22:29,149 INFO  GitService - Deleted "/tmp/rdisk/17/src/.git": true
+2018-04-11 22:22:29,151 INFO  FullProcessService - Size of directory with sources: 281 KB
+2018-04-11 22:22:29,151 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/17/src]
+2018-04-11 22:22:29,155 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/17/src/.git/
+
+2018-04-11 22:22:29,157 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/17/src/gradlew
+2018-04-11 22:22:29,159 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/17/src/Example/build.gradle /tmp/rdisk/17/src/build.gradle
+2018-04-11 22:22:29,160 INFO  ProjectBuildService - All script(s): /tmp/rdisk/17/src/settings.gradle /tmp/rdisk/17/src/build.gradle /tmp/rdisk/17/src/Example/build.gradle
+2018-04-11 22:22:29,160 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 22:22:29,160 INFO  ProjectFixService - Fixing project...
+2018-04-11 22:22:29,168 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/17/src/Example/local.properties
+2018-04-11 22:22:29,168 INFO  ProjectFixService - Build info for "/tmp/rdisk/17/src/Example/build.gradle": [buildToolsVersion=19.0.0,compileSdkVersion=19,minSdkVersion=11,targetSdkVersion=19]
+2018-04-11 22:22:29,169 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/17/src/Example/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=11,targetSdkVersion=19]
+2018-04-11 22:22:29,169 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/17/src/local.properties
+2018-04-11 22:22:29,170 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.10-bin.zip
+2018-04-11 22:22:29,171 INFO  ProjectFixService - Build info for "/tmp/rdisk/17/src/build.gradle": [buildToolsVersion=19.1.0,compileSdkVersion=19,minSdkVersion=11,targetSdkVersion=19]
+2018-04-11 22:22:29,171 INFO  ProjectFixService - Project was maybe fixed
+2018-04-11 22:22:29,171 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-11 22:22:29,171 INFO  SysUtils - Execute command: [/tmp/rdisk/17/src/gradlew, -b, /tmp/rdisk/17/src/Example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-11 22:22:36,920 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-11 22:22:36,920 INFO  ProjectTaskService - Excluded tasks (10): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check installDebug lintRelease uninstallDebug
+2018-04-11 22:22:36,921 INFO  SysUtils - Execute command: [/tmp/rdisk/17/src/gradlew, -b, /tmp/rdisk/17/src/Example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-11 22:22:46,202 INFO  SysUtils - Configuration on demand is an incubating feature.
+:Example:compileDebugNdk
+:Example:preBuild
+:Example:preDebugBuild
+:Example:checkDebugManifest
+:Example:prepareDebugDependencies
+:Example:compileDebugAidl
+:Example:compileDebugRenderscript
+:Example:generateDebugBuildConfig
+:Example:mergeDebugAssets
+:Example:generateDebugResValues
+:Example:generateDebugResources
+:Example:mergeDebugResources
+:Example:processDebugManifest
+:Example:processDebugResources
+:Example:generateDebugSources
+:Example:compileDebugJavaNote: /tmp/rdisk/17/src/Example/src/main/java/me/eugeniomarletti/extendedactionbar/ExtendedActionBarActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:Example:preDexDebug
+:Example:dexDebug
+:Example:processDebugJavaRes UP-TO-DATE
+:Example:validateDebugSigning
+:Example:packageDebug
+:Example:assembleDebug
+:Example:preReleaseBuild
+:Example:checkReleaseManifest
+:Example:prepareReleaseDependencies
+:Example:compileReleaseAidl
+:Example:compileReleaseRenderscript
+:Example:generateReleaseBuildConfig
+:Example:mergeReleaseAssets
+:Example:generateReleaseResValues
+:Example:generateReleaseResources
+:Example:mergeReleaseResources
+:Example:processReleaseManifest
+:Example:processReleaseResources
+:Example:generateReleaseSources
+:Example:compileReleaseJavaNote: /tmp/rdisk/17/src/Example/src/main/java/me/eugeniomarletti/extendedactionbar/ExtendedActionBarActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:Example:lintVitalRelease
+:Example:compileReleaseNdk
+:Example:preDexRelease
+:Example:dexRelease
+:Example:processReleaseJavaRes UP-TO-DATE
+:Example:packageRelease
+:Example:assembleRelease
+:Example:assemble
+:Example:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.853 secs
+
+2018-04-11 22:22:46,208 INFO  FullProcessService - Found APK file: /tmp/rdisk/17/src/Example/build/apk/Example-release-unsigned.apk

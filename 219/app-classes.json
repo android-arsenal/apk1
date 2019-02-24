@@ -1,0 +1,7 @@
+{
+  "it.sephiroth.android.library.imagezoom" : [ "BuildConfig", "ImageViewTouch", "ImageViewTouch$GestureListener", "ImageViewTouch$OnImageViewTouchDoubleTapListener", "ImageViewTouch$OnImageViewTouchSingleTapListener", "ImageViewTouch$ScaleListener", "ImageViewTouchBase", "ImageViewTouchBase$1", "ImageViewTouchBase$2", "ImageViewTouchBase$3", "ImageViewTouchBase$4", "ImageViewTouchBase$DisplayType", "ImageViewTouchBase$OnDrawableChangeListener", "ImageViewTouchBase$OnLayoutChangeListener", "R" ],
+  "it.sephiroth.android.library.imagezoom.graphics" : [ "FastBitmapDrawable", "IBitmapDrawable" ],
+  "it.sephiroth.android.library.imagezoom.test" : [ "BuildConfig", "ImageViewTestActivity", "ImageViewTestActivity$1", "ImageViewTestActivity$2", "ImageViewTestActivity$3", "ImageViewTestActivity$4", "ImageViewTestActivity$5", "ImageViewTestActivity$6", "R", "R$attr", "R$drawable", "R$id", "R$layout", "R$string" ],
+  "it.sephiroth.android.library.imagezoom.test.utils" : [ "BitmapUtils", "DecodeUtils", "ExifUtils", "IOUtils" ],
+  "it.sephiroth.android.library.imagezoom.utils" : [ "IDisposable" ]
+}

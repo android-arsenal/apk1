@@ -1,0 +1,383 @@
+2018-05-15 06:23:36,631 INFO  DownloadService - Downloading "https://github.com/gabrielemariotti/cardslib/archive/master.zip", attempt 3
+2018-05-15 06:24:37,285 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-15 06:24:38,168 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-15 06:24:38,168 INFO  DownloadService - Downloading "https://github.com/gabrielemariotti/cardslib/archive/master.zip", attempt 3
+2018-05-15 06:25:39,563 DEBUG FullProcessService - Repository https://github.com/gabrielemariotti/cardslib available: true
+2018-05-15 06:25:39,563 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-15 06:25:39,563 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/gabrielemariotti/cardslib, /tmp/rdisk/78/src]
+2018-05-15 06:26:05,487 INFO  SysUtils - 
+2018-05-15 06:26:05,507 INFO  GitService - Deleted "/tmp/rdisk/78/src/.git": true
+2018-05-15 06:26:05,544 INFO  FullProcessService - Size of directory with sources: 21 MB
+2018-05-15 06:26:05,544 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/78/src]
+2018-05-15 06:26:05,549 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/78/src/.git/
+
+2018-05-15 06:26:05,573 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/78/src/gradlew
+2018-05-15 06:26:05,597 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/78/src/demo/extras/build.gradle /tmp/rdisk/78/src/demo/stock/build.gradle /tmp/rdisk/78/src/extra/extra-dragdrop/build.gradle /tmp/rdisk/78/src/extra/extra-staggeredgrid/build.gradle /tmp/rdisk/78/src/extra/extra-twoway/build.gradle /tmp/rdisk/78/src/library-cards/build.gradle /tmp/rdisk/78/src/library-core/build.gradle /tmp/rdisk/78/src/library-recyclerview/build.gradle /tmp/rdisk/78/src/build.gradle
+2018-05-15 06:26:05,621 INFO  ProjectBuildService - All script(s): /tmp/rdisk/78/src/settings.gradle /tmp/rdisk/78/src/maven_push.gradle /tmp/rdisk/78/src/library-recyclerview/build.gradle /tmp/rdisk/78/src/library-core/build.gradle /tmp/rdisk/78/src/library-cards/build.gradle /tmp/rdisk/78/src/extra/extra-twoway/build.gradle /tmp/rdisk/78/src/extra/extra-staggeredgrid/build.gradle /tmp/rdisk/78/src/extra/extra-dragdrop/build.gradle /tmp/rdisk/78/src/demo/stock/build.gradle /tmp/rdisk/78/src/demo/extras/build.gradle /tmp/rdisk/78/src/build.gradle
+2018-05-15 06:26:05,621 INFO  ProjectBuildService - Remote scripts: none
+2018-05-15 06:26:05,621 INFO  ProjectFixService - Fixing project...
+2018-05-15 06:26:05,675 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/78/src/demo/extras/local.properties
+2018-05-15 06:26:05,679 INFO  ProjectFixService - Build info for "/tmp/rdisk/78/src/demo/extras/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-15 06:26:05,679 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/78/src/demo/stock/local.properties
+2018-05-15 06:26:05,682 INFO  ProjectFixService - Build info for "/tmp/rdisk/78/src/demo/stock/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-15 06:26:05,683 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/78/src/extra/extra-dragdrop/local.properties
+2018-05-15 06:26:05,686 INFO  ProjectFixService - Build info for "/tmp/rdisk/78/src/extra/extra-dragdrop/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-15 06:26:05,686 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/78/src/extra/extra-staggeredgrid/local.properties
+2018-05-15 06:26:05,690 INFO  ProjectFixService - Build info for "/tmp/rdisk/78/src/extra/extra-staggeredgrid/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-15 06:26:05,690 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/78/src/extra/extra-twoway/local.properties
+2018-05-15 06:26:05,693 INFO  ProjectFixService - Build info for "/tmp/rdisk/78/src/extra/extra-twoway/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-15 06:26:05,694 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/78/src/library-cards/local.properties
+2018-05-15 06:26:05,697 INFO  ProjectFixService - Build info for "/tmp/rdisk/78/src/library-cards/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-15 06:26:05,697 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/78/src/library-core/local.properties
+2018-05-15 06:26:05,700 INFO  ProjectFixService - Build info for "/tmp/rdisk/78/src/library-core/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-15 06:26:05,701 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/78/src/library-recyclerview/local.properties
+2018-05-15 06:26:05,704 INFO  ProjectFixService - Build info for "/tmp/rdisk/78/src/library-recyclerview/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-15 06:26:05,704 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/78/src/local.properties
+2018-05-15 06:26:05,705 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-05-15 06:26:05,705 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-05-15 06:26:05,706 INFO  ProjectFixService - Build info for "/tmp/rdisk/78/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-05-15 06:26:05,706 INFO  ProjectFixService - Project was maybe fixed
+2018-05-15 06:26:05,706 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-15 06:26:05,706 INFO  SysUtils - Execute command: [/tmp/rdisk/78/src/gradlew, -b, /tmp/rdisk/78/src/demo/extras/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-15 06:26:31,089 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-05-15 06:26:31,089 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-05-15 06:26:31,089 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-05-15 06:26:31,090 INFO  SysUtils - Execute command: [/tmp/rdisk/78/src/gradlew, -b, /tmp/rdisk/78/src/demo/extras/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-05-15 06:27:39,809 INFO  SysUtils - Configuration on demand is an incubating feature.
+RELEASE BUILD NOT FOUND SIGNING FILE
+:library-cards:compileLint
+:library-cards:copyReleaseLint UP-TO-DATE
+:library-cards:preBuild UP-TO-DATE
+:library-cards:preReleaseBuild UP-TO-DATE
+:library-cards:checkReleaseManifest
+:library-cards:preDebugAndroidTestBuild UP-TO-DATE
+:library-cards:preDebugBuild UP-TO-DATE
+:library-cards:preDebugUnitTestBuild UP-TO-DATE
+:library-cards:preReleaseUnitTestBuild UP-TO-DATE
+:library-core:compileLint
+:library-core:copyReleaseLint UP-TO-DATE
+:library-core:preBuild UP-TO-DATE
+:library-core:preReleaseBuild UP-TO-DATE
+:library-core:checkReleaseManifest
+:library-core:preDebugAndroidTestBuild UP-TO-DATE
+:library-core:preDebugBuild UP-TO-DATE
+:library-core:preDebugUnitTestBuild UP-TO-DATE
+:library-core:preReleaseUnitTestBuild UP-TO-DATE
+:library-core:prepareComAndroidSupportCardviewV72211Library
+:library-core:prepareComAndroidSupportSupportV42211Library
+:library-core:prepareReleaseDependencies
+:library-core:compileReleaseAidl
+:library-core:compileReleaseRenderscript
+:library-core:generateReleaseBuildConfig
+:library-core:generateReleaseAssets UP-TO-DATE
+:library-core:mergeReleaseAssets
+:library-core:generateReleaseResValues
+:library-core:generateReleaseResources
+:library-core:mergeReleaseResources
+:library-core:processReleaseManifest
+:library-core:processReleaseResources
+:library-core:generateReleaseSources
+:library-core:processReleaseJavaRes UP-TO-DATE
+:library-core:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/78/src/library-core/src/main/java/it/gmariotti/cardslib/library/internal/Card.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library-core:extractReleaseAnnotations
+:library-core:mergeReleaseProguardFiles
+:library-core:packageReleaseJar
+:library-core:compileReleaseNdk UP-TO-DATE
+:library-core:packageReleaseJniLibs UP-TO-DATE
+:library-core:packageReleaseLocalJar UP-TO-DATE
+:library-core:packageReleaseRenderscript UP-TO-DATE
+:library-core:packageReleaseResources
+:library-core:bundleRelease
+:library-cards:prepareComAndroidSupportCardviewV72211Library
+:library-cards:prepareComAndroidSupportSupportV42211Library
+:library-cards:prepareComGithubGabrielemariottiCardsLibraryCore210Library
+:library-cards:prepareReleaseDependencies
+:library-cards:compileReleaseAidl
+:library-cards:compileReleaseRenderscript
+:library-cards:generateReleaseBuildConfig
+:library-cards:generateReleaseAssets UP-TO-DATE
+:library-cards:mergeReleaseAssets
+:library-cards:generateReleaseResValues
+:library-cards:generateReleaseResources
+:library-cards:mergeReleaseResources
+:library-cards:processReleaseManifest
+:library-cards:processReleaseResources
+:library-cards:generateReleaseSources
+:library-cards:processReleaseJavaRes UP-TO-DATE
+:library-cards:compileReleaseJavaNote: /tmp/rdisk/78/src/library-cards/src/main/java/it/gmariotti/cardslib/library/cards/material/utils/RoundCornersDrawable.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library-cards:extractReleaseAnnotations
+:library-cards:mergeReleaseProguardFiles
+:library-cards:packageReleaseJar
+:library-cards:compileReleaseNdk UP-TO-DATE
+:library-cards:packageReleaseJniLibs UP-TO-DATE
+:library-cards:packageReleaseLocalJar UP-TO-DATE
+:library-cards:packageReleaseRenderscript UP-TO-DATE
+:library-cards:packageReleaseResources
+:library-cards:bundleRelease
+:library-recyclerview:compileLint
+:library-recyclerview:copyReleaseLint UP-TO-DATE
+:library-recyclerview:preBuild UP-TO-DATE
+:library-recyclerview:preReleaseBuild UP-TO-DATE
+:library-recyclerview:checkReleaseManifest
+:library-recyclerview:preDebugAndroidTestBuild UP-TO-DATE
+:library-recyclerview:preDebugBuild UP-TO-DATE
+:library-recyclerview:preDebugUnitTestBuild UP-TO-DATE
+:library-recyclerview:preReleaseUnitTestBuild UP-TO-DATE
+:library-recyclerview:prepareComAndroidSupportCardviewV72211Library
+:library-recyclerview:prepareComAndroidSupportRecyclerviewV72211Library
+:library-recyclerview:prepareComAndroidSupportSupportV42211Library
+:library-recyclerview:prepareComGithubGabrielemariottiCardsLibraryCore210Library
+:library-recyclerview:prepareReleaseDependencies
+:library-recyclerview:compileReleaseAidl
+:library-recyclerview:compileReleaseRenderscript
+:library-recyclerview:generateReleaseBuildConfig
+:library-recyclerview:generateReleaseAssets UP-TO-DATE
+:library-recyclerview:mergeReleaseAssets
+:library-recyclerview:generateReleaseResValues
+:library-recyclerview:generateReleaseResources
+:library-recyclerview:mergeReleaseResources
+:library-recyclerview:processReleaseManifest
+:library-recyclerview:processReleaseResources
+:library-recyclerview:generateReleaseSources
+:library-recyclerview:processReleaseJavaRes UP-TO-DATE
+:library-recyclerview:compileReleaseJava
+:library-recyclerview:extractReleaseAnnotations
+:library-recyclerview:mergeReleaseProguardFiles
+:library-recyclerview:packageReleaseJar
+:library-recyclerview:compileReleaseNdk UP-TO-DATE
+:library-recyclerview:packageReleaseJniLibs UP-TO-DATE
+:library-recyclerview:packageReleaseLocalJar UP-TO-DATE
+:library-recyclerview:packageReleaseRenderscript UP-TO-DATE
+:library-recyclerview:packageReleaseResources
+:library-recyclerview:bundleRelease
+:demo:extras:preBuild UP-TO-DATE
+:demo:extras:preDebugBuild UP-TO-DATE
+:demo:extras:checkDebugManifest
+:demo:extras:preReleaseBuild UP-TO-DATE
+:extra:extra-dragdrop:compileLint
+:extra:extra-dragdrop:copyReleaseLint UP-TO-DATE
+:extra:extra-dragdrop:preBuild UP-TO-DATE
+:extra:extra-dragdrop:preReleaseBuild UP-TO-DATE
+:extra:extra-dragdrop:checkReleaseManifest
+:extra:extra-dragdrop:preDebugAndroidTestBuild UP-TO-DATE
+:extra:extra-dragdrop:preDebugBuild UP-TO-DATE
+:extra:extra-dragdrop:preDebugUnitTestBuild UP-TO-DATE
+:extra:extra-dragdrop:preReleaseUnitTestBuild UP-TO-DATE
+:extra:extra-dragdrop:prepareComAndroidSupportCardviewV72211Library
+:extra:extra-dragdrop:prepareComAndroidSupportSupportV42211Library
+:extra:extra-dragdrop:prepareComGithubGabrielemariottiCardsLibraryCore210Library
+:extra:extra-dragdrop:prepareReleaseDependencies
+:extra:extra-dragdrop:compileReleaseAidl
+:extra:extra-dragdrop:compileReleaseRenderscript
+:extra:extra-dragdrop:generateReleaseBuildConfig
+:extra:extra-dragdrop:generateReleaseAssets UP-TO-DATE
+:extra:extra-dragdrop:mergeReleaseAssets
+:extra:extra-dragdrop:generateReleaseResValues
+:extra:extra-dragdrop:generateReleaseResources
+:extra:extra-dragdrop:mergeReleaseResources
+:extra:extra-dragdrop:processReleaseManifest
+:extra:extra-dragdrop:processReleaseResources
+:extra:extra-dragdrop:generateReleaseSources
+:extra:extra-dragdrop:processReleaseJavaRes UP-TO-DATE
+:extra:extra-dragdrop:compileReleaseJava
+:extra:extra-dragdrop:extractReleaseAnnotations
+:extra:extra-dragdrop:mergeReleaseProguardFiles
+:extra:extra-dragdrop:packageReleaseJar
+:extra:extra-dragdrop:compileReleaseNdk UP-TO-DATE
+:extra:extra-dragdrop:packageReleaseJniLibs UP-TO-DATE
+:extra:extra-dragdrop:packageReleaseLocalJar UP-TO-DATE
+:extra:extra-dragdrop:packageReleaseRenderscript UP-TO-DATE
+:extra:extra-dragdrop:packageReleaseResources
+:extra:extra-dragdrop:bundleRelease
+:extra:extra-staggeredgrid:compileLint
+:extra:extra-staggeredgrid:copyReleaseLint UP-TO-DATE
+:extra:extra-staggeredgrid:preBuild UP-TO-DATE
+:extra:extra-staggeredgrid:preReleaseBuild UP-TO-DATE
+:extra:extra-staggeredgrid:checkReleaseManifest
+:extra:extra-staggeredgrid:preDebugAndroidTestBuild UP-TO-DATE
+:extra:extra-staggeredgrid:preDebugBuild UP-TO-DATE
+:extra:extra-staggeredgrid:preDebugUnitTestBuild UP-TO-DATE
+:extra:extra-staggeredgrid:preReleaseUnitTestBuild UP-TO-DATE
+:extra:extra-staggeredgrid:prepareComAndroidSupportCardviewV72211Library
+:extra:extra-staggeredgrid:prepareComAndroidSupportSupportV42211Library
+:extra:extra-staggeredgrid:prepareComEtsyAndroidGridLibrary105Library
+:extra:extra-staggeredgrid:prepareComGithubGabrielemariottiCardsLibraryCore210Library
+:extra:extra-staggeredgrid:prepareReleaseDependencies
+:extra:extra-staggeredgrid:compileReleaseAidl
+:extra:extra-staggeredgrid:compileReleaseRenderscript
+:extra:extra-staggeredgrid:generateReleaseBuildConfig
+:extra:extra-staggeredgrid:generateReleaseAssets UP-TO-DATE
+:extra:extra-staggeredgrid:mergeReleaseAssets
+:extra:extra-staggeredgrid:generateReleaseResValues
+:extra:extra-staggeredgrid:generateReleaseResources
+:extra:extra-staggeredgrid:mergeReleaseResources
+:extra:extra-staggeredgrid:processReleaseManifest
+:extra:extra-staggeredgrid:processReleaseResources
+:extra:extra-staggeredgrid:generateReleaseSources
+:extra:extra-staggeredgrid:processReleaseJavaRes UP-TO-DATE
+:extra:extra-staggeredgrid:compileReleaseJava
+:extra:extra-staggeredgrid:extractReleaseAnnotations
+:extra:extra-staggeredgrid:mergeReleaseProguardFiles
+:extra:extra-staggeredgrid:packageReleaseJar
+:extra:extra-staggeredgrid:compileReleaseNdk UP-TO-DATE
+:extra:extra-staggeredgrid:packageReleaseJniLibs UP-TO-DATE
+:extra:extra-staggeredgrid:packageReleaseLocalJar UP-TO-DATE
+:extra:extra-staggeredgrid:packageReleaseRenderscript UP-TO-DATE
+:extra:extra-staggeredgrid:packageReleaseResources
+:extra:extra-staggeredgrid:bundleRelease
+:extra:extra-twoway:compileLint
+:extra:extra-twoway:copyReleaseLint UP-TO-DATE
+:extra:extra-twoway:preBuild UP-TO-DATE
+:extra:extra-twoway:preReleaseBuild UP-TO-DATE
+:extra:extra-twoway:checkReleaseManifest
+:extra:extra-twoway:preDebugAndroidTestBuild UP-TO-DATE
+:extra:extra-twoway:preDebugBuild UP-TO-DATE
+:extra:extra-twoway:preDebugUnitTestBuild UP-TO-DATE
+:extra:extra-twoway:preReleaseUnitTestBuild UP-TO-DATE
+:extra:extra-twoway:prepareComAndroidSupportCardviewV72211Library
+:extra:extra-twoway:prepareComAndroidSupportRecyclerviewV72211Library
+:extra:extra-twoway:prepareComAndroidSupportSupportV42211Library
+:extra:extra-twoway:prepareComGithubGabrielemariottiCardsLibraryCore210Library
+:extra:extra-twoway:prepareComGithubGabrielemariottiCardsLibraryRecyclerview210Library
+:extra:extra-twoway:prepareOrgLucasrTwowayviewCore100SNAPSHOTLibrary
+:extra:extra-twoway:prepareOrgLucasrTwowayviewLayouts100SNAPSHOTLibrary
+:extra:extra-twoway:prepareReleaseDependencies
+:extra:extra-twoway:compileReleaseAidl
+:extra:extra-twoway:compileReleaseRenderscript
+:extra:extra-twoway:generateReleaseBuildConfig
+:extra:extra-twoway:generateReleaseAssets UP-TO-DATE
+:extra:extra-twoway:mergeReleaseAssets
+:extra:extra-twoway:generateReleaseResValues
+:extra:extra-twoway:generateReleaseResources
+:extra:extra-twoway:mergeReleaseResources
+:extra:extra-twoway:processReleaseManifest
+:extra:extra-twoway:processReleaseResources
+:extra:extra-twoway:generateReleaseSources
+:extra:extra-twoway:processReleaseJavaRes UP-TO-DATE
+:extra:extra-twoway:compileReleaseJava
+:extra:extra-twoway:extractReleaseAnnotations
+:extra:extra-twoway:mergeReleaseProguardFiles
+:extra:extra-twoway:packageReleaseJar
+:extra:extra-twoway:compileReleaseNdk UP-TO-DATE
+:extra:extra-twoway:packageReleaseJniLibs UP-TO-DATE
+:extra:extra-twoway:packageReleaseLocalJar UP-TO-DATE
+:extra:extra-twoway:packageReleaseRenderscript UP-TO-DATE
+:extra:extra-twoway:packageReleaseResources
+:extra:extra-twoway:bundleRelease
+:demo:extras:prepareComAndroidSupportAppcompatV72211Library
+:demo:extras:prepareComAndroidSupportCardviewV72211Library
+:demo:extras:prepareComAndroidSupportRecyclerviewV72211Library
+:demo:extras:prepareComAndroidSupportSupportV42211Library
+:demo:extras:prepareComEtsyAndroidGridLibrary105Library
+:demo:extras:prepareComGithubCastorflexSmoothprogressbarLibrary040Library
+:demo:extras:prepareComGithubCastorflexSmoothprogressbarLibraryCircular101Library
+:demo:extras:prepareComGithubChrisbanesActionbarpulltorefreshLibrary099Library
+:demo:extras:prepareComGithubGabrielemariottiCardsExtraDragdrop210Library
+:demo:extras:prepareComGithubGabrielemariottiCardsExtraStaggeredgrid210Library
+:demo:extras:prepareComGithubGabrielemariottiCardsExtraTwoway210Library
+:demo:extras:prepareComGithubGabrielemariottiCardsLibraryCards210Library
+:demo:extras:prepareComGithubGabrielemariottiCardsLibraryCore210Library
+:demo:extras:prepareComGithubGabrielemariottiCardsLibraryRecyclerview210Library
+:demo:extras:prepareComMelnykovFloatingactionbutton106Library
+:demo:extras:prepareComSurvivingwithandroidWeatherlib132Library
+:demo:extras:prepareDeKeyboardsurferAndroidWidgetCrouton185Library
+:demo:extras:prepareOrgLucasrTwowayviewCore100SNAPSHOTLibrary
+:demo:extras:prepareOrgLucasrTwowayviewLayouts100SNAPSHOTLibrary
+:demo:extras:prepareSeEmilsjolanderStickylistheaders250Library
+:demo:extras:prepareDebugDependencies
+:demo:extras:compileDebugAidl
+:demo:extras:compileDebugRenderscript
+:demo:extras:generateDebugBuildConfig
+:demo:extras:generateDebugAssets UP-TO-DATE
+:demo:extras:mergeDebugAssets
+:demo:extras:generateDebugResValues
+:demo:extras:generateDebugResources
+:demo:extras:mergeDebugResources
+AAPT: /tmp/rdisk/78/src/demo/extras/src/main/res/drawable-xhdpi/action_refresh.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/78/src/demo/extras/src/main/res/drawable-mdpi/action_refresh.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/78/src/demo/extras/src/main/res/drawable-hdpi/action_refresh.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:demo:extras:processDebugManifest
+:demo:extras:processDebugResources
+:demo:extras:generateDebugSources
+:demo:extras:processDebugJavaRes UP-TO-DATE
+:demo:extras:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:demo:extras:compileDebugNdk UP-TO-DATE
+:demo:extras:compileDebugSources
+:demo:extras:preDexDebug
+:demo:extras:dexDebug
+:demo:extras:validateDebugSigning
+:demo:extras:packageDebug
+:demo:extras:zipalignDebug
+:demo:extras:assembleDebug
+:demo:extras:checkReleaseManifest
+:demo:extras:prepareReleaseDependencies
+:demo:extras:compileReleaseAidl
+:demo:extras:compileReleaseRenderscript
+:demo:extras:generateReleaseBuildConfig
+:demo:extras:generateReleaseAssets UP-TO-DATE
+:demo:extras:mergeReleaseAssets
+:demo:extras:generateReleaseResValues
+:demo:extras:generateReleaseResources
+:demo:extras:mergeReleaseResources
+AAPT: /tmp/rdisk/78/src/demo/extras/src/main/res/drawable-xhdpi/action_refresh.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT err(1366053999) : No Delegate set : lost message:/tmp/rdisk/78/src/demo/extras/src/main/res/drawable-mdpi/action_refresh.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/78/src/demo/extras/src/main/res/drawable-hdpi/action_refresh.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:demo:extras:processReleaseManifest
+:demo:extras:processReleaseResources
+:demo:extras:generateReleaseSources
+:demo:extras:processReleaseJavaRes UP-TO-DATE
+:demo:extras:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:demo:extras:compileReleaseNdk UP-TO-DATE
+:demo:extras:compileReleaseSources
+:demo:extras:lintVitalRelease SKIPPED
+:demo:extras:preDexRelease
+:demo:extras:dexRelease
+:demo:extras:packageRelease
+:demo:extras:assembleRelease
+:demo:extras:assemble
+:demo:extras:compileLint
+:demo:extras:lint
+Ran lint on variant debug: 551 issues found
+Ran lint on variant release: 551 issues found
+Wrote HTML report to file:/tmp/rdisk/78/src/demo/extras/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/78/src/demo/extras/build/outputs/lint-results.xml
+:demo:extras:preCompileDebugUnitTestJava
+:demo:extras:preDebugUnitTestBuild UP-TO-DATE
+:demo:extras:prepareDebugUnitTestDependencies
+:demo:extras:processDebugUnitTestJavaRes UP-TO-DATE
+:demo:extras:compileDebugUnitTestJava UP-TO-DATE
+:demo:extras:compileDebugUnitTestSources UP-TO-DATE
+:demo:extras:mockableAndroidJar
+:demo:extras:assembleDebugUnitTest
+:demo:extras:testDebug
+:demo:extras:preCompileReleaseUnitTestJava
+:demo:extras:preReleaseUnitTestBuild UP-TO-DATE
+:demo:extras:prepareReleaseUnitTestDependencies
+:demo:extras:processReleaseUnitTestJavaRes UP-TO-DATE
+:demo:extras:compileReleaseUnitTestJava UP-TO-DATE
+:demo:extras:compileReleaseUnitTestSources UP-TO-DATE
+:demo:extras:assembleReleaseUnitTest
+:demo:extras:testRelease
+:demo:extras:test
+:demo:extras:check
+:demo:extras:build
+
+BUILD SUCCESSFUL
+
+Total time: 1 mins 8.267 secs
+
+2018-05-15 06:27:39,967 INFO  FullProcessService - Found APK file: /tmp/rdisk/78/src/demo/extras/build/outputs/apk/extras-release-unsigned.apk

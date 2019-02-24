@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.alexvasilkov.foldablelayout.sample",
+    "label" : "FoldableLayout",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.2.2",
+    "versionCode" : 8,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 2166,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"8\" android:versionName=\"1.2.2\" package=\"com.alexvasilkov.foldablelayout.sample\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"25\" />\n\t<meta-data android:name=\"android.support.VERSION\" android:value=\"25.3.1\" />\n\t<application android:theme=\"resourceId:0x7f0700a3\" android:label=\"FoldableLayout\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:name=\"com.alexvasilkov.foldablelayout.sample.activities.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"Unfoldable details\" android:name=\"com.alexvasilkov.foldablelayout.sample.activities.UnfoldableDetailsActivity\" />\n\t\t<activity android:label=\"Foldable list\" android:name=\"com.alexvasilkov.foldablelayout.sample.activities.FoldableListActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 3419458,
+  "crc32" : 1308388331,
+  "sha256" : "d459df6276c7f767e5cd54a1a36e1bc959ac25a09f921002fa4b79bf0fd3ecfb",
+  "buildTime" : 1523478942000
+}

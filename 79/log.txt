@@ -1,0 +1,9 @@
+2018-04-11 20:56:05,818 INFO  DownloadService - Downloading "https://github.com/Androguide/cardsui-for-android/archive/master.zip", attempt 3
+2018-04-11 20:56:05,818 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 20:56:06,707 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 20:56:06,707 INFO  DownloadService - Downloading "https://github.com/Androguide/cardsui-for-android/archive/master.zip", attempt 3
+2018-04-11 20:56:06,708 DEBUG FullProcessService - Repository https://github.com/Androguide/cardsui-for-android available: false
+2018-04-11 20:56:06,708 ERROR FullProcessService - Could not find directory with sources
+2018-04-11 20:56:06,708 ERROR FullProcessService - Project will not be processed
+2018-04-11 20:56:06,708 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 20:56:06,708 ERROR FullProcessService - Could not find generated or existed APK file

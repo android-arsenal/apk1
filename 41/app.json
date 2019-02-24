@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "nl.changer.audiowifedemo",
+    "label" : "AudioWifeDemo",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "14",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.WRITE_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 681,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"nl.changer.audiowifedemo\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"14\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"@android:style/Theme.Holo.Light\" android:label=\"AudioWifeDemo\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:theme=\"@android:style/Theme.Holo.Light.DialogWhenLarge\" android:label=\"AudioWifeDemo\" android:name=\"nl.changer.audiowifedemo.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:theme=\"@android:style/Theme.Holo.Light.DialogWhenLarge\" android:label=\"AudioWifeDemo\" android:name=\"nl.changer.audiowifedemo.DefaultPlayerActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 661265,
+  "crc32" : 4212192053,
+  "sha256" : "5f7d6a1777f937e712e32869dc6a25f228516722e8aeef1a5934b1990078319f",
+  "buildTime" : 1523483332000
+}

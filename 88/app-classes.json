@@ -1,0 +1,5 @@
+{
+  "yuku.ambilwarna" : [ "AmbilWarnaDialog", "AmbilWarnaDialog$1", "AmbilWarnaDialog$2", "AmbilWarnaDialog$3", "AmbilWarnaDialog$4", "AmbilWarnaDialog$5", "AmbilWarnaDialog$6", "AmbilWarnaDialog$7", "AmbilWarnaDialog$OnAmbilWarnaListener", "AmbilWarnaSquare", "BuildConfig", "R", "R$attr", "R$dimen", "R$drawable", "R$id", "R$layout", "R$styleable" ],
+  "yuku.ambilwarna.demo" : [ "AmbilWarnaDemoActivity", "AmbilWarnaDemoActivity$1", "AmbilWarnaDemoActivity$2", "AmbilWarnaDemoActivity$3", "AmbilWarnaDemoActivity$4", "AmbilWarnaDemoPreferenceActivity", "BuildConfig", "R", "R$attr", "R$dimen", "R$drawable", "R$id", "R$layout", "R$mipmap", "R$styleable", "R$xml" ],
+  "yuku.ambilwarna.widget" : [ "AmbilWarnaPrefWidgetView", "AmbilWarnaPreference", "AmbilWarnaPreference$1", "AmbilWarnaPreference$SavedState", "AmbilWarnaPreference$SavedState$1" ]
+}

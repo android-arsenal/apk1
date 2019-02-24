@@ -1,0 +1,21 @@
+2018-04-11 21:03:54,814 INFO  DownloadService - Downloading "https://github.com/chrisbanes/Android-BitmapCache/archive/master.zip", attempt 3
+2018-04-11 21:04:55,315 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-11 21:04:56,026 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-11 21:04:56,026 INFO  DownloadService - Downloading "https://github.com/chrisbanes/Android-BitmapCache/archive/master.zip", attempt 3
+2018-04-11 21:05:57,451 DEBUG FullProcessService - Repository https://github.com/chrisbanes/Android-BitmapCache available: true
+2018-04-11 21:05:57,451 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-11 21:05:57,451 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/chrisbanes/Android-BitmapCache, /tmp/rdisk/73/src]
+2018-04-11 21:05:59,579 INFO  SysUtils - 
+2018-04-11 21:05:59,590 INFO  GitService - Deleted "/tmp/rdisk/73/src/.git": true
+2018-04-11 21:05:59,591 INFO  FullProcessService - Size of directory with sources: 498 KB
+2018-04-11 21:05:59,591 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/73/src]
+2018-04-11 21:05:59,602 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/73/src/.git/
+
+2018-04-11 21:05:59,604 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-11 21:05:59,604 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-11 21:05:59,605 INFO  ProjectBuildService - Build script(s): none
+2018-04-11 21:05:59,607 INFO  ProjectBuildService - All script(s): none
+2018-04-11 21:05:59,607 INFO  ProjectBuildService - Remote scripts: none
+2018-04-11 21:05:59,607 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-11 21:05:59,607 ERROR FullProcessService - Project build has not produced APK file
+2018-04-11 21:05:59,608 ERROR FullProcessService - Could not find generated or existed APK file

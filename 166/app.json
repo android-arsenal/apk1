@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.neopixl.pixluisample",
+    "label" : "PixlUISample",
+    "icon" : "res/drawable-mdpi-v4/launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 72,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.neopixl.pixluisample\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"25\" />\n\t<application android:theme=\"resourceId:0x7f050001\" android:label=\"PixlUISample\" android:icon=\"res/drawable-mdpi-v4/launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"PixlUISample\" android:name=\"com.neopixl.pixluisample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 139856,
+  "crc32" : 526138008,
+  "sha256" : "31a3fa45fe8ad2c74ffd40089a32bdafeddb44d9bb3be3bdea0f7f11c63664c9",
+  "buildTime" : 1523441483000
+}

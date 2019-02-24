@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.cardsui.example",
+    "label" : "CardsUI Example",
+    "icon" : "res/drawable-xhdpi/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "17",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-xhdpi/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAACRlBMVEUAAACioqLm5ub5+fn+/v7///8AAADMzMz6+voAAADW1tYAAADZ2dkAAADp9/3J7PnB6fnN7frs+P296PhbxO4ztupZw+605Pf+//+k3vY7uetXw+5Nv+02t+pwzPBSwe1qyvDi9fz9/v+F0/J0zfH5/f6g3fVQwO1Kvuxty/Boye/h9Pyy5PeR1/RVwu1ZxO41t+qG1PPY8ftBu+vc8vs0tup90fLE6vnS7/qK1fPw+v2d3PVnye9OwO1hx++N1vOn4PaJ1fPR7vrx+v6f3fXQ7vp5z/FRwe3g9PxAu+tcxe6M1vN70PHd8/xGveyZ2vRpyfCo4Paj3vY9uut4z/GV2fRhxu9dxe49uevj9fzL7Pqz5Pfm9vzG6/k6ueu55vil3/bM7fpkx+/A6Pj8/v/t+f1/0fLo9/08uetWw+7H6/m45vj6/f+e3PWD0/JxzPCY2vTb8vvC6flHvez4/P6x4/dPwO1lyO9Uwu2P1/M4uOpJvuyu4ve65vir4fZix+9FvOzT7/rF6vmt4veR2PRTwe33/P6C0vJryvBIvezZ8vvz+/580PHW8Ps+uuua2/WU2fT7/v96z/F1zvFgxu9EvOzt+P275/hMv+2Q1/Rjx+9DvOw5uOt3zvGT2PQ/uuv1/P5Yw+7K7Pqp4Pa15Pfe8/yW2fR1zfGZ2/Vfxu9uy/Da8vvl9vy85/jX19fNzc35+fmvr6/i4uLj4+OwsLCLi4uvr6+MjIwjIyODg4OIiIiLi4uMjIwiIiIAAAAAAAAAAAAAAAC/+VIFAAAAwnRSTlMAC5ns//8DnP8K8BD/E//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////0///0t/+6LML1//8tJTQ5OjMQuz4AAANASURBVGje7ZpZUxNBEIAFMoEQMBy2ILqCUUDkCkeAAILhFAXFE1DkUBFUFBVQFJAVFS88UUTEW7wJ8UIBBfxn9uxmY2JJqFRlqyydfsh0T8/0t9O7PZuqnXnzmPwV4ubuoSAuFoWHu5sUX+npRWQQL0+lBaDyVsgBUHirLAC1D5FFfNQWgK9cAF8GYAAGYAAGYAAGYAAGYID/GjBf4+cfIB8gcAFQWRgUPPf8RSEhi7FZwnFLxY5QjgsjZBnHcUGzALTLQZIV4XMCIgAisVkJECV2RAKsIiQaZ8fMAoiloeOi4nXYJMgASMTASRpUknGoPtH1gBR0pQpaGmoGbNMzMiNXZ2ULrDVGY06uIS4P1fyC0MKUtU4DtEUA6yxXt764OIOQkg3iDdFvxK5SgE3xALGEbKYphC1bnQVQzza7JGwH4MqyygF0FQIAYyFghx4bHf1xEqBBz07b+JXYsYuQgCqAagEASYaaWrIboHzP3rp9TgP80BNoC6iPiKjBJqBBACMgJBrNOrz2DJrR/c4CDqDnoP2D0qg5dDizASRAk7RQCiJHnAUcRU+eXfxjzTTROp0EMNLOauxqoUrr74DjAKWOAOGY6zBxaPCJtraTpOQUQHtCR0WzBMimvk4MkEuV0yIgFKBLnMULa3RQB014tWcErRsHnSXnAM73oFVkB8hBH61GckEEXAQoahS2Sb2wRgcAmt1LaahcbscH5gopAOhF6yrYAcKvYU60GChEBFxH9w3cG2/eEu+ho72olxZVWd9tWkgdhBgA7uT33x1Aq/UXgNxDezAv9r7lMa0cQqWw4AEtkuYex4CWKOtu+pBuGELFwiNcT40N4PETccigCCAxOmlS1VPiGEC0zwaEkW1iPTxPonGGjTwf30P6eP6FOCr9JWZ76JUfz78W7Nouoax1b95S6x3P89Wzv9GCk0daR4al102Pf2r0nzbS+m5Nrq3dr6nurM1l/yoYgAEYgAEYgAEYgAEYgAHkB5jk+WBtsgJGzXIAzKNWwPsPZtcfGjB//CQB1J/HRk0+LhbT6NgX6ZO76uv4xOQ3F8vkxPh36dCAUj01PfPDxTIzPaVWWg9WqNS+Lhe1SvlvHGv5CTbJwLTAWxN+AAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 566,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.cardsui.example\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"17\" />\n\t<application android:theme=\"resourceId:0x7f0a0061\" android:label=\"CardsUI Example\" android:icon=\"res/drawable-xhdpi/ic_launcher.png\">\n\t\t<activity android:label=\"CardsUI\" android:name=\".MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 847184,
+  "crc32" : 3206992946,
+  "sha256" : "de23fc392577ff33a844ce67cca5daba4bf0ded569d3e8c43800318270a6407e",
+  "buildTime" : 1508188753000
+}
